@@ -9,21 +9,27 @@
         <link rel="stylesheet" href="assets/css/style.css" async>
     </head>
 <body>
+    <!-- main navigation -->
+    <header class="main-header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo"><a href="index.html"><img src="assets/images/Logo.png" alt="Flex-logo" width="124" height="32"></a></div>
+                <ul class="nav-list">
+                    <li><a href="#">Company</a></li>
+                    <li class="dropdown"><a href="#">Services</a></li>
+                    <li class="dropdown"><a href="#">Case Studies</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Blogs</a></li>
+                    <button type="button" class="button btn-primary" aria-label="contact-button">Contact now</button>
+                </ul>
+            </nav>
+        </div>
+    </header> <!-- main navigation end-->
+
     <!-- main section -->
     <main>
-        <section class="main-header hero-section">
+        <section class="hero-section">
             <div class="container">
-                <nav class="navbar">
-                    <div class="logo"><a href="index.html"><img src="assets/images/Logo.png" alt="Flex-logo" loading="lazy" width="124" height="32"></a></div>
-                    <ul class="nav-list">
-                        <li><a href="#">Company</a></li>
-                        <li class="dropdown"><a href="#">Services</a></li>
-                        <li class="dropdown"><a href="#">Case Studies</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">Blogs</a></li>
-                        <button type="button" class="button btn-primary" aria-label="contact-button">Contact now</button>
-                    </ul>
-                </nav>
                 <div class="hero-wrapper"> 
                     <div class="card">
                         <img src="assets/images/icons/Image1.svg" alt="Developer" width="52" height="52">
@@ -337,29 +343,150 @@
                 <div class="title">Excellence in Digital Solutions</div>
             </div>
             <div class="row">
-                <!-- <div class="column"> -->
-                    <div class="aboutus-block">
-                        <img src="assets/images/aboutus1.png" height="250" width="400">
-                        <div class="aboutus-text">
-                            <div class="about-title">Secure information</div>
-                            <p class="summary-text">To align with your strategic interests</p>
+                <div class="about-us-wrapper">
+                    <div class="aboutus-block block1">
+                        <div class="about-img">
+                            <img src="assets/images/icons/Icon1.svg" height="122" width="122">
                         </div>
                     </div>
-                    <div class="aboutus-block">
-                        <img src="assets/images/Mask.png" height="250" width="560">
-                        <div class="aboutus-text">
-                            <div class="about-title">Tailored solutions</div>
-                            <p class="summary-text">To solve current and future challenges</p>
+                    <div class="aboutus-text">
+                        <div class="about-title">Secure information</div>
+                        <p class="summary-text">To align with your strategic interests</p>
+                    </div>
+                </div>
+                <div class="about-us-wrapper">
+                    <div class="aboutus-block block2">
+                        <div class="about-img">
+                            <img src="assets/images/icons/Icon2.svg" height="122" width="122">
                         </div>
                     </div>
-                    <div class="aboutus-block">
-                        <img src="assets/images/about-2.png" height="250" width="400">
-                        <div class="aboutus-text">
-                            <div class="about-title">A true partnership</div>
-                            <p class="summary-text">Built on respect for your needs</p>
+                    <div class="aboutus-text">
+                        <div class="about-title">Tailored solutions</div>
+                        <p class="summary-text">To solve current and future challenges</p>
+                    </div>
+                </div>
+                <div class="about-us-wrapper">
+                    <div class="aboutus-block block3">
+                        <div class="about-img">
+                            <img src="assets/images/icons/Icon3.svg" height="122" width="122">
                         </div>
                     </div>
-                <!-- </div> -->
+                    <div class="aboutus-text">
+                        <div class="about-title">A true partnership</div>
+                        <p class="summary-text">Built on respect for your needs</p>
+                    </div>
+                </div>
+                <div class="about-us-wrapper">
+                    <div class="aboutus-block block4">
+                        <div class="about-img">
+                            <img src="assets/images/icons/Icon4.svg" height="122" width="122">
+                        </div>
+                    </div>
+                    <div class="aboutus-text">
+                        <div class="about-title">Project goals mapped</div>
+                        <p class="summary-text">To align with your strategic interests</p>
+                    </div>
+                </div>
+                <div class="about-us-wrapper">
+                    <div class="aboutus-block block5">
+                        <div class="about-img">
+                            <img src="assets/images/icons/Icon5.svg" height="122" width="122">
+                        </div>
+                    </div>
+                    <div class="aboutus-text">
+                        <div class="about-title">Seamless communication</div>
+                        <p class="summary-text">At every step along the way</p>
+                    </div>
+                </div>
+                <div class="about-us-wrapper">
+                    <div class="aboutus-block block6">
+                        <div class="about-img">
+                            <img src="assets/images/icons/Icon6.svg" height="122" width="122">
+                        </div>
+                    </div>
+                    <div class="aboutus-text">
+                        <div class="about-title">Open source experts</div>
+                        <p class="summary-text">Working as an extension of your team</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="blog-section container">
+            <div class="header">
+                <div class="header-wrapper">
+                    <h3 class="sub-title">Insights</h3>
+                    <div class="title">Blog & Articles</div>
+                </div>
+                <button type="button" class="button btn-primary">Go to insights</button>
+            </div>
+            <div class="row">
+                <div class="blog-card">
+                    <img src="assets/images/blog-img-1.png" alt="Blog 1" height="300" width="440" class="img-border">
+                    <div class="text-block">
+                        <p class="blog-card-text">Design</p>
+                        <div class="blog-card-title">How Flex Integrated AVIF for Faster, Smaller, and Sharper Images</div>
+                        <p class="blog-card-description">In May 2024, we shipped AVIF support. All images on Framer are now served as AVIF, which makes them ~20% smaller. However, integrating this format was challenging, partly because converting images to AVIF is slow. Here’s how we solved this.</p>
+                    </div>
+                </div>
+                <div class="blog-card blog-area">
+                    <div class="blog">
+                        <img src="assets/images/blog-img-2.png" alt="Blog 1" height="300" width="440" class="img-border">
+                    </div>
+                    <div class="text-block">
+                        <p class="blog-card-text">Web Development</p>
+                        <div class="blog-card-title">Framer's $27M Series C and Shaping the Future of Web</div>
+                        <p class="blog-card-description">We’re happy to announce our $27M Series C funding round, led by Meritech Capital with participation from our current investors: Atomico, Accel, and Foundation. As always, thanks to all our customers, employees, and investors for coming on this journey with us.</p>
+                    </div>
+                </div> 
+                <div class="blog-card">
+                    <img src="assets/images/blog-img-3.png" alt="Blog 1" height="300" width="440" class="img-border">
+                    <div class="text-block">
+                        <p class="blog-card-text">Mobile Application</p>
+                        <div class="blog-card-title">Radial Background Component for Framer</div>
+                        <p class="blog-card-description">Introducing a new component — the radial background component. This component combines CSS repeating-radial-gradient, background-position/size manipulation, and is powered by Framer Motion. In this blog post, we'll dive into how it works.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section container">
+            <div class="row">
+                <div class="column">
+                    <h3 class="sub-title">faq</h3>
+                    <div class="title">Frequently asked questions</div>
+                    <p class="faq-content">Find quick answers to common questions in our FAQ section. For more help, contact our support team anytime-we're here to assist.</p>
+                    <button type="button" class="button btn-secondary">Contact Us<span class="icon"></span></button>
+                </div>
+                <div class="column">
+                    <div class="accordion-item">
+                        <div class="accordion-header open">What services does Flex Solutions offer? <button class="minus-icon"></button></div>
+                        <div class="accordion-content open">Flex Solutions specializes in website development, mobile app creation, and custom software solutions personalized to your business needs.</div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">How long does it take to develop a website? <button class="plus-icon"></button>
+                        </div>
+                        <!-- <div class="accordion-content">
+                            Flex Solutions specializes in website development, mobile app creation, and custom software solutions personalized to your business needs.  
+                        </div> -->
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">Do you provide ongoing support after the website or app is launched? <button class="plus-icon"></button>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">Can you help with search engine optimization (SEO)? <button class="plus-icon"></button>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">What platforms do you use for app development? <button class="plus-icon"></button>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">Do you offer custom solutions for unique business needs? <button class="plus-icon"></button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 

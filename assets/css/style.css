@@ -88,12 +88,7 @@ h3 , .h3 {
 }
 /* header css */
 .main-header {
-    background-color: var(--light-black);
-    background-image:url("../images/BG.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top;
-    padding-bottom: 80px;
+  background: transparent;
 }
 .navbar {
     display: flex;
@@ -148,11 +143,20 @@ img {
 /* header css end */
 
 /* hero-section css */
+.hero-section {
+    padding: 80px 0;
+    background-color: var(--light-black);
+    background-image:url("../images/BG.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    margin-top: -110px;
+}
 .hero-wrapper {
     text-align: center;
     width: 68%;
     margin: 0 auto;
-    padding: 125px 20px 147px;
+    padding: 147px 20px;
 }
 .card img {
     width: 52px;
@@ -255,7 +259,8 @@ img {
 /* case studies section */
 .case-studies-section {
     background-color: var(--light-black);
-    padding: 80px 0;
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 .title {
     font-family: var(--utendo-medium);
@@ -390,7 +395,8 @@ img {
 
 /* testimonial section */
 .testimonial-section {
-    padding: 80px 0;
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 .column , .last-block  {
     width: 50%;
@@ -444,11 +450,13 @@ img {
 
 /* service section */
 .service-section {
-    padding: 80px 0;
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 .service-section .row {
     display: flex;
     gap: 40px;
+    align-items: center;
 }
 .service-section .column{
     display: flex;
@@ -481,7 +489,8 @@ img {
 
 /* tab section */
 .tab-section {
-    padding: 80px 0;
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 .tab-wrapper {
     margin-top: 60px;
@@ -507,7 +516,7 @@ img {
     border-radius: 50px;
 }
 .tab:hover {
-    background-color: #444;
+    background-color: #292727;
 }
 .tab.active {
     background-color: var(--primary-color);
@@ -542,16 +551,52 @@ img {
 
 /* about-us section */
 .aboutus-section {
-    padding: 80px 0;
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 .aboutus-section .row {
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
+    margin-top: 60px;
 }
-.aboutus-block {
+.about-us-wrapper {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(19, 20, 22, 1) 100%);
     border-radius: 36px;
+}
+.aboutus-block {
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 250px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+}
+.block1 {
+    background-image: url("../images/Secure-information.png");
+}
+.block2 {
+    background-image: url("../images/Tailored-solutions.png");
+    width: 560px;
+}
+.block3 {
+    background-image: url("../images/partnership.png");
+}
+.block4 {
+    background-image: url("../images/Project.png");
+}
+.block5 {
+    background-image: url("../images/communication.png");
+}
+.block6 {
+    background-image: url("../images/experts.png");
+    width: 560px;
+}
+.about-img {
+    box-shadow: 0 0 200px rgba(0, 58, 255, 0.6);
+    border-radius: 50%;
+    margin: auto;
+    display: flex;
 }
 .aboutus-text {
     color: var(--primary-color);
@@ -567,10 +612,124 @@ img {
     font-family: var(--utendo-medium);
     font-size: 24px;
 }
-/* abouyt-us section end */
+/* about-us section end */
+
+/* blog section  */
+.blog-section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.blog-section .row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+.blog-card {
+    border-radius: 24px;
+    border: 1px solid #212121;
+    color: var(--primary-color);
+    letter-spacing: 0.36px;
+    padding: 10px 10px 30px;
+}
+.blog-area {
+    background-color: #121315;
+}
+.text-block {
+    padding: 30px 20px 0;
+}
+.blog-card-text {
+    font-size: 16px;
+    line-height: 26px;
+    color: #8E8E8E;
+}
+.blog-card-title {
+    font-size: 24px;
+    line-height: 36px;
+    padding: 18px 0;
+}
+.blog-card-description {
+    font-family: "utendolight";
+    font-size: 18px;
+    line-height: 28px;
+    color: #8E8E8E;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.img-border {
+    border-radius: 16px;
+}
+/* blog section end */
+
+/* faq section  */
+.faq-section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.faq-section .row {
+    display: flex;
+    flex-wrap: wrap;
+    /* gap: 100px; */
+}
+.faq-content {
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: 0.36px;
+    color: #CFCFCF;
+    padding: 30px 0 40px;
+}
+.accordion-item {
+    border-bottom: 1px solid #1B1B1B;
+    padding: 36px 0;
+}
+.accordion-item:last-child {
+    border-bottom: none;
+}
+.accordion-header {
+    color: #A4A4A4;
+    font-family: "utendolight";
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px; 
+    line-height: 32px;
+    letter-spacing: 0.36px;
+}
+.accordion-header.open {
+    color: var(--primary-color);
+    font-family: "utendoregular";
+}
+.minus-icon {
+    background: url("../images/icons/minus.svg") center no-repeat;
+    height: 20px;
+    width: 20px;
+    border: none;
+}
+.plus-icon {
+    background: url("../images/icons/plus.svg") center no-repeat;
+    height: 20px;
+    width: 20px;
+    border: none;
+}
+.accordion-content {
+    font-family: "utendolight";
+    display: none;
+    padding-top: 30px;
+    color: var(--primary-color);
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.36px;
+}
+.accordion-content.open {
+    display: block;
+}
+/* faq section end */
 
 /* footer */
-footer{
+footer {
     color: var(--primary-color);
     padding: 60px 0 25px 0;
     border-top: 1px solid #1B1B1B;
@@ -644,14 +803,14 @@ footer .column {
     display: flex;
     gap: 20px;
 }
-.footer-column-text li {
+.footer-column-text li a{
     border-right: 2px solid var(--primary-color);
 }
-.footer-column-text li:last-child {
+.footer-column-text li:last-child a{
     border: none;
     padding: unset;
 }
-.footer-column-text li {
+.footer-column-text li a {
     padding-right: 20px;
 }
 /* footer end */
