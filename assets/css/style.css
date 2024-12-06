@@ -130,7 +130,7 @@ h3 , .h3 {
 }
 .navbar-list {
     display: flex;
-    gap: 46px;
+    gap: 23px;
 }
 .button {
     font-family: var(--utendo-medium);
@@ -166,20 +166,19 @@ img {
     background-color: #121315;
     left: 0;
     right: 0;
-    z-index: 3;
+    z-index: 9;
     opacity: 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     overflow-y: auto;
     scrollbar-width: none;
     max-height: calc(100vh - 125px);
-    transition: all 0.4s ease 0s;
-    transform: rotateX(90deg);
+    transition: all 0.2s ease-in-out;
     transform-origin: top center;
+    transform: scale(0.9);
 }
 .menu-item:hover .mega-menu {
     visibility: visible;
     opacity: 1;
-    transform: rotateX(0deg);
 }
 .menu-row {
     display: grid;
@@ -190,10 +189,13 @@ img {
     border: 1px solid #bababa1f;
     text-align: center;
     padding: 0 10px; 
-    transition: all 0.4s ease-in-out;
 }
 .menu-text-block {
     padding: 30px 30px 25px;
+    transform: translateY(20px);
+}
+.menu-column img {
+    transform: translateY(20px);
 }
 .menu-column .menu-card-title{
     font-family: var(--utendo-medium);
@@ -1129,7 +1131,7 @@ footer .column {
     .mobile-menu {
         position: fixed;
         z-index: 99;
-        top: 0;
+        top: -38px;
         right: 0;
         width: 100%;
         height: 400px;
