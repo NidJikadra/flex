@@ -1,5 +1,6 @@
 import { animate, stagger } from "https://cdn.jsdelivr.net/npm/motion@11.11.13/+esm";
 
+// dropdown menu animation
 document.querySelectorAll('.menu-item').forEach(item => {
     item.addEventListener("mouseenter", () => {
         animate(".mega-menu", { scale: [0.2, 1] }, { ease: "circInOut", duration: 0.2 });
@@ -13,3 +14,36 @@ document.querySelectorAll('.menu-item').forEach(item => {
     });
 });
 
+// tab-section
+document.querySelectorAll(".tab").forEach((tab) => {
+    tab.addEventListener("click", () => {
+      document.querySelectorAll(".tab").forEach((t) => t.classList.remove("active"));
+  
+      tab.classList.add("active");
+  
+      document.querySelectorAll(".tab-panel").forEach((content) => content.classList.remove("active"));
+      const target = tab.getAttribute("data-tab");
+      document.getElementById(target).classList.add("active");
+    });
+  });
+
+// accordion section
+document.querySelectorAll(".accordion-header").forEach((header) => {
+    header.addEventListener("click", () => {
+      const accordionItem = header.parentElement;
+  
+      document.querySelectorAll(".accordion-item").forEach((item) => {
+        if (item !== accordionItem) {
+          item.classList.remove("open");
+          item.querySelector(".accordion-header").classList.remove("active");
+        }
+      });
+  
+      const isOpen = accordionItem.classList.toggle("open");
+      if (isOpen) {
+        header.classList.add("active");
+      } else {
+        header.classList.remove("active");
+      }
+    });
+  });
