@@ -1,6 +1,7 @@
 import { animate, stagger } from "https://cdn.jsdelivr.net/npm/motion@11.11.13/+esm";
 
 // dropdown menu animation
+
 document.querySelectorAll('.menu-item').forEach(item => {
     item.addEventListener("mouseenter", () => {
         animate(".mega-menu", { scale: [0.2, 1] }, { ease: "circInOut", duration: 0.2 });
@@ -46,4 +47,43 @@ document.querySelectorAll(".accordion-header").forEach((header) => {
         header.classList.remove("active");
       }
     });
-  });
+  }); 
+
+
+  // dropdown
+//   document.addEventListener("DOMContentLoaded", () => {
+   
+//     const menuItems = document.querySelectorAll(".menu-item");
+//     const menus = document.querySelectorAll(".mega-menu");
+
+   
+//     menuItems.forEach((menuItem) => {
+//         menuItem.addEventListener("mouseenter", (event) => {
+//             event.preventDefault(); 
+
+//             const menuId = menuItem.getAttribute("data-menu"); 
+//             const activeMenu = document.querySelector(`.mega-menu[data-menu="${menuId}"]`); 
+
+//             if (activeMenu) {
+            
+//                 menus.forEach((menu) => {
+//                     if (menu !== activeMenu) {
+//                         menu.classList.remove("show");
+//                     }
+//                 });
+
+//                 activeMenu.classList.toggle("show");
+//             }
+//         });
+//     });
+
+   
+//     document.addEventListener("click", (event) => {
+//         if (!event.target.closest(".menu-item")) {
+//             menus.forEach((menu) => {
+//                 menu.classList.remove("show");
+//             });
+//         }
+//     });
+// });
+

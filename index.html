@@ -7,7 +7,7 @@
         <meta name="description" content="">
         <title>Flex | HomePage</title>
         <link rel="stylesheet" href="assets/css/style.css" async>
-        <script src="assets/js/dropdown.js" type="module"></script>
+        <script src="assets/js/main.js" type="module"></script>
         <script src="https://cdn.jsdelivr.net/npm/motion@11.11.13/dist/motion.js"></script>
         <script>
           const { animate, scroll } = Motion
@@ -23,136 +23,140 @@
                 <div class="navbar-list">
                     <ul class="nav-list">
                         <li><a href="#">Company</a></li>
-                        <li class="dropdown menu-item"><a href="#">Services</a>
-                            <div class="mega-menu">
-                                <div class="menu-row">
-                                    <div class="menu-column">
-                                        <div class="menu-text-block">
-                                            <div class="menu-card-title">CMS Platform and Frameworks</div>
-                                            <p class="menu-card-text">User-friendly platforms for efficient content management.</p>
+                        <li class="dropdown menu-item" data-menu="menu1"><a href="#">Services</a>
+                            <div class="mega-menu" data-menu="menu1">
+                                <div class="mega-menu-wrapper">
+                                    <div class="menu-row">
+                                        <div class="menu-column">
+                                            <div class="menu-text-block">
+                                                <div class="menu-card-title">CMS Platform and Frameworks</div>
+                                                <p class="menu-card-text">User-friendly platforms for efficient content management.</p>
+                                            </div>
+                                            <img src="assets/images/mega-vector1.png" height="195" width="340">
                                         </div>
-                                        <img src="assets/images/mega-vector1.png" height="195" width="340">
-                                    </div>
-                                    <div class="menu-column">
-                                        <div class="menu-text-block">
-                                            <div class="menu-card-title">Web App Development</div>
-                                            <p class="menu-card-text">Build responsive apps tailored to your needs.</p>
+                                        <div class="menu-column">
+                                            <div class="menu-text-block">
+                                                <div class="menu-card-title">Web App Development</div>
+                                                <p class="menu-card-text">Build responsive apps tailored to your needs.</p>
+                                            </div>
+                                            <img src="assets/images/mega-vectore2.png" height="195" width="340">
                                         </div>
-                                        <img src="assets/images/mega-vectore2.png" height="195" width="340">
-                                    </div>
-                                    <div class="menu-column">
-                                        <div class="menu-text-block">
-                                            <div class="menu-card-title">UI/UX Designing</div>
-                                            <p class="menu-card-text">Create intuitive, engaging user interfaces and experiences.</p>
+                                        <div class="menu-column">
+                                            <div class="menu-text-block">
+                                                <div class="menu-card-title">UI/UX Designing</div>
+                                                <p class="menu-card-text">Create intuitive, engaging user interfaces and experiences.</p>
+                                            </div>
+                                            <img src="assets/images/mega-vector3.png" height="195" width="340">
                                         </div>
-                                        <img src="assets/images/mega-vector3.png" height="195" width="340">
-                                    </div>
-                                    <div class="menu-column">
-                                        <div class="menu-text-block">
-                                            <div class="menu-card-title">SEO & Performance</div>
-                                            <p class="menu-card-text">Boost visibility and speed for optimal results.</p>
+                                        <div class="menu-column">
+                                            <div class="menu-text-block">
+                                                <div class="menu-card-title">SEO & Performance</div>
+                                                <p class="menu-card-text">Boost visibility and speed for optimal results.</p>
+                                            </div>
+                                            <img src="assets/images/mega-vector4.png" height="195" width="340">
                                         </div>
-                                        <img src="assets/images/mega-vector4.png" height="195" width="340">
-                                    </div>
-                                    <div class="menu-column">
-                                        <div class="menu-text-block">
-                                            <div class="menu-card-title">Support & Maintenance</div>
-                                            <p class="menu-card-text">Ongoing support to ensure website reliability.</p>
+                                        <div class="menu-column">
+                                            <div class="menu-text-block">
+                                                <div class="menu-card-title">Support & Maintenance</div>
+                                                <p class="menu-card-text">Ongoing support to ensure website reliability.</p>
+                                            </div>
+                                            <img src="assets/images/mega-vector5.png" height="195" width="340">
                                         </div>
-                                        <img src="assets/images/mega-vector5.png" height="195" width="340">
-                                    </div>
-                                    <div class="menu-column">
-                                        <div class="menu-text-block">
-                                            <div class="menu-card-title">Backend Development</div>
-                                            <p class="menu-card-text">Develop robust systems for seamless web operations.</p>
+                                        <div class="menu-column">
+                                            <div class="menu-text-block">
+                                                <div class="menu-card-title">Backend Development</div>
+                                                <p class="menu-card-text">Develop robust systems for seamless web operations.</p>
+                                            </div>
+                                            <img src="assets/images/mega-vectore-6.png" height="195" width="340">
                                         </div>
-                                        <img src="assets/images/mega-vectore-6.png" height="195" width="340">
-                                    </div>
-                                    <div class="menu-column">
-                                        <div class="menu-text-block">
-                                            <div class="menu-card-title">E-Commerce</div>
-                                            <p class="menu-card-text">Secure, high-performing online stores for growth.</p>
+                                        <div class="menu-column">
+                                            <div class="menu-text-block">
+                                                <div class="menu-card-title">E-Commerce</div>
+                                                <p class="menu-card-text">Secure, high-performing online stores for growth.</p>
+                                            </div>
+                                            <img src="assets/images/mega-vectore7.png" height="195" width="340">
                                         </div>
-                                        <img src="assets/images/mega-vectore7.png" height="195" width="340">
+                                        <div class="menu-column"></div>
                                     </div>
-                                    <div class="menu-column"></div>
-                                </div>
-                                <div class="view-all">
-                                    <div class="view-text-block">
-                                        <div class="view-all-title">Explore All Our Services</div>
-                                        <p class="view-all-desc">Discover tailored solutions that drive growth and innovation.</p>
+                                    <div class="view-all">
+                                        <div class="view-text-block">
+                                            <div class="view-all-title">Explore All Our Services</div>
+                                            <p class="view-all-desc">Discover tailored solutions that drive growth and innovation.</p>
+                                        </div>
+                                        <button type="button" class="button btn-primary bottom">View all Services</button>
                                     </div>
-                                    <button type="button" class="button btn-primary bottom">View all Services</button>
-                                </div>
-                            </div>  
+                                </div>  
+                            </div>
                         </li>
-                        <li class="dropdown menu-item"><a href="#">Case Studies</a>
-                            <div class="mega-menu">
-                                <div class="grid-menu">
-                                    <div class="menu-card">
-                                        <img src="assets/images/menu-card1.png" alt="Laptop mockup" class="img-border">
-                                        <p class="tech-field">
-                                            <span>UI</span>
-                                            <span>UX</span>
-                                            <span>Branding</span>
-                                            <span>Web Design</span>
-                                            <span>Development</span>
-                                            <span>3D Design</span>
-                                        </p>
-                                        <div class="card-title">The Interactive Dictionary of Free Speech - Web Experience</div>
-                                        <div class="tech-icons">
-                                            <div class="icons"><img src="assets/images/icons/Figma.svg" alt="figma-icon" height="28" width="28"></div>
-                                            <div class="icons"><img src="assets/images/icons/angular.svg" alt="angular-icon" height="28" width="28"></div>
-                                            <div class="icons"><img src="assets/images/icons/javascript.svg" alt="javascript-icon" height="28" width="28"></div>
-                                            <div class="icons"><img src="assets/images/icons/react.svg" alt="react-icon" height="28" width="28"></div>
+                        <li class="dropdown menu-item" data-menu="menu2"><a href="#">Case Studies</a>
+                            <div class="mega-menu" data-menu="menu2">
+                                <div class="mega-menu-wrapper">
+                                    <div class="grid-menu">
+                                        <div class="menu-card">
+                                            <img src="assets/images/menu-card1.png" alt="Laptop mockup" class="img-border">
+                                            <p class="tech-field">
+                                                <span>UI</span>
+                                                <span>UX</span>
+                                                <span>Branding</span>
+                                                <span>Web Design</span>
+                                                <span>Development</span>
+                                                <span>3D Design</span>
+                                            </p>
+                                            <div class="card-title">The Interactive Dictionary of Free Speech - Web Experience</div>
+                                            <div class="tech-icons">
+                                                <div class="icons"><img src="assets/images/icons/Figma.svg" alt="figma-icon" height="28" width="28"></div>
+                                                <div class="icons"><img src="assets/images/icons/angular.svg" alt="angular-icon" height="28" width="28"></div>
+                                                <div class="icons"><img src="assets/images/icons/javascript.svg" alt="javascript-icon" height="28" width="28"></div>
+                                                <div class="icons"><img src="assets/images/icons/react.svg" alt="react-icon" height="28" width="28"></div>
+                                            </div>
+                                            <a href="#" class="read-more">Explore the Details</a>
                                         </div>
-                                        <a href="#" class="read-more">Explore the Details</a>
-                                    </div>
-                                    <div class="menu-card">
-                                        <img src="assets/images/menu-card2.png" alt="Ipad mockup" class="img-border">
-                                        <p class="tech-field">
-                                            <span>UI</span>
-                                            <span>UX</span>
-                                            <span>Branding</span>
-                                            <span>Web Design</span>
-                                            <span>Development</span>
-                                            <span>3D Design</span>
-                                        </p>
-                                        <div class="card-title">The Interactive Dictionary of Free Speech - Web Experience</div>
-                                        <div class="tech-icons">
-                                            <div class="icons"><img src="assets/images/icons/Figma.svg" alt="figma-icon" height="28" width="28"></div>
-                                            <div class="icons"><img src="assets/images/icons/angular.svg" alt="angular-icon" height="28" width="28"></div>
-                                            <div class="icons"><img src="assets/images/icons/javascript.svg" alt="javascript-icon" height="28" width="28"></div>
-                                            <div class="icons"><img src="assets/images/icons/react.svg" alt="react-icon" height="28" width="28"></div>
+                                        <div class="menu-card">
+                                            <img src="assets/images/menu-card2.png" alt="Ipad mockup" class="img-border">
+                                            <p class="tech-field">
+                                                <span>UI</span>
+                                                <span>UX</span>
+                                                <span>Branding</span>
+                                                <span>Web Design</span>
+                                                <span>Development</span>
+                                                <span>3D Design</span>
+                                            </p>
+                                            <div class="card-title">The Interactive Dictionary of Free Speech - Web Experience</div>
+                                            <div class="tech-icons">
+                                                <div class="icons"><img src="assets/images/icons/Figma.svg" alt="figma-icon" height="28" width="28"></div>
+                                                <div class="icons"><img src="assets/images/icons/angular.svg" alt="angular-icon" height="28" width="28"></div>
+                                                <div class="icons"><img src="assets/images/icons/javascript.svg" alt="javascript-icon" height="28" width="28"></div>
+                                                <div class="icons"><img src="assets/images/icons/react.svg" alt="react-icon" height="28" width="28"></div>
+                                            </div>
+                                            <a href="#" class="read-more">Explore the Details</a>
                                         </div>
-                                        <a href="#" class="read-more">Explore the Details</a>
-                                    </div>
-                                    <div class="menu-card">
-                                        <img src="assets/images/menu-card3.png" alt="Iphone mockup" class="img-border">
-                                        <p class="tech-field">
-                                            <span>UI</span>
-                                            <span>UX</span>
-                                            <span>Branding</span>
-                                            <span>Web Design</span>
-                                            <span>Development</span>
-                                            <span>3D Design</span>
-                                        </p>
-                                        <div class="card-title">The Interactive Dictionary of Free Speech - Web Experience</div>
-                                        <div class="tech-icons">
-                                            <div class="icons"><img src="assets/images/icons/Figma.svg" alt="figma-icon" height="28" width="28"></div>
-                                            <div class="icons"><img src="assets/images/icons/angular.svg" alt="angular-icon" height="28" width="28"></div>
-                                            <div class="icons"><img src="assets/images/icons/javascript.svg" alt="javascript-icon" height="28" width="28"></div>
-                                            <div class="icons"><img src="assets/images/icons/react.svg" alt="react-icon" height="28" width="28"></div>
+                                        <div class="menu-card">
+                                            <img src="assets/images/menu-card3.png" alt="Iphone mockup" class="img-border">
+                                            <p class="tech-field">
+                                                <span>UI</span>
+                                                <span>UX</span>
+                                                <span>Branding</span>
+                                                <span>Web Design</span>
+                                                <span>Development</span>
+                                                <span>3D Design</span>
+                                            </p>
+                                            <div class="card-title">The Interactive Dictionary of Free Speech - Web Experience</div>
+                                            <div class="tech-icons">
+                                                <div class="icons"><img src="assets/images/icons/Figma.svg" alt="figma-icon" height="28" width="28"></div>
+                                                <div class="icons"><img src="assets/images/icons/angular.svg" alt="angular-icon" height="28" width="28"></div>
+                                                <div class="icons"><img src="assets/images/icons/javascript.svg" alt="javascript-icon" height="28" width="28"></div>
+                                                <div class="icons"><img src="assets/images/icons/react.svg" alt="react-icon" height="28" width="28"></div>
+                                            </div>
+                                            <a href="#" class="read-more">Explore the Details</a>
                                         </div>
-                                        <a href="#" class="read-more">Explore the Details</a>
                                     </div>
-                                </div>
-                                <div class="view-all">
-                                    <div class="view-text-block">
-                                        <div class="view-all-title">Showcasing Success Stories and Innovations</div>
-                                        <p class="view-all-desc">Explore our projects and see how we deliver results.</p>
+                                    <div class="view-all">
+                                        <div class="view-text-block">
+                                            <div class="view-all-title">Showcasing Success Stories and Innovations</div>
+                                            <p class="view-all-desc">Explore our projects and see how we deliver results.</p>
+                                        </div>
+                                        <button type="button" class="button btn-primary">View all Case Studies</button>
                                     </div>
-                                    <button type="button" class="button btn-primary">View all Case Studies</button>
                                 </div>
                             </div>
                         </li>
@@ -198,636 +202,657 @@
                     <p class="review-text desc">It's not just about building web - Flex Solutions create customer - focused, tech-enabled experiences that drive business results.</p>
                     <button type="button" class="button btn-secondary">Start Your Projects<span class="icon"></span></button>
                 </div>
-                <div class="trusted-section">
+            </div>
+        </section>
+
+        <section class="trusted-section">
+            <div class="container">
+                <div class="trustred-slider">
                     <h6 class="sub-title">Trusted By</h6>
                     <div class="slider-wrapper">
-                      <div class="slider">
-                        <img src="assets/images/Card1.png" alt="Logo 1">
-                        <img src="assets/images/Card2.png" alt="Logo 2">
-                        <img src="assets/images/Card3.png" alt="Logo 3">
-                        <img src="assets/images/Card4.png" alt="Logo 4">
-                        <img src="assets/images/Card5.png" alt="Logo 5">
-                        <img src="assets/images/Card6.png" alt="Logo 6">
-                      </div>
-                      <div class="slider">
-                        <img src="assets/images/Card1.png" alt="Logo 1">
-                        <img src="assets/images/Card2.png" alt="Logo 2">
-                        <img src="assets/images/Card3.png" alt="Logo 3">
-                        <img src="assets/images/Card4.png" alt="Logo 4">
-                        <img src="assets/images/Card5.png" alt="Logo 5">
-                        <img src="assets/images/Card6.png" alt="Logo 6">
-                      </div>
+                        <div class="slider">
+                            <img src="assets/images/Card1.png" alt="Logo 1">
+                            <img src="assets/images/Card2.png" alt="Logo 2">
+                            <img src="assets/images/Card3.png" alt="Logo 3">
+                            <img src="assets/images/Card4.png" alt="Logo 4">
+                            <img src="assets/images/Card5.png" alt="Logo 5">
+                            <img src="assets/images/Card6.png" alt="Logo 6">
+                        </div>
+                        <div class="slider">
+                            <img src="assets/images/Card1.png" alt="Logo 1">
+                            <img src="assets/images/Card2.png" alt="Logo 2">
+                            <img src="assets/images/Card3.png" alt="Logo 3">
+                            <img src="assets/images/Card4.png" alt="Logo 4">
+                            <img src="assets/images/Card5.png" alt="Logo 5">
+                            <img src="assets/images/Card6.png" alt="Logo 6">
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="case-studies-section container">
-            <div class="header">
+        <section class="case-studies-section ">
+            <div class="container">
+                <div class="header">
+                    <div class="header-wrapper">
+                        <h6 class="sub-title">case studies</h6>
+                        <h2 class="h2">Our Work in Action</h2>
+                    </div>
+                    <button type="button" class="button btn-primary">See all case studies</button>
+                </div>
+                <div class="background-image">
+                    <div class="overlay">
+                        <div class="info-wrapper">
+                            <p class="info">Duolingo empowers its engineers to be force multipliers for expertise with GitHub Copilot, Codespaces.</p>
+                            <a href="#" class="read-more">Read Customer Story</a>
+                            <div class="cards">
+                                <div class="info-card"><span class="count">~25%</span>increase in developer speed with GitHub Copilot</div>
+                                <div class="info-card"><span class="count">1m</span>set-up time for largest repo with Codespaces</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column-1">
+                        <div class="healthcare-wrapper">  
+                            <div class="overlay">
+                                <div class="info-wrapper">
+                                    <p class="info">Healthcare Hub</p>
+                                    <a href="#" class="read-more">Read Customer Story</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column-2">
+                        <div class="travel-wrapper">
+                            <div class="overlay">
+                                <div class="info-wrapper">
+                                    <p class="info">Travel Treasure</p>
+                                    <a href="#" class="read-more">Read Customer Story</a>
+                                </div>   
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="button btn-primary bottom">See all case studies</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonial-section">
+            <div class="container">
+                <div class="row">
+                    <div class="column-I">
+                        <div class="column name-block">
+                            <h3 class="sub-title">Testimonial</h3>
+                            <h2 class="h2">Words of Appreciation</h2>
+                        </div>
+                
+                        <div class="column testimonial-wrapper">
+                            <img src="assets/images/Image1.png" height="80" width="80" >
+                            <P class="name">Savannah Nguyen</P> 
+                            <p class="position">FOUNDER, QURO</p>
+                            <p class="description">Working with this team has been incredible. They transformed our website into a sleek, modern, and user-friendly platform. The project was completed on time and within budget. Highly recommended for any web needs!</p>
+                        </div>
+                    </div>
+                    <div class="column-II">
+                        <div class="column testimonial-wrapper">
+                            <img src="assets/images/Image2.png" height="80" width="80" >
+                            <P class="name">Courtney Henry</P> 
+                            <p class="position">CO - FOUNDER, DREAM TRAVEL</p>
+                            <p class="description">The backend expertise provided by this company is unmatched. They streamlined our server operations and improved our database management. Communication was clear and timely. We couldn't be happier with the results.</p>
+                        </div>
+                        <div class="sub-column">
+                            <div class="review-card-image">
+                                <video src="https://www.freepik.com/free-video/smiling-business-man-having-online-conversation-open-space_2812178#fromView=search&page=5&position=22&uuid=42d17cf0-d16d-45f4-8998-bb1498b6c43a" loop="" autoplay="" poster="assets/images/Review-Card.png" height="400" width="360" class="image-border"></video>
+                            </div>
+                            <div class="testimonial-wrapper last-block">
+                                <img src="assets/images/Image3.png" height="80" width="80" >
+                                <P class="name">Jacob Jones</P> 
+                                <p class="position">FOUNDER, MOM</p>
+                                <p class="description">Outstanding e-commerce solutions! Our online store is now faster, more secure, and easier to navigate.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="service-section">
+            <div class="container">
+                <div class="header">
+                    <div class="header-wrapper">
+                        <h3 class="sub-title">our services</h3>
+                        <h2 class="h2">Covering all Your Needs</h2>
+                    </div>
+                    <button type="button" class="button btn-primary">View all services</button>
+                </div>
+                <div class="row">
+                <div class="column">
+                    <div class="service-card">
+                        <div class="service-block">
+                            <h3 class="h3">CMS Platform and Frameworks</h3>
+                            <p class="service-text">We often work with Drupal, Laravel and Wordpress, but we’re not wedded to any one framework. What’s important is that you get a solution that’s customisable, scalable, cost-effective.</p>
+                            <a href="#" class="read-more">Contact now</a>
+                        </div>
+                    
+                        <div class="service-image">
+                            <img src="assets/images/Vector-service.png" height="546" width="720">
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-block">
+                            <h3 class="h3">UI UX Designing</h3>
+                            <p class="service-text">Crafting intuitive and visually appealing interfaces that enhance user experience. Our designs focus on seamless navigation and user engagement, ensuring your product is both functional and attractive. We turn your vision into an interactive and user-friendly reality.</p>
+                            <a href="#" class="read-more">Let’s meet</a>
+                        </div>
+                    
+                        <div class="service-image">
+                            <img src="assets/images/vector-service2.png" height="465" width="720">
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-block">
+                            <h3 class="h3">Support & Maintenance</h3>
+                            <p class="service-text">We protect your website from malicious activity and data breaches using trusted locations, secure https, firewalls, encryption, restricted CMS access, 24/7 server monitoring, regular back-ups, security...</p>
+                            <a href="#" class="read-more">Contact now</a>
+                        </div>
+                    
+                        <div class="service-image">
+                            <img src="assets/images/Mask group.png" height="393" width="720">
+                        </div>
+                    </div>
+                </div>  
+                <div class="column">
+                    <div class="service-card">
+                        <div class="service-block">
+                            <h3 class="h3">Web App Development</h3>
+                            <p class="service-text">Next.js is among the top libraries for the creation of high-performance, scalable application interfaces. Our specialists have collected sufficient expertise over the years to use its potential to the max.</p>
+                            <a href="#" class="read-more">Contact now</a>
+                        </div>
+                        <div class="service-image">
+                            <img src="assets/images/web-development.png" height="410" width="720">
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-block">
+                            <h3 class="h3">SEO & Performance</h3>
+                            <p class="service-text">Framer uses state-of-the-art technology and industry best practices to make your website fast and SEO o timized to rank.</p>
+                            <a href="#" class="read-more">Learn more</a>
+                        </div>
+                        <div class="service-image">
+                            <img src="assets/images/seo.png" height="270" width="720">
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-block">
+                            <h3 class="h3">Backend development</h3>
+                            <p class="service-text">Support for code, small features, bug fixes, upgrades and security patches. Our hosting keeps your applications and server infrastructure updated and secure...</p>
+                            <a href="#" class="read-more">Get inquiry now</a>
+                        </div>
+                        <div class="service-image">
+                            <img src="assets/images/backend.png" height="192" width="720">
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-block">
+                            <h3 class="h3">E Commerce</h3>
+                            <p class="service-text">We integrate third-party systems and APIs with your website or web app so you can improve functionality without the need for costly development.</p>
+                            <a href="#" class="read-more">Learn more</a>
+                        </div>
+                        <div class="service-image">
+                            <img src="assets/images/e-commerce.png" height="308" width="720">
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="button btn-primary bottom">View all services</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="tab-section">
+            <div class="container">
                 <div class="header-wrapper">
-                    <h6 class="sub-title">case studies</h6>
-                    <h2 class="h2">Our Work in Action</h2>
+                    <h3 class="sub-title">Technologies we use</h3>
+                    <h2 class="h2">Our Services with Advanced Tools</h2>
                 </div>
-                <button type="button" class="button btn-primary">See all case studies</button>
-            </div>
-            <div class="background-image">
-                <div class="overlay">
-                    <div class="info-wrapper">
-                        <p class="info">Duolingo empowers its engineers to be force multipliers for expertise with GitHub Copilot, Codespaces.</p>
-                        <a href="#" class="read-more">Read Customer Story</a>
-                        <div class="cards">
-                            <div class="info-card"><span class="count">~25%</span>increase in developer speed with GitHub Copilot</div>
-                            <div class="info-card"><span class="count">1m</span>set-up time for largest repo with Codespaces</div>
-                        </div>
+                <div class="tab-wrapper"> 
+                    <div class="tabs">
+                        <button class="tab active" data-tab="frontend">Front End</button>
+                        <button class="tab" data-tab="backend">Back End</button>
+                        <button class="tab" data-tab="database">Database</button>
+                        <button class="tab" data-tab="CMS/E-commerce">CMS/E-commerce</button>
+                        <button class="tab" data-tab="UI/UX">UI/UX</button>
+                        <button class="tab" data-tab="mobile">Mobile</button>
                     </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="column-1">
-                    <div class="healthcare-wrapper">  
-                        <div class="overlay">
-                            <div class="info-wrapper">
-                                <p class="info">Healthcare Hub</p>
-                                <a href="#" class="read-more">Read Customer Story</a>
+                    <div class="tab-panel active" id="frontend">
+                        <div class="grid">
+                            <div class="grid-image">
+                                <img src="assets/images/icons/tailwind.svg" height="60" width="60">
                             </div>
+                            <div class="item-name">Tailwind</div>
+                        </div>
+                        <div class="grid">
+                            <div class="grid-image">
+                                <img src="assets/images/icons/scss.svg" height="60" width="60">
+                            </div>
+                            <div class="item-name">Sass</div>
+                        </div>
+                        <div class="grid">
+                            <div class="grid-image">
+                                <img src="assets/images/icons/bootstrap.svg" height="60" width="60">
+                            </div>
+                            <div class="item-name">Bootstrap</div>
+                        </div>
+                        <div class="grid">
+                            <div class="grid-image">
+                                <img src="assets/images/icons/js.svg" height="60" width="60">
+                            </div>
+                            <div class="item-name">JavaScript</div>
+                        </div>
+                        <div class="grid">
+                            <div class="grid-image">
+                                <img src="assets/images/icons/css.svg" height="60" width="60">
+                            </div>
+                            <div class="item-name">CSS</div>
+                        </div>
+                        <div class="grid">
+                            <div class="grid-image">
+                                <img src="assets/images/icons/html.svg" height="60" width="60">
+                            </div>
+                            <div class="item-name">HTML</div>
+                        </div>
+                        <div class="grid">
+                            <div class="grid-image">
+                                <img src="assets/images/icons/angular.svg" height="60" width="60">
+                            </div>
+                            <div class="item-name">Angular</div>
+                        </div>
+                        <div class="grid">
+                            <div class="grid-image">
+                                <img src="assets/images/icons/vuejs.svg" height="60" width="60">
+                            </div>
+                            <div class="item-name">Vue.js</div>
+                        </div>
+                        <div class="grid">
+                            <div class="grid-image">
+                                <img src="assets/images/icons/react.svg" height="60" width="60">
+                            </div>
+                            <div class="item-name">React.js</div>
+                        </div>
+                        <div class="grid">
+                            <div class="grid-image">
+                                <img src="assets/images/icons/next.svg" height="60" width="60">
+                            </div>
+                            <div class="item-name">Next.js</div>
+                        </div>
+                        <div class="grid">
+                            <div class="grid-image">
+                                <img src="assets/images/icons/nuxt.svg" height="60" width="60">
+                            </div>
+                            <div class="item-name">Nuxt.js</div>
+                        </div>
+                    </div>
+                    <div class="tab-panel" id="backend">
+                        <div class="grid">
+                            <div class="grid-image">
+                                <img src="assets/images/icons/code.svg" height="60" width="60">
+                            </div>
+                            <div class="item-name">Codeigniter</div>
+                        </div>
+                        <div class="grid">
+                            <div class="grid-image">
+                                <img src="assets/images/icons/python.svg" height="60" width="60">
+                            </div>
+                            <div class="item-name">Python</div>
+                        </div>
+                        <div class="grid">
+                            <div class="grid-image">
+                                <img src="assets/images/icons/node.svg" height="60" width="60">
+                            </div>
+                            <div class="item-name">Node Js</div>
+                        </div>
+                        <div class="grid">
+                            <div class="grid-image">
+                                <img src="assets/images/icons/php.svg" height="60" width="60">
+                            </div>
+                            <div class="item-name">Php</div>
+                        </div>
+                        <div class="grid">
+                            <div class="grid-image">
+                                <img src="assets/images/icons/laravel.svg" height="60" width="60">
+                            </div>
+                            <div class="item-name">Laravel</div>
+                        </div>
+                    </div>
+                    <div class="tab-panel" id="database">
+                        <div class="grid">
+                            <div class="grid-image">
+                                <img src="assets/images/icons/firebase.svg" height="60" width="60">
+                            </div>
+                            <div class="item-name">Firebase</div>
+                        </div>
+                        <div class="grid">
+                            <div class="grid-image">
+                                <img src="assets/images/icons/sqlite.svg" height="60" width="60">
+                            </div>
+                            <div class="item-name">SQLite</div>
+                        </div>
+                        <div class="grid">
+                            <div class="grid-image">
+                                <img src="assets/images/icons/postgre.svg" height="60" width="60">
+                            </div>
+                            <div class="item-name">PostgreSQL</div>
+                        </div>
+                        <div class="grid">
+                            <div class="grid-image">
+                                <img src="assets/images/icons/mysql.svg" height="60" width="60">
+                            </div>
+                            <div class="item-name">MySQL</div>
+                        </div>
+                        <div class="grid">
+                            <div class="grid-image">
+                                <img src="assets/images/icons/mongodb.svg" height="60" width="60">
+                            </div>
+                            <div class="item-name">MongoDB</div>
+                        </div>
+                    </div>
+                    <div class="tab-panel" id="CMS/E-commerce">
+                        <div class="grid">
+                            <div class="grid-image">
+                                <img src="assets/images/icons/bagisto.svg" height="60" width="60">
+                            </div>
+                            <div class="item-name">Bagisto</div>
+                        </div>
+                        <div class="grid">
+                            <div class="grid-image">
+                                <img src="assets/images/icons/squre.svg" height="60" width="60">
+                            </div>
+                            <div class="item-name">Squarespace</div>
+                        </div>
+                        <div class="grid">
+                            <div class="grid-image">
+                                <img src="assets/images/icons/woocom.svg" height="60" width="60">
+                            </div>
+                            <div class="item-name">WooCommerce</div>
+                        </div>
+                        <div class="grid">
+                            <div class="grid-image">
+                                <img src="assets/images/icons/magento.svg" height="60" width="60">
+                            </div>
+                            <div class="item-name">Magento</div>
+                        </div>
+                        <div class="grid">
+                            <div class="grid-image">
+                                <img src="assets/images/icons/wordpress.svg" height="60" width="60">
+                            </div>
+                            <div class="item-name">WordPress</div>
+                        </div>
+                        <div class="grid">
+                            <div class="grid-image">
+                                <img src="assets/images/icons/shopify.svg" height="60" width="60">
+                            </div>
+                            <div class="item-name">Shopify</div>
+                        </div>
+                        <div class="grid">
+                            <div class="grid-image">
+                                <img src="assets/images/icons/webflow.svg" height="60" width="60">
+                            </div>
+                            <div class="item-name">WebFlow</div>
+                        </div>
+                        <div class="grid">
+                            <div class="grid-image">
+                                <img src="assets/images/icons/wix.svg" height="60" width="60">
+                            </div>
+                            <div class="item-name">WiX Studio</div>
+                        </div>
+                        <div class="grid">
+                            <div class="grid-image">
+                                <img src="assets/images/icons/ghost.svg" height="60" width="60">
+                            </div>
+                            <div class="item-name">Ghost</div>
+                        </div>
+                    </div>
+                    <div class="tab-panel" id="UI/UX">
+                        <div class="grid">
+                            <div class="grid-image">
+                                <img src="assets/images/icons/marvel.svg" height="60" width="60">
+                            </div>
+                            <div class="item-name">Marvel</div>
+                        </div>
+                        <div class="grid">
+                            <div class="grid-image">
+                                <img src="assets/images/icons/invision.svg" height="60" width="60">
+                            </div>
+                            <div class="item-name">InVision</div>
+                        </div>
+                        <div class="grid">
+                            <div class="grid-image">
+                                <img src="assets/images/icons/axure.svg" height="60" width="60">
+                            </div>
+                            <div class="item-name">Axure</div>
+                        </div>
+                        <div class="grid">
+                            <div class="grid-image">
+                                <img src="assets/images/icons/sketch.svg" height="60" width="60">
+                            </div>
+                            <div class="item-name">Sketch</div>
+                        </div>
+                        <div class="grid">
+                            <div class="grid-image">
+                                <img src="assets/images/icons/photoshop.svg" height="60" width="60">
+                            </div>
+                            <div class="item-name">Photoshop</div>
+                        </div>
+                        <div class="grid">
+                            <div class="grid-image">
+                                <img src="assets/images/icons/illustratore.svg" height="60" width="60">
+                            </div>
+                            <div class="item-name">Illustratore</div>
+                        </div>
+                        <div class="grid">
+                            <div class="grid-image">
+                                <img src="assets/images/icons/figma-tab.svg" height="60" width="60">
+                            </div>
+                            <div class="item-name">Figma</div>
+                        </div>
+                    </div>
+                    <div class="tab-panel" id="mobile">
+                        <div class="grid">
+                            <div class="grid-image">
+                                <img src="assets/images/icons/android.svg" height="60" width="60">
+                            </div>
+                            <div class="item-name">Android</div>
+                        </div>
+                        <div class="grid">
+                            <div class="grid-image">
+                                <img src="assets/images/icons/flutter.svg" height="60" width="60">
+                            </div>
+                            <div class="item-name">Flutter</div>
+                        </div>
+                        <div class="grid">
+                            <div class="grid-image">
+                                <img src="assets/images/icons/apple.svg" height="60" width="60">
+                            </div>
+                            <div class="item-name">Apple</div>
+                        </div>
+                        <div class="grid">
+                            <div class="grid-image">
+                                <img src="assets/images/icons/native.svg" height="60" width="60">
+                            </div>
+                            <div class="item-name">React Native</div>
                         </div>
                     </div>
                 </div>
-                <div class="column-2">
-                    <div class="travel-wrapper">
-                        <div class="overlay">
-                            <div class="info-wrapper">
-                                <p class="info">Travel Treasure</p>
-                                <a href="#" class="read-more">Read Customer Story</a>
-                            </div>   
-                        </div>
-                    </div>
-                </div>
-                <button type="button" class="button btn-primary bottom">See all case studies</button>
             </div>
         </section>
 
-        <section class="testimonial-section container">
-            <div class="row">
-                <div class="column-I">
-                    <div class="column name-block">
-                        <h3 class="sub-title">Testimonial</h3>
-                        <h2 class="h2">Words of Appreciation</h2>
-                    </div>
-              
-                    <div class="column testimonial-wrapper">
-                        <img src="assets/images/Image1.png" height="80" width="80" >
-                        <P class="name">Savannah Nguyen</P> 
-                        <p class="position">FOUNDER, QURO</p>
-                        <p class="description">Working with this team has been incredible. They transformed our website into a sleek, modern, and user-friendly platform. The project was completed on time and within budget. Highly recommended for any web needs!</p>
-                    </div>
-                </div>
-                <div class="column-II">
-                    <div class="column testimonial-wrapper">
-                        <img src="assets/images/Image2.png" height="80" width="80" >
-                        <P class="name">Courtney Henry</P> 
-                        <p class="position">CO - FOUNDER, DREAM TRAVEL</p>
-                        <p class="description">The backend expertise provided by this company is unmatched. They streamlined our server operations and improved our database management. Communication was clear and timely. We couldn't be happier with the results.</p>
-                    </div>
-                    <div class="sub-column">
-                        <div class="review-card-image">
-                            <video src="https://www.freepik.com/free-video/smiling-business-man-having-online-conversation-open-space_2812178#fromView=search&page=5&position=22&uuid=42d17cf0-d16d-45f4-8998-bb1498b6c43a" loop="" autoplay="" poster="assets/images/Review-Card.png" height="400" width="360" class="image-border"></video>
-                        </div>
-                        <div class="testimonial-wrapper last-block">
-                            <img src="assets/images/Image3.png" height="80" width="80" >
-                            <P class="name">Jacob Jones</P> 
-                            <p class="position">FOUNDER, MOM</p>
-                            <p class="description">Outstanding e-commerce solutions! Our online store is now faster, more secure, and easier to navigate.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="service-section container">
-            <div class="header">
+        <section class="aboutus-section">
+            <div class="container">
                 <div class="header-wrapper">
-                    <h3 class="sub-title">our services</h3>
-                    <h2 class="h2">Covering all Your Needs</h2>
+                    <h3 class="sub-title">why choose flex</h3>
+                    <h2 class="h2">Excellence in Digital Solutions</h2>
                 </div>
-                <button type="button" class="button btn-primary">View all services</button>
-            </div>
-            <div class="row">
-              <div class="column">
-                <div class="service-card">
-                    <div class="service-block">
-                        <h3 class="h3">CMS Platform and Frameworks</h3>
-                        <p class="service-text">We often work with Drupal, Laravel and Wordpress, but we’re not wedded to any one framework. What’s important is that you get a solution that’s customisable, scalable, cost-effective.</p>
-                        <a href="#" class="read-more">Contact now</a>
-                    </div>
-                   
-                    <div class="service-image">
-                        <img src="assets/images/Vector-service.png" height="546" width="720">
-                    </div>
-                </div>
-                <div class="service-card">
-                    <div class="service-block">
-                        <h3 class="h3">UI UX Designing</h3>
-                        <p class="service-text">Crafting intuitive and visually appealing interfaces that enhance user experience. Our designs focus on seamless navigation and user engagement, ensuring your product is both functional and attractive. We turn your vision into an interactive and user-friendly reality.</p>
-                        <a href="#" class="read-more">Let’s meet</a>
-                    </div>
-                   
-                    <div class="service-image">
-                        <img src="assets/images/vector-service2.png" height="465" width="720">
-                    </div>
-                </div>
-                <div class="service-card">
-                    <div class="service-block">
-                        <h3 class="h3">Support & Maintenance</h3>
-                        <p class="service-text">We protect your website from malicious activity and data breaches using trusted locations, secure https, firewalls, encryption, restricted CMS access, 24/7 server monitoring, regular back-ups, security...</p>
-                        <a href="#" class="read-more">Contact now</a>
-                    </div>
-                   
-                    <div class="service-image">
-                        <img src="assets/images/Mask group.png" height="393" width="720">
-                    </div>
-                </div>
-              </div>  
-              <div class="column">
-                <div class="service-card">
-                    <div class="service-block">
-                        <h3 class="h3">Web App Development</h3>
-                        <p class="service-text">Next.js is among the top libraries for the creation of high-performance, scalable application interfaces. Our specialists have collected sufficient expertise over the years to use its potential to the max.</p>
-                        <a href="#" class="read-more">Contact now</a>
-                    </div>
-                    <div class="service-image">
-                        <img src="assets/images/web-development.png" height="410" width="720">
-                    </div>
-                </div>
-                <div class="service-card">
-                    <div class="service-block">
-                        <h3 class="h3">SEO & Performance</h3>
-                        <p class="service-text">Framer uses state-of-the-art technology and industry best practices to make your website fast and SEO o timized to rank.</p>
-                        <a href="#" class="read-more">Learn more</a>
-                    </div>
-                    <div class="service-image">
-                        <img src="assets/images/seo.png" height="270" width="720">
-                    </div>
-                </div>
-                <div class="service-card">
-                    <div class="service-block">
-                        <h3 class="h3">Backend development</h3>
-                        <p class="service-text">Support for code, small features, bug fixes, upgrades and security patches. Our hosting keeps your applications and server infrastructure updated and secure...</p>
-                        <a href="#" class="read-more">Get inquiry now</a>
-                    </div>
-                    <div class="service-image">
-                        <img src="assets/images/backend.png" height="192" width="720">
-                    </div>
-                </div>
-                <div class="service-card">
-                    <div class="service-block">
-                        <h3 class="h3">E Commerce</h3>
-                        <p class="service-text">We integrate third-party systems and APIs with your website or web app so you can improve functionality without the need for costly development.</p>
-                        <a href="#" class="read-more">Learn more</a>
-                    </div>
-                    <div class="service-image">
-                        <img src="assets/images/e-commerce.png" height="308" width="720">
-                    </div>
-                </div>
-              </div>
-              <button type="button" class="button btn-primary bottom">View all services</button>
-            </div>
-        </section>
-
-        <section class="tab-section container">
-            <div class="header-wrapper">
-                <h3 class="sub-title">Technologies we use</h3>
-                <h2 class="h2">Our Services with Advanced Tools</h2>
-            </div>
-            <div class="tab-wrapper"> 
-                <div class="tabs">
-                    <button class="tab active" data-tab="frontend">Front End</button>
-                    <button class="tab" data-tab="backend">Back End</button>
-                    <button class="tab" data-tab="database">Database</button>
-                    <button class="tab" data-tab="CMS/E-commerce">CMS/E-commerce</button>
-                    <button class="tab" data-tab="UI/UX">UI/UX</button>
-                    <button class="tab" data-tab="mobile">Mobile</button>
-                </div>
-                <div class="tab-panel active" id="frontend">
-                    <div class="grid">
-                        <div class="grid-image">
-                            <img src="assets/images/icons/tailwind.svg" height="60" width="60">
-                        </div>
-                        <div class="item-name">Tailwind</div>
-                    </div>
-                    <div class="grid">
-                        <div class="grid-image">
-                            <img src="assets/images/icons/scss.svg" height="60" width="60">
-                        </div>
-                        <div class="item-name">Sass</div>
-                    </div>
-                    <div class="grid">
-                        <div class="grid-image">
-                            <img src="assets/images/icons/bootstrap.svg" height="60" width="60">
-                        </div>
-                        <div class="item-name">Bootstrap</div>
-                    </div>
-                    <div class="grid">
-                        <div class="grid-image">
-                            <img src="assets/images/icons/js.svg" height="60" width="60">
-                        </div>
-                        <div class="item-name">JavaScript</div>
-                    </div>
-                    <div class="grid">
-                        <div class="grid-image">
-                            <img src="assets/images/icons/css.svg" height="60" width="60">
-                        </div>
-                        <div class="item-name">CSS</div>
-                    </div>
-                    <div class="grid">
-                        <div class="grid-image">
-                            <img src="assets/images/icons/html.svg" height="60" width="60">
-                        </div>
-                        <div class="item-name">HTML</div>
-                    </div>
-                    <div class="grid">
-                        <div class="grid-image">
-                            <img src="assets/images/icons/angular.svg" height="60" width="60">
-                        </div>
-                        <div class="item-name">Angular</div>
-                    </div>
-                    <div class="grid">
-                        <div class="grid-image">
-                            <img src="assets/images/icons/vuejs.svg" height="60" width="60">
-                        </div>
-                        <div class="item-name">Vue.js</div>
-                    </div>
-                    <div class="grid">
-                        <div class="grid-image">
-                            <img src="assets/images/icons/react.svg" height="60" width="60">
-                        </div>
-                        <div class="item-name">React.js</div>
-                    </div>
-                    <div class="grid">
-                        <div class="grid-image">
-                            <img src="assets/images/icons/next.svg" height="60" width="60">
-                        </div>
-                        <div class="item-name">Next.js</div>
-                    </div>
-                    <div class="grid">
-                        <div class="grid-image">
-                            <img src="assets/images/icons/nuxt.svg" height="60" width="60">
-                        </div>
-                        <div class="item-name">Nuxt.js</div>
-                    </div>
-                </div>
-                <div class="tab-panel" id="backend">
-                    <div class="grid">
-                        <div class="grid-image">
-                            <img src="assets/images/icons/code.svg" height="60" width="60">
-                        </div>
-                        <div class="item-name">Codeigniter</div>
-                    </div>
-                    <div class="grid">
-                        <div class="grid-image">
-                            <img src="assets/images/icons/python.svg" height="60" width="60">
-                        </div>
-                        <div class="item-name">Python</div>
-                    </div>
-                    <div class="grid">
-                        <div class="grid-image">
-                            <img src="assets/images/icons/node.svg" height="60" width="60">
-                        </div>
-                        <div class="item-name">Node Js</div>
-                    </div>
-                    <div class="grid">
-                        <div class="grid-image">
-                            <img src="assets/images/icons/php.svg" height="60" width="60">
-                        </div>
-                        <div class="item-name">Php</div>
-                    </div>
-                    <div class="grid">
-                        <div class="grid-image">
-                            <img src="assets/images/icons/laravel.svg" height="60" width="60">
-                        </div>
-                        <div class="item-name">Laravel</div>
-                    </div>
-                </div>
-                <div class="tab-panel" id="database">
-                    <div class="grid">
-                        <div class="grid-image">
-                            <img src="assets/images/icons/firebase.svg" height="60" width="60">
-                        </div>
-                        <div class="item-name">Firebase</div>
-                    </div>
-                    <div class="grid">
-                        <div class="grid-image">
-                            <img src="assets/images/icons/sqlite.svg" height="60" width="60">
-                        </div>
-                        <div class="item-name">SQLite</div>
-                    </div>
-                    <div class="grid">
-                        <div class="grid-image">
-                            <img src="assets/images/icons/postgre.svg" height="60" width="60">
-                        </div>
-                        <div class="item-name">PostgreSQL</div>
-                    </div>
-                    <div class="grid">
-                        <div class="grid-image">
-                            <img src="assets/images/icons/mysql.svg" height="60" width="60">
-                        </div>
-                        <div class="item-name">MySQL</div>
-                    </div>
-                    <div class="grid">
-                        <div class="grid-image">
-                            <img src="assets/images/icons/mongodb.svg" height="60" width="60">
-                        </div>
-                        <div class="item-name">MongoDB</div>
-                    </div>
-                </div>
-                <div class="tab-panel" id="CMS/E-commerce">
-                    <div class="grid">
-                        <div class="grid-image">
-                            <img src="assets/images/icons/bagisto.svg" height="60" width="60">
-                        </div>
-                        <div class="item-name">Bagisto</div>
-                    </div>
-                    <div class="grid">
-                        <div class="grid-image">
-                            <img src="assets/images/icons/squre.svg" height="60" width="60">
-                        </div>
-                        <div class="item-name">Squarespace</div>
-                    </div>
-                    <div class="grid">
-                        <div class="grid-image">
-                            <img src="assets/images/icons/woocom.svg" height="60" width="60">
-                        </div>
-                        <div class="item-name">WooCommerce</div>
-                    </div>
-                    <div class="grid">
-                        <div class="grid-image">
-                            <img src="assets/images/icons/magento.svg" height="60" width="60">
-                        </div>
-                        <div class="item-name">Magento</div>
-                    </div>
-                    <div class="grid">
-                        <div class="grid-image">
-                            <img src="assets/images/icons/wordpress.svg" height="60" width="60">
-                        </div>
-                        <div class="item-name">WordPress</div>
-                    </div>
-                    <div class="grid">
-                        <div class="grid-image">
-                            <img src="assets/images/icons/shopify.svg" height="60" width="60">
-                        </div>
-                        <div class="item-name">Shopify</div>
-                    </div>
-                    <div class="grid">
-                        <div class="grid-image">
-                            <img src="assets/images/icons/webflow.svg" height="60" width="60">
-                        </div>
-                        <div class="item-name">WebFlow</div>
-                    </div>
-                    <div class="grid">
-                        <div class="grid-image">
-                            <img src="assets/images/icons/wix.svg" height="60" width="60">
-                        </div>
-                        <div class="item-name">WiX Studio</div>
-                    </div>
-                    <div class="grid">
-                        <div class="grid-image">
-                            <img src="assets/images/icons/ghost.svg" height="60" width="60">
-                        </div>
-                        <div class="item-name">Ghost</div>
-                    </div>
-                </div>
-                <div class="tab-panel" id="UI/UX">
-                    <div class="grid">
-                        <div class="grid-image">
-                            <img src="assets/images/icons/marvel.svg" height="60" width="60">
-                        </div>
-                        <div class="item-name">Marvel</div>
-                    </div>
-                    <div class="grid">
-                        <div class="grid-image">
-                            <img src="assets/images/icons/invision.svg" height="60" width="60">
-                        </div>
-                        <div class="item-name">InVision</div>
-                    </div>
-                    <div class="grid">
-                        <div class="grid-image">
-                            <img src="assets/images/icons/axure.svg" height="60" width="60">
-                        </div>
-                        <div class="item-name">Axure</div>
-                    </div>
-                    <div class="grid">
-                        <div class="grid-image">
-                            <img src="assets/images/icons/sketch.svg" height="60" width="60">
-                        </div>
-                        <div class="item-name">Sketch</div>
-                    </div>
-                    <div class="grid">
-                        <div class="grid-image">
-                            <img src="assets/images/icons/photoshop.svg" height="60" width="60">
-                        </div>
-                        <div class="item-name">Photoshop</div>
-                    </div>
-                    <div class="grid">
-                        <div class="grid-image">
-                            <img src="assets/images/icons/illustratore.svg" height="60" width="60">
-                        </div>
-                        <div class="item-name">Illustratore</div>
-                    </div>
-                    <div class="grid">
-                        <div class="grid-image">
-                            <img src="assets/images/icons/figma-tab.svg" height="60" width="60">
-                        </div>
-                        <div class="item-name">Figma</div>
-                    </div>
-                </div>
-                <div class="tab-panel" id="mobile">
-                    <div class="grid">
-                        <div class="grid-image">
-                            <img src="assets/images/icons/android.svg" height="60" width="60">
-                        </div>
-                        <div class="item-name">Android</div>
-                    </div>
-                    <div class="grid">
-                        <div class="grid-image">
-                            <img src="assets/images/icons/flutter.svg" height="60" width="60">
-                        </div>
-                        <div class="item-name">Flutter</div>
-                    </div>
-                    <div class="grid">
-                        <div class="grid-image">
-                            <img src="assets/images/icons/apple.svg" height="60" width="60">
-                        </div>
-                        <div class="item-name">Apple</div>
-                    </div>
-                    <div class="grid">
-                        <div class="grid-image">
-                            <img src="assets/images/icons/native.svg" height="60" width="60">
-                        </div>
-                        <div class="item-name">React Native</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="aboutus-section container">
-            <div class="header-wrapper">
-                <h3 class="sub-title">why choose flex</h3>
-                <h2 class="h2">Excellence in Digital Solutions</h2>
-            </div>
-            <div class="row">
-                <div class="column column-first">
-                    <div class="about-us-wrapper">
-                        <div class="aboutus-block block1">
-                            <div class="about-img">
-                                <img src="assets/images/icons/Icon1.svg" height="122" width="122">
+                <div class="row">
+                    <div class="column column-first">
+                        <div class="about-us-wrapper">
+                            <div class="aboutus-block block1">
+                                <div class="about-img">
+                                    <img src="assets/images/icons/Icon1.svg" height="122" width="122">
+                                </div>
+                            </div>
+                            <div class="aboutus-text">
+                                <div class="about-title">Secure information</div>
+                                <p class="summary-text">To align with your strategic interests</p>
                             </div>
                         </div>
-                        <div class="aboutus-text">
-                            <div class="about-title">Secure information</div>
-                            <p class="summary-text">To align with your strategic interests</p>
-                        </div>
-                    </div>
-                    <div class="about-us-wrapper">
-                        <div class="aboutus-block block2">
-                            <div class="about-img">
-                                <img src="assets/images/icons/Icon2.svg" height="122" width="122">
+                        <div class="about-us-wrapper">
+                            <div class="aboutus-block block2">
+                                <div class="about-img">
+                                    <img src="assets/images/icons/Icon2.svg" height="122" width="122">
+                                </div>
+                            </div>
+                            <div class="aboutus-text">
+                                <div class="about-title">Tailored solutions</div>
+                                <p class="summary-text">To solve current and future challenges</p>
                             </div>
                         </div>
-                        <div class="aboutus-text">
-                            <div class="about-title">Tailored solutions</div>
-                            <p class="summary-text">To solve current and future challenges</p>
-                        </div>
-                    </div>
-                    <div class="about-us-wrapper">
-                        <div class="aboutus-block block3">
-                            <div class="about-img">
-                                <img src="assets/images/icons/Icon3.svg" height="122" width="122">
+                        <div class="about-us-wrapper">
+                            <div class="aboutus-block block3">
+                                <div class="about-img">
+                                    <img src="assets/images/icons/Icon3.svg" height="122" width="122">
+                                </div>
+                            </div>
+                            <div class="aboutus-text">
+                                <div class="about-title">A true partnership</div>
+                                <p class="summary-text">Built on respect for your needs</p>
                             </div>
                         </div>
-                        <div class="aboutus-text">
-                            <div class="about-title">A true partnership</div>
-                            <p class="summary-text">Built on respect for your needs</p>
-                        </div>
                     </div>
-                </div>
-                <div class="column column-second">
-                    <div class="about-us-wrapper">
-                        <div class="aboutus-block block4">
-                            <div class="about-img">
-                                <img src="assets/images/icons/Icon4.svg" height="122" width="122">
+                    <div class="column column-second">
+                        <div class="about-us-wrapper">
+                            <div class="aboutus-block block4">
+                                <div class="about-img">
+                                    <img src="assets/images/icons/Icon4.svg" height="122" width="122">
+                                </div>
+                            </div>
+                            <div class="aboutus-text">
+                                <div class="about-title">Project goals mapped</div>
+                                <p class="summary-text">To align with your strategic interests</p>
                             </div>
                         </div>
-                        <div class="aboutus-text">
-                            <div class="about-title">Project goals mapped</div>
-                            <p class="summary-text">To align with your strategic interests</p>
-                        </div>
-                    </div>
-                    <div class="about-us-wrapper">
-                        <div class="aboutus-block block5">
-                            <div class="about-img">
-                                <img src="assets/images/icons/Icon5.svg" height="122" width="122">
+                        <div class="about-us-wrapper">
+                            <div class="aboutus-block block5">
+                                <div class="about-img">
+                                    <img src="assets/images/icons/Icon5.svg" height="122" width="122">
+                                </div>
+                            </div>
+                            <div class="aboutus-text">
+                                <div class="about-title">Seamless communication</div>
+                                <p class="summary-text">At every step along the way</p>
                             </div>
                         </div>
-                        <div class="aboutus-text">
-                            <div class="about-title">Seamless communication</div>
-                            <p class="summary-text">At every step along the way</p>
-                        </div>
-                    </div>
-                    <div class="about-us-wrapper">
-                        <div class="aboutus-block block6">
-                            <div class="about-img">
-                                <img src="assets/images/icons/Icon6.svg" height="122" width="122">
+                        <div class="about-us-wrapper">
+                            <div class="aboutus-block block6">
+                                <div class="about-img">
+                                    <img src="assets/images/icons/Icon6.svg" height="122" width="122">
+                                </div>
                             </div>
-                        </div>
-                        <div class="aboutus-text">
-                            <div class="about-title">Open source experts</div>
-                            <p class="summary-text">Working as an extension of your team</p>
+                            <div class="aboutus-text">
+                                <div class="about-title">Open source experts</div>
+                                <p class="summary-text">Working as an extension of your team</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="blog-section container">
-            <div class="header">
-                <div class="header-wrapper">
-                    <h3 class="sub-title">Insights</h3>
-                    <h2 class="h2">Blog & Articles</h2>
+        <section class="blog-section">
+            <div class="container">
+                <div class="header">
+                    <div class="header-wrapper">
+                        <h3 class="sub-title">Insights</h3>
+                        <h2 class="h2">Blog & Articles</h2>
+                    </div>
+                    <button type="button" class="button btn-primary">Go to insights</button>
                 </div>
-                <button type="button" class="button btn-primary">Go to insights</button>
-            </div>
-            <div class="row">
-                <div class="blog-card">
-                    <img src="assets/images/blog-img-1.png" alt="Blog 1" height="300" width="440" class="img-border">
-                    <div class="text-block">
-                        <p class="blog-card-text">Design</p>
-                        <div class="blog-card-title"><a href="#">How Flex Integrated AVIF for Faster, Smaller, and Sharper Images</a></div>
-                        <p class="blog-card-description">In May 2024, we shipped AVIF support. All images on Framer are now served as AVIF, which makes them ~20% smaller. However, integrating this format was challenging, partly because converting images to AVIF is slow. Here’s how we solved this.</p>
+                <div class="row">
+                    <div class="blog-card">
+                        <img src="assets/images/blog-img-1.png" alt="Blog 1" height="300" width="440" class="img-border">
+                        <div class="text-block">
+                            <p class="blog-card-text">Design</p>
+                            <div class="blog-card-title"><a href="#">How Flex Integrated AVIF for Faster, Smaller, and Sharper Images</a></div>
+                            <p class="blog-card-description">In May 2024, we shipped AVIF support. All images on Framer are now served as AVIF, which makes them ~20% smaller. However, integrating this format was challenging, partly because converting images to AVIF is slow. Here’s how we solved this.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="blog-card">
-                    <div class="blog">
-                        <img src="assets/images/blog-img-2.png" alt="Blog 1" height="300" width="440" class="img-border">
-                    </div>
-                    <div class="text-block">
-                        <p class="blog-card-text">Web Development</p>
-                        <div class="blog-card-title">Framer's $27M Series C and Shaping the Future of Web</div>
-                        <p class="blog-card-description">We’re happy to announce our $27M Series C funding round, led by Meritech Capital with participation from our current investors: Atomico, Accel, and Foundation. As always, thanks to all our customers, employees, and investors for coming on this journey with us.</p>
-                    </div>
-                </div> 
-                <div class="blog-card">
-                    <img src="assets/images/blog-img-3.png" alt="Blog 1" height="300" width="440" class="img-border">
-                    <div class="text-block">
-                        <p class="blog-card-text">Mobile Application</p>
-                        <div class="blog-card-title">Radial Background Component for Framer</div>
-                        <p class="blog-card-description">Introducing a new component — the radial background component. This component combines CSS repeating-radial-gradient, background-position/size manipulation, and is powered by Framer Motion. In this blog post, we'll dive into how it works.</p>
+                    <div class="blog-card">
+                        <div class="blog">
+                            <img src="assets/images/blog-img-2.png" alt="Blog 1" height="300" width="440" class="img-border">
+                        </div>
+                        <div class="text-block">
+                            <p class="blog-card-text">Web Development</p>
+                            <div class="blog-card-title">Framer's $27M Series C and Shaping the Future of Web</div>
+                            <p class="blog-card-description">We’re happy to announce our $27M Series C funding round, led by Meritech Capital with participation from our current investors: Atomico, Accel, and Foundation. As always, thanks to all our customers, employees, and investors for coming on this journey with us.</p>
+                        </div>
+                    </div> 
+                    <div class="blog-card">
+                        <img src="assets/images/blog-img-3.png" alt="Blog 1" height="300" width="440" class="img-border">
+                        <div class="text-block">
+                            <p class="blog-card-text">Mobile Application</p>
+                            <div class="blog-card-title">Radial Background Component for Framer</div>
+                            <p class="blog-card-description">Introducing a new component — the radial background component. This component combines CSS repeating-radial-gradient, background-position/size manipulation, and is powered by Framer Motion. In this blog post, we'll dive into how it works.</p>
+                        </div>
                     </div>
                 </div>
             </div>
             <button type="button" class="button btn-primary bottom">Go to insights</button>
         </section>
 
-        <section class="faq-section container">
-            <div class="row"> 
-                <div class="column-1">
-                    <h3 class="sub-title">faq</h3>
-                    <h2 class="h2">Frequently asked questions</h2>
-                    <p class="faq-content">Find quick answers to common questions in our FAQ section. For more help, contact our support team anytime-we're here to assist.</p>
-                    <button type="button" class="button btn-secondary">Contact Us<span class="icon"></span></button>
-                </div>
-                <div class="column-2">
-                    <div class="accordion-item open">
-                        <div class="accordion-header active">What services does Flex Solutions offer?</div>
-                        <div class="accordion-content">Flex Solutions specializes in website development, mobile app creation, and custom software solutions personalized to your business needs.</div>
+        <section class="faq-section">
+            <div class="container">
+                <div class="row"> 
+                    <div class="column-1">
+                        <h3 class="sub-title">faq</h3>
+                        <h2 class="h2">Frequently asked questions</h2>
+                        <p class="faq-content">Find quick answers to common questions in our FAQ section. For more help, contact our support team anytime-we're here to assist.</p>
+                        <button type="button" class="button btn-secondary">Contact Us<span class="icon"></span></button>
                     </div>
-                    <div class="accordion-item">
-                        <div class="accordion-header">How long does it take to develop a website?</div>
-                        <div class="accordion-content">Flex Solutions specializes in website development, mobile app creation, and custom software solutions personalized to your business needs.</div>
-                    </div>
-                    <div class="accordion-item">
-                        <div class="accordion-header">Do you provide ongoing support after the website or app is launched?</div>
-                        <div class="accordion-content">Flex Solutions specializes in website development, mobile app creation, and custom software solutions personalized to your business needs.</div>
-                    </div>
-                    <div class="accordion-item">
-                        <div class="accordion-header">Can you help with search engine optimization (SEO)?</div>
-                        <div class="accordion-content">Flex Solutions specializes in website development, mobile app creation, and custom software solutions personalized to your business needs.</div>
-                    </div>
-                    <div class="accordion-item">
-                        <div class="accordion-header">What platforms do you use for app development?</div>
-                        <div class="accordion-content">Flex Solutions specializes in website development, mobile app creation, and custom software solutions personalized to your business needs.</div>
-                    </div>
-                    <div class="accordion-item">
-                        <div class="accordion-header">Do you offer custom solutions for unique business needs?</div>
-                        <div class="accordion-content">Flex Solutions specializes in website development, mobile app creation, and custom software solutions personalized to your business needs.</div>
+                    <div class="column-2">
+                        <div class="accordion-item open">
+                            <div class="accordion-header active">What services does Flex Solutions offer?</div>
+                            <div class="accordion-content">Flex Solutions specializes in website development, mobile app creation, and custom software solutions personalized to your business needs.</div>
+                        </div>
+                        <div class="accordion-item">
+                            <div class="accordion-header">How long does it take to develop a website?</div>
+                            <div class="accordion-content">Flex Solutions specializes in website development, mobile app creation, and custom software solutions personalized to your business needs.</div>
+                        </div>
+                        <div class="accordion-item">
+                            <div class="accordion-header">Do you provide ongoing support after the website or app is launched?</div>
+                            <div class="accordion-content">Flex Solutions specializes in website development, mobile app creation, and custom software solutions personalized to your business needs.</div>
+                        </div>
+                        <div class="accordion-item">
+                            <div class="accordion-header">Can you help with search engine optimization (SEO)?</div>
+                            <div class="accordion-content">Flex Solutions specializes in website development, mobile app creation, and custom software solutions personalized to your business needs.</div>
+                        </div>
+                        <div class="accordion-item">
+                            <div class="accordion-header">What platforms do you use for app development?</div>
+                            <div class="accordion-content">Flex Solutions specializes in website development, mobile app creation, and custom software solutions personalized to your business needs.</div>
+                        </div>
+                        <div class="accordion-item">
+                            <div class="accordion-header">Do you offer custom solutions for unique business needs?</div>
+                            <div class="accordion-content">Flex Solutions specializes in website development, mobile app creation, and custom software solutions personalized to your business needs.</div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="call-section container">
-            <div class="call-wrapper">
-                <h2 class="h2">Looking for help with development, design, or product strategy?</h2>
-                <button type="button" class="button btn-secondary">Schedule a Call<span class="icon"></span></button>
+        <section class="call-section">
+            <div class="container">
+                <div class="call-wrapper">
+                    <h2 class="h2">Looking for help with development, design, or product strategy?</h2>
+                    <button type="button" class="button btn-secondary">Schedule a Call<span class="icon"></span></button>
+                </div>
             </div>
         </section>
     </main><!-- main section end -->
@@ -842,9 +867,36 @@
                     </a>
                     <p class="footer-text">521, 5th Floor, Laxmi Enclave-2, near Gajera School, Katargam, Surat, Gujarat 395004</p>
                     <ul class="social-icons">
-                        <li><a href="#" class="fa fa-instagram"></a></li>
-                        <li><a href="#" class="fa fa-facebook"></a></li>
-                        <li><a href="#" class="fa fa-linkedin"></a></li>
+                        <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42" fill="none">
+                            <path d="M15.75 38.5039H26.25C35 38.5039 38.5 35.0039 38.5 26.2539V15.7539C38.5 7.00391 35 3.50391 26.25 3.50391H15.75C7 3.50391 3.5 7.00391 3.5 15.7539V26.2539C3.5 35.0039 7 38.5039 15.75 38.5039Z" stroke="#FBFBFB" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M21 27.1289C24.3827 27.1289 27.125 24.3867 27.125 21.0039C27.125 17.6212 24.3827 14.8789 21 14.8789C17.6173 14.8789 14.875 17.6212 14.875 21.0039C14.875 24.3867 17.6173 27.1289 21 27.1289Z" stroke="#FBFBFB" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M30.8633 12.2539H30.8836" stroke="#FBFBFB" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg></a></li>
+                        <li><a href="#"><svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_2401_22706)">
+                            <path d="M21 0.00390625C9.40078 0.00390625 0 9.40469 0 21.0039C0 32.6031 9.40078 42.0039 21 42.0039C32.5992 42.0039 42 32.6031 42 21.0039C42 9.40469 32.5992 0.00390625 21 0.00390625ZM34.1086 34.1043C32.4023 35.8105 30.4254 37.1477 28.2188 38.0746C25.9383 39.0426 23.5102 39.5266 21 39.5266C18.498 39.5266 16.0699 39.0344 13.7812 38.0746C11.5746 37.1395 9.58945 35.8023 7.89141 34.1043C6.18516 32.398 4.84805 30.4211 3.92109 28.2145C2.95313 25.934 2.46094 23.5059 2.46094 21.0039C2.46094 18.502 2.95312 16.0738 3.91289 13.7852C4.84805 11.5785 6.18516 9.59336 7.8832 7.89531C9.59766 6.18906 11.5746 4.85195 13.7812 3.9168C16.0699 2.95703 18.498 2.46484 21 2.46484C23.502 2.46484 25.9301 2.95703 28.2188 3.9168C30.4254 4.85195 32.4105 6.18906 34.1086 7.88711C35.8148 9.59336 37.152 11.5703 38.0789 13.777C39.0469 16.0574 39.5309 18.4855 39.5309 20.9957C39.5309 23.4977 39.0387 25.9258 38.0789 28.2145C37.1437 30.4211 35.8066 32.4062 34.1086 34.1043Z" fill="#FBFBFB"/>
+                            <path d="M23.7719 13.8425C24.6168 13.8425 25.5191 14.105 25.5191 14.105L26.0605 10.8894C26.0605 10.8894 24.9121 10.4956 22.1723 10.4956C20.4906 10.4956 19.5145 11.1355 18.8008 12.0788C18.1281 12.973 18.1035 14.4085 18.1035 15.3354V17.4437H15.9297V20.5855H18.1035V31.4956H22.1723V20.5855H25.3961L25.634 17.4437H22.1723V14.9909C22.1723 14.146 22.927 13.8425 23.7719 13.8425Z" fill="#FBFBFB"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_2401_22706">
+                            <rect width="42" height="42" fill="white" transform="translate(0 0.00390625)"/>
+                            </clipPath>
+                            </defs>
+                            </svg></a></li>
+                        <li><a href="#"><svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_2401_22710)">
+                            <path d="M21 0.00390625C9.40078 0.00390625 0 9.40469 0 21.0039C0 32.6031 9.40078 42.0039 21 42.0039C32.5992 42.0039 42 32.6031 42 21.0039C42 9.40469 32.5992 0.00390625 21 0.00390625ZM34.1086 34.1043C32.4023 35.8105 30.4254 37.1477 28.2188 38.0746C25.9383 39.0426 23.5102 39.5266 21 39.5266C18.498 39.5266 16.0699 39.0344 13.7812 38.0746C11.5746 37.1395 9.58945 35.8023 7.89141 34.1043C6.18516 32.398 4.84805 30.4211 3.92109 28.2145C2.95313 25.934 2.46094 23.5059 2.46094 21.0039C2.46094 18.502 2.95312 16.0738 3.91289 13.7852C4.84805 11.5785 6.18516 9.59336 7.8832 7.89531C9.59766 6.18906 11.5746 4.85195 13.7812 3.9168C16.0699 2.95703 18.498 2.46484 21 2.46484C23.502 2.46484 25.9301 2.95703 28.2188 3.9168C30.4254 4.85195 32.4105 6.18906 34.1086 7.88711C35.8148 9.59336 37.152 11.5703 38.0789 13.777C39.0469 16.0574 39.5309 18.4855 39.5309 20.9957C39.5309 23.4977 39.0387 25.9258 38.0789 28.2145C37.1437 30.4211 35.8066 32.4062 34.1086 34.1043Z" fill="#FBFBFB"/>
+                            <path d="M15.1266 16.689H11.0332V29.7894H15.1266V16.689Z" fill="#FBFBFB"/>
+                            <path d="M12.9941 10.5039C11.4848 10.5039 10.4922 11.4801 10.4922 12.7762C10.4922 14.0477 11.452 15.0484 12.9367 15.0484H12.9695C14.5117 15.0484 15.4715 14.0395 15.4633 12.7762C15.4305 11.4801 14.5035 10.5039 12.9941 10.5039Z" fill="#FBFBFB"/>
+                            <path d="M26.3082 16.5659C23.9621 16.5659 22.4938 17.8456 22.223 18.7479V16.689H17.6211C17.6785 17.78 17.6211 29.7894 17.6211 29.7894H22.223V22.7101C22.223 22.3081 22.2066 21.9144 22.3215 21.6355C22.6332 20.848 23.3141 20.0276 24.5363 20.0276C26.1359 20.0276 26.8578 21.2417 26.8578 23.0136V29.7894H31.5008V22.505C31.5008 18.4526 29.2203 16.5659 26.3082 16.5659Z" fill="#FBFBFB"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_2401_22710">
+                            <rect width="42" height="42" fill="white" transform="translate(0 0.00390625)"/>
+                            </clipPath>
+                            </defs>
+                            </svg>
+                            </a></li>
                     </ul>
                 </div>
                 <div class="second-column">
