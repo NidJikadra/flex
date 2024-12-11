@@ -18,12 +18,12 @@
     <header class="main-header">
         <div class="container">
             <nav class="navbar">
-                <div class="logo"><a href="/"><img src="assets/images/Logo.png" alt="Flex-logo" width="124" height="32"></a></div>
-                <img src="assets/images/icons/Logo.svg" alt="Flex-logo" width="26" height="26" class="menu-icon">
+                <div class="logo"><a href="/"><img src="assets/images/icons/Logo.svg" alt="Flex-logo" width="124" height="32"></a></div>
+                <img src="assets/images/icons/Logo-mobile.svg" alt="Flex-logo" width="26" height="26" class="menu-icon">
                 <div class="navbar-list">
                     <ul class="nav-list">
                         <li><a href="#">Company</a></li>
-                        <li class="dropdown menu-item" data-menu="menu1"><a href="#">Services</a>
+                        <li class="dropdown menu-item menu-trigger" data-menu="menu1" data-direction="start"><a href="#">Services</a>
                             <div class="mega-menu" data-menu="menu1">
                                 <div class="mega-menu-wrapper">
                                     <div class="menu-row">
@@ -54,14 +54,14 @@
                                                 <p class="menu-card-text">Boost visibility and speed for optimal results.</p>
                                             </div>
                                             <img src="assets/images/mega-vector4.png" height="195" width="340">
-                                        </div>
+                                        </div>  
                                         <div class="menu-column">
                                             <div class="menu-text-block">
                                                 <div class="menu-card-title">Support & Maintenance</div>
                                                 <p class="menu-card-text">Ongoing support to ensure website reliability.</p>
                                             </div>
                                             <img src="assets/images/mega-vector5.png" height="195" width="340">
-                                        </div>
+                                        </div>      
                                         <div class="menu-column">
                                             <div class="menu-text-block">
                                                 <div class="menu-card-title">Backend Development</div>
@@ -109,7 +109,7 @@
                                                 <div class="icons"><img src="assets/images/icons/javascript.svg" alt="javascript-icon" height="28" width="28"></div>
                                                 <div class="icons"><img src="assets/images/icons/react.svg" alt="react-icon" height="28" width="28"></div>
                                             </div>
-                                            <a href="#" class="read-more">Explore the Details</a>
+                                            <a href="#" class="read-more" data-hover="Explore the Details"><span>Explore the Details</span></a>
                                         </div>
                                         <div class="menu-card">
                                             <img src="assets/images/menu-card2.png" alt="Ipad mockup" class="img-border">
@@ -128,7 +128,7 @@
                                                 <div class="icons"><img src="assets/images/icons/javascript.svg" alt="javascript-icon" height="28" width="28"></div>
                                                 <div class="icons"><img src="assets/images/icons/react.svg" alt="react-icon" height="28" width="28"></div>
                                             </div>
-                                            <a href="#" class="read-more">Explore the Details</a>
+                                            <a href="#" class="read-more" data-hover="Explore the Details"><span>Explore the Details</span></a>
                                         </div>
                                         <div class="menu-card">
                                             <img src="assets/images/menu-card3.png" alt="Iphone mockup" class="img-border">
@@ -147,7 +147,7 @@
                                                 <div class="icons"><img src="assets/images/icons/javascript.svg" alt="javascript-icon" height="28" width="28"></div>
                                                 <div class="icons"><img src="assets/images/icons/react.svg" alt="react-icon" height="28" width="28"></div>
                                             </div>
-                                            <a href="#" class="read-more">Explore the Details</a>
+                                            <a href="#" class="read-more" data-hover="Explore the Details"><span>Explore the Details</span></a>
                                         </div>
                                     </div>
                                     <div class="view-all">
@@ -163,6 +163,7 @@
                         <li><a href="#">Contact Us</a></li>
                         <li><a href="#">Blogs</a></li>
                     </ul>
+                    
                     <button type="button" class="button btn-primary" aria-label="contact-button">Contact now</button>
                     <button type="button" class="menu-icon-btn" aria-label="menu-button"></button>
                     <ul class="nav-list mobile-menu">
@@ -244,7 +245,7 @@
                     <div class="overlay">
                         <div class="info-wrapper">
                             <p class="info">Duolingo empowers its engineers to be force multipliers for expertise with GitHub Copilot, Codespaces.</p>
-                            <a href="#" class="read-more">Read Customer Story</a>
+                            <a href="#" class="read-more" data-hover="Read Customer Story"><span>Read Customer Story</span></a>
                             <div class="cards">
                                 <div class="info-card"><span class="count">~25%</span>increase in developer speed with GitHub Copilot</div>
                                 <div class="info-card"><span class="count">1m</span>set-up time for largest repo with Codespaces</div>
@@ -258,7 +259,7 @@
                             <div class="overlay">
                                 <div class="info-wrapper">
                                     <p class="info">Healthcare Hub</p>
-                                    <a href="#" class="read-more">Read Customer Story</a>
+                                    <a href="#" class="read-more" data-hover="Read Customer Story"><span>Read Customer Story</span></a>
                                 </div>
                             </div>
                         </div>
@@ -268,7 +269,7 @@
                             <div class="overlay">
                                 <div class="info-wrapper">
                                     <p class="info">Travel Treasure</p>
-                                    <a href="#" class="read-more">Read Customer Story</a>
+                                    <a href="#" class="read-more" data-hover="Read Customer Story"><span>Read Customer Story</span></a>
                                 </div>   
                             </div>
                         </div>
@@ -332,7 +333,7 @@
                         <div class="service-block">
                             <h3 class="h3">CMS Platform and Frameworks</h3>
                             <p class="service-text">We often work with Drupal, Laravel and Wordpress, but we’re not wedded to any one framework. What’s important is that you get a solution that’s customisable, scalable, cost-effective.</p>
-                            <a href="#" class="read-more">Contact now</a>
+                            <a href="#" class="read-more" data-hover="Contact now"><span>Contact now</span></a>
                         </div>
                     
                         <div class="service-image">
@@ -343,7 +344,7 @@
                         <div class="service-block">
                             <h3 class="h3">UI UX Designing</h3>
                             <p class="service-text">Crafting intuitive and visually appealing interfaces that enhance user experience. Our designs focus on seamless navigation and user engagement, ensuring your product is both functional and attractive. We turn your vision into an interactive and user-friendly reality.</p>
-                            <a href="#" class="read-more">Let’s meet</a>
+                            <a href="#" class="read-more" data-hover="Let’s meet"><span>Let’s meet</span></a>
                         </div>
                     
                         <div class="service-image">
@@ -354,7 +355,7 @@
                         <div class="service-block">
                             <h3 class="h3">Support & Maintenance</h3>
                             <p class="service-text">We protect your website from malicious activity and data breaches using trusted locations, secure https, firewalls, encryption, restricted CMS access, 24/7 server monitoring, regular back-ups, security...</p>
-                            <a href="#" class="read-more">Contact now</a>
+                            <a href="#" class="read-more" data-hover="Contact now"><span>Contact now</span></a>
                         </div>
                     
                         <div class="service-image">
@@ -367,7 +368,7 @@
                         <div class="service-block">
                             <h3 class="h3">Web App Development</h3>
                             <p class="service-text">Next.js is among the top libraries for the creation of high-performance, scalable application interfaces. Our specialists have collected sufficient expertise over the years to use its potential to the max.</p>
-                            <a href="#" class="read-more">Contact now</a>
+                            <a href="#" class="read-more" data-hover="Contact now"><span>Contact now</span></a>
                         </div>
                         <div class="service-image">
                             <img src="assets/images/web-development.png" height="410" width="720">
@@ -377,7 +378,7 @@
                         <div class="service-block">
                             <h3 class="h3">SEO & Performance</h3>
                             <p class="service-text">Framer uses state-of-the-art technology and industry best practices to make your website fast and SEO o timized to rank.</p>
-                            <a href="#" class="read-more">Learn more</a>
+                            <a href="#" class="read-more" data-hover="Learn more"><span>Learn more</span></a>
                         </div>
                         <div class="service-image">
                             <img src="assets/images/seo.png" height="270" width="720">
@@ -387,7 +388,7 @@
                         <div class="service-block">
                             <h3 class="h3">Backend development</h3>
                             <p class="service-text">Support for code, small features, bug fixes, upgrades and security patches. Our hosting keeps your applications and server infrastructure updated and secure...</p>
-                            <a href="#" class="read-more">Get inquiry now</a>
+                            <a href="#" class="read-more" data-hover="Get inquiry now"><span>Get inquiry now</span></a>
                         </div>
                         <div class="service-image">
                             <img src="assets/images/backend.png" height="192" width="720">
@@ -397,7 +398,7 @@
                         <div class="service-block">
                             <h3 class="h3">E Commerce</h3>
                             <p class="service-text">We integrate third-party systems and APIs with your website or web app so you can improve functionality without the need for costly development.</p>
-                            <a href="#" class="read-more">Learn more</a>
+                            <a href="#" class="read-more" data-hover="Learn more"><span>Learn more</span></a>
                         </div>
                         <div class="service-image">
                             <img src="assets/images/e-commerce.png" height="308" width="720">
@@ -938,15 +939,17 @@
             </div>
         </div>
         <div class="row-copyright">
-            <div class="columns">
-                <div class="footer-column">
-                    <p class="copyright-text">&copy; 2024 Flex Solutions All Rights Reserved.</p>
+            <div class="container">
+                <div class="columns">
+                    <div class="footer-column">
+                        <p class="copyright-text">&copy; 2024 Flex Solutions All Rights Reserved.</p>
+                    </div>
+                    <ul class="footer-column-text">
+                        <li><a href="#" target="_blank">Privacy Policy</a></li>
+                        <li><a href="#" target="_blank">Terms of Conditions</a></li>
+                        <li><a href="#" target="_blank">Website Terms of Use</a></li>
+                    </ul>   
                 </div>
-                <ul class="footer-column-text">
-                    <li><a href="#" target="_blank">Privacy Policy</a></li>
-                    <li><a href="#" target="_blank">Terms of Conditions</a></li>
-                    <li><a href="#" target="_blank">Website Terms of Use</a></li>
-                </ul>   
             </div>
         </div>
     </footer>  <!-- footer end -->

@@ -4,15 +4,15 @@ import { animate, stagger } from "https://cdn.jsdelivr.net/npm/motion@11.11.13/+
 
 document.querySelectorAll('.menu-item').forEach(item => {
     item.addEventListener("mouseenter", () => {
-        animate(".mega-menu", { scale: [0.2, 1] }, { ease: "circInOut", duration: 0.2 });
-        animate(".menu-text-block, .menu-column img", { opacity: 1, y: [50, 0] }, { delay: stagger(0.05), duration: 0.4 });
+        // animate(".mega-menu", { scale: [0.2, 1] }, { ease: "circInOut", duration: 0.2 });
+        // animate(".menu-text-block, .menu-column img", { opacity: 1, y: [50, 0] }, { delay: stagger(0.05), duration: 0.4 });
     });
 });
 
 document.querySelectorAll('.menu-item').forEach(item => {
     item.addEventListener("mouseleave", () => {
-        animate(".mega-menu", { scale: [0.2, 1] }, { ease: "circInOut", duration: 0.2 });
-    });
+        // animate(".mega-menu", { scale: [0.2, 1] }, { ease: "circInOut", duration: 0.2 });
+    }); // 
 });
 
 // tab-section
@@ -49,41 +49,46 @@ document.querySelectorAll(".accordion-header").forEach((header) => {
     });
   }); 
 
+const menuItems = document.querySelectorAll('.menu-item');
+const header = document.querySelector('.main-header');
 
-  // dropdown
-//   document.addEventListener("DOMContentLoaded", () => {
-   
-//     const menuItems = document.querySelectorAll(".menu-item");
-//     const menus = document.querySelectorAll(".mega-menu");
+function showMegaMenu() { 
+  header.classList.add('active'); 
 
-   
-//     menuItems.forEach((menuItem) => {
-//         menuItem.addEventListener("mouseenter", (event) => {
-//             event.preventDefault(); 
+}
 
-//             const menuId = menuItem.getAttribute("data-menu"); 
-//             const activeMenu = document.querySelector(`.mega-menu[data-menu="${menuId}"]`); 
+function hideMegaMenu() {
+  header.classList.remove('active'); 
+}
 
-//             if (activeMenu) {
-            
-//                 menus.forEach((menu) => {
-//                     if (menu !== activeMenu) {
-//                         menu.classList.remove("show");
-//                     }
-//                 });
+menuItems.forEach(item => {
+  item.addEventListener('mouseenter', showMegaMenu); 
+  item.addEventListener('mouseleave', hideMegaMenu); 
+});
 
-//                 activeMenu.classList.toggle("show");
-//             }
-//         });
-//     });
+// ... existing code ...
 
-   
-//     document.addEventListener("click", (event) => {
-//         if (!event.target.closest(".menu-item")) {
-//             menus.forEach((menu) => {
-//                 menu.classList.remove("show");
-//             });
-//         }
-//     });
-// });
+// Add data-motion handling for mega menu
+const megaMenuWrapper = document.querySelector('.mega-menu-wrapper');
+let currentPosition = 'start'; // Track current position
 
+function updateMenuMotion(newPosition) {
+
+    megaMenuWrapper.removeAttribute('data-motion');
+    
+  
+    if (currentPosition === 'start' && newPosition === 'end') {
+        megaMenuWrapper.setAttribute('data-motion', 'from-start');
+    } else if (currentPosition === 'end' && newPosition === 'start') {
+        megaMenuWrapper.setAttribute('data-motion', 'from-end');
+    }
+    
+    currentPosition = newPosition;
+}
+
+document.querySelectorAll('.menu-trigger').forEach(trigger => {
+    trigger.addEventListener('mouseenter', (e) => {
+        const direction = e.target.dataset.direction; 
+        updateMenuMotion(direction);
+    });
+});
