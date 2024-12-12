@@ -2,18 +2,17 @@ import { animate, stagger } from "https://cdn.jsdelivr.net/npm/motion@11.11.13/+
 
 // dropdown menu animation
 
-document.querySelectorAll('.menu-item').forEach(item => {
+document.querySelectorAll('.menu-column').forEach(item => {
     item.addEventListener("mouseenter", () => {
-        // animate(".mega-menu", { scale: [0.2, 1] }, { ease: "circInOut", duration: 0.2 });
         // animate(".menu-text-block, .menu-column img", { opacity: 1, y: [50, 0] }, { delay: stagger(0.05), duration: 0.4 });
     });
 });
 
-document.querySelectorAll('.menu-item').forEach(item => {
-    item.addEventListener("mouseleave", () => {
-        // animate(".mega-menu", { scale: [0.2, 1] }, { ease: "circInOut", duration: 0.2 });
-    }); // 
-});
+// document.querySelectorAll('.menu-item').forEach(item => {
+//     item.addEventListener("mouseleave", () => {
+//         // animate(".mega-menu", { scale: [0.2, 1] }, { ease: "circInOut", duration: 0.2 });
+//     }); // 
+// });
 
 // tab-section
 document.querySelectorAll(".tab").forEach((tab) => {
@@ -66,29 +65,19 @@ menuItems.forEach(item => {
   item.addEventListener('mouseleave', hideMegaMenu); 
 });
 
-// ... existing code ...
-
-// Add data-motion handling for mega menu
-const megaMenuWrapper = document.querySelector('.mega-menu-wrapper');
-let currentPosition = 'start'; // Track current position
-
-function updateMenuMotion(newPosition) {
-
-    megaMenuWrapper.removeAttribute('data-motion');
-    
+document.querySelectorAll('.menu-item').forEach(dropdown => {
+  const menu = dropdown.querySelector('.mega-menu');
   
-    if (currentPosition === 'start' && newPosition === 'end') {
-        megaMenuWrapper.setAttribute('data-motion', 'from-start');
-    } else if (currentPosition === 'end' && newPosition === 'start') {
-        megaMenuWrapper.setAttribute('data-motion', 'from-end');
-    }
-    
-    currentPosition = newPosition;
-}
+  dropdown.addEventListener('mouseenter', () => {
+    menu.style.display = 'block';
+    menu.classList.remove('closing');
+  });
 
-document.querySelectorAll('.menu-trigger').forEach(trigger => {
-    trigger.addEventListener('mouseenter', (e) => {
-        const direction = e.target.dataset.direction; 
-        updateMenuMotion(direction);
-    });
+  dropdown.addEventListener('mouseleave', () => {
+    menu.classList.add('closing');
+    setTimeout(() => {
+      menu.style.display = 'none';
+      menu.classList.remove('closing');
+    }, 300);
+  });
 });
