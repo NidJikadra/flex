@@ -1,10 +1,14 @@
-@font-face {
+/* ==========================================================================
+   1. Font Declarations
+   ========================================================================== */
+   @font-face {
     font-family: 'utendoregular';
     src: url('../fonts/utendoregular-webfont.woff2') format('woff2'),
          url('../fonts/UtendoRegular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'utendolight';
     src: url('../fonts/utendolight-webfont.woff2') format('woff2'),
@@ -12,6 +16,7 @@
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'utendomedium';
     src: url('../fonts/utendomedium-webfont.woff2') format('woff2'),
@@ -19,6 +24,7 @@
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'utendosemibold';
     src: url('../fonts/utendosemibold-webfont.woff2') format('woff2'),
@@ -26,19 +32,28 @@
     font-weight: normal;
     font-style: normal;
 }
-:root{
+/* ==========================================================================
+   2. Variables
+   ========================================================================== */
+   :root{
     --primary-color: #FBFBFB;
     --secondary-color: #C1CFFF;
     --light-black: #0B0B0B;
     --white: #fff;
     --black: #000;
+    --utendo-light: "utendolight";
+    --utendo-regular: "utendoregular";
     --utendo-medium: "utendomedium";
+    --utendo-semibold: "utendosemibold";
 }
-*{
+/* ==========================================================================
+   3. Reset & Base Styles
+   ========================================================================== */
+* {
     box-sizing: border-box;
 }
 body{
-    font-family: "utendoregular";
+    font-family: var(--utendo-regular);
     background-color: var(--light-black);
     margin: 0;
     padding: 0;
@@ -62,10 +77,17 @@ a:hover{
 p {
     margin: 0;
 }
-h1, .h1 {
+img {
+    width: 100%;
+    height: auto;
+}
+/* ==========================================================================
+   4. Typography
+   ========================================================================== */
+   h1, .h1 {
     margin: 0 0 26px;
     font-size: clamp(40px, calc(7vw + 7vh) / 2, 90px);
-    font-family: "utendosemibold";
+    font-family: var(--utendo-semibold);
     line-height: 1.05; 
     color: var(--secondary-color);
 }
@@ -80,14 +102,69 @@ h2, .h2 {
 h3 , .h3 {
     margin: 0;
     color: var(--primary-color);
-    font-family: "utendosemibold";
+    font-family: var(--utendo-semibold);
     font-size: clamp(1.625rem, 1.4414rem + 0.8985vw, 2.25rem);
     line-height: 32px;
 }
+
+/* ==========================================================================
+   5. Layout
+   ========================================================================== */
 .container {
     margin: 0 auto;
     max-width: 1480px;
     padding: 0 1em;
+}
+/* ==========================================================================
+   6. Components
+   ========================================================================== */
+   .button {
+    font-family: var(--utendo-medium);
+    background-color: var(--primary-color);
+    color: var(--black);
+    font-size: 18px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    border: 1px solid var(--light-black);
+    outline: 1.5px solid gray;
+    outline-offset: 1px;
+}
+.btn-primary {
+    padding: 18px 28px;
+}
+.btn-primary:hover {
+    color: var(--primary-color);
+    background-color: var(--light-black);
+}
+.btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    gap: 26px;
+    font-size: 20px;
+    padding: 4px 5px 4px 23px;
+}
+.btn-secondary .icon {
+    width: 50px;
+    height: 50px;
+    background-color: var(--light-black);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-secondary .icon::before {
+    content: "";
+    background-image: url("../images/icons/Vector.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    width: 37px;
+    height: 37px;
+    transition: transform 0.3s ease-out;
+}
+.btn-secondary:hover .icon::before {
+    transform: rotate(45deg);
 }
 /* header css */
 .main-header {
@@ -137,37 +214,13 @@ h3 , .h3 {
     display: flex;
     gap: 23px;
 }
-.button {
-    font-family: var(--utendo-medium);
-    background-color: var(--primary-color);
-    color: var(--black);
-    font-size: 18px;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all .3s ease-in-out;
-    border: 1px solid var(--light-black);
-    outline: 1.5px solid gray;
-    outline-offset: 1px;
-}
-.btn-primary {
-    padding: 18px 28px;
-}
-.btn-primary:hover {
-    color: var(--primary-color);
-    background-color: var(--light-black);
-}
-img {
-    width: 100%;
-    height: auto;
-}
-
 /* mega-menu css */
 .mega-menu {
     visibility: hidden;
     position: absolute;
     width: 100%;
     background-color: #121315;
-    top: 100px;
+    top: 85px;
     left: 0;
     right: 0;
     z-index: 9;
@@ -176,32 +229,11 @@ img {
     overflow-y: auto;
     scrollbar-width: none;
     max-height: calc(100vh - 125px);
-    transition: opacity 0.2s ease-in-out 0.05s, visibility 0.2s ease-in-out 0.05s;
+    transition: all 0.4s ease-in-out;
     transform-origin: top center;
-   
     border-top: 1px solid #bababa1f;
     border-bottom: 1px solid #bababa1f;
 } 
-@keyframes slideDown {
-    0% { 
-      opacity: 0;
-      transform: scaleY(0);
-    }
-    100% {
-      opacity: 1;
-      transform: scaleY(1);
-    }
-  }
-@keyframes slideUp {
-    0% {
-      opacity: 1;
-      transform: scaleY(1);
-    }
-    100% { 
-      opacity: 0;
-      transform: scaleY(0);
-    }
-}
 .mega-menu-wrapper {
     margin: 0 auto;
     max-width: 1440px;
@@ -209,29 +241,24 @@ img {
 .menu-item:hover .mega-menu {
     visibility: visible;
     opacity: 1;
-    animation: slideDown 400ms ease-in-out forwards;
-    transform-origin: top;
-}
-.mega-menu.closing {
-    animation: slideUp 400ms ease-in-out forwards;
-    transform-origin: top;
+    transform: translate3d(0px, 8px, 0px) scale3d(1, 1, 1);
+    transform-style: preserve-3d;
 }
 .menu-row {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
-   
 }
 .menu-column {
     border: 1px solid #bababa1f;
     text-align: center;
     padding: 0 10px; 
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    transition: all 0.4s ease-in-out;
 }
 .menu-text-block {
     padding: 30px 30px 25px;
-    transform: translateY(20px);
-}
-.menu-column img {
-    transform: translateY(20px);
 }
 .menu-column .menu-card-title, .view-all-title{
     font-family: var(--utendo-medium);
@@ -241,7 +268,7 @@ img {
     line-height: 18px;
 }
 .menu-column .menu-card-text, .view-all-desc{
-    font-family: "utendolight";
+    font-family: var(--utendo-light);
     font-size: 16px;
     line-height: 26px;
     letter-spacing: 0.36px;
@@ -257,7 +284,6 @@ img {
 .grid-menu {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    /* transform: translateX(100%);  */
     transition: transform 0.5s ease-out;
 }
 .menu-card {
@@ -270,9 +296,6 @@ img {
 .menu-card:hover, .menu-column:hover {
     background-color: #0B0B0B;
 }
-/* .menu-card:hover.menu-card img {
-    transform: scale(1.1);
-} */
 .menu-card .img-border {
     box-shadow: -1px -1px 1px #ffffff40;
 }
@@ -284,7 +307,7 @@ img {
     margin: 26px 0;
 }
 .tech-field {
-    font-family: "utendolight";
+    font-family: var(--utendo-light);
     font-size: 14px;
     line-height: 18px;
     text-transform: uppercase;
@@ -366,35 +389,6 @@ img {
     font-size: 24px;
     line-height: 36px;
 }
-.btn-secondary {
-    display: inline-flex;
-    align-items: center;
-    gap: 26px;
-    font-size: 20px;
-    padding: 4px 5px 4px 23px;
-}
-.btn-secondary .icon {
-    width: 50px;
-    height: 50px;
-    background-color: var(--light-black);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.btn-secondary .icon::before {
-    content: "";
-    background-image: url("../images/icons/Vector.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    display: block;
-    width: 37px;
-    height: 37px;
-    transition: transform 0.3s ease-out;
-}
-.btn-secondary:hover .icon::before {
-    transform: rotate(45deg);
-}
 /* hero-section css end */
 
 /* trusted-section */
@@ -449,7 +443,7 @@ img {
 /* trusted-section end*/ 
 
 /* case studies section */
-.case-studies-section, .testimonial-section, .service-section, .tab-section, .aboutus-section,  .blog-section, .faq-section {
+.case-studies-section, .testimonial-section, .service-section, .tab-section, .aboutus-section,  .blog-section, .faq-section, .our-mission {
     padding-top: 80px;
     padding-bottom: 80px;
 }
@@ -551,7 +545,7 @@ img {
 }
 .count {
     color: var(--primary-color);
-    font-family: "utendosemibold";
+    font-family: var(--utendo-semibold);
     font-size: 36px;
 }
 .info-card {
@@ -593,7 +587,7 @@ img {
 .healthcare-wrapper .info, .travel-wrapper .info {
     max-width: none;
     font-size: 42px;
-    font-family: "utendoregular";
+    font-family: var(--utendo-regular);
 }
 .travel-wrapper {
     position: relative;
@@ -660,14 +654,14 @@ img {
     padding: 15px 0;
 }
 .testimonial-wrapper .position {
-    font-family: "utendolight";
+    font-family: var(--utendo-light);
     color: var(--primary-color);
     font-size: 16px;
     padding-bottom: 25px;
 }
-.testimonial-wrapper .description , .footer-text{
+.description , .footer-text{
     color: #A4A4A4;
-    font-family: "utendolight";
+    font-family: var(--utendo-light);
     font-size: 20px;
     letter-spacing: 0.32px;
     line-height: 32px;
@@ -723,7 +717,7 @@ img {
     padding: 40px 40px 0;
 }
 .service-text {
-    font-family: "utendolight";
+    font-family: var(--utendo-light);
     font-size: 18px;
     line-height: 28px;
     letter-spacing: 0.36px;
@@ -756,7 +750,7 @@ img {
 .tab {
     display: inline-block;
     width: 100%;
-    font-family: "utendoregular";
+    font-family: var(--utendo-regular);
     padding: 15px;
     font-size: 20px;
     text-align: center;
@@ -831,14 +825,9 @@ img {
 /* about-us section */
 .aboutus-section .column{
     display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 40px;
     width: 100%;
-}
-.aboutus-section .column-first {
-    grid-template-columns: 27.78% 38.89% 27.78%;
-}
-.aboutus-section .column-second {
-    grid-template-columns: 27.78% 27.78% 38.89%;
 }
 .aboutus-section .row {
     margin-top: 60px;
@@ -953,7 +942,7 @@ img {
     padding: 18px 0;
 }
 .blog-card-description {
-    font-family: "utendolight";
+    font-family: var(--utendo-light);
     font-size: 18px;
     line-height: 28px;
     color: #8E8E8E;
@@ -1011,7 +1000,7 @@ img {
 }
 .accordion-header {
     color: #A4A4A4;
-    font-family: "utendolight";
+    font-family: var(--utendo-light);
     cursor: pointer;
     display: flex;
     justify-content: space-between;
@@ -1023,7 +1012,7 @@ img {
 }
 .accordion-header.active {
     color: var(--primary-color);
-    font-family: "utendoregular";
+    font-family: var(--utendo-regular);
 }
 .accordion-header.active::after {
     content: "";
@@ -1040,7 +1029,7 @@ img {
     width: 20px;
 }
 .accordion-content {
-    font-family: "utendolight";
+    font-family: var(--utendo-light);
     color: var(--primary-color);
     font-size: 18px;
     line-height: 28px;
@@ -1090,6 +1079,7 @@ img {
         linear-gradient(#fff 0 0) content-box, 
         linear-gradient(#fff 0 0);
     background: linear-gradient(166deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 0.1) 60%, rgba(255, 255, 255, 0.2) 100%);
+    mask-composite: exclude;
 }
 .call-section .h2 {
     padding-bottom: 60px;
@@ -1132,7 +1122,7 @@ footer .column {
     margin-top: 16px;
 }
 .footer-nav li a , .copyright-text , .footer-column-text li a {
-   font-family: "utendolight";
+   font-family: var(--utendo-light);
    font-size: 18px;
    line-height: 24px;
    color: var(--primary-color);
@@ -1173,6 +1163,84 @@ footer .column {
     display: none;
 }
 /* footer end */
+/* about us css */
+
+/* hero section */
+.hero-section.about-hero {
+    background-image: url("../images/about-hero.png");
+    height: auto;
+    display: block;
+    padding: 124px 0 80px;
+}
+.about-hero-wrapper {
+   padding-top: 100px;
+   width: 51%;
+}
+.about-hero .h2 {
+    margin: 32px 0;
+}
+.blue-text {
+    color: var(--secondary-color);
+}
+.about-hero .row {
+    display: flex;
+    gap: 20px;
+    width: 76%;
+    padding-top: 80px;
+}
+.about-hero .about-column {
+    margin-left: 15px;
+}
+.about-hero .count-text {
+    font-size: 24px;
+    line-height: 36px;
+    color: #A4A4A4;
+    letter-spacing: 0.36px;
+}
+.about-hero .info {
+   padding-bottom: 0;
+   margin-left: -15px;
+}
+.about-hero .info::before {
+    content: "";
+    border: 3px solid #003AFF;
+    border-radius: 50px;
+    height: 23px;
+    display: inline-block;
+    margin-right: 10px;
+}
+/* hero section end */
+.mission-block {
+    background-color: #1B1B1B;
+    border-radius: 36px;
+    padding: 50px;
+    text-align: center;
+    flex: 1;
+}
+.last-mission-block {
+    background-color: #121315;
+}
+.our-mission .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding-top: 40px;
+}
+.mission-title {
+    font-family: var(--utendo-medium);
+    font-size: clamp(1.25rem, 0.7358rem + 2.5157vw, 3rem);
+    line-height: clamp(1.5rem, 0.9124rem + 2.8751vw, 3.5rem);
+    color: var(--primary-color);
+    margin: 20px 0;
+}
+.video-image {
+    width: 72px;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
 .menu-icon, .menu-icon-btn, .mobile-menu, .mobile-btn {
     display: none;
 }
@@ -1185,7 +1253,7 @@ footer .column {
     }
 }
 @media (max-width: 1200px) {
-    .column-II .column, .sub-column {
+    .column-II .column, .sub-column, .about-hero-wrapper{
         width: 100%;
     }
     .nav-list li {
@@ -1194,14 +1262,11 @@ footer .column {
     .last-block {
         width: 70%;
     }
-    .aboutus-section .column-first {
-        grid-template-columns: 27.78% 35.89% 27.78%;
-    }
-    .aboutus-section .column-second {
-        grid-template-columns: 27.78% 27.78% 35.89%;
-    }
     .container {
         max-width: 960px;
+    }
+    .aboutus-section .column {
+        grid-template-columns: 1fr 1fr;
     }
 }
 @media (max-width: 1024px) {
@@ -1276,11 +1341,8 @@ footer .column {
         margin-top: 24px;
         justify-content: center;
     }
-    .aboutus-section .column-first {
-        grid-template-columns: 27.78% 33.89% 27.78%;
-    }
-    .aboutus-section .column-second {
-        grid-template-columns: 27.78% 27.78% 33.89%;
+    .mission-block {
+        padding: 30px;
     }
 }
 @media (max-width: 992px) {
@@ -1292,7 +1354,7 @@ footer .column {
     .container {
         max-width: 540px;
     }
-    .column-1, .column-2, .faq-section .column-1, .faq-section .column-2 {
+    .column-1, .column-2, .faq-section .column-1, .faq-section .column-2, .mission-block {
         flex: 100%;
     }
     .cards {
@@ -1317,7 +1379,7 @@ footer .column {
     .footer-column-text {
         display: none;
     }
-    .column, .last-block, .service-section .column {
+    .column, .last-block, .service-section .column,  .about-hero .row {
         width: 100%;
         gap: 20px;
     }
@@ -1369,7 +1431,7 @@ footer .column {
         line-height: 26px;
     }
     .faq-content {
-        font-family: "utendolight";
+        font-family: var(--utendo-light);
         font-size: 16px;
         line-height: 26px;
         padding: 30px 0;
@@ -1384,7 +1446,7 @@ footer .column {
     .tab {
         padding: 14px 30px;
     }
-    .sub-column {
+    .sub-column, .about-hero .row{
         flex-wrap: wrap;
     }
     .call-section {
@@ -1421,11 +1483,11 @@ footer .column {
         padding: 24px 0;
     }
     .sub-title {
-        font-family: "utendoregular";
+        font-family: var(--utendo-regular);
         font-size: 14px;
     }
     .btn-primary {
-        font-family: "utendoregular";
+        font-family: var(--utendo-regular);
         font-size: 16px;
         letter-spacing: 0.36px;
         padding: 15px 26px;
@@ -1449,7 +1511,7 @@ footer .column {
         letter-spacing: 0.36px;
     }
     .info {
-        font-family: "utendoregular";
+        font-family: var(--utendo-regular);
     }
     .info-card {
         font-size: 16px;

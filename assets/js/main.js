@@ -64,20 +64,3 @@ menuItems.forEach(item => {
   item.addEventListener('mouseenter', showMegaMenu); 
   item.addEventListener('mouseleave', hideMegaMenu); 
 });
-
-document.querySelectorAll('.menu-item').forEach(dropdown => {
-  const menu = dropdown.querySelector('.mega-menu');
-  
-  dropdown.addEventListener('mouseenter', () => {
-    menu.style.display = 'block';
-    menu.classList.remove('closing');
-  });
-
-  dropdown.addEventListener('mouseleave', () => {
-    menu.classList.add('closing');
-    setTimeout(() => {
-      menu.style.display = 'none';
-      menu.classList.remove('closing');
-    }, 300);
-  });
-});
