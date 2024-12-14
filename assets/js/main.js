@@ -64,3 +64,28 @@ menuItems.forEach(item => {
   item.addEventListener('mouseenter', showMegaMenu); 
   item.addEventListener('mouseleave', hideMegaMenu); 
 });
+
+// new
+
+const values = document.querySelectorAll(".value");
+const images = document.querySelectorAll(".dynamic-image img");
+
+values.forEach(value => {
+    value.addEventListener("mouseenter", () => {
+        const imageId = value.getAttribute("data-image");
+        images.forEach(img => {
+            if (img.id === imageId) {
+                img.classList.add("active"); 
+                value.classList.add("active");
+            } else {
+                img.classList.remove("active"); 
+                value.classList.remove("active");
+            }
+        });
+    });
+
+    value.addEventListener("mouseleave", () => {
+        images.forEach(img => img.classList.remove("active"));
+        value.classList.remove("active");
+    });
+});

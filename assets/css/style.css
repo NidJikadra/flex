@@ -112,7 +112,7 @@ h3 , .h3 {
    ========================================================================== */
 .container {
     margin: 0 auto;
-    max-width: 1480px;
+    max-width: 1440px;
     padding: 0 1em;
 }
 /* ==========================================================================
@@ -129,6 +129,7 @@ h3 , .h3 {
     border: 1px solid var(--light-black);
     outline: 1.5px solid gray;
     outline-offset: 1px;
+    white-space: nowrap;
 }
 .btn-primary {
     padding: 18px 28px;
@@ -207,7 +208,7 @@ h3 , .h3 {
     padding: 8px 23px;
     border-radius: 50px;
 }
-.nav-list li:hover {
+.nav-list li:hover, .nav-list li.active {
     background-color: #1B1B1B; 
 }
 .navbar-list {
@@ -260,7 +261,7 @@ h3 , .h3 {
 .menu-text-block {
     padding: 30px 30px 25px;
 }
-.menu-column .menu-card-title, .view-all-title{
+.menu-card-title, .view-all-title{
     font-family: var(--utendo-medium);
     color: var(--primary-color);
     font-size: 20px;
@@ -443,11 +444,10 @@ h3 , .h3 {
 /* trusted-section end*/ 
 
 /* case studies section */
-.case-studies-section, .testimonial-section, .service-section, .tab-section, .aboutus-section,  .blog-section, .faq-section, .our-mission {
-    padding-top: 80px;
-    padding-bottom: 80px;
+.case-studies-section, .testimonial-section, .service-section, .tab-section, .aboutus-section,  .blog-section, .faq-section, .our-mission, .core-values-section, .our-team-section, .career-section, .our-commitment-section {
+    padding: 80px 0;
 }
-.header {
+.page-title {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -732,12 +732,14 @@ h3 , .h3 {
 }
 .service-card:hover {
     box-shadow: rgba(0, 0, 0, 0.6) 4px 5px 10px 4px;
+    position: relative;
+    z-index: 1;
 }
 /* service section end */
 
 /* tab section */
 .tab-wrapper {
-    margin-top: 60px;
+    margin-top: 45px;
     display: flex;
     flex-direction: column;
     gap: 50px;
@@ -830,7 +832,7 @@ h3 , .h3 {
     width: 100%;
 }
 .aboutus-section .row {
-    margin-top: 60px;
+    margin-top: 45px;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -844,6 +846,7 @@ h3 , .h3 {
 .about-us-wrapper::before, .service-card:hover::before {
     content: '';
     position: absolute;
+    z-index: -1;
     top: 0;
     left: 0;
     right: 0;
@@ -892,6 +895,10 @@ h3 , .h3 {
     border-radius: 50%;
     margin: auto;
     display: flex;
+}
+.about-img img {
+    box-shadow: 0px 20px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
 }
 .aboutus-text {
     color: var(--primary-color);
@@ -1220,7 +1227,7 @@ footer .column {
 .last-mission-block {
     background-color: #121315;
 }
-.our-mission .row{
+.our-mission .row, .our-team-section .row{
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
@@ -1241,15 +1248,184 @@ footer .column {
     justify-content: center;
     margin: auto;
 }
+
+/* core value css */
+.core-values-wrapper {
+    margin-top: 60px;
+}
+.value .number {
+    font-size: 24px;
+}
+.value {
+    border-top: 1px solid #1B1B1B;
+    padding: 50px 0;
+    display: flex;
+    gap: 20px;
+    align-items: baseline;
+    position: relative;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: opacity 0.3s ease-in-out;
+}
+.value:hover {
+    opacity: 1;
+}
+.value-text .h3{
+    margin-bottom: 30px;
+}
+.value-text {
+    max-width: 800px;
+}
+.dynamic-image {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    width: 300px;
+    height: 200px;
+    rotate: -9deg;
+    pointer-events: none; /* Prevent interference with hover */
+}
+
+.dynamic-image img {
+    position: absolute;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0;
+}
+
+.dynamic-image img.active {
+    opacity: 1;
+}
+
+/* our team css */
+.our-team-section .row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.team-card {
+    border: 1px solid #212121;
+    border-radius: 24px;
+    padding: 10px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.team-card img, .team-card .card-content, .team-card {
+    border: 1px solid #212121;
+    box-shadow: 2px 1px 24px 6px rgba(0, 0, 0, 0.6);
+}
+.team-card .member-position {
+    font-family: var(--utendo-light);
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--secondary-color);
+    margin-top: auto;
+}
+.card-content {
+    padding: 22px;
+    background-color:#121315;
+    color: var(--primary-color);
+    border-radius: 16px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.team-card:hover{
+    background-color: #1B1B1B;
+    box-shadow: 0px 28px 8px rgba(0, 0, 0, 0.2);
+}
+/* our team css end */
+
+/* career section css */
+.careers-wrapper {
+    background-image: url("../images/career-bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 70px;
+    border-radius: 36px;
+    border: 1px solid #fbfbfb45;
+    box-shadow: 0px 28px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+.careers-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 36px;
+    background: linear-gradient(242deg, rgba(0, 0, 0, .4) 60%, rgba(0, 0, 0, 0) 100%);
+}
+.career-content {
+    position: relative;
+    z-index: 1;
+    max-width: 735px;   
+}
+.career-sub-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: var(--secondary-color);
+}
+.career-content .h3 {
+    font-size: 48px;
+    font-family: 'utendomedium';
+    font-weight: 100;
+}
+.career-content .faq-content {
+    color: #E5E5E5;
+}
+/* career section css end */
+/* our commitment css */
+.our-commitment-section .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    background-color: #121315;
+    border-radius: 36px;
+    padding: 20px;
+    align-items: center;
+}
+.our-commitment-image img{
+    border-radius: 24px;
+    box-shadow: 17px 16px 22px rgba(0, 0, 0, 0.3);
+}
+.our-commitment-wrapper {
+    width: 35%;
+    text-align: center;
+}
+.our-commitment-wrapper .description {
+    margin: 24px 0 30px;
+    color: #E5E5E5;
+}
+/* our commitment css end */
+/* core value css end */
 .menu-icon, .menu-icon-btn, .mobile-menu, .mobile-btn {
     display: none;
 }
 .case-studies-section .bottom, .service-section .bottom, .blog-section .bottom {
     display: none;
 }
-@media (max-width: 1400px) {
+@media (max-width: 1480px) {
     .container {
-        max-width: 1140px;
+        max-width: 1320px;
+    }
+}
+@media (max-width: 1360px) {
+    .container {
+        max-width: 1200px;
+    }
+}
+@media (max-width: 1240px) {
+    .container {
+        max-width: 1024px;
     }
 }
 @media (max-width: 1200px) {
@@ -1261,9 +1437,6 @@ footer .column {
     }
     .last-block {
         width: 70%;
-    }
-    .container {
-        max-width: 960px;
     }
     .aboutus-section .column {
         grid-template-columns: 1fr 1fr;
@@ -1315,7 +1488,7 @@ footer .column {
         gap: 40px;
         margin-top: 40px;
     }
-    .info {
+    .info, .container{
         max-width: 100%;
     }
     .travel-wrapper .info, .healthcare-wrapper .info {
@@ -1344,16 +1517,11 @@ footer .column {
     .mission-block {
         padding: 30px;
     }
-}
-@media (max-width: 992px) {
-    .container {
-        max-width: 720px;
+    .our-team-section .row {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 @media (max-width: 768px) {
-    .container {
-        max-width: 540px;
-    }
     .column-1, .column-2, .faq-section .column-1, .faq-section .column-2, .mission-block {
         flex: 100%;
     }
@@ -1410,13 +1578,13 @@ footer .column {
         overflow-x: auto;
     }
     .tab-wrapper {
-        margin-top: 28px;
+        margin-top: 20px;
     }
     .text-block {
         padding: 20px 20px 0;
     }
     .aboutus-section .row {
-        margin-top: 30px;
+        margin-top: 20px;
     }
     .blog-card-text {
         font-size: 14px;
@@ -1453,9 +1621,8 @@ footer .column {
         padding-top: 56px;
         padding-bottom: 112px;
     }
-    .faq-section, .blog-section, .aboutus-section, .tab-section, .service-section, .testimonial-section, .case-studies-section {
-        padding-top: 56px;
-        padding-bottom: 56px;
+    .faq-section, .blog-section, .aboutus-section, .tab-section, .service-section, .testimonial-section, .case-studies-section, .core-values-section, .our-team-section, .our-mission, .career-section, .our-commitment-section {
+        padding: 56px 0;
     }
     .case-studies-section button, .service-section button, .blog-section button {
         display: none;
@@ -1471,11 +1638,6 @@ footer .column {
     }
     .column-I {
         gap: 30px;
-    }
-}
-@media (max-width: 576px) {
-    .container {
-      max-width: 100%;
     }
 }
 @media (max-width: 425px) {
@@ -1582,9 +1744,8 @@ footer .column {
         padding-top: 35px;
         padding-bottom: 70px;
     }
-    .faq-section, .blog-section, .aboutus-section, .tab-section, .service-section, .testimonial-section, .case-studies-section {
-        padding-top: 35px;
-        padding-bottom: 35px;
+    .faq-section, .blog-section, .aboutus-section, .tab-section, .service-section, .testimonial-section, .case-studies-section, .core-values-section, .our-team-section, .career-section, .our-commitment-section {
+        padding: 35px 0;
     }
     .card img {
         border: 1px solid #1B1B1B;
@@ -1596,11 +1757,14 @@ footer .column {
     .review-card-image {
         width: 100%;
     }
-    .header {
+    .page-title {
         padding-bottom: 30px;
     }
     .testimonial-wrapper {
         padding: 32px;
+    }
+    .our-team-section .row {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 @media (max-width: 375px) {

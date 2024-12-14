@@ -14,11 +14,11 @@
     <header class="main-header">
         <div class="container">
             <nav class="navbar">
-                <div class="logo"><a href="/"><img src="assets/images/icons/Logo.svg" alt="Flex-logo" width="124" height="32"></a></div>
+                <div class="logo"><a href="index.html"><img src="assets/images/icons/Logo.svg" alt="Flex-logo" width="124" height="32"></a></div>
                 <img src="assets/images/icons/Logo-mobile.svg" alt="Flex-logo" width="26" height="26" class="menu-icon">
                 <div class="navbar-list">
                     <ul class="nav-list">
-                        <li><a href="#">Company</a></li>
+                        <li class="active"><a href="#">Company</a></li>
                         <li class="dropdown menu-item" data-menu="menu1"><a href="#">Services</a>
                             <div class="mega-menu" data-menu="menu1">
                                 <div class="mega-menu-wrapper">
@@ -159,7 +159,6 @@
                         <li><a href="#">Contact Us</a></li>
                         <li><a href="#">Blogs</a></li>
                     </ul>
-                    
                     <button type="button" class="button btn-primary" aria-label="contact-button">Contact now</button>
                     <button type="button" class="menu-icon-btn" aria-label="menu-button"></button>
                     <ul class="nav-list mobile-menu">
@@ -233,7 +232,7 @@
 
         <section class="aboutus-section">
             <div class="container">
-                <div class="header-wrapper">
+                <div class="title-wrapper">
                     <h3 class="sub-title">why choose flex</h3>
                     <h2 class="h2">Excellence in Digital Solutions</h2>
                 </div>
@@ -312,15 +311,260 @@
 
         <section class="core-values-section">
             <div class="container">
-                <div class="header-wrapper">
+                <div class="title-wrapper">
                     <h3 class="sub-title">Our Core Values</h3>
                     <h2 class="h2">Principles that Shape Our Vision</h2>
                 </div>
                 <div class="core-values-wrapper">
-                    <h2 class="h2">Core Values</h2>
+                    <div class="value" data-image="image-1">
+                        <span class="number blue-text">01</span>
+                      <div class="value-text">
+                            <h3 class="h3">Innovation</h3>
+                            <p class="description">We are committed to pushing the boundaries of what’s possible, constantly exploring new frontiers in AI and Web3 technologies.</p>
+                        </div>
+                        <div class="dynamic-image">
+                            <img id="image-1" src="assets/images/innovation.png" width="309" height="209" alt="Innovation">
+                        </div>
+                    </div>
+                    <div class="value active" data-image="image-2">
+                        <span class="number blue-text">02</span>
+                        <div class="value-text">
+                            <h3 class="h3">Integrity</h3>
+                            <p class="description">Honesty and transparency are at the heart of our operations, ensuring trust and reliability in everything we do.</p>
+                        </div>
+                        <div class="dynamic-image">
+                            <img id="image-2" src="assets/images/innovation.png" width="309" height="209" alt="Integrity" class="active">
+                        </div>
+                    </div>
+                    <div class="value" data-image="image-3">
+                        <span class="number blue-text">03</span>
+                        <div class="value-text">
+                            <h3 class="h3">Impact</h3>
+                            <p class="description">Our focus is on making a meaningful difference, leveraging technology to address real-world challenges and improve lives.</p>
+                        </div>
+                        <div class="dynamic-image">
+                            <img id="image-3" src="assets/images/innovation.png" width="309" height="209" alt="Impact">
+                        </div>
+                    </div>
+                    <div class="value" data-image="image-4">
+                        <span class="number blue-text">04</span>
+                        <div class="value-text">
+                            <h3 class="h3">Collaboration</h3>
+                            <p class="description">We believe in the power of teamwork, fostering a culture where diverse ideas come together to create superior solutions.</p>
+                        </div>
+                        <div class="dynamic-image">
+                            <img id="image-4" src="assets/images/innovation.png" width="309" height="209" alt="Collaboration">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="our-team-section">
+            <div class="container">
+                <div class="title-wrapper">
+                    <h3 class="sub-title">Our Team</h3>
+                    <h2 class="h2">Our People, Our Strength</h2>
+                </div>
+                <div class="row">
+                    <div class="team-card">   
+                        <img src="assets/images/team-member1.png" alt="Jacob Jones"  width="310" height="300" class="img-border">
+                        <div class="card-content">
+                            <div class="menu-card-title">Jacob Jones</div>
+                            <div class="member-position">Founder</div>
+                        </div>
+                    </div>
+                    <div class="team-card">   
+                        <img src="assets/images/team-member2.png" alt="Jacob Jones"  width="310" height="300" class="img-border">
+                        <div class="card-content">
+                            <div class="menu-card-title">Bessie Cooper</div>
+                            <div class="member-position">Team Leader</div>
+                        </div>
+                    </div>
+                    <div class="team-card">   
+                        <img src="assets/images/team-member3.png" alt="Jacob Jones"  width="310" height="300" class="img-border">
+                        <div class="card-content">
+                            <div class="menu-card-title">Marvin McKinney</div>
+                            <div class="member-position">UI/UX Designer</div>
+                        </div>
+                    </div>
+                    <div class="team-card">   
+                        <img src="assets/images/team-member4.png" alt="Jacob Jones"  width="310" height="300" class="img-border">
+                        <div class="card-content">
+                            <div class="menu-card-title">Savannah Nguyen</div>
+                            <div class="member-position">Software Developer</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="career-section">
+            <div class="container">
+                <div class="careers-wrapper">
+                    <div class="career-content">
+                        <div class="career-sub-title">Careers</div>
+                        <h3 class="h3">Join Our Team</h3>
+                        <p class="faq-content">Join Flex and help shape the future of technology through seamless AI and Web3 integrations. At Flex, we offer competitive salaries, equity, and bonuses, alongside flexible work options for a balanced life.</p>
+                        <button type="button" class="button btn-secondary">Show open position<span class="icon"></span></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonial-section">
+            <div class="container">
+                <div class="row">
+                    <div class="column-I">
+                        <div class="column name-block">
+                            <h3 class="sub-title">Testimonial</h3>
+                            <h2 class="h2">Words of Appreciation</h2>
+                        </div>
+                
+                        <div class="column testimonial-wrapper">
+                            <img src="assets/images/Image1.png" height="80" width="80" >
+                            <P class="name">Savannah Nguyen</P> 
+                            <p class="position">FOUNDER, QURO</p>
+                            <p class="description">Working with this team has been incredible. They transformed our website into a sleek, modern, and user-friendly platform. The project was completed on time and within budget. Highly recommended for any web needs!</p>
+                        </div>
+                    </div>
+                    <div class="column-II">
+                        <div class="column testimonial-wrapper">
+                            <img src="assets/images/Image2.png" height="80" width="80" >
+                            <P class="name">Courtney Henry</P> 
+                            <p class="position">CO - FOUNDER, DREAM TRAVEL</p>
+                            <p class="description">The backend expertise provided by this company is unmatched. They streamlined our server operations and improved our database management. Communication was clear and timely. We couldn't be happier with the results.</p>
+                        </div>
+                        <div class="sub-column">
+                            <div class="review-card-image">
+                                <a class="play-iframe" href="https://videocdn.cdnpk.net/videos/3e391e96-8805-4cfd-ac03-f725bcb59836/horizontal/previews/clear/large.mp4?token=exp=1733978159~hmac=d4b13f31cfa7cc2a6749892ea71cac60998d259c2a3010fcfbd4932cd1b7c16b">
+                                    <video src="https://videocdn.cdnpk.net/videos/3e391e96-8805-4cfd-ac03-f725bcb59836/horizontal/previews/clear/large.mp4?token=exp=1733978159~hmac=d4b13f31cfa7cc2a6749892ea71cac60998d259c2a3010fcfbd4932cd1b7c16b" loop="" autoplay="" poster="assets/images/Review-Card.png" height="400" width="360" class="image-border"></video>
+                                </a>
+                            </div> 
+                            <div class="testimonial-wrapper last-block">
+                                <img src="assets/images/Image3.png" height="80" width="80" >
+                                <P class="name">Jacob Jones</P> 
+                                <p class="position">FOUNDER, MOM</p>
+                                <p class="description">Outstanding e-commerce solutions! Our online store is now faster, more secure, and easier to navigate.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="our-commitment-section">
+            <div class="container">
+                <div class="row">
+                    <div class="our-commitment-image">
+                        <img src="assets/images/Guaranteed.png" alt="Guaranteed" height="472" width="680">  
+                    </div>
+                    <div class="our-commitment-wrapper">
+                        <div class="career-sub-title">Our Commitment to Quality</div>
+                        <h3 class="h3">Guaranteed</h3>
+                        <p class="description">We aim to provide our clients with the best possible return on investment. read about the high quality standards we set for every project.</p>
+                        <button type="button" class="button btn-secondary">Join Our Mission<span class="icon"></span></button>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
+
+    <!-- footer -->
+    <footer> 
+        <div class="container">
+            <div class="row-footer">
+                <div class="column">
+                    <a href="index.html" class="footer-logo">
+                        <img src="assets/images/Logo.png" alt="Flex-logo">
+                    </a>
+                    <p class="footer-text">521, 5th Floor, Laxmi Enclave-2, near Gajera School, Katargam, Surat, Gujarat 395004</p>
+                    <ul class="social-icons">
+                        <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42" fill="none">
+                            <path d="M15.75 38.5039H26.25C35 38.5039 38.5 35.0039 38.5 26.2539V15.7539C38.5 7.00391 35 3.50391 26.25 3.50391H15.75C7 3.50391 3.5 7.00391 3.5 15.7539V26.2539C3.5 35.0039 7 38.5039 15.75 38.5039Z" stroke="#FBFBFB" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M21 27.1289C24.3827 27.1289 27.125 24.3867 27.125 21.0039C27.125 17.6212 24.3827 14.8789 21 14.8789C17.6173 14.8789 14.875 17.6212 14.875 21.0039C14.875 24.3867 17.6173 27.1289 21 27.1289Z" stroke="#FBFBFB" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M30.8633 12.2539H30.8836" stroke="#FBFBFB" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg></a></li>
+                        <li><a href="#"><svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_2401_22706)">
+                            <path d="M21 0.00390625C9.40078 0.00390625 0 9.40469 0 21.0039C0 32.6031 9.40078 42.0039 21 42.0039C32.5992 42.0039 42 32.6031 42 21.0039C42 9.40469 32.5992 0.00390625 21 0.00390625ZM34.1086 34.1043C32.4023 35.8105 30.4254 37.1477 28.2188 38.0746C25.9383 39.0426 23.5102 39.5266 21 39.5266C18.498 39.5266 16.0699 39.0344 13.7812 38.0746C11.5746 37.1395 9.58945 35.8023 7.89141 34.1043C6.18516 32.398 4.84805 30.4211 3.92109 28.2145C2.95313 25.934 2.46094 23.5059 2.46094 21.0039C2.46094 18.502 2.95312 16.0738 3.91289 13.7852C4.84805 11.5785 6.18516 9.59336 7.8832 7.89531C9.59766 6.18906 11.5746 4.85195 13.7812 3.9168C16.0699 2.95703 18.498 2.46484 21 2.46484C23.502 2.46484 25.9301 2.95703 28.2188 3.9168C30.4254 4.85195 32.4105 6.18906 34.1086 7.88711C35.8148 9.59336 37.152 11.5703 38.0789 13.777C39.0469 16.0574 39.5309 18.4855 39.5309 20.9957C39.5309 23.4977 39.0387 25.9258 38.0789 28.2145C37.1437 30.4211 35.8066 32.4062 34.1086 34.1043Z" fill="#FBFBFB"/>
+                            <path d="M23.7719 13.8425C24.6168 13.8425 25.5191 14.105 25.5191 14.105L26.0605 10.8894C26.0605 10.8894 24.9121 10.4956 22.1723 10.4956C20.4906 10.4956 19.5145 11.1355 18.8008 12.0788C18.1281 12.973 18.1035 14.4085 18.1035 15.3354V17.4437H15.9297V20.5855H18.1035V31.4956H22.1723V20.5855H25.3961L25.634 17.4437H22.1723V14.9909C22.1723 14.146 22.927 13.8425 23.7719 13.8425Z" fill="#FBFBFB"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_2401_22706">
+                            <rect width="42" height="42" fill="white" transform="translate(0 0.00390625)"/>
+                            </clipPath>
+                            </defs>
+                            </svg></a></li>
+                        <li><a href="#"><svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_2401_22710)">
+                            <path d="M21 0.00390625C9.40078 0.00390625 0 9.40469 0 21.0039C0 32.6031 9.40078 42.0039 21 42.0039C32.5992 42.0039 42 32.6031 42 21.0039C42 9.40469 32.5992 0.00390625 21 0.00390625ZM34.1086 34.1043C32.4023 35.8105 30.4254 37.1477 28.2188 38.0746C25.9383 39.0426 23.5102 39.5266 21 39.5266C18.498 39.5266 16.0699 39.0344 13.7812 38.0746C11.5746 37.1395 9.58945 35.8023 7.89141 34.1043C6.18516 32.398 4.84805 30.4211 3.92109 28.2145C2.95313 25.934 2.46094 23.5059 2.46094 21.0039C2.46094 18.502 2.95312 16.0738 3.91289 13.7852C4.84805 11.5785 6.18516 9.59336 7.8832 7.89531C9.59766 6.18906 11.5746 4.85195 13.7812 3.9168C16.0699 2.95703 18.498 2.46484 21 2.46484C23.502 2.46484 25.9301 2.95703 28.2188 3.9168C30.4254 4.85195 32.4105 6.18906 34.1086 7.88711C35.8148 9.59336 37.152 11.5703 38.0789 13.777C39.0469 16.0574 39.5309 18.4855 39.5309 20.9957C39.5309 23.4977 39.0387 25.9258 38.0789 28.2145C37.1437 30.4211 35.8066 32.4062 34.1086 34.1043Z" fill="#FBFBFB"/>
+                            <path d="M15.1266 16.689H11.0332V29.7894H15.1266V16.689Z" fill="#FBFBFB"/>
+                            <path d="M12.9941 10.5039C11.4848 10.5039 10.4922 11.4801 10.4922 12.7762C10.4922 14.0477 11.452 15.0484 12.9367 15.0484H12.9695C14.5117 15.0484 15.4715 14.0395 15.4633 12.7762C15.4305 11.4801 14.5035 10.5039 12.9941 10.5039Z" fill="#FBFBFB"/>
+                            <path d="M26.3082 16.5659C23.9621 16.5659 22.4938 17.8456 22.223 18.7479V16.689H17.6211C17.6785 17.78 17.6211 29.7894 17.6211 29.7894H22.223V22.7101C22.223 22.3081 22.2066 21.9144 22.3215 21.6355C22.6332 20.848 23.3141 20.0276 24.5363 20.0276C26.1359 20.0276 26.8578 21.2417 26.8578 23.0136V29.7894H31.5008V22.505C31.5008 18.4526 29.2203 16.5659 26.3082 16.5659Z" fill="#FBFBFB"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_2401_22710">
+                            <rect width="42" height="42" fill="white" transform="translate(0 0.00390625)"/>
+                            </clipPath>
+                            </defs>
+                            </svg>
+                            </a></li>
+                    </ul>
+                </div>
+                <div class="second-column">
+                    <div class="column-footer">
+                        <p class="footer-title">Company</p>
+                        <ul class="footer-nav">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Case Studies</a></li>
+                            <li><a href="#">Blog</a></li>
+                                <li><a href="#">Carrers</a></li>
+                        </ul>
+                    </div>
+                    <div class="column-footer">
+                        <p class="footer-title">Service</p>
+                        <ul class="footer-nav">
+                            <li><a href="#">Platform Migration</a></li>
+                            <li><a href="#">Managed Services</a></li>
+                            <li><a href="#">Staff Augmentation</a></li>
+                            <li><a href="#">Decoupled Architecture</a></li>
+                        </ul>
+                    </div>
+                    <div class="column-footer">
+                        <p class="footer-title">Case Studies</p>
+                        <ul class="footer-nav">
+                            <li><a href="#">Insights</a></li>
+                            <li><a href="#">Awards</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="column-footer">
+                        <p class="footer-title">Links</p>
+                        <ul class="footer-nav">
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Conditions</a></li>
+                            <li><a href="#">Website Terms of Use</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row-copyright">
+            <div class="container">
+                <div class="columns">
+                    <div class="footer-column">
+                        <p class="copyright-text">&copy; 2024 Flex Solutions All Rights Reserved.</p>
+                    </div>
+                    <ul class="footer-column-text">
+                        <li><a href="#" target="_blank">Privacy Policy</a></li>
+                        <li><a href="#" target="_blank">Terms of Conditions</a></li>
+                        <li><a href="#" target="_blank">Website Terms of Use</a></li>
+                    </ul>   
+                </div>
+            </div>
+        </div>
+    </footer>  <!-- footer end -->
+    
 </body>
 </html>
