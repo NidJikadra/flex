@@ -1,0 +1,42 @@
+h1,
+.h1 {
+  margin: 0 0 20px;
+  font-size: clamp(32px, calc(5vw + 5vh) / 2, 90px);
+  font-family: $font-semibold;
+  line-height: 1.05;
+  color: $secondary-color;
+
+  @include respond-to(md) {
+    margin: 0 0 26px;
+    font-size: clamp(40px, calc(7vw + 7vh) / 2, 90px);
+  }
+}
+
+h2,
+.h2 {
+  margin: 0;
+  font-family: $font-medium;
+  font-size: clamp(1.5rem, 1.1257rem + 2.5vw, 3.875rem);
+  line-height: clamp(2rem, 1.442rem + 3vw, 5rem);
+  color: $primary-color;
+  font-weight: 100;
+
+  @include respond-to(md) {
+    font-size: clamp(1.75rem, 1.1257rem + 3.0548vw, 3.875rem);
+    line-height: clamp(2.25rem, 1.442rem + 3.9533vw, 5rem);
+  }
+}
+
+h3,
+.h3 {
+  margin: 0;
+  color: $primary-color;
+  font-family: $font-semibold;
+  font-size: clamp(1.25rem, 1.1414rem + 0.6vw, 2.25rem);
+  line-height: 28px;
+
+  @include respond-to(md) {
+    font-size: clamp(1.625rem, 1.4414rem + 0.8985vw, 2.25rem);
+    line-height: 32px;
+  }
+}

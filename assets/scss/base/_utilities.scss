@@ -1,0 +1,77 @@
+.white-text {
+  color: $primary-color;
+}
+
+.blue-text {
+  color: $secondary-color;
+}
+
+.desc {
+  font-size: 16px;
+  line-height: 26px;
+
+  @include respond-to(md) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @include respond-to(lg) {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+
+.img-border {
+  box-shadow: -1px -1px 1px rgba($white, 0.25);
+  border-radius: 16px;
+}
+
+.page-title {
+  @include flex(row, space-between, center);
+  flex-wrap: wrap;
+  padding-bottom: 30px;
+
+  @include respond-to(md) {
+    padding-bottom: 60px;
+  }
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, rgba($black, 0.8) 17%, transparent 86%, transparent 40%, rgba($black, 0.8) 100%);
+  background-color: rgba($black, 0.5);
+  border-radius: inherit;
+  z-index: 2;
+}
+
+// Add these utility classes
+.text-center {
+  text-align: center;
+}
+
+.d-none {
+  display: none !important;
+}
+
+.d-block {
+  display: block !important;
+}
+
+@include respond-to(lg) {
+  .d-lg-none {
+    display: none !important;
+  }
+
+  .d-lg-block {
+    display: block !important;
+  }
+}
+
+.position-relative {
+  position: relative;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}

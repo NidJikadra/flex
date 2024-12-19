@@ -1,0 +1,129 @@
+.faq-section {
+  padding: 35px 0;
+
+  @include respond-to(md) {
+    padding: 56px 0;
+  }
+
+  @include respond-to(lg) {
+    padding: 80px 0;
+  }
+
+  .row {
+    @include flex;
+    flex-wrap: wrap;
+    gap: 43px;
+
+    @include respond-to(lg) {
+      gap: 100px;
+    }
+  }
+
+  .column-1,
+  .column-2 {
+    flex: 100%;
+
+    @include respond-to(lg) {
+      &.column-1 {
+        flex: 2;
+      }
+      &.column-2 {
+        flex: 3;
+      }
+    }
+  }
+}
+
+.faq-content {
+  font-family: $font-light;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.36px;
+  color: #cfcfcf;
+  padding: 30px 0;
+
+  @include respond-to(md) {
+    font-size: 20px;
+    line-height: 32px;
+    padding: 30px 0 40px;
+  }
+}
+
+.accordion {
+  &-item {
+    border-top: 1px solid #1b1b1b;
+    padding: 28px 0;
+
+    @include respond-to(md) {
+      padding: 36px 0;
+    }
+
+    &:last-child {
+      padding-bottom: 0;
+    }
+
+    &.open .accordion-content {
+      opacity: 1;
+      max-height: 86px;
+      padding-top: 24px;
+
+      @include respond-to(md) {
+        padding-top: 30px;
+      }
+    }
+  }
+
+  &-header {
+    color: #a4a4a4;
+    font-family: $font-light;
+    cursor: pointer;
+    @include flex(row, space-between, center);
+    font-size: 18px;
+    line-height: 29px;
+    letter-spacing: 0.36px;
+    gap: 20px;
+
+    @include respond-to(md) {
+      font-size: 20px;
+      line-height: 32px;
+    }
+
+    &.active {
+      color: $primary-color;
+      font-family: $font-regular;
+
+      &::after {
+        content: "";
+        display: block;
+        background: url("../images/icons/minus.svg") center no-repeat;
+        height: 20px;
+        width: 20px;
+      }
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      background: url("../images/icons/plus.svg") center no-repeat;
+      height: 20px;
+      width: 20px;
+    }
+  }
+
+  &-content {
+    font-family: $font-light;
+    color: $primary-color;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.36px;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.25s ease-out;
+
+    @include respond-to(md) {
+      font-size: 18px;
+      line-height: 28px;
+    }
+  }
+}

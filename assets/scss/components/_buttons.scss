@@ -1,0 +1,66 @@
+.button {
+  font-family: $font-medium;
+  background-color: $primary-color;
+  color: $black;
+  font-size: 16px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid $light-black;
+  outline: 1.5px solid gray;
+  outline-offset: 1px;
+  white-space: nowrap;
+
+  @include respond-to(md) {
+    font-size: 18px;
+  }
+}
+
+.btn-primary {
+  padding: 15px 26px;
+
+  @include respond-to(md) {
+    padding: 18px 28px;
+  }
+
+  &:hover {
+    color: $primary-color;
+    background-color: $light-black;
+  }
+}
+
+.btn-secondary {
+  @include flex(row, flex-start, center);
+  gap: 20px;
+  font-size: 18px;
+  padding: 2px 3px 2px 18px;
+
+  @include respond-to(md) {
+    gap: 26px;
+    font-size: 20px;
+    padding: 4px 5px 4px 23px;
+  }
+
+  .icon {
+    width: 50px;
+    height: 50px;
+    background-color: $light-black;
+    border-radius: 50%;
+    @include flex(row, center, center);
+
+    &::before {
+      content: "";
+      background-image: url("../images/icons/Vector.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      display: block;
+      width: 37px;
+      height: 37px;
+      transition: transform 0.3s ease-out;
+    }
+  }
+
+  &:hover .icon::before {
+    transform: rotate(45deg);
+  }
+}

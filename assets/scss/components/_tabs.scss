@@ -1,0 +1,125 @@
+.tab-section {
+  padding: 35px 0;
+
+  @include respond-to(md) {
+    padding: 56px 0;
+  }
+
+  @include respond-to(lg) {
+    padding: 80px 0;
+  }
+}
+
+.tab-wrapper {
+  margin-top: 20px;
+  @include flex(column);
+  gap: 30px;
+
+  @include respond-to(md) {
+    margin-top: 45px;
+    gap: 50px;
+  }
+}
+
+.tabs {
+  @include flex;
+  border: 1px solid #212121;
+  border-radius: 50px;
+  overflow-x: auto;
+
+  @include respond-to(md) {
+    overflow-x: visible;
+  }
+}
+
+.tab {
+  display: inline-block;
+  width: 100%;
+  font-family: $font-regular;
+  padding: 14px 30px;
+  font-size: 18px;
+  text-align: center;
+  cursor: pointer;
+  background-color: $light-black;
+  border: none;
+  color: $primary-color;
+  border-radius: 50px;
+  white-space: nowrap;
+  transition: all 0.3s ease-in-out;
+
+  @include respond-to(md) {
+    padding: 15px;
+    font-size: 20px;
+  }
+
+  &:hover {
+    background-color: #323030;
+  }
+
+  &.active {
+    background-color: $primary-color;
+    color: $light-black;
+  }
+}
+
+.tab-panel {
+  display: none;
+
+  &.active {
+    @include flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 20px;
+
+    @include respond-to(md) {
+      flex-wrap: wrap;
+      overflow-x: visible;
+    }
+  }
+}
+
+.grid {
+  position: relative;
+  background-color: #121315;
+  color: $primary-color;
+  border-radius: 16px;
+  text-align: center;
+  padding: 10px 0;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+  flex: 0 0 calc((100% - 60px) / 4);
+  border: 1px solid transparent;
+
+  @include respond-to(md) {
+    padding: 30px 0;
+    flex: 0 0 calc((100% - (20px * 6)) / 7);
+  }
+
+  &:hover {
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: 16px;
+      background: linear-gradient(128deg, rgba($white, 0.3) 0%, rgba($white, 0) 40%, rgba($white, 0) 60%, rgba($white, 0.1) 100%);
+      padding: 1.5px;
+      mask:
+        linear-gradient($white 0 0) content-box,
+        linear-gradient($white 0 0);
+      mask-composite: exclude;
+      box-shadow: rgba($black, 0.6) 4px 5px 10px 4px;
+    }
+  }
+}
+
+.grid-image {
+  width: 60px;
+  margin: 0 40px;
+  height: 85px;
+  @include flex(row, center, center);
+}
+
+.item-name {
+  margin-top: 22px;
+  font-size: 18px;
+}

@@ -1,0 +1,302 @@
+.main-header {
+  background-color: transparent;
+  position: absolute;
+  z-index: 99;
+  right: 0;
+  left: 0;
+  transition: background-color 0.3s ease;
+
+  &.active {
+    background-color: $light-black;
+  }
+}
+
+.navbar {
+  @include flex(row, space-between, center);
+  padding: 15px 0;
+  position: relative;
+
+  @include respond-to(lg) {
+    padding: 25px 0;
+  }
+
+  .mobile-btn {
+    display: block;
+
+    @include respond-to(lg) {
+      display: none;
+    }
+  }
+
+  .logo {
+    display: none;
+
+    @include respond-to(lg) {
+      display: block;
+
+      img {
+        display: block;
+      }
+    }
+  }
+}
+
+// Mobile Navigation
+.menu-icon {
+  display: block;
+  height: 26px;
+  width: 26px;
+
+  &-btn {
+    display: block;
+    background: url("../images/icons/Menu.svg");
+    height: 48px;
+    width: 48px;
+    border: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+
+    @include respond-to(lg) {
+      display: none;
+    }
+  }
+
+  @include respond-to(lg) {
+    display: none;
+  }
+}
+
+.mobile-menu {
+  position: fixed;
+  z-index: 99;
+  top: -38px;
+  right: 0;
+  width: 100%;
+  height: 400px;
+  background-color: rgba($light-black, 0.9);
+  transform: translateY(-100%);
+  transition: transform 0.3s ease-in-out;
+  padding: 30px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+
+  &.active {
+    transform: translateY(85px);
+  }
+
+  li {
+    margin-bottom: 30px;
+
+    a {
+      font-size: 18px;
+      line-height: 24px;
+
+      @include respond-to(md) {
+        font-size: 20px;
+        line-height: 28px;
+      }
+    }
+  }
+
+  @include respond-to(lg) {
+    display: none;
+  }
+}
+
+// Desktop Navigation
+.nav-list {
+  display: none;
+
+  @include respond-to(lg) {
+    @include flex(row, flex-start, center);
+
+    li {
+      padding: 8px 23px;
+      border-radius: 50px;
+
+      &:hover,
+      &.active {
+        background-color: #1b1b1b;
+      }
+
+      &.dropdown > a {
+        &::after {
+          content: "";
+          background: url("../images/icons/down-arrow.svg") no-repeat center right;
+          background-size: contain;
+          width: 10px;
+          height: 10px;
+          margin-left: 8px;
+          display: inline-block;
+          transition: all 0.4s ease-in-out;
+        }
+
+        &:hover::after {
+          transform: rotate(180deg);
+        }
+      }
+    }
+  }
+}
+
+// Add this after the nav-list styles
+.navbar-list {
+  @include flex;
+  gap: 23px;
+
+  @include respond-to(lg) {
+    display: flex; // Ensure it's visible on desktop
+  }
+}
+
+// Mega Menu
+.mega-menu {
+  visibility: hidden;
+  position: absolute;
+  width: 100%;
+  background-color: #121315;
+  top: 85px;
+  left: 0;
+  right: 0;
+  z-index: 9;
+  opacity: 0;
+  box-shadow: 0 4px 6px rgba($black, 0.3);
+  overflow-y: auto;
+  scrollbar-width: none;
+  max-height: calc(100vh - 125px);
+  transition: all 0.4s ease-in-out;
+  transform-origin: top center;
+  border-top: 1px solid rgba(#bababa, 0.12);
+  border-bottom: 1px solid rgba(#bababa, 0.12);
+
+  &-wrapper {
+    margin: 0 auto;
+    max-width: 1440px;
+  }
+
+  .menu-card {
+    padding: 20px;
+    border: 1px solid rgba(#bababa, 0.12);
+    color: $primary-color;
+    transition: all 0.4s ease-in-out;
+    overflow: hidden;
+
+    &:hover {
+      background-color: $light-black;
+    }
+
+    .img-border {
+      box-shadow: -1px -1px 1px rgba($white, 0.25);
+    }
+  }
+
+  .card-title {
+    line-height: 28px;
+  }
+
+  // Add these missing styles to mega menu section
+  .menu-column {
+    border: 1px solid rgba(#bababa, 0.12);
+    text-align: center;
+    padding: 0 10px;
+    @include flex(column);
+    height: 100%;
+    transition: all 0.4s ease-in-out;
+
+    &:hover {
+      background-color: $light-black;
+    }
+  }
+
+  .menu-text-block {
+    padding: 30px 30px 25px;
+  }
+
+  .menu-card-title,
+  .view-all-title {
+    font-family: $font-medium;
+    color: $primary-color;
+    font-size: 20px;
+    margin: 0 0 20px;
+    line-height: 18px;
+  }
+
+  .menu-card-text,
+  .view-all-desc {
+    font-family: $font-light;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.36px;
+    color: #bababa;
+  }
+
+  .view-all {
+    @include flex(row, space-between, center);
+    padding: 35px 48px;
+    border: 1px solid rgba(#bababa, 0.12);
+  }
+
+  .grid-menu {
+    display: grid;
+    grid-template-columns: 1fr;
+    transition: transform 0.5s ease-out;
+
+    @include respond-to(md) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @include respond-to(lg) {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+
+  .icons {
+    background-color: #121315;
+    box-shadow: -2px -1px 2px rgba($white, 0.25);
+    border-radius: 50%;
+    padding: 19px;
+    @include flex(row, center, center);
+    height: 68px;
+    width: 68px;
+    margin-right: -10px;
+  }
+}
+
+.menu-item:hover .mega-menu {
+  visibility: visible;
+  opacity: 1;
+  transform: translate3d(0px, 8px, 0px) scale3d(1, 1, 1);
+  transform-style: preserve-3d;
+}
+
+.menu-row {
+  @include grid(1, 0);
+
+  @include respond-to(lg) {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+.tech-icons {
+  @include flex;
+  margin: 26px 0;
+}
+
+.tech-field {
+  font-family: $font-light;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #cfcfcf;
+  margin: 26px 0;
+
+  span {
+    border-right: 1px solid #cfcfcf;
+    padding: 0px 6px;
+
+    &:last-child {
+      border: none;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+// Colors
+$primary-color: #fbfbfb;
+$secondary-color: #c1cfff;
+$light-black: #0b0b0b;
+$white: #fff;
+$black: #000;
+
+// Fonts
+$font-light: "utendolight";
+$font-regular: "utendoregular";
+$font-medium: "utendomedium";
+$font-semibold: "utendosemibold";
+
+// Breakpoints
+$breakpoints: (
+  sm: 375px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1200px,
+  xxl: 1440px
+);

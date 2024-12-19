@@ -1,0 +1,25 @@
+// Import variables and mixins
+@import "abstracts/variables";
+@import "abstracts/mixins";
+
+// Import base styles
+@import "base/fonts";
+@import "base/reset";
+@import "base/typography";
+@import "base/utilities";
+@import "base/animations";
+
+// Import components
+@import "components/buttons";
+@import "components/header";
+@import "components/hero";
+@import "components/trusted";
+@import "components/case-studies";
+@import "components/testimonials";
+@import "components/services";
+@import "components/tabs";
+@import "components/about";
+@import "components/blog";
+@import "components/footer";
+@import "components/faq";
+@import "components/call";

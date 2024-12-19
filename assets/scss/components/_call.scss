@@ -1,0 +1,55 @@
+.call-section {
+  padding-top: 35px;
+  padding-bottom: 70px;
+
+  @include respond-to(md) {
+    padding-top: 56px;
+    padding-bottom: 112px;
+  }
+
+  @include respond-to(lg) {
+    padding-top: 80px;
+    padding-bottom: 160px;
+  }
+}
+
+.call-wrapper {
+  text-align: center;
+  background-image: url("../images/BG-shadow.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  padding: 50px 0;
+  box-shadow: 0px 28px 8px rgba($black, 0.2);
+  position: relative;
+  border-radius: 36px;
+
+  @include respond-to(md) {
+    padding: 77px 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    inset: 1px 0px;
+    border-radius: 36px;
+    padding: 1.5px;
+    mask:
+      linear-gradient($white 0 0) content-box,
+      linear-gradient($white 0 0);
+    background: linear-gradient(166deg, rgba($white, 0.5) 0%, rgba($white, 0) 40%, rgba($white, 0.1) 60%, rgba($white, 0.2) 100%);
+    mask-composite: exclude;
+  }
+
+  .h2 {
+    padding-bottom: 40px;
+    max-width: 74%;
+    margin: 0 auto;
+
+    @include respond-to(md) {
+      padding-bottom: 60px;
+      max-width: 67%;
+    }
+  }
+}

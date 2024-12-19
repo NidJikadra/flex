@@ -1,0 +1,92 @@
+.trusted-section {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  padding: 20px 0;
+  border-top: 1px solid #252222;
+  border-bottom: 1px solid #252222;
+  overflow: hidden;
+
+  @include respond-to(md) {
+    padding: 33px 0;
+  }
+}
+
+.trustred-slider {
+  @include flex;
+  gap: 25px;
+  align-items: center;
+
+  @include respond-to(md) {
+    gap: 50px;
+  }
+}
+
+.sub-title {
+  font-family: $font-medium;
+  color: $secondary-color;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 3px;
+  margin: 0;
+  white-space: nowrap;
+
+  @include respond-to(md) {
+    font-size: 20px;
+    letter-spacing: 5px;
+  }
+}
+
+.slider {
+  @include flex;
+  align-items: center;
+  width: max-content;
+  margin-right: 45px;
+  gap: 45px;
+  animation: scroll 20s linear infinite;
+  will-change: transform;
+
+  @include respond-to(md) {
+    margin-right: 90px;
+    gap: 90px;
+  }
+
+  img {
+    max-width: 70px;
+    height: auto;
+    object-fit: contain;
+
+    @include respond-to(md) {
+      max-width: 100px;
+    }
+  }
+
+  &:hover {
+    animation-play-state: paused;
+  }
+}
+
+.slider-wrapper {
+  white-space: nowrap;
+  overflow: hidden;
+  width: 80%;
+  position: relative;
+  mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 25%, rgb(0, 0, 0) 75%, rgba(0, 0, 0, 0) 100%);
+  -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 25%, rgb(0, 0, 0) 75%, rgba(0, 0, 0, 0) 100%);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-100% - 45px));
+  }
+
+  @include respond-to(md) {
+    100% {
+      transform: translateX(calc(-100% - 90px));
+    }
+  }
+}

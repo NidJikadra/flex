@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-regular;
+  background-color: $light-black;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 20px;
+  scroll-behavior: smooth;
+
+  @include respond-to(md) {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  @include respond-to(lg) {
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.3s;
+  color: $primary-color;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+p {
+  margin: 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 1em;
+  width: 100%;
+
+  @include respond-to(lg) {
+    max-width: 1024px;
+  }
+
+  @include respond-to(xl) {
+    max-width: 1200px;
+  }
+
+  @include respond-to(xxl) {
+    max-width: 1440px;
+  }
+}
