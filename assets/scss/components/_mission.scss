@@ -1,0 +1,38 @@
+.our-mission,
+.our-team-section {
+  .row {
+    @include flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding-top: 40px;
+  }
+}
+
+.mission {
+  &-block {
+    background-color: #1b1b1b;
+    border-radius: 36px;
+    padding: 50px;
+    text-align: center;
+    flex: 1;
+
+    &.last-mission-block {
+      background-color: #121315;
+    }
+  }
+
+  &-title {
+    font-family: $font-medium;
+    font-size: clamp(1.25rem, 0.7358rem + 2.5157vw, 3rem);
+    line-height: clamp(1.5rem, 0.9124rem + 2.8751vw, 3.5rem);
+    color: $primary-color;
+    margin: 20px 0;
+  }
+}
+
+.video-image {
+  width: 72px;
+  height: 72px;
+  @include flex(row, center, center);
+  margin: auto;
+}

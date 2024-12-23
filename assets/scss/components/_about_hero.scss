@@ -1,0 +1,57 @@
+.hero-section {
+  &.about-hero {
+    background-image: url("../images/about-hero.png");
+    height: auto;
+    display: block;
+    padding: 124px 0 80px;
+
+    .row {
+      @include flex;
+      gap: 20px;
+      width: 76%;
+      padding-top: 80px;
+    }
+
+    .about-column {
+      margin-left: 15px;
+    }
+
+    .count-text {
+      font-size: 24px;
+      line-height: 36px;
+      color: #a4a4a4;
+      letter-spacing: 0.36px;
+    }
+
+    .info {
+      padding-bottom: 0;
+      margin-left: -15px;
+
+      &::before {
+        content: "";
+        border: 3px solid #003aff;
+        border-radius: 50px;
+        height: 23px;
+        display: inline-block;
+        margin-right: 10px;
+      }
+    }
+
+    .h2 {
+      margin: 32px 0;
+    }
+  }
+}
+
+.about-hero-wrapper {
+  padding-top: 100px;
+  width: 51%;
+}
+
+// Add this to _variables.scss if not already there
+// $secondary-color: #c1cfff;
+
+// Add this to _utilities.scss if not already there
+.blue-text {
+  color: $secondary-color;
+}

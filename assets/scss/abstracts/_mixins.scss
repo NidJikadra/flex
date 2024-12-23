@@ -7,17 +7,96 @@
   }
 }
 
+// Container mixin
+@mixin make-container() {
+  width: 100%;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  margin-right: auto;
+  margin-left: auto;
+
+  @each $breakpoint, $width in $container-max-widths {
+    @include respond-to($breakpoint) {
+      max-width: $width;
+    }
+  }
+}
+
 // Flexbox mixins
-@mixin flex($direction: row, $justify: flex-start, $align: stretch) {
+@mixin flex($direction: row, $justify: flex-start, $align: stretch, $wrap: nowrap) {
   display: flex;
   flex-direction: $direction;
   justify-content: $justify;
   align-items: $align;
+  flex-wrap: $wrap;
 }
 
 // Grid mixins
-@mixin grid($columns: 1, $gap: 0) {
+@mixin grid($columns: 1, $gap: 1rem) {
   display: grid;
   grid-template-columns: repeat($columns, 1fr);
   gap: $gap;
+}
+
+// Responsive grid columns
+@mixin grid-columns($cols-mobile: 1, $cols-tablet: 2, $cols-desktop: 3, $gap: 1rem) {
+  display: grid;
+  gap: $gap;
+  grid-template-columns: repeat($cols-mobile, 1fr);
+
+  @include respond-to(md) {
+    grid-template-columns: repeat($cols-tablet, 1fr);
+  }
+
+  @include respond-to(lg) {
+    grid-template-columns: repeat($cols-desktop, 1fr);
+  }
+}
+
+// Typography scaling
+@mixin fluid-type($min-font-size, $max-font-size, $min-vw: 320px, $max-vw: 1200px) {
+  font-size: $min-font-size;
+
+  @media screen and (min-width: $min-vw) {
+    font-size: calc(#{$min-font-size} + #{strip-unit($max-font-size - $min-font-size)} * ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)}));
+  }
+
+  @media screen and (min-width: $max-vw) {
+    font-size: $max-font-size;
+  }
+}
+
+// Helper function to strip units
+@function strip-unit($value) {
+  @return $value / ($value * 0 + 1);
+}
+
+// Hide content visually but keep it accessible for screen readers
+@mixin visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+// Button base styles
+@mixin button-base {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
 }

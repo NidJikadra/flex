@@ -1,0 +1,47 @@
+.our-team-section {
+  .row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.team-card {
+  border: 1px solid #212121;
+  border-radius: 24px;
+  padding: 10px;
+  gap: 10px;
+  @include flex(column);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 2px 1px 24px 6px rgba($black, 0.6);
+
+  &:hover {
+    background-color: #1b1b1b;
+    box-shadow: 0px 28px 8px rgba($black, 0.2);
+  }
+
+  img {
+    border: 1px solid #212121;
+    box-shadow: 2px 1px 24px 6px rgba($black, 0.6);
+  }
+
+  .member-position {
+    font-family: $font-light;
+    font-size: 18px;
+    line-height: 24px;
+    color: $secondary-color;
+    margin-top: auto;
+  }
+}
+
+.card-content {
+  padding: 22px;
+  background-color: #121315;
+  color: $primary-color;
+  border-radius: 16px;
+  text-align: center;
+  @include flex(column);
+  height: 100%;
+  border: 1px solid #212121;
+  box-shadow: 2px 1px 24px 6px rgba($black, 0.6);
+}

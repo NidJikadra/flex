@@ -1,22 +1,28 @@
 .service-section {
-  padding: 35px 0;
+  padding: 2rem 0;
+  background-color: $light-black;
 
   @include respond-to(md) {
-    padding: 56px 0;
+    padding: 3.5rem 0;
   }
 
   @include respond-to(lg) {
-    padding: 80px 0;
+    padding: 5rem 0;
   }
 
+  .container {
+    @include make-container();
+  }
+
+  // Section layout
   .row {
     @include flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 1.25rem;
 
     @include respond-to(md) {
-      gap: 40px;
-      align-items: center;
+      gap: 2.5rem;
+      align-items: stretch;
       justify-content: center;
     }
   }
@@ -25,15 +31,16 @@
     width: 100%;
 
     @include respond-to(lg) {
-      width: calc(50% - 20px);
+      width: calc(50% - 1.25rem);
       @include flex(column);
-      gap: 40px;
+      gap: 2.5rem;
     }
   }
 
   .bottom {
     display: flex;
-    margin: 24px auto 0;
+    margin: 1.5rem auto 0;
+    justify-content: center;
 
     @include respond-to(lg) {
       display: none;
@@ -41,14 +48,16 @@
   }
 }
 
+// Service Card
 .service-card {
   background-color: #121315;
   color: #cfcfcf;
-  border-radius: 36px;
+  border-radius: 2.25rem;
   position: relative;
   cursor: pointer;
   border: 1px solid transparent;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease;
+  height: 100%;
 
   &:hover {
     box-shadow: rgba($black, 0.6) 4px 5px 10px 4px;
@@ -59,7 +68,7 @@
       content: "";
       position: absolute;
       inset: 0;
-      border-radius: 36px;
+      border-radius: 2.25rem;
       background: linear-gradient(128deg, rgba($white, 0.3) 0%, rgba($white, 0) 40%, rgba($white, 0) 60%, rgba($white, 0.1) 100%);
       padding: 1.5px;
       mask:
@@ -71,32 +80,69 @@
 }
 
 .service-block {
-  padding: 24px 24px 0;
+  padding: 1.5rem 1.5rem 0;
 
   @include respond-to(md) {
-    padding: 40px 40px 0;
+    padding: 2.5rem 2.5rem 0;
   }
 }
 
 .service-text {
   font-family: $font-light;
-  font-size: 16px;
-  line-height: 26px;
+  @include fluid-type(1rem, 1.125rem);
+  line-height: 1.6;
   letter-spacing: 0.36px;
   color: #cfcfcf;
-  margin: 24px 0;
+  margin: 1.5rem 0;
 
   @include respond-to(md) {
-    font-size: 18px;
-    line-height: 28px;
-    margin: 36px 0;
+    margin: 2.25rem 0;
   }
 }
 
-.service-card .read-more {
+.read-more {
+  @include flex(row, flex-start, center);
+  gap: 0.5rem;
+  padding: 1rem 1.5rem;
   color: $primary-color;
+  font-family: $font-medium;
+  transition: gap 0.3s ease;
 
   &::after {
+    content: "";
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
     background-image: url("../images/icons/white-arrow.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: transform 0.3s ease;
+  }
+
+  &:hover {
+    gap: 0.75rem;
+
+    &::after {
+      transform: translateX(4px);
+    }
+  }
+}
+
+// View more button for mobile
+.view-more-btn {
+  @include button-base;
+  width: 100%;
+  max-width: 20rem;
+  margin: 2rem auto 0;
+  background-color: transparent;
+  border: 1px solid $secondary-color;
+  color: $white;
+
+  @include respond-to(lg) {
+    display: none;
+  }
+
+  &:hover {
+    background-color: rgba($secondary-color, 0.1);
   }
 }
