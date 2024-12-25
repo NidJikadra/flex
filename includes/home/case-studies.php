@@ -5,9 +5,9 @@
 ?>
 <section class="case-studies-section ">
             <div class="container">
-                <div class="page-title">
+                <div class="section-title">
                     <div class="title-wrapper">
-                        <h6 class="sub-title">case studies</h6>
+                        <h6 class="sub-title">Case Studies</h6>
                         <h2 class="h2">Our Work in Action</h2>
                     </div>
                     <button type="button" class="button btn-primary">See all case studies</button>

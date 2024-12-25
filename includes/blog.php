@@ -22,7 +22,7 @@ $blog_posts = [
 
 <section class="blog-section">
             <div class="container">
-                <div class="page-title">
+                <div class="section-title">
                     <div class="title-wrapper">
                         <h3 class="sub-title">Insights</h3>
                         <h2 class="h2">Blog & Articles</h2>

@@ -62,6 +62,30 @@
   height: 200px;
   width: 100%;
   @include flex(row, center, center);
+  
+  &.block1 {
+    background-image: url('../images/Secure-information.png');
+  }
+
+  &.block2 {
+    background-image: url('../images/Tailored-solutions.png');
+  }
+
+  &.block3 {
+    background-image: url('../images/partnership.png');
+  }
+
+  &.block4 {
+    background-image: url('../images/Project.png');
+  }
+
+  &.block5 {
+    background-image: url('../images/communication.png');
+  }
+
+  &.block6 {
+    background-image: url('../images/experts.png');
+  }
 
   @include respond-to(md) {
     height: 250px;
@@ -100,7 +124,7 @@
 }
 
 .summary-text {
-  color: #a4a4a4;
+  color: $gray-color;
   font-size: 16px;
   line-height: 26px;
   margin-top: 15px;

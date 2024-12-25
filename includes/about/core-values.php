@@ -12,7 +12,7 @@
                 </div>
                 <div class="core-values-wrapper">
                     <div class="value" data-image="image-1">
-                        <span class="number blue-text">01</span>
+                        <span class="number text-blue">01</span>
                       <div class="value-text">
                             <h3 class="h3">Innovation</h3>
                             <p class="description">We are committed to pushing the boundaries of what’s possible, constantly exploring new frontiers in AI and Web3 technologies.</p>
@@ -22,7 +22,7 @@
                         </div>
                     </div>
                     <div class="value active" data-image="image-2">
-                        <span class="number blue-text">02</span>
+                        <span class="number text-blue">02</span>
                         <div class="value-text">
                             <h3 class="h3">Integrity</h3>
                             <p class="description">Honesty and transparency are at the heart of our operations, ensuring trust and reliability in everything we do.</p>
@@ -32,7 +32,7 @@
                         </div>
                     </div>
                     <div class="value" data-image="image-3">
-                        <span class="number blue-text">03</span>
+                        <span class="number text-blue">03</span>
                         <div class="value-text">
                             <h3 class="h3">Impact</h3>
                             <p class="description">Our focus is on making a meaningful difference, leveraging technology to address real-world challenges and improve lives.</p>
@@ -42,7 +42,7 @@
                         </div>
                     </div>
                     <div class="value" data-image="image-4">
-                        <span class="number blue-text">04</span>
+                        <span class="number text-blue">04</span>
                         <div class="value-text">
                             <h3 class="h3">Collaboration</h3>
                             <p class="description">We believe in the power of teamwork, fostering a culture where diverse ideas come together to create superior solutions.</p>

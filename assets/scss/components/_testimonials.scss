@@ -64,23 +64,14 @@
     padding: 45px 48px;
   }
 
-  &:hover {
-    box-shadow: rgba($black, 0.6) 4px 5px 10px 4px;
-    position: relative;
-    z-index: 1;
+
 
     &::before {
       content: "";
       position: absolute;
       inset: 0;
       border-radius: 36px;
-      background: linear-gradient(128deg, rgba($white, 0.3) 0%, rgba($white, 0) 40%, rgba($white, 0) 60%, rgba($white, 0.1) 100%);
-      padding: 1.5px;
-      mask:
-        linear-gradient($white 0 0) content-box,
-        linear-gradient($white 0 0);
-      mask-composite: exclude;
-    }
+     
   }
 
   img {
@@ -112,7 +103,7 @@
 }
 
 .description {
-  color: #a4a4a4;
+  color: $gray-color;
   font-family: $font-light;
   font-size: 16px;
   letter-spacing: 0.32px;
@@ -139,9 +130,6 @@
     width: 360px;
   }
 
-  &:hover {
-    transform: translateY(-4px);
-  }
 }
 
 .image-border {
@@ -153,22 +141,12 @@
 
 // Title block
 .name-block {
-  margin-bottom: 24px;
-
-  @include respond-to(md) {
-    margin-bottom: 32px;
-  }
-
-  @include respond-to(lg) {
-    margin-bottom: 40px;
-  }
+ align-content: center;
 
   .sub-title {
     color: $secondary-color;
     font-family: $font-medium;
-    font-size: 16px;
     text-transform: uppercase;
-    letter-spacing: 0.8px;
     margin-bottom: 8px;
   }
 

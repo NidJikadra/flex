@@ -1,15 +1,12 @@
 .call-section {
-  padding-top: 35px;
-  padding-bottom: 70px;
+  padding: 35px 0;
 
   @include respond-to(md) {
-    padding-top: 56px;
-    padding-bottom: 112px;
+    padding: 56px 0;
   }
 
   @include respond-to(lg) {
-    padding-top: 80px;
-    padding-bottom: 160px;
+    padding: 80px 0;
   }
 }
 
@@ -40,6 +37,8 @@
       linear-gradient($white 0 0);
     background: linear-gradient(166deg, rgba($white, 0.5) 0%, rgba($white, 0) 40%, rgba($white, 0.1) 60%, rgba($white, 0.2) 100%);
     mask-composite: exclude;
+    pointer-events: none;
+
   }
 
   .h2 {
@@ -51,5 +50,9 @@
       padding-bottom: 60px;
       max-width: 67%;
     }
+  }
+
+  .button {
+    margin: 0 auto;
   }
 }

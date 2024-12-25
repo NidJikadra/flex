@@ -6,8 +6,8 @@
 <section class="hero-section about-hero">
     <div class="container">
         <div class="about-hero-wrapper"> 
-            <h6 class="sub-title"><span class="white-text">About us</span></h6>
-                    <h2 class="h2"><span class="blue-text">The</span> India's Leading <span class="blue-text">Digital Experience </span>Agency</h2>
+            <h6 class="sub-title"><span class="text-white">About us</span></h6>
+                    <h2 class="h2"><span class="text-blue">The</span> India's Leading <span class="text-blue">Digital Experience </span>Agency</h2>
                     <p class="review-text desc">Our team consists of worldwide, innovative design and programming fanatics.</p>
                     <button type="button" class="button btn-secondary">Connect With Our Story<span class="icon"></span></button>
                     <div class="row">

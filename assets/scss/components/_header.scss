@@ -1,6 +1,6 @@
 .main-header {
   background-color: transparent;
-  position: fixed;
+  position: absolute;
   z-index: 99;
   right: 0;
   left: 0;
@@ -13,9 +13,13 @@
     box-shadow: 0 2px 10px rgba($black, 0.1);
   }
 
-  .container {
-    @include make-container();
+  &.active {
+    background-color: $light-black;
   }
+
+  // .container {
+  //   @include make-container();
+  // }
 }
 
 .navbar {
@@ -35,17 +39,8 @@
   }
 
   .logo {
-    display: block;
+    display: flex;
     z-index: 100;
-
-    img {
-      height: 32px;
-      width: auto;
-
-      @include respond-to(md) {
-        height: 40px;
-      }
-    }
   }
 }
 

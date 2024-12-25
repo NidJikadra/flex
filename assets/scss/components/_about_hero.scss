@@ -19,7 +19,7 @@
     .count-text {
       font-size: 24px;
       line-height: 36px;
-      color: #a4a4a4;
+      color: $gray-color;
       letter-spacing: 0.36px;
     }
 
@@ -52,6 +52,6 @@
 // $secondary-color: #c1cfff;
 
 // Add this to _utilities.scss if not already there
-.blue-text {
+.text-blue {
   color: $secondary-color;
 }

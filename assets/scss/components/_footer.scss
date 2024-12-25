@@ -2,9 +2,15 @@ footer {
   color: $primary-color;
   padding: 40px 0 20px;
   border-top: 1px solid #1b1b1b;
+  margin: 35px 0 0;
 
   @include respond-to(md) {
     padding: 60px 0 25px;
+    margin: 56px 0 0;
+  }
+
+  @include respond-to(lg) {
+    margin: 80px 0 0;
   }
 
   .column {
@@ -77,8 +83,11 @@ footer {
   }
 
   &-text {
-    font-size: 18px;
-    line-height: 28px;
+    font-family: $font-light;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: 0.36px;
+    color: $gray-color;
   }
 
   &-column-text {

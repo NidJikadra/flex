@@ -51,7 +51,7 @@
     </div>
 </footer>
 
-<script src="/assets/js/main.js" type="module"></script>
+<script src="./assets/js/main.js" type="module"></script>
 <script src="https://cdn.jsdelivr.net/npm/motion@11.11.13/dist/motion.js"></script>
 <script>
     const { animate, scroll } = Motion;

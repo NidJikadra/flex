@@ -74,7 +74,7 @@
   }
 
   &-header {
-    color: #a4a4a4;
+    color: $gray-color;
     font-family: $font-light;
     cursor: pointer;
     @include flex(row, space-between, center);

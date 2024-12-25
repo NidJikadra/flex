@@ -1,14 +1,14 @@
 .hero-section {
   position: relative;
-  min-height: 100svh;
+  min-height: 100vh;
   padding: 4rem 0;
   background-color: $light-black;
 
-  .container {
-    @include make-container();
-    position: relative;
-    z-index: 2;
-  }
+  // .container {
+  //   @include make-container();
+  //   position: relative;
+  //   z-index: 2;
+  // }
 
   &::before {
     content: "";
@@ -44,6 +44,7 @@
   &.about-hero {
     &::before {
       background-image: url("../images/about-hero.png");
+      width: auto
     }
 
     .row {
@@ -71,7 +72,7 @@
     .count-text {
       @include fluid-type(1.125rem, 1.5rem);
       line-height: 1.6;
-      color: #a4a4a4;
+      color: $gray-color;
       letter-spacing: 0.36px;
     }
   }
@@ -89,7 +90,7 @@
 
   .hero-description {
     @include fluid-type(1rem, 1.25rem);
-    color: #a4a4a4;
+    color: $gray-color;
     line-height: 1.6;
     margin-bottom: 2rem;
     max-width: 85ch;
@@ -161,17 +162,15 @@
 
     .stat-label {
       @include fluid-type(0.875rem, 1rem);
-      color: #a4a4a4;
+      color: $gray-color;
       line-height: 1.4;
     }
   }
 }
 
 .hero-wrapper {
-  text-align: center;
   padding: 24px 0;
   max-width: 90%;
-  margin: 0 auto;
   position: relative;
   z-index: 2;
 
@@ -181,7 +180,7 @@
   }
 
   @include respond-to(lg) {
-    padding: 80px 0;
+    padding: 137px 0;
     max-width: 800px;
   }
 }
@@ -273,7 +272,7 @@
   }
 }
 
-.white-text {
+.text-white {
   color: $primary-color;
 }
 

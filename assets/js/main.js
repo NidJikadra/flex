@@ -55,7 +55,6 @@ function showMegaMenu() {
   header.classList.add('active'); 
 
 }
-
 function hideMegaMenu() {
   header.classList.remove('active'); 
 }

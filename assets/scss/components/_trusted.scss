@@ -7,6 +7,7 @@
   border-top: 1px solid #252222;
   border-bottom: 1px solid #252222;
   overflow: hidden;
+  z-index: 1;
 
   @include respond-to(md) {
     padding: 33px 0;
@@ -39,23 +40,15 @@
 }
 
 .slider {
-  @include flex;
-  align-items: center;
-  width: max-content;
-  margin-right: 45px;
-  gap: 45px;
+  display: flex;
   animation: scroll 20s linear infinite;
   will-change: transform;
-
-  @include respond-to(md) {
-    margin-right: 90px;
-    gap: 90px;
-  }
 
   img {
     max-width: 70px;
     height: auto;
     object-fit: contain;
+    margin-right: 90px;
 
     @include respond-to(md) {
       max-width: 100px;
@@ -68,9 +61,8 @@
 }
 
 .slider-wrapper {
-  white-space: nowrap;
   overflow: hidden;
-  width: 80%;
+  width: 100%;
   position: relative;
   mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 25%, rgb(0, 0, 0) 75%, rgba(0, 0, 0, 0) 100%);
   -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 25%, rgb(0, 0, 0) 75%, rgba(0, 0, 0, 0) 100%);
@@ -81,12 +73,12 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(calc(-100% - 45px));
+    transform: translateX(calc(-50%));
   }
 
   @include respond-to(md) {
     100% {
-      transform: translateX(calc(-100% - 90px));
+      transform: translateX(calc(-50%));
     }
   }
 }

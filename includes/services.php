@@ -10,10 +10,10 @@
 
   <section class="service-section">
             <div class="container">
-                <div class="page-title">
+                <div class="section-title">
                     <div class="title-wrapper">
-                        <h3 class="sub-title">our services</h3>
-                        <h2 class="h2">Covering all Your Needs</h2>
+                        <h3 class="sub-title">Our Services</h3>
+                        <h2 class="h2">Covering All Your Needs</h2>
                     </div>
                     <button type="button" class="button btn-primary">View all services</button>
                 </div>

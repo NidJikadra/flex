@@ -12,6 +12,9 @@
                     <?php for($i = 1; $i <= 6; $i++) : ?>
                         <img src="assets/images/Card<?php echo $i; ?>.png" alt="Logo <?php echo $i; ?>">
                     <?php endfor; ?>
+                    <?php for($i = 1; $i <= 6; $i++) : ?>
+                        <img src="assets/images/Card<?php echo $i; ?>.png" alt="Logo <?php echo $i; ?>">
+                    <?php endfor; ?>
                 </div>
             </div>
         </div>
