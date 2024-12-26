@@ -9,7 +9,7 @@
     padding: 80px 0;
   }
 
-  .row {
+  &__row {
     @include flex;
     flex-wrap: wrap;
   }
@@ -29,6 +29,12 @@
   }
 }
 
+.column-II .testimonial-wrapper {
+  @media (max-width: 1440px) {
+    width: 100%;
+  }
+}
+
 .sub-column {
   @include flex;
   width: 100%;
@@ -38,17 +44,23 @@
     width: 50%;
     flex-wrap: nowrap;
   }
+  @media (max-width: 1440px) {
+    width: 100%;
+  }
 }
 
 .last-block {
   width: 100%;
 
   @include respond-to(md) {
-    width: 70%;
+    width: 100%;
   }
 
   @include respond-to(lg) {
     width: 50%;
+  }
+  @media (max-width: 1440px) {
+    width: 100%;
   }
 }
 
@@ -64,14 +76,11 @@
     padding: 45px 48px;
   }
 
-
-
-    &::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      border-radius: 36px;
-     
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 36px;
   }
 
   img {
@@ -83,13 +92,13 @@
     }
   }
 
-  .name {
+  &__name {
     color: $secondary-color;
     font-family: $font-medium;
     padding: 15px 0;
   }
 
-  .position {
+  &__position {
     font-family: $font-light;
     color: $primary-color;
     font-size: 14px;
@@ -102,7 +111,7 @@
   }
 }
 
-.description {
+.testimonial-section__description {
   color: $gray-color;
   font-family: $font-light;
   font-size: 16px;
@@ -122,14 +131,16 @@
 
 .review-card-image {
   width: 100%;
-  margin: 0 auto;
   cursor: pointer;
   transition: transform 0.3s ease;
 
   @include respond-to(md) {
-    width: 360px;
+    width: 545px;
   }
 
+  @include respond-to(xxl) {
+    width: 360px;
+  }
 }
 
 .image-border {
@@ -139,18 +150,19 @@
   display: block;
 }
 
-// Title block
+// Title
 .name-block {
- align-content: center;
+  align-content: center;
+  margin-bottom: 30px;
+  @include respond-to(lg) {
+    margin-bottom: 0;
+  }
 
-  .sub-title {
-    color: $secondary-color;
-    font-family: $font-medium;
-    text-transform: uppercase;
+  &__sub-title {
     margin-bottom: 8px;
   }
 
-  .h2 {
+  &__heading {
     color: $white;
   }
 }

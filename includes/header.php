@@ -26,7 +26,8 @@ ob_start();
         <div class="container">
             <nav class="navbar">
                 <a href="./" class="logo">
-                    <img src="assets/images/icons/Logo.svg" alt="Logo" width="124" height="32">
+                    <img src="assets/images/icons/Logo.svg" alt="Logo" width="124" height="32" class="logo-default">
+                    <img src="assets/images/icons/Logo-mobile.svg" alt="Logo Large" width="200" height="50" class="logo-lg">
                 </a>
                 <div class="navbar-list">
                     <ul class="nav-list">
@@ -175,7 +176,7 @@ ob_start();
                     </ul>
                     
                     <button type="button" class="button btn-primary" aria-label="contact-button">Contact now</button>
-                    <button type="button" class="menu-icon-btn d-none" aria-label="menu-button"></button>
+                    <button type="button" class="menu-icon-btn" aria-label="menu-button"></button>
                     <ul class="nav-list mobile-menu">
                         <li><a href="#">Company</a></li>
                         <li class="dropdown"><a href="#">Services</a></li>

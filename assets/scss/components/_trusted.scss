@@ -1,13 +1,10 @@
 .trusted-section {
-  position: absolute;
-  right: 0;
-  left: 0;
-  bottom: 0;
   padding: 20px 0;
   border-top: 1px solid #252222;
   border-bottom: 1px solid #252222;
   overflow: hidden;
-  z-index: 1;
+  z-index: 10;
+  position: relative;
 
   @include respond-to(md) {
     padding: 33px 0;
@@ -21,21 +18,6 @@
 
   @include respond-to(md) {
     gap: 50px;
-  }
-}
-
-.sub-title {
-  font-family: $font-medium;
-  color: $secondary-color;
-  text-transform: uppercase;
-  font-size: 14px;
-  letter-spacing: 3px;
-  margin: 0;
-  white-space: nowrap;
-
-  @include respond-to(md) {
-    font-size: 20px;
-    letter-spacing: 5px;
   }
 }
 

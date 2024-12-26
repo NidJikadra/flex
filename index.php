@@ -6,7 +6,7 @@ include 'includes/header.php';
 <main>
     <?php
     include 'includes/home/hero.php';
-    include 'includes/trusted.php';
+    // include 'includes/trusted.php';
     include 'includes/home/case-studies.php';
     include 'includes/testimonials.php';
     include 'includes/services.php';

@@ -1,4 +1,4 @@
-.case-studies-section {
+.case-studies {
   padding: 35px 0;
 
   @include respond-to(md) {
@@ -9,7 +9,92 @@
     padding: 80px 0;
   }
 
-  .row {
+  &__title {
+    @include flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    align-items: center;
+
+    @include respond-to(lg) {
+      margin-bottom: 60px;
+    }
+  }
+
+  &__background-image {
+    background-image: url("../images/bg-laptop-image.png");
+    background-position: center;
+    border-radius: 36px 36px 240px 36px;
+    position: relative;
+    height: 637px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      inset: -1px -1px -2px;
+      border: 1px solid rgba(#4c4c4c, 0.56);
+      border-radius: 36px 36px 200px 36px;
+    }
+  }
+
+  &__info-wrapper {
+    padding: 25px;
+
+    @include respond-to(lg) {
+      padding: 30px;
+    }
+  }
+
+  &__info {
+    font-family: $font-medium;
+    font-size: clamp(1.25rem, 0.9562rem + 1.4376vw, 2.25rem);
+    line-height: clamp(2rem, 1.6327rem + 1.7969vw, 3.25rem);
+    color: $primary-color;
+    max-width: 75%;
+    padding-bottom: 20px;
+  }
+
+  &__cards {
+    @include flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    position: absolute;
+    bottom: 45px;
+    margin-right: 20px;
+
+    @include respond-to(md) {
+      gap: 50px;
+    }
+  }
+
+  &__info-card {
+    background-color: rgba($white, 0);
+    backdrop-filter: blur(5px);
+    box-shadow: -2px -2px 2px rgba($white, 0.25);
+    border-radius: 24px;
+    display: grid;
+    line-height: 32px;
+    color: #bababa;
+    width: 100%;
+    padding: 24px;
+    gap: 15px;
+
+    @include respond-to(md) {
+      width: 25%;
+      padding: 30px 30px 72px;
+    }
+  }
+
+  &__count {
+    color: $primary-color;
+    font-family: $font-semibold;
+    font-size: 24px;
+
+    @include respond-to(md) {
+      font-size: 36px;
+    }
+  }
+
+  &__row {
     @include flex;
     flex-wrap: wrap;
     gap: 24px;
@@ -28,8 +113,7 @@
     }
   }
 
-  .column-1,
-  .column-2 {
+  &__column {
     width: 100%;
 
     @include respond-to(md) {
@@ -41,161 +125,98 @@
     }
   }
 
-  .bottom {
-    display: flex;
-    margin: 24px auto 0;
-    justify-content: center;
-
-    @include respond-to(lg) {
-      display: none;
-    }
-  }
-}
-
-.info-wrapper {
-  padding: 25px;
-
-  @include respond-to(md) {
-    padding: 35px;
-  }
-
-  @include respond-to(lg) {
-    padding: 50px;
-  }
-}
-
-.info {
-  font-family: $font-medium;
-  font-size: clamp(1.25rem, 0.9562rem + 1.4376vw, 2.25rem);
-  line-height: clamp(2rem, 1.6327rem + 1.7969vw, 3.25rem);
-  color: $primary-color;
-  max-width: 75%;
-  padding-bottom: 20px;
-}
-
-.cards {
-  @include flex;
-  flex-wrap: wrap;
-  gap: 25px;
-  position: absolute;
-  bottom: 45px;
-
-  @include respond-to(md) {
-    gap: 50px;
-  }
-}
-
-.info-card {
-  background-color: rgba($white, 0);
-  backdrop-filter: blur(5px);
-  box-shadow: -2px -2px 2px rgba($white, 0.25);
-  border-radius: 24px;
-  display: grid;
-  line-height: 32px;
-  color: #bababa;
-  width: 100%;
-  padding: 24px;
-  gap: 15px;
-
-  @include respond-to(md) {
-    width: 25%;
-    padding: 30px 30px 72px;
-  }
-}
-
-.count {
-  color: $primary-color;
-  font-family: $font-semibold;
-  font-size: 24px;
-
-  @include respond-to(md) {
-    font-size: 36px;
-  }
-}
-
-.background-image {
-  background-image: url("../images/bg-laptop-image.png");
-  background-position: center;
-  border-radius: 36px 36px 240px 36px;
-  position: relative;
-  height: 400px;
-
-  @include respond-to(md) {
-    height: 500px;
-  }
-
-  @include respond-to(lg) {
-    height: 637px;
-  }
-
-  &::before {
-    content: "";
-    position: absolute;
-    inset: -1px -1px -2px;
-    border: 1px solid rgba(#4c4c4c, 0.56);
-    border-radius: 36px 36px 200px 36px;
-  }
-}
-
-.healthcare-wrapper,
-.travel-wrapper {
-  position: relative;
-  height: 300px;
-  border-radius: 36px;
-
-  @include respond-to(md) {
-    height: 400px;
-  }
-
-  @include respond-to(lg) {
-    height: 480px;
-  }
-
-  .info {
-    max-width: none;
-    font-size: 32px;
-    font-family: $font-regular;
+  &__healthcare-wrapper,
+  &__travel-wrapper {
+    position: relative;
+    height: 300px;
+    border-radius: 36px;
 
     @include respond-to(md) {
-      font-size: 36px;
+      height: 400px;
     }
 
     @include respond-to(lg) {
-      font-size: 42px;
+      height: 480px;
+    }
+
+    &__info {
+      max-width: none;
+      font-size: 32px;
+      font-family: $font-regular;
+
+      @include respond-to(md) {
+        font-size: 36px;
+      }
+
+      @include respond-to(lg) {
+        font-size: 42px;
+      }
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border: 1px solid rgba(#4c4c4c, 0.73);
     }
   }
 
-  &::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    border: 1px solid rgba(#4c4c4c, 0.73);
-  }
-}
-
-.healthcare-wrapper {
-  background: url("../images/Health-card.png") no-repeat center/cover;
-  border-radius: 36px 36px 36px 200px;
-
-  .overlay {
-    background: linear-gradient(211deg, rgba($black, 0.9) 0%, rgba($black, 0) 100%);
+  &__healthcare-wrapper {
+    background: url("../images/Health-card.png") no-repeat center/cover;
     border-radius: 36px 36px 36px 200px;
+
+    .overlay {
+      background: linear-gradient(
+        211deg,
+        rgba($black, 0.9) 0%,
+        rgba($black, 0) 100%
+      );
+      border-radius: 36px 36px 36px 200px;
+    }
+
+    &::before {
+      border-radius: 36px 36px 36px 160px;
+    }
   }
-  
-  &::before {
-    border-radius: 36px 36px 36px 160px;
+
+  &__travel-wrapper {
+    background: url("../images/Travel-card.png") no-repeat center/cover;
+    border-radius: 36px 240px 36px 36px;
+
+    .overlay {
+      background: linear-gradient(
+        224deg,
+        rgba($black, 0) 0%,
+        rgba($black, 0.9) 100%
+      );
+      border-radius: 36px 240px 36px 36px;
+    }
+
+    &::before {
+      border-radius: 36px 190px 36px 36px;
+    }
   }
 }
 
-.travel-wrapper {
-  background: url("../images/Travel-card.png") no-repeat center/cover;
-  border-radius: 36px 240px 36px 36px;
-
-  .overlay {
-    background: linear-gradient(224deg, rgba($black, 0) 0%, rgba($black, 0.9) 100%);
-    border-radius: 36px 240px 36px 36px;
+.case-studies__healthcare-wrapper {
+  .case-studies__info-wrapper {
+    float: right;
+    max-width: 100%;
   }
-  &::before {
-    border-radius: 36px 190px 36px 36px;
+
+  .case-studies__info {
+    max-width: 100%;
+    padding-bottom: 5px;
+  }
+}
+
+.case-studies__travel-wrapper {
+  .case-studies__info-wrapper {
+    position: absolute;
+    bottom: 0;
+  }
+  .case-studies__info {
+    max-width: 100%;
+    padding-bottom: 5px;
   }
 }

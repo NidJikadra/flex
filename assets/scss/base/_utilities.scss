@@ -34,6 +34,21 @@
   }
 }
 
+.sub-title {
+  font-family: $font-medium;
+  color: $secondary-color;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 3px;
+  margin: 0;
+  white-space: nowrap;
+
+  @include respond-to(md) {
+    font-size: 20px;
+    letter-spacing: 5px;
+  }
+}
+
 .read-more{
   color: $secondary-color;
   gap: 10px;

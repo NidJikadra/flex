@@ -10,9 +10,9 @@
     padding: 5rem 0;
   }
 
-  .container {
-    @include make-container();
-  }
+  // .container {
+  //   @include make-container();
+  // }
 
   // Section layout
   .row {
@@ -28,11 +28,11 @@
   }
 
   .column {
-    width: 100%;
+    @include flex(column);
+    gap: 1.5rem;
 
     @include respond-to(lg) {
       width: calc(50% - 1.25rem);
-      @include flex(column);
       gap: 2.5rem;
     }
   }

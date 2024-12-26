@@ -4,6 +4,7 @@
  */
 ?>
 <section class="hero-section">
+    <div class="hero-main">
     <div class="container">
         <div class="hero-wrapper"> 
             <p class="review-text">Loved by founders worldwide</p>
@@ -12,4 +13,16 @@
             <button type="button" class="button btn-secondary">Start Your Projects<span class="icon"></span></button>
         </div>
     </div>
+</div>
+
+    <div class="clients">
+    <?php
+
+include 'includes/trusted.php';
+
+        
+
+?>
+</div>
+ 
 </section> 

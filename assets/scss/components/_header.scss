@@ -25,17 +25,16 @@
 .navbar {
   @include flex(row, space-between, center);
   min-height: 60px;
-  padding: 0.5rem 0;
-  position: relative;
+  padding: 15px 0;
 
   @include respond-to(md) {
     min-height: 70px;
-    padding: 0.75rem 0;
+    padding: 20px 0;
   }
 
   @include respond-to(lg) {
     min-height: 80px;
-    padding: 1rem 0;
+    padding: 25px 0;
   }
 
   .logo {
@@ -183,8 +182,12 @@
     @include flex(row, flex-start, center);
 
     li {
-      padding: 8px 23px;
+      padding: 8px 14px;
       border-radius: 50px;
+
+      @include respond-to(xl) {
+        padding: 8px 23px;
+      }
 
       &:hover,
       &.active {
@@ -211,15 +214,35 @@
   }
 }
 
+.logo-default {
+  display: none;
+}
+
+@include respond-to(lg){
+
+  .logo-default {
+    display: block;
+  }
+  .logo-lg {
+    display: none;
+  }
+}
 // Add this after the nav-list styles
 .navbar-list {
-  @include flex;
   gap: 23px;
 
   @include respond-to(lg) {
     display: flex; // Ensure it's visible on desktop
   }
 }
+.navbar .button {
+  display: none;
+
+  @include respond-to(lg) {
+    display: block;
+  }
+}
+
 
 // Mega Menu
 .mega-menu {
@@ -370,4 +393,19 @@
       border: none;
     }
   }
+}
+
+// Add this CSS for menu-icon-btn
+.menu-icon-btn {
+    background: url("../images/icons/Menu.svg");
+    height: 48px;
+    width: 48px;
+    display: block;
+    border: none;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @include respond-to(lg) { 
+        display: none; // Hide on larger screens
+    }
 }

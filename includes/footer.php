@@ -14,7 +14,7 @@
                 <ul class="social-icons">
                     <?php foreach(SOCIAL_LINKS as $social): ?>
                         <li>
-                            <a href="<?php echo $social['url']; ?>" target="_blank">
+                            <a href="<?php echo htmlspecialchars($social['url'], ENT_QUOTES, 'UTF-8'); ?>" target="_blank" rel="noopener noreferrer">
                                 <?php echo $social['icon']; ?>
                             </a>
                         </li>
@@ -24,10 +24,10 @@
             <div class="second-column">
                 <?php foreach(FOOTER_LINKS as $section): ?>
                     <div class="column-footer">
-                        <p class="footer-title"><?php echo $section['title']; ?></p>
+                        <p class="footer-title"><?php echo htmlspecialchars($section['title'], ENT_QUOTES, 'UTF-8'); ?></p>
                         <ul class="footer-nav">
                             <?php foreach($section['links'] as $link): ?>
-                                <li><a href="<?php echo $link['url']; ?>"><?php echo $link['text']; ?></a></li>
+                                <li><a href="<?php echo htmlspecialchars($link['url'], ENT_QUOTES, 'UTF-8'); ?>"><?php echo htmlspecialchars($link['text'], ENT_QUOTES, 'UTF-8'); ?></a></li>
                             <?php endforeach; ?>
                         </ul>
                     </div>

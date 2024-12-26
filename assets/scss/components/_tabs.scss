@@ -8,15 +8,21 @@
   @include respond-to(lg) {
     padding: 80px 0;
   }
+
+  &__title-wrapper {
+    margin-bottom: 30px;
+
+    @include respond-to(lg) {
+      margin-bottom: 60px
+    }
+  }
 }
 
 .tab-wrapper {
-  margin-top: 20px;
   @include flex(column);
   gap: 30px;
 
   @include respond-to(md) {
-    margin-top: 45px;
     gap: 50px;
   }
 }
@@ -87,12 +93,17 @@
   padding: 10px 0;
   cursor: pointer;
   transition: all 0.4s ease-in-out;
-  flex: 0 0 calc((100% - 60px) / 4);
+  flex: 0 0 calc((100% - (20px * 3)) / 3  );
   border: 1px solid transparent;
 
   @include respond-to(md) {
+    padding: 20px 0;
+    flex: 0 calc((100% - (20px * 3)) / 4)
+  }
+
+  @include respond-to(lg) {
     padding: 30px 0;
-    flex: 0 0 calc((100% - (20px * 6)) / 7);
+    flex: 0 calc((100% - (20px * 6)) / 7);
   }
 
   &:hover {

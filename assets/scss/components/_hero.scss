@@ -1,14 +1,20 @@
 .hero-section {
   position: relative;
-  min-height: 100vh;
-  padding: 4rem 0;
+  min-height: 100dvh;
   background-color: $light-black;
+  @include flex(column, space-between, flex-start);
 
-  // .container {
-  //   @include make-container();
-  //   position: relative;
-  //   z-index: 2;
-  // }
+  .hero-main{
+    width: 100%;
+    height: auto;
+    flex: 1 1 0%;
+    @include flex(column, center, flex-start);
+  }
+
+  .clients{
+    width: 100%;
+    flex-shrink: 0;
+  }
 
   &::before {
     content: "";
@@ -175,12 +181,10 @@
   z-index: 2;
 
   @include respond-to(md) {
-    padding: 40px 0;
     max-width: 600px;
   }
 
   @include respond-to(lg) {
-    padding: 137px 0;
     max-width: 800px;
   }
 }
