@@ -7,6 +7,7 @@
 
     .row {
       @include flex;
+      flex-wrap: wrap;
       gap: 20px;
       width: 76%;
       padding-top: 80px;
@@ -26,6 +27,10 @@
     .info {
       padding-bottom: 0;
       margin-left: -15px;
+      color: $primary-color;
+      font-size: clamp(1.25rem, 0.9562rem + 1.4376vw, 2.25rem);
+      line-height: clamp(2rem, 1.6327rem + 1.7969vw, 3.25rem);
+      font-family: $font-medium;
 
       &::before {
         content: "";

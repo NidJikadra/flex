@@ -46,6 +46,6 @@
                 </div>
             </div>
         </div>
-        <!-- <button type="button" class="button btn-primary bottom">See all case studies</button> -->
+        <button type="button" class="button btn-primary bottom">See all case studies</button>
     </div>
 </section>

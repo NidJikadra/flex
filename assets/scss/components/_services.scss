@@ -37,12 +37,20 @@
     }
   }
 
+  button {
+    display: none;
+
+    @include respond-to(md) {
+      display: block;
+    }
+  }
+
   .bottom {
     display: flex;
     margin: 1.5rem auto 0;
     justify-content: center;
 
-    @include respond-to(lg) {
+    @include respond-to(md) {
       display: none;
     }
   }
@@ -71,9 +79,7 @@
       border-radius: 2.25rem;
       background: linear-gradient(0deg, transparent, #232121);
       padding: 1.5px;
-      mask:
-        linear-gradient($white 0 0) content-box,
-        linear-gradient($white 0 0);
+      mask: linear-gradient($white 0 0) content-box, linear-gradient($white 0 0);
       mask-composite: exclude;
     }
   }

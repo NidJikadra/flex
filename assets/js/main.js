@@ -64,10 +64,9 @@ menuItems.forEach(item => {
   item.addEventListener('mouseleave', hideMegaMenu); 
 });
 
-// new
-
-const values = document.querySelectorAll(".value");
-const images = document.querySelectorAll(".dynamic-image img");
+// Core Values Image Switching
+const values = document.querySelectorAll(".core-values__value");
+const images = document.querySelectorAll(".core-values__dynamic-image img");
 
 values.forEach(value => {
     value.addEventListener("mouseenter", () => {
@@ -88,3 +87,50 @@ values.forEach(value => {
         value.classList.remove("active");
     });
 });
+
+//popup model
+
+document.addEventListener('DOMContentLoaded', () => {
+  const modal = document.getElementById('teamModal');
+  const modalImage = modal.querySelector('.profile-card__image img');
+  const modalName = modal.querySelector('.profile-card__name');
+  const modalPosition = modal.querySelector('.profile-card__position');
+  const modalDescription = modal.querySelector('.description');
+  const closeModalBtn = document.getElementById('closeModal');
+
+  // Open modal on team card click
+  document.querySelectorAll('.team-card').forEach(card => {
+    card.addEventListener('click', () => {
+      const name = card.getAttribute('data-name');
+      const position = card.getAttribute('data-position');
+      const description = card.getAttribute('data-description');
+      const image = card.getAttribute('data-image');
+
+      // Set modal content
+      modalImage.src = image;
+      modalName.textContent = name;
+      modalPosition.textContent = position;
+      modalDescription.textContent = description;
+
+      // Open modal
+      modal.classList.add('open');
+    });
+  });
+
+  // Close modal when close button is clicked
+  closeModalBtn.addEventListener('click', () => {
+    modal.classList.remove('open');
+  });
+
+  // Close modal when clicking outside modal content
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) {
+      modal.classList.remove('open');
+    }
+  });
+});
+
+
+
+
+

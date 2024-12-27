@@ -66,6 +66,24 @@
     }
   }
 
+  button {
+    display: none;
+
+    @include respond-to(md) {
+      display: block;
+    }
+  }
+
+  .bottom {
+    display: flex;
+    margin: 1.5rem auto 0;
+    justify-content: center;
+
+    @include respond-to(md) {
+      display: none;
+    }
+  }
+
   &__info-card {
     background-color: rgba($white, 0);
     backdrop-filter: blur(5px);

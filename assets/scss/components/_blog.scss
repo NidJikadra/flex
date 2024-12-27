@@ -17,11 +17,19 @@
     gap: 20px;
   }
 
+  button {
+    display: none;
+
+    @include respond-to(md) {
+      display: block;
+    }
+  }
+
   .bottom {
     margin: 24px auto 0;
     display: flex;
 
-    @include respond-to(lg) {
+    @include respond-to(md) {
       display: none;
     }
   }
