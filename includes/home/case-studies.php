@@ -7,7 +7,7 @@
     <div class="container">
         <div class="case-studies__title">
             <div class="case-studies__title-wrapper">
-                <h6 class="sub-title">Case Studies</h6>
+                <p class="sub-title">Case Studies</p>
                 <h2 class="case-studies__heading">Our Work in Action</h2>
             </div>
             <button type="button" class="button btn-primary">See all case studies</button>

@@ -8,7 +8,7 @@
  <section class="aboutus-section">
             <div class="container">
                 <div class="title-wrapper">
-                    <h3 class="sub-title">why choose flex</h3>
+                    <p class="sub-title">why choose flex</p>
                     <h2 class="h2">Excellence in Digital Solutions</h2>
                 </div>
                 <div class="row">

@@ -24,7 +24,7 @@ $blog_posts = [
             <div class="container">
                 <div class="section-title">
                     <div class="title-wrapper">
-                        <h3 class="sub-title">Insights</h3>
+                        <p class="sub-title">Insights</p>
                         <h2 class="h2">Blog & Articles</h2>
                     </div>
                     <button type="button" class="button btn-primary">Go to insights</button>

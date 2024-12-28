@@ -7,7 +7,7 @@
 <section class="core-values-section">
     <div class="container">
         <div class="title-wrapper">
-            <h3 class="sub-title">Our Core Values</h3>
+            <p class="sub-title">Our Core Values</p>
             <h2 class="h2">Principles that Shape Our Vision</h2>
         </div>
         <div class="core-values-wrapper">

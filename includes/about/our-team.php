@@ -7,13 +7,13 @@
 <section class="our-team-section">
     <div class="container">
         <div class="title-wrapper">
-            <h3 class="sub-title">our team</h3>
+            <p class="sub-title">our team</p>
             <h2 class="h2">Our People, Our Strength</h2>
         </div>
         <div class="our-team-section__row">
             <div class="team-card" data-name="Jacob Jones" data-position="Founder" data-description="Bessie Cooper is the visionary Team Leader at Flex Solutions, driving innovative design strategies 
                                     and ensuring seamless project execution. With a background in both design and project management, 
-                                    Bessie excels in leading creative teams to deliver exceptional results."
+                                    Bessie excels in leading creative teams to deliver exceptional results." data-skills="Strategic Planning"
                 data-image="assets/images/team-member1(lg).png">
                 <img src="assets/images/team-member1.png" alt="Jacob Jones" width="310" height="300" class="img-border">
                 <div class="card-content">
@@ -22,9 +22,9 @@
                 </div>
 
             </div>
-            <div class="team-card" data-name="Jacob Jones" data-position="Founder" data-description="Bessie Cooper is the visionary Team Leader at Flex Solutions, driving innovative design strategies 
+            <div class="team-card" data-name="Bessie Cooper" data-position="Team Leader" data-description="Bessie Cooper is the visionary Team Leader at Flex Solutions, driving innovative design strategies 
                                     and ensuring seamless project execution. With a background in both design and project management, 
-                                    Bessie excels in leading creative teams to deliver exceptional results."
+                                    Bessie excels in leading creative teams to deliver exceptional results." data-skills="Strategic Planning" 
                 data-image="assets/images/team-member2(lg).png">
                 <img src="assets/images/team-member2.png" alt="Bessie Cooper" width="310" height="300"
                     class="img-border">
@@ -33,9 +33,9 @@
                     <div class="team-card__position">Team Leader</div>
                 </div>
             </div>
-            <div class="team-card" data-name="Jacob Jones" data-position="Founder" data-description="Bessie Cooper is the visionary Team Leader at Flex Solutions, driving innovative design strategies 
+            <div class="team-card" data-name="Marvin McKinney" data-position="UI/UX Designer" data-description="Bessie Cooper is the visionary Team Leader at Flex Solutions, driving innovative design strategies 
                                     and ensuring seamless project execution. With a background in both design and project management, 
-                                    Bessie excels in leading creative teams to deliver exceptional results."
+                                    Bessie excels in leading creative teams to deliver exceptional results." data-skills="Strategic Planning"
                 data-image="assets/images/team-member3(lg).png">
                 <img src="assets/images/team-member3.png" alt="Marvin McKinney" width="310" height="300"
                     class="img-border">
@@ -44,9 +44,9 @@
                     <div class="team-card__position">UI/UX Designer</div>
                 </div>
             </div>
-            <div class="team-card" data-name="Jacob Jones" data-position="Founder" data-description="Bessie Cooper is the visionary Team Leader at Flex Solutions, driving innovative design strategies 
+            <div class="team-card" data-name="Savannah Nguyen" data-position="Software Developer" data-description="Bessie Cooper is the visionary Team Leader at Flex Solutions, driving innovative design strategies 
                                     and ensuring seamless project execution. With a background in both design and project management, 
-                                    Bessie excels in leading creative teams to deliver exceptional results."
+                                    Bessie excels in leading creative teams to deliver exceptional results." data-skills="Strategic Planning"
                 data-image="assets/images/team-member4(lg).png">
                 <img src="assets/images/team-member4.png" alt="Savannah Nguyen" width="310" height="300"
                     class="img-border">
@@ -57,16 +57,16 @@
             </div>
         </div>
         <div class="modal" id="teamModal">
-            <div class="modal-content">
-                <span class="close-btn" id="closeModal">&times;</span>
+            <div class="container">
                 <div class="profile-card">
+                    <span class="close-btn" id="closeModal">&times;</span>
                     <div class="profile-card__image">
                         <img src="assets/images/team-member1(lg).png" alt="Jacob Jones" width="690" height="781"
                             class="img-border">
                     </div>
                     <div class="profile-card__content">
 
-                        <h6 class="profile-card__position">Team Leader</h6>
+                        <p class="profile-card__position">Team Leader</p>
                         <h3 class="profile-card__name">Bessie Cooper</h3>
                         <p class="description">
                             Bessie Cooper is the visionary Team Leader at Flex Solutions, driving innovative design
@@ -105,9 +105,9 @@
                         </ul>
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
     </div>
 </section>
-<!-- Popup Modal -->

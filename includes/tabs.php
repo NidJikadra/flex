@@ -81,7 +81,7 @@ $tabs = [
 <section class="tab-section">
     <div class="container">
         <div class="tab-section__title-wrapper">
-            <h3 class="sub-title">Technologies we use</h3>
+            <p class="sub-title">Technologies we use</p>
             <h2 class="tab-section__heading">Our Services with Advanced Tools</h2>
         </div>
         <div class="tab-wrapper"> 

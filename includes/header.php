@@ -99,7 +99,7 @@ ob_start();
                             </div>
                         </li>
                         <li class="dropdown menu-item">
-                            <a href="#">Case Studies</a>
+                            <a href="case-study.php">Case Studies</a>
                             <div class="mega-menu">
                                 <div class="mega-menu-wrapper">
                                     <div class="grid-menu">
@@ -171,7 +171,7 @@ ob_start();
                                 </div>
                             </div>
                         </li>
-                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="contactus">Contact Us</a></li>
                         <li><a href="#">Blogs</a></li>
                     </ul>
                     

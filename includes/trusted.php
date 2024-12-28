@@ -6,7 +6,7 @@
 <section class="trusted-section">
     <div class="container">
         <div class="trustred-slider">
-            <h6 class="sub-title">Trusted By</h6>
+            <p class="sub-title">Trusted By</p>
             <div class="slider-wrapper">
                 <div class="slider">
                     <?php for($i = 1; $i <= 6; $i++) : ?>

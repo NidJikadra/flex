@@ -98,6 +98,23 @@
     transition: all 0.4s ease-in-out;
   }
 }
+// to show button end of section
+button {
+  display: none;
+  @include respond-to(md) {
+    display: block;
+  }
+}
+
+.bottom {
+  margin: 24px auto 0;
+  display: flex;
+
+  @include respond-to(md) {
+    display: none;
+  }
+}
+
 
 .overlay {
   position: absolute;

@@ -41,7 +41,7 @@ $faqs = [
     <div class="container">
         <div class="faq-section__row"> 
             <div class="faq-section__column-1">
-                <h6 class="sub-title">FAQ</h6>
+                <p class="sub-title">FAQ</p>
                 <h2 class="faq-section__heading">Frequently Asked Questions</h2>
                 <p class="faq-section__content">Find quick answers to common questions in our FAQ section. For more help, contact our support team anytime—we're here to assist.</p>
                 <button type="button" class="button btn-secondary">Contact Us<span class="icon"></span></button>

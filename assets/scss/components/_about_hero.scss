@@ -1,9 +1,10 @@
 .hero-section {
   &.about-hero {
     background-image: url("../images/about-hero.png");
+    background-size: cover;
     height: auto;
-    display: block;
-    padding: 124px 0 80px;
+    padding: 124px 0 0;
+    margin-bottom: 80px;
 
     .row {
       @include flex;
@@ -43,7 +44,7 @@
     }
 
     .h2 {
-      margin: 32px 0;
+      margin: 15px 0;
     }
   }
 }

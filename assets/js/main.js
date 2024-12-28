@@ -1,19 +1,3 @@
-import { animate, stagger } from "https://cdn.jsdelivr.net/npm/motion@11.11.13/+esm";
-
-// dropdown menu animation
-
-document.querySelectorAll('.menu-column').forEach(item => {
-    item.addEventListener("mouseenter", () => {
-        // animate(".menu-text-block, .menu-column img", { opacity: 1, y: [50, 0] }, { delay: stagger(0.05), duration: 0.4 });
-    });
-});
-
-// document.querySelectorAll('.menu-item').forEach(item => {
-//     item.addEventListener("mouseleave", () => {
-//         // animate(".mega-menu", { scale: [0.2, 1] }, { ease: "circInOut", duration: 0.2 });
-//     }); // 
-// });
-
 // tab-section
 document.querySelectorAll(".tab").forEach((tab) => {
     tab.addEventListener("click", () => {
@@ -96,6 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const modalName = modal.querySelector('.profile-card__name');
   const modalPosition = modal.querySelector('.profile-card__position');
   const modalDescription = modal.querySelector('.description');
+  const modalSkills = modal.querySelector('.skills__name');
   const closeModalBtn = document.getElementById('closeModal');
 
   // Open modal on team card click
@@ -104,6 +89,8 @@ document.addEventListener('DOMContentLoaded', () => {
       const name = card.getAttribute('data-name');
       const position = card.getAttribute('data-position');
       const description = card.getAttribute('data-description');
+      const skills = card.getAttribute('data-skills');
+
       const image = card.getAttribute('data-image');
 
       // Set modal content
@@ -111,6 +98,7 @@ document.addEventListener('DOMContentLoaded', () => {
       modalName.textContent = name;
       modalPosition.textContent = position;
       modalDescription.textContent = description;
+      modalSkills.textContent = skills;
 
       // Open modal
       modal.classList.add('open');
@@ -130,7 +118,4 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-
-
-
-
+//case studies list

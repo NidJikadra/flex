@@ -9,7 +9,7 @@ include 'includes/header.php';
         include 'includes/services.php';
         include 'includes/tabs.php';
         include 'includes/testimonials.php';
-        include 'includes/about/our-team.php';
+        include 'includes/case-studies-list.php';
         include 'includes/faq.php';
         include 'includes/call.php';
     ?>

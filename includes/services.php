@@ -12,7 +12,7 @@
             <div class="container">
                 <div class="section-title">
                     <div class="title-wrapper">
-                        <h3 class="sub-title">Our Services</h3>
+                        <p class="sub-title">Our Services</p>
                         <h2 class="h2">Covering All Your Needs</h2>
                     </div>
                     <button type="button" class="button btn-primary">View all services</button>

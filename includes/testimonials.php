@@ -8,7 +8,7 @@
         <div class="testimonial-section__row">
             <div class="column-I">
                 <div class="column name-block">
-                    <h6 class="sub-title">Testimonial</h3>
+                    <p class="sub-title">Testimonial</p>
                     <h2 class="name-block__heading">Words of Appreciation</h2>
                 </div>
                 <div class="column testimonial-wrapper">
