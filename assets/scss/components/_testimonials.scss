@@ -76,13 +76,6 @@
     padding: 45px 48px;
   }
 
-  &::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    border-radius: 36px;
-  }
-
   img {
     border-radius: 50%;
     width: 60px;

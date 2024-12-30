@@ -171,8 +171,8 @@ ob_start();
                                 </div>
                             </div>
                         </li>
-                        <li><a href="contactus">Contact Us</a></li>
-                        <li><a href="#">Blogs</a></li>
+                        <li><a href="contactus.php">Contact Us</a></li>
+                        <li><a href="blogs.php">Blogs</a></li>
                     </ul>
                     
                     <button type="button" class="button btn-primary" aria-label="contact-button">Contact now</button>

@@ -182,11 +182,11 @@
     @include flex(row, flex-start, center);
 
     li {
-      padding: 4px 14px;
+      padding: 8px 14px;
       border-radius: 50px;
 
       @include respond-to(xl) {
-        padding: 4px 23px;
+        padding: 8px 23px;
       }
 
       &:hover,

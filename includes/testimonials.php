@@ -23,7 +23,7 @@
                     <img src="assets/images/Image2.png" height="80" width="80" alt="Courtney Henry">
                     <p class="testimonial-wrapper__name">Courtney Henry</p>
                     <p class="testimonial-wrapper__position">CO - FOUNDER, DREAM TRAVEL</p>
-                    <p class="testimonial-section__description">The backend expertise provided by this company is unmatched. They streamlined our server operations and improved our database management. Communication was clear and timely.</p>
+                    <p class="testimonial-section__description">The backend expertise provided by this company is unmatched. They streamlined our server operations and improved our database management. Communication was clear and timely. We couldn't be happier with the results.</p>
                 </div>
                 <div class="sub-column">
                     <div class="review-card-image">
