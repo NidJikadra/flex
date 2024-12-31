@@ -3,10 +3,10 @@
  * Hero Section Component
  */
 ?>
-<section class="hero-section about-hero services-hero">
+<section class="hero-section services-hero">
     <div class="hero-main">
         <div class="container">
-            <div class="about-hero-wrapper">
+            <div class="service-hero-wrapper">
                 <p class="sub-title"><span class="text-white">our services</span></p>
                 <h2 class="h2"><span class="text-blue">Comprehensive</span> Solutions <span class="text-blue">to Meet
                     </span>Your Needs</h2>

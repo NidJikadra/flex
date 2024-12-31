@@ -1,5 +1,5 @@
 <?php
-$page_title = 'About Us';
+$page_title = 'Blogs';
 include 'includes/header.php';
 ?>
 

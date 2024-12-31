@@ -1,6 +1,30 @@
 .services-hero {
-    background-image: url("../images/about-hero.png");
-    height: auto;
-    padding: 0;
-    margin-bottom: 0;
+    &::before {
+        background-image: url("../images/about-hero.png");
+        pointer-events: none;
+    }
+
+    .service-hero-wrapper {
+        width: 100%;
+
+        @include respond-to(lg) {
+            width: 84%;
+        }
+
+        @include respond-to(lg) {
+            width: 74%;
+        }
+    }
+
+    .desc {
+        max-width: 100%;
+
+        @include respond-to(md){
+            max-width: 70%;
+        }
+    }
+    
+    h2{
+        margin: 15px 0;
+    }
 }

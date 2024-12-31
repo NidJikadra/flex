@@ -3,7 +3,7 @@
  * Hero Section Component
  */
 ?>
-<section class="hero-section about-hero">
+<section class="about-hero">
     <div class="container">
         <div class="about-hero-wrapper">
             <p class="sub-title"><span class="text-white">About us</span></p>

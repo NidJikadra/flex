@@ -23,11 +23,11 @@
                     <p class="description">Get technical support, project inquiries, or consultations. We’re here to
                         provide expert assistance.</p>
                     <form>
-                        <div class="demo">
+                        <div class="form-group">
                             <input type="text" id="name" placeholder="Your Name" required>
                             <input type="text" placeholder="Company Name" required>
                         </div>
-                        <div class="demo">
+                        <div class="form-group">
                             <input type="email" id="email" placeholder="Email Address" required>
                             <input type="tel" placeholder="Contact Number">
                         </div>
@@ -37,8 +37,8 @@
                             <img src="assets/images/icons/upload-icon.svg" height="24" width="24" alt="Upload Icon"
                                 class="upload-icon">
                         </label>
-                        <textarea name="message" id="address" cols="60" rows="4"
-                            placeholder="Brief Overview"></textarea>
+                        <textarea name="message" id="brief message" rows="4"
+                            placeholder="Brief Overview" required></textarea>
                         <button type="button" class="button btn-primary d-block">Send your inquiry</button>
                     </form>
                 </div>

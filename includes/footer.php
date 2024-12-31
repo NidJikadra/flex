@@ -13,9 +13,10 @@
                 <p class="footer-text"><?php echo COMPANY_ADDRESS; ?></p>
                 <ul class="social-icons">
                     <?php foreach(SOCIAL_LINKS as $social): ?>
-                        <li>
+                        <li class="social-icon">
                             <a href="<?php echo htmlspecialchars($social['url'], ENT_QUOTES, 'UTF-8'); ?>" target="_blank" rel="noopener noreferrer">
                                 <?php echo $social['icon']; ?>
+                                <span class="tooltip"><?php echo htmlspecialchars($social['platform'], ENT_QUOTES, 'UTF-8'); ?></span>
                             </a>
                         </li>
                     <?php endforeach; ?>

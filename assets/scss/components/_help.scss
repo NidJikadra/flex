@@ -39,12 +39,16 @@
         line-height: 28px;
         letter-spacing: 0.36px;
         width: 100%;
+        resize: none;
 
         &::placeholder {
           color: #a4a4a4;
         }
+        &:focus {
+          outline: none;
+        }
       }
-      .demo {
+      .form-group {
         @include flex;
         flex-wrap: wrap;
         gap: 0;

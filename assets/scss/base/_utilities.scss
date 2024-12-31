@@ -38,13 +38,11 @@
   font-family: $font-medium;
   color: $secondary-color;
   text-transform: uppercase;
-  font-size: 14px;
-  letter-spacing: 1.4px;
+  letter-spacing: 1.6px;
   margin: 0;
   white-space: nowrap;
 
   @include respond-to(md) {
-    font-size: 20px;
     letter-spacing: 2.4px;
   }
 }
@@ -98,7 +96,8 @@
     transition: all 0.4s ease-in-out;
   }
 }
-// to show button end of section
+
+// to show button end of the section
 button {
   display: none;
   @include respond-to(md) {

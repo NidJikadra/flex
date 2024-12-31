@@ -30,10 +30,16 @@
     max-width: 70px;
     height: auto;
     object-fit: contain;
-    margin-right: 90px;
+    margin-right: 40px;
 
     @include respond-to(md) {
+      max-width: 90px;
+      margin-right: 66px;
+    }
+
+    @include respond-to(lg) {
       max-width: 100px;
+      margin-right: 90px;
     }
   }
 

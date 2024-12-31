@@ -18,7 +18,7 @@
     @include respond-to(md) {
       grid-template-columns: repeat(2, 1fr);
       gap: 30px;
-    } 
+    }
 
     @include respond-to(lg) {
       grid-template-columns: repeat(4, 1fr);
@@ -77,7 +77,7 @@
 }
 .our-team-section {
   .team-card {
-      cursor: pointer;
+    cursor: pointer;
   }
 }
 
@@ -93,7 +93,7 @@
   align-items: center;
   z-index: 9;
   transition: all 0.4s ease-in-out;
- 
+
   .profile-card {
     display: flex;
     flex-wrap: wrap;
@@ -115,27 +115,28 @@
       color: #373737;
       position: absolute;
       cursor: pointer;
-      font-size: 40px;
+      font-size: 34px;
       right: 54px;
       top: 36px;
       border: 2px solid;
-      border-radius: 7px;
-      padding: 4px 8px 1px;
+      border-radius: 12px;
+      padding: 3px 9px 0px;
       z-index: 1;
     }
 
     &__image {
       width: 100%;
-        img {
-          display: block;
-            border-radius: 36px;
-            object-fit: cover;
-            border: 1px solid #212121;
-            box-shadow: 2px 1px 24px 6px rgba($black, 0.6);
-        }
-        @include respond-to(lg) {
-          flex: 1;
-        }
+      img {
+        display: block;
+        border-radius: 36px;
+        height: 100%;
+        object-fit: cover;
+        border: 1px solid #212121;
+        box-shadow: 2px 1px 24px 6px rgba($black, 0.6);
+      }
+      @include respond-to(lg) {
+        flex: 1;
+      }
     }
 
     &__content {
@@ -143,59 +144,65 @@
       width: 100%;
       position: relative;
       color: $primary-color;
-        background-color: $light-black;
-        padding: 25px;
-        border-radius: 36px;
-        gap: 1rem;
+      background-color: $light-black;
+      padding: 25px;
+      border-radius: 36px;
+      gap: 20px;
 
-        @include respond-to(lg){
-          flex: 1;
-          padding: 40px;
-        }
+      @include respond-to(lg) {
+        flex: 1;
+        padding: 40px;
+      }
 
-        .profile-card__position {
-          font-size: 20px;
+      .profile-card__position {
+        font-size: 20px;
+        font-family: $font-light;
+        letter-spacing: 0.36px;
+        color: $secondary-color;
+        margin: 0;
+      }
+      .description {
+        font-size: 18px;
+        line-height: 28px;
+      }
+
+      .skills__List {
+        list-style-type: disc;
+        margin-left: 20px;
+
+        .skills__name {
+          color: $secondary-color;
           font-family: $font-light;
           letter-spacing: 0.36px;
-            color: $secondary-color;
-            margin: 0;
-        }
-        .description {
-          font-size: 18px;
           line-height: 28px;
-        }
 
-        .skills__List {
-          list-style-type: disc;
-          margin-left: 20px;
-
-          .skills__name {
-            color: $secondary-color;
-            font-family: $font-light;
-            letter-spacing: 0.36px;
-          }
-        }
-
-        &__name {
-            font-size: 1.8rem;
-            font-weight: bold;
-        }
-
-        &__skills, &__experience {
-          .skills, .experience {
-            font-size: 24px;
+          @include respond-to(md) {
             line-height: 36px;
-            letter-spacing: 0.36px;
           }
-          
+        }
+      }
+
+      &__name {
+        font-size: 1.8rem;
+        font-weight: bold;
+      }
+
+      .skills,
+      .experience {
+        font-size: 18px;
+        line-height: 26px;
+        letter-spacing: 0.36px;
+        margin-bottom: 5px;
+
+        @include respond-to(md) {
+          font-size: 24px;
+          line-height: 36px;
         }
       }
     }
   }
-
+}
 
 #teamModal.open {
   display: flex;
 }
-
-

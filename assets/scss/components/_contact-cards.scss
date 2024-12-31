@@ -85,6 +85,7 @@
         display: block;
 
         &:hover {
+          color: $secondary-color;
           text-decoration: underline;
         }
       }
