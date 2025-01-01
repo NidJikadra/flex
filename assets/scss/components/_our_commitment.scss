@@ -24,7 +24,7 @@
     }
 
     @include respond-to(xxl) {
-      gap: 100px;
+      gap: 150px;
     }
   }
 
@@ -45,7 +45,6 @@
 
     @include respond-to(lg) {
       max-width: 440px;
-      flex: 1;
     }
 
     &__title {

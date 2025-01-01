@@ -51,6 +51,11 @@
 
     .number {
       font-size: 24px;
+      margin-top: 0;
+
+      @include respond-to(md){
+        margin-top: 7px;
+      }
     }
 
     .text {

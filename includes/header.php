@@ -93,7 +93,7 @@ ob_start();
                                             <div class="view-all-title">Explore All Our Services</div>
                                             <p class="view-all-desc">Discover tailored solutions that drive growth and innovation.</p>
                                         </div>
-                                        <button type="button" class="button btn-primary bottom">View all Services</button>
+                                        <button type="button" class="button btn-primary">View all Services</button>
                                     </div>
                                 </div>  
                             </div>

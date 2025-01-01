@@ -12,7 +12,7 @@ include 'includes/header.php';
         include 'includes/about/our-team.php';
         include 'includes/about/career-cta.php';
         include 'includes/testimonials.php';
-        include 'includes/about/our-commitment.php';
+        include 'includes/our-commitment.php';
     ?>
 </main>
 

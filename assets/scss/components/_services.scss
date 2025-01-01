@@ -83,8 +83,9 @@
     margin: 2.25rem 0;
   }
 }
-
-.service-block .read-more {
+                                              
+.service-block .read-more,
+.menu-card .read-more {
   color: $primary-color;
 
   &::after {

@@ -76,15 +76,15 @@
     padding: 45px 48px;
   }
 
-  img {
-    border-radius: 50%;
-    width: 60px;
+  &__image {
+    width: 80px;
+    margin: 0 auto;
 
-    @include respond-to(md) {
-      width: 80px;
+    img {
+      border-radius: 50%;
     }
   }
-
+  
   &__name {
     color: $secondary-color;
     font-family: $font-medium;

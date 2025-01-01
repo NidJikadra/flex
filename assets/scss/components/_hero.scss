@@ -37,17 +37,9 @@
 
 .hero-wrapper {
   padding: 24px 0;
-  max-width: 90%;
+  max-width: 800px;
   position: relative;
   z-index: 2;
-
-  @include respond-to(md) {
-    max-width: 600px;
-  }
-
-  @include respond-to(lg) {
-    max-width: 800px;
-  }
 }
 
 .review-text {

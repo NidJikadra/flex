@@ -5,26 +5,14 @@
     }
 
     .service-hero-wrapper {
-        width: 100%;
-
-        @include respond-to(lg) {
-            width: 84%;
-        }
-
-        @include respond-to(lg) {
-            width: 74%;
-        }
+       max-width: 1000px;
     }
 
     .desc {
-        max-width: 100%;
-
-        @include respond-to(md){
-            max-width: 70%;
-        }
+        max-width: 700px;
     }
     
-    h2{
+    h2 {
         margin: 15px 0;
     }
 }

@@ -49,7 +49,7 @@
     font-size: clamp(1.25rem, 0.9562rem + 1.4376vw, 2.25rem);
     line-height: clamp(2rem, 1.6327rem + 1.7969vw, 3.25rem);
     color: $primary-color;
-    max-width: 75%;
+    max-width: 1000px;
     padding-bottom: 20px;
   }
 
@@ -208,7 +208,6 @@
 
   .case-studies__info {
     max-width: 100%;
-    padding-bottom: 5px;
   }
 }
 
@@ -219,6 +218,5 @@
   }
   .case-studies__info {
     max-width: 100%;
-    padding-bottom: 5px;
   }
 }
