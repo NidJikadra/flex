@@ -51,9 +51,8 @@
     letter-spacing: 0.36px;
     font-size: 24px;
     background-color: transparent;
-    color: #4C4C4C;
+    color: #A4A4A4;
     border: none;
-    border-bottom: 1px solid;
     padding-right: 50px;
 
     &::placeholder {
@@ -79,4 +78,5 @@
 .search-container {
     position: relative;
     display: inline-block;
+    border-bottom: 1px solid #4C4C4C;
 }

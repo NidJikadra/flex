@@ -12,14 +12,13 @@
   &__row {
     @include flex();
     flex-wrap: wrap;
-    gap: 50px;
+    gap: 30px;
     background-color: #121315;
     border-radius: 36px;
     padding: 20px;
     align-items: center;
 
-    @include respond-to(md) {
-      gap: 40px;
+    @include respond-to(lg) {
       flex-wrap: nowrap;
     }
 

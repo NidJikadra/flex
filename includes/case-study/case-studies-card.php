@@ -19,13 +19,13 @@ $stats = [
 ?>
 <section class="case-studies-list-section">
     <div class="container">
-        <div class="interactive-dictionary">
-            <div class="content">
-                <div class="image-container">
+        <div class="case-studies-list__content">
+            <div class="case-studies-list__content-list">
+                <div class="case-studies-list__image-container">
                     <img src="assets/images/case-studies1.png" width="690" height="781"
-                        alt="Laptop with virtual dictionary" class="laptop-image">
+                        alt="Laptop with virtual dictionary" class="case-studies-list__laptop-image">
                 </div>
-                <div class="details">
+                <div class="case-studies-list__details">
                     <p class="tech-field">
                         <span>UI</span>
                         <span>UX</span>
@@ -39,9 +39,9 @@ $stats = [
                         A virtual reality gaming experience showcasing the wonders of the island of Nisida, intertwining
                         myths, legends, and tourist information with a message of hope and redemption.
                     </p>
-                    <div class="technologies">
+                    <div class="case-studies-list__technologies">
                         <?php foreach ($technologies as $tech): ?>
-                        <div class="tech">
+                        <div class="case-studies-list__tech">
                             <div class="grid-image">
                                 <img src="<?php echo $tech['src']; ?>" height="45" width="45" alt="<?php echo $tech['name']; ?>">
                             </div>
@@ -49,11 +49,11 @@ $stats = [
                         </div>
                         <?php endforeach; ?>
                     </div>
-                    <div class="case-study-stats">
+                    <div class="case-studies-list__stats">
                         <?php foreach ($stats as $stat): ?>
-                        <div class="stat">
-                            <p class="stat-value"><?php echo $stat['value']; ?></p>
-                            <p class="stat-description"><?php echo $stat['description']; ?></p>
+                        <div class="case-studies-list__stat">
+                            <p class="case-studies-list__stat-value"><?php echo $stat['value']; ?></p>
+                            <p class="case-studies-list__stat-description"><?php echo $stat['description']; ?></p>
                         </div>
                         <?php endforeach; ?>
                     </div>
@@ -62,13 +62,13 @@ $stats = [
                 </div>
             </div>
         </div>
-        <div class="interactive-dictionary">
-            <div class="content">
-                <div class="image-container">
+        <div class="case-studies-list__content">
+            <div class="case-studies-list__content-list">
+                <div class="case-studies-list__image-container">
                     <img src="assets/images/case-studies2.png" width="690" height="781"
-                        alt="Laptop with virtual dictionary" class="laptop-image">
+                        alt="Laptop with virtual dictionary" class="case-studies-list__laptop-image">
                 </div>
-                <div class="details">
+                <div class="case-studies-list__details">
                     <p class="tech-field">
                         <span>UI</span>
                         <span>UX</span>
@@ -82,9 +82,9 @@ $stats = [
                         A virtual reality gaming experience showcasing the wonders of the island of Nisida, intertwining
                         myths, legends, and tourist information with a message of hope and redemption.
                     </p>
-                    <div class="technologies">
+                    <div class="case-studies-list__technologies">
                         <?php foreach ($technologies as $tech): ?>
-                        <div class="tech">
+                        <div class="case-studies-list__tech">
                             <div class="grid-image">
                                 <img src="<?php echo $tech['src']; ?>" height="45" width="45" alt="<?php echo $tech['name']; ?>">
                             </div>
@@ -92,11 +92,11 @@ $stats = [
                         </div>
                         <?php endforeach; ?>
                     </div>
-                    <div class="case-study-stats">
+                    <div class="case-studies-list__stats">
                         <?php foreach ($stats as $stat): ?>
-                        <div class="stat">
-                            <p class="stat-value"><?php echo $stat['value']; ?></p>
-                            <p class="stat-description"><?php echo $stat['description']; ?></p>
+                        <div class="case-studies-list__stat">
+                            <p class="case-studies-list__stat-value"><?php echo $stat['value']; ?></p>
+                            <p class="case-studies-list__stat-description"><?php echo $stat['description']; ?></p>
                         </div>
                         <?php endforeach; ?>
                     </div>
@@ -105,13 +105,13 @@ $stats = [
                 </div>
             </div>
         </div>
-        <div class="interactive-dictionary">
-            <div class="content">
-                <div class="image-container">
+        <div class="case-studies-list__content">
+            <div class="case-studies-list__content-list">
+                <div class="case-studies-list__image-container">
                     <img src="assets/images/case-studies3.png" width="690" height="781"
-                        alt="Laptop with virtual dictionary" class="laptop-image">
+                        alt="Laptop with virtual dictionary" class="case-studies-list__laptop-image">
                 </div>
-                <div class="details">
+                <div class="case-studies-list__details">
                     <p class="tech-field">
                         <span>UI</span>
                         <span>UX</span>
@@ -125,9 +125,9 @@ $stats = [
                         A virtual reality gaming experience showcasing the wonders of the island of Nisida, intertwining
                         myths, legends, and tourist information with a message of hope and redemption.
                     </p>
-                    <div class="technologies">
+                    <div class="case-studies-list__technologies">
                         <?php foreach ($technologies as $tech): ?>
-                        <div class="tech">
+                        <div class="case-studies-list__tech">
                             <div class="grid-image">
                                 <img src="<?php echo $tech['src']; ?>" height="45" width="45" alt="<?php echo $tech['name']; ?>">
                             </div>
@@ -135,11 +135,11 @@ $stats = [
                         </div>
                         <?php endforeach; ?>
                     </div>
-                    <div class="case-study-stats">
+                    <div class="case-studies-list__stats">
                         <?php foreach ($stats as $stat): ?>
-                        <div class="stat">
-                            <p class="stat-value"><?php echo $stat['value']; ?></p>
-                            <p class="stat-description"><?php echo $stat['description']; ?></p>
+                        <div class="case-studies-list__stat">
+                            <p class="case-studies-list__stat-value"><?php echo $stat['value']; ?></p>
+                            <p class="case-studies-list__stat-description"><?php echo $stat['description']; ?></p>
                         </div>
                         <?php endforeach; ?>
                     </div>
@@ -148,13 +148,13 @@ $stats = [
                 </div>
             </div>
         </div>
-        <div class="interactive-dictionary">
-            <div class="content">
-                <div class="image-container">
+        <div class="case-studies-list__content">
+            <div class="case-studies-list__content-list">
+                <div class="case-studies-list__image-container">
                     <img src="assets/images/case-studies4.png" width="690" height="781"
-                        alt="Laptop with virtual dictionary" class="laptop-image">
+                        alt="Laptop with virtual dictionary" class="case-studies-list__laptop-image">
                 </div>
-                <div class="details">
+                <div class="case-studies-list__details">
                     <p class="tech-field">
                         <span>UI</span>
                         <span>UX</span>
@@ -168,9 +168,9 @@ $stats = [
                         A virtual reality gaming experience showcasing the wonders of the island of Nisida, intertwining
                         myths, legends, and tourist information with a message of hope and redemption.
                     </p>
-                    <div class="technologies">
+                    <div class="case-studies-list__technologies">
                         <?php foreach ($technologies as $tech): ?>
-                        <div class="tech">
+                        <div class="case-studies-list__tech">
                             <div class="grid-image">
                                 <img src="<?php echo $tech['src']; ?>" height="45" width="45" alt="<?php echo $tech['name']; ?>">
                             </div>
@@ -178,11 +178,11 @@ $stats = [
                         </div>
                         <?php endforeach; ?>
                     </div>
-                    <div class="case-study-stats">
+                    <div class="case-studies-list__stats">
                         <?php foreach ($stats as $stat): ?>
-                        <div class="stat">
-                            <p class="stat-value"><?php echo $stat['value']; ?></p>
-                            <p class="stat-description"><?php echo $stat['description']; ?></p>
+                        <div class="case-studies-list__stat">
+                            <p class="case-studies-list__stat-value"><?php echo $stat['value']; ?></p>
+                            <p class="case-studies-list__stat-description"><?php echo $stat['description']; ?></p>
                         </div>
                         <?php endforeach; ?>
                     </div>
@@ -191,13 +191,13 @@ $stats = [
                 </div>
             </div>
         </div>
-        <div class="interactive-dictionary">
-            <div class="content">
-                <div class="image-container">
+        <div class="case-studies-list__content">
+            <div class="case-studies-list__content-list">
+                <div class="case-studies-list__image-container">
                     <img src="assets/images/case-studies5.png" width="690" height="781"
-                        alt="Laptop with virtual dictionary" class="laptop-image">
+                        alt="Laptop with virtual dictionary" class="case-studies-list__laptop-image">
                 </div>
-                <div class="details">
+                <div class="case-studies-list__details">
                     <p class="tech-field">
                         <span>UI</span>
                         <span>UX</span>
@@ -211,9 +211,9 @@ $stats = [
                         A virtual reality gaming experience showcasing the wonders of the island of Nisida, intertwining
                         myths, legends, and tourist information with a message of hope and redemption.
                     </p>
-                    <div class="technologies">
+                    <div class="case-studies-list__technologies">
                         <?php foreach ($technologies as $tech): ?>
-                        <div class="tech">
+                        <div class="case-studies-list__tech">
                             <div class="grid-image">
                                 <img src="<?php echo $tech['src']; ?>" height="45" width="45" alt="<?php echo $tech['name']; ?>">
                             </div>
@@ -221,11 +221,11 @@ $stats = [
                         </div>
                         <?php endforeach; ?>
                     </div>
-                    <div class="case-study-stats">
+                    <div class="case-studies-list__stats">
                         <?php foreach ($stats as $stat): ?>
-                        <div class="stat">
-                            <p class="stat-value"><?php echo $stat['value']; ?></p>
-                            <p class="stat-description"><?php echo $stat['description']; ?></p>
+                        <div class="case-studies-list__stat">
+                            <p class="case-studies-list__stat-value"><?php echo $stat['value']; ?></p>
+                            <p class="case-studies-list__stat-description"><?php echo $stat['description']; ?></p>
                         </div>
                         <?php endforeach; ?>
                     </div>

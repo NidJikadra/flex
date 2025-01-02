@@ -9,10 +9,10 @@
     padding: 80px 0;
   }
 
-  .image-container {
+  .case-studies-list__image-container {
     position: relative;
   }
-  .details {
+  .case-studies-list__details {
     .description {
       margin: 12px 0 22px;
 
@@ -33,7 +33,7 @@
         border: 1px solid #212121;
         border-radius: 10px;
         padding: 12px 20px;
-        margin-bottom: 23px;
+        margin-bottom: 30px;
         font-size: 18px;
         font-family: $font-light;
         line-height: 28px;
@@ -54,12 +54,25 @@
         gap: 0;
 
         @include respond-to(md) {
-          @include flex;
           flex-wrap: nowrap;
           gap: 40px;
         }
       }
 
+      .required-field {
+        position: relative;
+      }
+      
+      .required-field::after {
+        content: '*'; /* Add the asterisk */
+        color: red; /* Asterisk color */
+        font-size: 1rem; /* Adjust size as needed */
+        position: absolute;
+        top: 50%; /* Align vertically */
+        transform: translateY(-50%); /* Center the asterisk */
+        right: -20px; /* Adjust spacing based on layout */
+      }
+      
       .upload-label {
         cursor: pointer;
         display: flex;

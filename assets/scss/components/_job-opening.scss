@@ -1,0 +1,54 @@
+.job-opening {
+  @include grid(1, 30px);
+
+  @include respond-to(md) {
+    @include grid(2, 30px);
+  }
+
+  @include respond-to(lg) {
+    gap: 60px;
+  }
+
+  &__list {
+    @include flex(row, space-between, end);
+    flex-wrap: wrap;
+    margin-top: 12px;
+  }
+  
+  &__items {
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 0.4px;
+    font-family: $font-light;
+    color: #787878;
+    margin-top: 14px;
+  }
+
+  .contact-cards__card {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding: 30px 23px 24px;
+
+    @include respond-to(lg) {
+      padding: 40px 40px 36px;
+    }
+  }
+
+  .card-content__text {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  &__title {
+    margin-bottom: 15px;
+    a {
+      color: $secondary-color;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

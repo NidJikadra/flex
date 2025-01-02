@@ -122,6 +122,20 @@ button {
   line-height: 32px;
 }
 
+
+  .text-content {
+    font-family: $font-light;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.36px;
+    color: #cfcfcf;
+
+    @include respond-to(md) {
+      font-size: 24px;
+      line-height: 38px;
+    }
+  }
+
 .overlay {
   position: absolute;
   inset: 0;
