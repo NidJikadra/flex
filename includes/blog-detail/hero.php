@@ -4,7 +4,7 @@
  */
 ?>
 
-<section class="about-hero blog-details">
+<section class="hero-banner blog-details">
     <div class="container">
         <div class="blog-details__hero">
             <div class="blog">

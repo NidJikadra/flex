@@ -9,17 +9,18 @@
   @include respond-to(lg) {
     padding: 80px 0;
   }
+  .row {
+    display: grid;
+    overflow-x: auto;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+  
+    @include respond-to(lg) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  } 
 }
-.row {
-  display: grid;
-  overflow-x: auto;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 20px;
 
-  @include respond-to(lg) {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
 
 .latest-blog__title {
   margin-bottom: 20px;

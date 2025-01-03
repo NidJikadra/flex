@@ -117,3 +117,24 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
+
+//tech stack tabbing
+
+document.querySelectorAll('.tech-stack__skills-button').forEach((button) => {
+  button.addEventListener('click', () => {
+   
+    document.querySelectorAll('.tech-stack__skills-button').forEach((btn) => {
+      btn.classList.remove('tech-stack__skills-button--active');
+    });
+
+    button.classList.add('tech-stack__skills-button--active');
+
+    document.querySelectorAll('.tech-stack__skills-tab').forEach((tab) => {
+      tab.classList.remove('tech-stack__skills-tab--active');
+    });
+
+    const tabId = button.getAttribute('data-tab');
+    document.getElementById(tabId).classList.add('tech-stack__skills-tab--active');
+  });
+});
+

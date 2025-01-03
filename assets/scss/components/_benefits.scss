@@ -1,31 +1,3 @@
-.card-content {
-    text-align: left;
-    padding: 22px;
-
-    @include respond-to(lg){
-        padding: 30px;
-    }
-
-    &__image {
-        width: 42px;
-    }
-
-    &__title {
-        color: $secondary-color;
-        font-family: $font-medium;
-        font-size: 24px;
-        margin: 15px 0;
-    }
-
-    &__text {
-        font-family: $font-light;
-        font-size: 18px;
-        line-height: 28px;
-        letter-spacing: 0.36px;
-        color: #BABABA;
-    }
-}
-
 .career-benefit {
     padding: 35px 0;
 
@@ -46,6 +18,34 @@
 
         @include respond-to(xl){
             @include grid(4, 40px);
+        }
+    }
+
+    .card-content {
+        text-align: left;
+        padding: 22px;
+    
+        @include respond-to(lg){
+            padding: 30px;
+        }
+    
+        &__image {
+            width: 42px;
+        }
+    
+        &__title {
+            color: $secondary-color;
+            font-family: $font-medium;
+            font-size: 24px;
+            margin: 15px 0;
+        }
+    
+        &__text {
+            font-family: $font-light;
+            font-size: 18px;
+            line-height: 28px;
+            letter-spacing: 0.36px;
+            color: #BABABA;
         }
     }
     

@@ -23,7 +23,7 @@
                         <div class="service-block">
                             <h3 class="h3">CMS Platform and Frameworks</h3>
                             <p class="service-text">We often work with Drupal, Laravel and Wordpress, but we’re not wedded to any one framework. What’s important is that you get a solution that’s customisable, scalable, cost-effective.</p>
-                            <a href="#" class="read-more" data-hover="Contact now"><span>Contact now</span></a>
+                            <a href="wordpress-development.php" class="read-more" data-hover="Contact now"><span>Contact now</span></a>
                         </div>
                     
                         <div class="service-image">

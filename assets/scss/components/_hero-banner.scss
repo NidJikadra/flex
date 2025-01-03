@@ -1,4 +1,4 @@
-.about-hero {
+.hero-banner {
   background-image: url("../images/about-hero.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -6,7 +6,29 @@
   width: 100%;
   height: 100%;
 
-  .row {
+  .h2 {
+    margin: 15px 0;
+  }
+
+  &__wrapper {
+    padding: 100px 0 35px;
+    width: 100%;
+    max-width: 1000px;
+
+    @include respond-to(md) {
+      padding: 150px 0 56px;
+    }
+
+    @include respond-to(lg) {
+      padding: 200px 0 80px;
+    }
+
+    .desc {
+      max-width: 700px;
+    }
+  }
+
+  &__row {
     @include flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -17,8 +39,7 @@
       padding-top: 80px;
     }
   }
-
-  .about-column {
+  &__column {
     margin-left: 15px;
     max-width: 100%;
 
@@ -26,15 +47,13 @@
       max-width: 194px;
     }
   }
-
-  .count-text {
+  &__count-text {
     font-size: 24px;
     line-height: 36px;
     color: $gray-color;
     letter-spacing: 0.36px;
   }
-
-  .info {
+  &__info {
     padding-bottom: 0;
     margin-left: -15px;
     color: $primary-color;
@@ -50,31 +69,9 @@
       display: inline-block;
       margin-right: 10px;
 
-      @include respond-to(md){
+      @include respond-to(md) {
         height: 25px;
       }
     }
-  }
-
-  .h2 {
-    margin: 15px 0;
-  }
-}
-
-.about-hero-wrapper {
-  padding: 100px 0 35px;
-  width: 100%;
-  max-width: 1000px;
-
-  @include respond-to(md) {
-    padding: 150px 0 56px;
-  }
-
-  @include respond-to(lg) {
-    padding: 200px 0 80px;
-  }
-
-  .desc {
-    max-width: 700px;
   }
 }

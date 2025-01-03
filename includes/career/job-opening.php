@@ -15,7 +15,7 @@
         <div class="job-opening">
             <div class="contact-cards__card">
                 <h3 class="job-opening__title"><a href="career-detail.php">WordPress Developer</a></h3>
-                <div class="card-content__text">We're seeking a skilled WordPress Developer to join our team. Apply
+                <div class="job-opening__text">We're seeking a skilled WordPress Developer to join our team. Apply
                     now to work on exciting projects and make an impact.</div>
                 <div class="job-opening__list">
                     <div class="job-opening__categories">
@@ -32,7 +32,7 @@
 
             <div class="contact-cards__card">
                 <h3 class="job-opening__title"><a href="#">WordPress Developer</a></h3>
-                <div class="card-content__text">We're seeking a skilled WordPress Developer to join our team. Apply
+                <div class="job-opening__text">We're seeking a skilled WordPress Developer to join our team. Apply
                     now to work on exciting projects and make an impact.</div>
                 <div class="job-opening__list">
                     <div class="job-opening__categories">
@@ -48,7 +48,7 @@
 
             <div class="contact-cards__card">
                 <h3 class="job-opening__title"><a href="#">WordPress Developer</a></h3>
-                <div class="card-content__text">We're seeking a skilled WordPress Developer to join our team. Apply
+                <div class="job-opening__text">We're seeking a skilled WordPress Developer to join our team. Apply
                     now to work on exciting projects and make an impact.</div>
                 <div class="job-opening__list">
                     <div class="job-opening__categories">
@@ -64,7 +64,7 @@
 
             <div class="contact-cards__card">
                 <h3 class="job-opening__title"><a href="#">WordPress Developer</a></h3>
-                <div class="card-content__text">We're seeking a skilled WordPress Developer to join our team. Apply
+                <div class="job-opening__text">We're seeking a skilled WordPress Developer to join our team. Apply
                     now to work on exciting projects and make an impact.</div>
                 <div class="job-opening__list">
                     <div class="job-opening__categories">

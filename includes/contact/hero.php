@@ -3,9 +3,9 @@
  * Contact Us Hero Section Component
  */
 ?>
-<section class="about-hero">
+<section class="hero-banner">
     <div class="container">
-        <div class="about-hero-wrapper">
+        <div class="hero-banner__wrapper">
             <p class="sub-title"><span class="text-white">Contact us</span></p>
             <h2 class="h2">Solutions<span class="text-blue"> and</span> Support <span class="text-blue">Just a
                 </span>Click Away</h2>

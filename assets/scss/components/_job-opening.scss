@@ -14,7 +14,7 @@
     flex-wrap: wrap;
     margin-top: 12px;
   }
-  
+
   &__items {
     font-size: 18px;
     line-height: 26px;
@@ -35,12 +35,6 @@
     }
   }
 
-  .card-content__text {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-  }
-
   &__title {
     margin-bottom: 15px;
     a {
@@ -50,5 +44,16 @@
         text-decoration: underline;
       }
     }
+  }
+
+  &__text {
+    font-family: $font-light;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.36px;
+    color: #bababa;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
   }
 }

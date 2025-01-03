@@ -146,9 +146,6 @@ button {
 }
 
 // Add these utility classes
-.text-center {
-  text-align: center;
-}
 
 .d-none {
   display: none !important;
@@ -166,12 +163,4 @@ button {
   .d-lg-block {
     display: block !important;
   }
-}
-
-.position-relative {
-  position: relative;
-}
-
-.overflow-hidden {
-  overflow: hidden;
 }
