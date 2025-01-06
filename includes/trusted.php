@@ -3,7 +3,7 @@
  * Trusted Section Component
  */
 ?>
-<section class="trusted-section">
+<section class="trusted-by-many">
     <div class="container">
         <div class="trustred-slider">
             <p class="sub-title">Trusted By</p>

@@ -3,7 +3,7 @@
  * Blog Pagination Section Component
  */
 ?>
-<section class="blog-section">
+<section class="blogs-spot">
     <div class="container">
         <div class="blog__search">
             <div class="search-container">

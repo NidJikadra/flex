@@ -3,9 +3,9 @@
  * Testimonials Section Component
  */
 ?>
-<section class="testimonial-section">
+<section class="tabstestimonials">
     <div class="container">
-        <div class="testimonial-section__row">
+        <div class="tabstestimonials__row">
             <div class="column-I">
                 <div class="column name-block">
                     <p class="sub-title">Testimonial</p>
@@ -17,7 +17,7 @@
                     </div>
                     <p class="testimonial-wrapper__name">Savannah Nguyen</p>
                     <p class="testimonial-wrapper__position">FOUNDER, QURO</p>
-                    <p class="testimonial-section__description">Working with this team has been incredible. They
+                    <p class="tabstestimonials__description">Working with this team has been incredible. They
                         transformed our website into a sleek, modern, and user-friendly platform. The project was
                         completed on time and within budget. Highly recommended for any web needs!</p>
                 </div>
@@ -29,7 +29,7 @@
                     </div>
                     <p class="testimonial-wrapper__name">Courtney Henry</p>
                     <p class="testimonial-wrapper__position">CO - FOUNDER, DREAM TRAVEL</p>
-                    <p class="testimonial-section__description">The backend expertise provided by this company is
+                    <p class="tabstestimonials__description">The backend expertise provided by this company is
                         unmatched. They streamlined our server operations and improved our database management.
                         Communication was clear and timely. We couldn't be happier with the results.</p>
                 </div>
@@ -44,7 +44,7 @@
                         </div>
                         <p class="testimonial-wrapper__name">Jacob Jones</p>
                         <p class="testimonial-wrapper__position">FOUNDER, MOM</p>
-                        <p class="testimonial-section__description">Outstanding e-commerce solutions! Our online store
+                        <p class="tabstestimonials__description">Outstanding e-commerce solutions! Our online store
                             is now faster, more secure, and easier to navigate.</p>
                     </div>
                 </div>

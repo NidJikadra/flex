@@ -20,7 +20,7 @@ $blog_posts = [
 ];
 ?>
 
-<section class="blog-section">
+<section class="blogs-spot">
             <div class="container">
                 <div class="section-title">
                     <div class="title-wrapper">

@@ -3,7 +3,7 @@
  * Help Section Component
  */
 ?>
-<section class="help-section">
+<section class="get-in-touch">
     <div class="container">
         <div class="case-studies-list__content">
             <div class="case-studies-list__content-list">

@@ -1,4 +1,4 @@
-.our-team-section {
+.our-team {
   padding: 35px 0;
 
   @include respond-to(md) {
@@ -75,7 +75,7 @@
   border: 1px solid #212121;
   box-shadow: 2px 1px 24px 6px rgba($black, 0.6);
 }
-.our-team-section {
+.our-team {
   .team-card {
     cursor: pointer;
   }

@@ -48,7 +48,6 @@
           background-image: url("../images/icons/arrow-narrow.svg");
           background-size: cover;
           background-repeat: no-repeat;
-          margin-right: 8px;
         }
       }
     }
@@ -73,21 +72,9 @@
             grid-template-columns: repeat(4, 1fr);
         }
       }
-    //   .grid {
-    //     width: 160px;
-
-    //     @include respond-to(md){
-    //         width: 202px;
-    //     }
-    //   }
     }
-
-    &-item {
-      background: #1c1c1c;
-      padding: 10px;
-      border-radius: 5px;
-      text-align: center;
-      flex: 1 1 calc(25% - 10px);
-    }
+  }
+  .item-name {
+    display: block;
   }
 }

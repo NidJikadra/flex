@@ -1,4 +1,4 @@
-.core-values-section {
+.core-values {
   padding: 35px 0;
 
   @include respond-to(md) {
@@ -14,7 +14,7 @@
   margin-top: 60px;
 }
 
-.core-values-section .core-values {
+.core-values .core-values {
   &__value {
     border-top: 1px solid #1b1b1b;
     @include flex (row, space-between, center);

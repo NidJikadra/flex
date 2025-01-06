@@ -4,7 +4,7 @@
  */
 ?>
 
-<section class="call-section">
+<section class="cta">
     <div class="container">
         <div class="call-wrapper">
             <h2 class="h2">Looking for help with development, design, or product strategy?</h2>

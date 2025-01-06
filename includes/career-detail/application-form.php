@@ -4,7 +4,7 @@
  */
 ?>
 
-<section class="help-section">
+<section class="get-in-touch">
     <div class="container">
         <div class="section-title">
             <div class="title-wrapper">

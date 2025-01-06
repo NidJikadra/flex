@@ -78,14 +78,14 @@ $tabs = [
 ];
 ?>
 
-<section class="tab-section">
-    <div class="container">
-        <div class="tab-section__title-wrapper">
+<section class="tabs">
+    <div class="container"> 
+        <div class="tabs__title-wrapper">
             <p class="sub-title">Technologies we use</p>
-            <h2 class="tab-section__heading">Our Services with Advanced Tools</h2>
+            <h2 class="tabs__heading">Our Services with Advanced Tools</h2>
         </div>
         <div class="tab-wrapper"> 
-            <div class="tabs">
+            <div class="tabs-panel">
                 <button class="tab active" data-tab="frontend">Front End</button>
                 <button class="tab" data-tab="backend">Back End</button>
                 <button class="tab" data-tab="database">Database</button>

@@ -6,8 +6,8 @@ include 'includes/header.php';
 <main>
     <?php
         include 'includes/contact/hero.php';
-        include 'includes/contact/help-section.php';
-        include 'includes/contact-cards.php';
+        include 'includes/contact/get-in-touch.php';
+        include 'includes/contact-info.php';
         include 'includes/faq.php';
     ?>
 </main>

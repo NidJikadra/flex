@@ -4,13 +4,13 @@
  */
 ?>
 
-<section class="our-team-section">
+<section class="our-team">
     <div class="container">
         <div class="title-wrapper">
             <p class="sub-title">our team</p>
             <h2 class="h2">Our People, Our Strength</h2>
         </div>
-        <div class="our-team-section__row">
+        <div class="our-team__row">
             <div class="team-card" data-name="Jacob Jones" data-position="Founder" data-description="Bessie Cooper is the visionary Team Leader at Flex Solutions, driving innovative design strategies 
                                     and ensuring seamless project execution. With a background in both design and project management, 
                                     Bessie excels in leading creative teams to deliver exceptional results." data-skills="Strategic Planning"

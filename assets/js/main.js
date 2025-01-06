@@ -138,3 +138,11 @@ document.querySelectorAll('.tech-stack__skills-button').forEach((button) => {
   });
 });
 
+
+// carousel 
+import EmblaCarousel from "embla-carousel";
+
+const emblaNode = document.querySelector('.carousel__viewport');
+
+const embla = EmblaCarousel(emblaNode, { loop: false });
+

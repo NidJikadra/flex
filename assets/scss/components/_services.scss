@@ -1,113 +1,104 @@
-.service-section {
-  padding: 2rem 0;
+.our-core-services {
+  padding: 32px 0;
   background-color: $light-black;
 
   @include respond-to(md) {
-    padding: 3.5rem 0;
+    padding: 56px 0;
   }
 
   @include respond-to(lg) {
-    padding: 5rem 0;
+    padding: 80px 0;
   }
 
-  // Section layout
-  .row {
+  &__row {
     @include flex;
     flex-wrap: wrap;
-    gap: 1.25rem;
+    gap: 20px;
 
     @include respond-to(md) {
-      gap: 2.5rem;
+      gap: 40px;
       align-items: stretch;
       justify-content: center;
     }
   }
 
-  .column {
+  &__column {
     @include flex(column);
-    gap: 1.5rem;
+    gap: 24px;
 
     @include respond-to(lg) {
-      width: calc(50% - 1.25rem);
-      gap: 2.5rem;
+      width: calc(50% - 20px);
+      gap: 40px;
     }
   }
-}
 
-// Service Card
-.service-card {
-  background-color: #121315;
-  color: #cfcfcf;
-  border-radius: 2.25rem;
-  position: relative;
-  cursor: pointer;
-  border: 1px solid transparent;
-  transition: all 0.3s ease;
-  // height: 100%;
-
-  &:hover {
-    box-shadow: rgba($black, 0.6) 4px 5px 10px 4px;
+  &__service-card {
+    background-color: #121315;
+    color: #cfcfcf;
+    border-radius: 36px;
     position: relative;
-    z-index: 1;
-
-    &::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      border-radius: 2.25rem;
-      background: linear-gradient(0deg, transparent, #232121);
-      padding: 1.5px;
-      mask: linear-gradient($white 0 0) content-box, linear-gradient($white 0 0);
-      mask-composite: exclude;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+    height: 100%;
+  
+    &:hover {
+      box-shadow: rgba($black, 0.6) 4px 5px 10px 4px;
+      position: relative;
+      z-index: 1;
+  
+      &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        border-radius: 2.25rem;
+        background: linear-gradient(0deg, transparent, #232121);
+        padding: 1.5px;
+        mask: linear-gradient($white 0 0) content-box, linear-gradient($white 0 0);
+        mask-composite: exclude;
+      }
     }
   }
-}
+  &__service-block {
+    padding: 24px 24px 0;
+  
+    @include respond-to(md) {
+      padding: 40px 40px 0;
+    }
+  }
+  
+  &__service-text {
+    font-family: $font-light;
+    @include fluid-type(16px, 18px);
+    line-height: 1.6;
+    letter-spacing: 0.36px;
+    color: #cfcfcf;
+    margin: 20px 0;
+  
+    @include respond-to(md) {
+      margin: 26px 0;
+    }
+  }
+                                                
+  &__service-block .read-more,
+  .menu-card .read-more {
+    color: $primary-color;
+  
+    &::after {
+      background-image: url("../images/icons/white-arrow.svg");
+    }
+  } 
 
-.service-block {
-  padding: 1.5rem 1.5rem 0;
+  &__details-link {
+    position: absolute;
+  }
 
-  @include respond-to(md) {
-    padding: 2.5rem 2.5rem 0;
+  &__link {
+    position: relative;
+    left: 36%;
+    display: inline-block;
   }
 }
 
-.service-text {
-  font-family: $font-light;
-  @include fluid-type(1rem, 1.125rem);
-  line-height: 1.6;
-  letter-spacing: 0.36px;
-  color: #cfcfcf;
-  margin: 1.5rem 0;
 
-  @include respond-to(md) {
-    margin: 2.25rem 0;
-  }
-}
-                                              
-.service-block .read-more,
-.menu-card .read-more {
-  color: $primary-color;
 
-  &::after {
-    background-image: url("../images/icons/white-arrow.svg");
-  }
-}
-
-// View more button for mobile
-.view-more-btn {
-  @include button-base;
-  width: 100%;
-  max-width: 20rem;
-  margin: 2rem auto 0;
-  background-color: transparent;
-  border: 1px solid $secondary-color;
-  color: $white;
-
-  @include respond-to(lg) {
-    display: none;
-  }
-
-  &:hover {
-    background-color: rgba($secondary-color, 0.1);
-  }
-}

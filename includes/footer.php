@@ -53,6 +53,9 @@
 </footer>
 
 <script src="./assets/js/main.js" type="module"></script>
+<script src="https://cdn.jsdelivr.net/npm/embla-carousel/embla.carousel.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/embla-carousel/embla.carousel.min.css">
+
 </body>
 </html>
 <?php

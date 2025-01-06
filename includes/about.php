@@ -5,7 +5,7 @@
 
 ?>
 
-<section class="aboutus-section">
+<section class="aboutus">
     <div class="container">
         <div class="title-wrapper">
             <p class="sub-title">why choose flex</p>

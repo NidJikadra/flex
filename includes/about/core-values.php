@@ -4,7 +4,7 @@
  */
 ?>
 
-<section class="core-values-section">
+<section class="core-values">
     <div class="container">
         <div class="title-wrapper">
             <p class="sub-title">Our Core Values</p>

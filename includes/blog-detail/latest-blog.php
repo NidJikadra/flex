@@ -4,7 +4,7 @@
  */
 ?>
 
-<section class="blog-section">
+<section class="blogs-spot">
     <div class="container">
         <h3 class="latest-blog__title">More Like This</h3>
         <div class="row">

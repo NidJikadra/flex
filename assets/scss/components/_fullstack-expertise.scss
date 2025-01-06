@@ -1,0 +1,37 @@
+.fullstack-expertise {
+    padding: 32px 0;
+  
+    @include respond-to(md) {
+      padding: 56px 0;
+    }
+  
+    @include respond-to(lg) {
+      padding: 80px 0;
+    }
+
+    .description {
+        color: #cfcfcf;
+    }
+
+    &__text {
+        font-size: 18px;
+        line-height: 29px;
+        letter-spacing: 0.36px;
+        color: $primary-color;
+    }
+
+    .wordpress-services__image-container {
+        margin: 0 auto 18px;
+        width: 63px;
+        height: 63px;
+    }
+
+    &__block {
+        text-align: center;
+    }
+
+    &__row {
+        @include grid(3, 90px);
+        margin: 40px 0;
+    }
+}

@@ -17,7 +17,7 @@ $stats = [
 ];
 
 ?>
-<section class="case-studies-list-section">
+<section class="case-studies-list">
     <div class="container">
         <div class="case-studies-list__content">
             <div class="case-studies-list__content-list">
@@ -35,7 +35,7 @@ $stats = [
                         <span>3D Design</span>
                     </p>
                     <h3 class="h3">The Interactive Dictionary of Free Speech - WebExperience</h3>
-                    <p class="service-text">
+                    <p class="description">
                         A virtual reality gaming experience showcasing the wonders of the island of Nisida, intertwining
                         myths, legends, and tourist information with a message of hope and redemption.
                     </p>
@@ -78,7 +78,7 @@ $stats = [
                         <span>3D Design</span>
                     </p>
                     <h3 class="h3">The Interactive Dictionary of Free Speech - WebExperience</h3>
-                    <p class="service-text">
+                    <p class="description">
                         A virtual reality gaming experience showcasing the wonders of the island of Nisida, intertwining
                         myths, legends, and tourist information with a message of hope and redemption.
                     </p>
@@ -121,7 +121,7 @@ $stats = [
                         <span>3D Design</span>
                     </p>
                     <h3 class="h3">The Interactive Dictionary of Free Speech - WebExperience</h3>
-                    <p class="service-text">
+                    <p class="description">
                         A virtual reality gaming experience showcasing the wonders of the island of Nisida, intertwining
                         myths, legends, and tourist information with a message of hope and redemption.
                     </p>
@@ -164,7 +164,7 @@ $stats = [
                         <span>3D Design</span>
                     </p>
                     <h3 class="h3">The Interactive Dictionary of Free Speech - WebExperience</h3>
-                    <p class="service-text">
+                    <p class="description">
                         A virtual reality gaming experience showcasing the wonders of the island of Nisida, intertwining
                         myths, legends, and tourist information with a message of hope and redemption.
                     </p>
@@ -207,7 +207,7 @@ $stats = [
                         <span>3D Design</span>
                     </p>
                     <h3 class="h3">The Interactive Dictionary of Free Speech - WebExperience</h3>
-                    <p class="service-text">
+                    <p class="description">
                         A virtual reality gaming experience showcasing the wonders of the island of Nisida, intertwining
                         myths, legends, and tourist information with a message of hope and redemption.
                     </p>

@@ -4,16 +4,16 @@
  */
 ?>
 
-<section class="article-section">
+<section class="our-articles">
     <div class="container">
-        <div class="article-section__featured">
-            <div class="article-section__image">
+        <div class="our-articles__featured">
+            <div class="our-articles__image">
                 <img src="assets/images/blog-img.png" width="660" height="460" alt="Laptop with virtual dictionary"
                     class="blog-image">
             </div>
-            <div class="article-section__block">
-                <p class="article-section__date">05 August, 2024</p>
-                <h3 class="article-section__title">Optimizing TCO and fueling growth for our partners with staff
+            <div class="our-articles__block">
+                <p class="our-articles__date">05 August, 2024</p>
+                <h3 class="our-articles__title">Optimizing TCO and fueling growth for our partners with staff
                     augmentation
                 </h3>
                 

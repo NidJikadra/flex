@@ -37,16 +37,16 @@ $faqs = [
 ];
 ?>
 
-<section class="faq-section">
+<section class="faq">
     <div class="container">
-        <div class="faq-section__row"> 
-            <div class="faq-section__column-1">
+        <div class="faq__row"> 
+            <div class="faq__column-1">
                 <p class="sub-title">FAQ</p>
-                <h2 class="faq-section__heading">Frequently Asked Questions</h2>
-                <p class="faq-section__content">Find quick answers to common questions in our FAQ section. For more help, contact our support team anytime—we're here to assist.</p>
+                <h2 class="faq__heading">Frequently Asked Questions</h2>
+                <p class="faq__content">Find quick answers to common questions in our FAQ section. For more help, contact our support team anytime—we're here to assist.</p>
                 <button type="button" class="button btn-secondary">Contact Us<span class="icon"></span></button>
             </div>
-            <div class="faq-section__column-2">
+            <div class="faq__column-2">
                 <?php foreach ($faqs as $faq): ?>
                     <div class="accordion-item <?php echo $faq['is_open'] ? 'open' : ''; ?>">
                         <div class="accordion-header <?php echo $faq['is_open'] ? 'active' : ''; ?>">

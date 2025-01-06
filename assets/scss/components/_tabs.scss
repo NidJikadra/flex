@@ -1,4 +1,4 @@
-.tab-section {
+.tabs {
   padding: 35px 0;
 
   @include respond-to(md) {
@@ -27,7 +27,7 @@
   }
 }
 
-.tabs {
+.tabs-panel {
   @include flex;
   border: 1px solid #212121;
   border-radius: 50px;

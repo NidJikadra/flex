@@ -122,6 +122,17 @@ button {
   line-height: 32px;
 }
 
+.sub-heading {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: $secondary-color;
+
+  @include respond-to(md){
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+}
+
 
   .text-content {
     font-family: $font-light;

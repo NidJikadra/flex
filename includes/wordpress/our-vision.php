@@ -17,20 +17,73 @@
                 <img src="assets/images/our-vision.png" alt="image" height="842" width="680">
             </div>
             <div class="our-vision__content">
-                <div class="our-vision__item">
                     <div class="wordpress-services__inner-card">
-                        <div class="wordpress-services__image-container">
+                        <div class="our-vision__image-container">
                             <img src="assets/images/icons/laptop-minimalistic.svg" alt="web development" height="33"
                                 width="33">
                         </div>
                         <div class="wordpress-services__content">
-                            <p class="our-process__title"><span class="text-blue">Custom WordPress Web
-                                    Development</span>
+                            <p class="our-process__title"><span class="text-blue">Expertise & Experience</span>
                             </p>
-                            <p class="job-opening__text">Tailored WordPress Web Solutions</p>
+                            <p class="job-opening__text">Deep Industry Knowledge and Skills</p>
                         </div>
                     </div>
-                </div>
+                    <div class="wordpress-services__inner-card">
+                        <div class="our-vision__image-container">
+                            <img src="assets/images/icons/laptop-minimalistic.svg" alt="web development" height="33"
+                                width="33">
+                        </div>
+                        <div class="wordpress-services__content">
+                            <p class="our-process__title"><span class="text-blue">Expertise & Experience</span>
+                            </p>
+                            <p class="job-opening__text">Deep Industry Knowledge and Skills</p>
+                        </div>
+                    </div>
+                    <div class="wordpress-services__inner-card">
+                        <div class="our-vision__image-container">
+                            <img src="assets/images/icons/laptop-minimalistic.svg" alt="web development" height="33"
+                                width="33">
+                        </div>
+                        <div class="wordpress-services__content">
+                            <p class="our-process__title"><span class="text-blue">Expertise & Experience</span>
+                            </p>
+                            <p class="job-opening__text">Deep Industry Knowledge and Skills</p>
+                        </div>
+                    </div>
+                    <div class="wordpress-services__inner-card">
+                        <div class="our-vision__image-container">
+                            <img src="assets/images/icons/laptop-minimalistic.svg" alt="web development" height="33"
+                                width="33">
+                        </div>
+                        <div class="wordpress-services__content">
+                            <p class="our-process__title"><span class="text-blue">Expertise & Experience</span>
+                            </p>
+                            <p class="job-opening__text">Deep Industry Knowledge and Skills</p>
+                        </div>
+                    </div>
+                    <div class="wordpress-services__inner-card">
+                        <div class="our-vision__image-container">
+                            <img src="assets/images/icons/laptop-minimalistic.svg" alt="web development" height="33"
+                                width="33">
+                        </div>
+                        <div class="wordpress-services__content">
+                            <p class="our-process__title"><span class="text-blue">Expertise & Experience</span>
+                            </p>
+                            <p class="job-opening__text">Deep Industry Knowledge and Skills</p>
+                        </div>
+                    </div>
+                    <div class="wordpress-services__inner-card">
+                        <div class="our-vision__image-container">
+                            <img src="assets/images/icons/laptop-minimalistic.svg" alt="web development" height="33"
+                                width="33">
+                        </div>
+                        <div class="wordpress-services__content">
+                            <p class="our-process__title"><span class="text-blue">Expertise & Experience</span>
+                            </p>
+                            <p class="job-opening__text">Deep Industry Knowledge and Skills</p>
+                        </div>
+                    </div>
+               
             </div>
         </div>
     </div>

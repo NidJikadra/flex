@@ -1,4 +1,4 @@
-.testimonial-section {
+.tabstestimonials {
   padding: 35px 0;
 
   @include respond-to(md) {
@@ -104,7 +104,7 @@
   }
 }
 
-.testimonial-section__description {
+.tabstestimonials__description {
   color: $gray-color;
   font-family: $font-light;
   font-size: 16px;
@@ -151,9 +151,7 @@
     margin-bottom: 0;
   }
 
-  &__sub-title {
-    margin-bottom: 8px;
-  }
+
 
   &__heading {
     color: $white;
