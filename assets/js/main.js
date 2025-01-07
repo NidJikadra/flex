@@ -1,3 +1,5 @@
+
+
 // tab-section
 document.querySelectorAll(".tab").forEach((tab) => {
     tab.addEventListener("click", () => {
@@ -140,9 +142,16 @@ document.querySelectorAll('.tech-stack__skills-button').forEach((button) => {
 
 
 // carousel 
-import EmblaCarousel from "embla-carousel";
 
-const emblaNode = document.querySelector('.carousel__viewport');
+document.addEventListener('DOMContentLoaded', () => {
+  const emblaNode = document.querySelector('.embla__viewport');
+  const embla = EmblaCarousel(emblaNode, {
+    align: "start", 
+    dragFree: true,
+    speed: 5,   
+  });
 
-const embla = EmblaCarousel(emblaNode, { loop: false });
+});
+
+
 

@@ -4,7 +4,7 @@
  */
 ?>
 
-<section class="cta">
+<section class="call-to-action">
     <div class="container">
         <div class="call-wrapper">
             <h2 class="h2">Looking for help with development, design, or product strategy?</h2>

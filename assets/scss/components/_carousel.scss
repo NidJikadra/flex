@@ -1,20 +1,39 @@
 .carousel {
 
+  .embla__viewport {
+    overflow: hidden;
+  }
+
   .sub-heading {
     font-family: $font-medium;
     color: $primary-color;
-    margin-top: 20px;
+    margin-top: 10px;
+
+    @include respond-to(md){
+      margin-top: 20px;
+    }
   }
 
   &__card {
     background-color: #121315;
     padding: 20px;
+    min-width: 300px;
+    margin-right: 20px;
     color: $primary-color;
     border-radius: 24px;
     border: 1px solid #212121;
     box-shadow: 2px 1px 24px 6px rgba(0, 0, 0, 0.6);
+
+    @include respond-to(md) {
+      min-width: 350px;
+      margin-right: 40px;
+    }
+
+    @include respond-to(lg) {
+      min-width: 450px;
+    }
   }
-  
+
   &__card-icons {
     display: flex;
     justify-content: space-between;
@@ -22,29 +41,45 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding: 45px;
+    padding: 30px;
     border-radius: 10px;
     background-color: #1b1b1b;
     border: 1px solid #212121;
     box-shadow: 2px 1px 24px 6px rgba(0, 0, 0, 0.6);
     color: $primary-color;
+
+    @include respond-to(lg) {
+      padding: 45px;
+    }
   }
 
   &__icon {
     background-color: #121315;
     border-radius: 50px;
-    padding: 22px;
-    width: 80px;
-    height: 80px;
+    padding: 19px;
+    width: 64px;
+    height: 64px;
+
+    @include respond-to(md) {
+      padding: 22px;
+      width: 80px;
+      height: 80px;
+    }
   }
 
   &__row {
-    @include grid(3, 40px);
+    display: flex;
+    user-select: none;
   }
 
   .description {
-    font-size: 18px;
-    line-height: 28px;
-    color: #BABABA;
+    font-size: 16px;
+    line-height: 22px;
+    color: #bababa;
+
+    @include respond-to(md) {
+      font-size: 18px;
+      line-height: 28px;
+    }
   }
 }

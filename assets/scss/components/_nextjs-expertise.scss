@@ -29,11 +29,19 @@
         width: 100%;
       }
   } 
-  
 
   .last-card {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
+
+    @include respond-to(lg){
+      flex-wrap: nowrap;
+    }
+
+    img {
+      padding: 0 20px;
+    }
   }
 
 }

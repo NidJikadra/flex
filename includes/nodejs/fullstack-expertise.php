@@ -1,7 +1,7 @@
 <?php
 /**
  * 
- * Next.js Expertise Section Component
+ * Fullstack Expertise Section Component
  * 
  **/
 ?>
@@ -10,12 +10,8 @@
     <div class="container">
         <div class="title-wrapper">
             <p class="sub-title">Full Stack Development</p>
-            <h2 class="h2">Build Secure Apps With Full-Stack Expertise</h2>
-            <p class="description">When it comes to delivering high-performance applications, Flex Solutions brings the
-                required expertise in full-stack development. We understand the importance of a seamless user
-                experience, and that's why we offer a range of technology stacks that combine the best tools and
-                frameworks. With our well-researched starter architecture, we provide a kickstart to your projects,
-                ensuring your project is efficient from the get-go.</p>
+            <h2 class="h2">Leverage Production-Ready Full-Stack Apps</h2>
+            <p class="description">Flex Solutions is a top-notch Node.js web development company that understands the vitality of great user experience, bug-free apps, and scalability. This is why we extend the range of technology stacks that combine the best tools and frameworks for your NodeJS application.</p>
         </div>
         <div class="fullstack-expertise__row">
             <div class="fullstack-expertise__block">

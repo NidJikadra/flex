@@ -31,7 +31,16 @@
     }
 
     &__row {
-        @include grid(3, 90px);
-        margin: 40px 0;
+        @include grid(1, 20px);
+        margin: 20px 0;
+
+        @include respond-to(lg){
+            @include grid(3, 40px);
+            margin: 40px 0;
+        }
+
+        @include respond-to(xl){
+            @include grid(3, 90px);
+        }
     }
 }

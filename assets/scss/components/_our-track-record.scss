@@ -1,0 +1,53 @@
+.our-track-records {
+    &__wrapper {
+        background-image: url("../images/track-record.png");
+    }
+
+    .career__content {
+        max-width: 1145px;
+    }
+
+    &__title {
+        font-family: "utendomedium";
+        font-size: clamp(1.25rem, 0.6338rem + 2.6291vw, 3rem);
+        line-height: clamp(1.5rem, 0.8398rem + 2.8169vw, 3.375rem);
+        font-weight: 100;
+        max-width: 735px;
+    }
+
+    .hero-banner__row {
+        padding-top: 20px;
+        justify-content: space-between;
+
+        @include respond-to(md) {
+            padding-top: 40px;
+        }
+    }
+
+    &__list {
+        @include grid(1, 16px);
+        margin-top: 20px;
+
+        @include respond-to(sm) {
+            @include grid(2, 16px);
+            margin-top: 20px;
+        }
+
+        @include respond-to(lg) {
+            @include grid(3, 36px);
+            margin-top: 40px;
+        }
+    }
+
+    &__list-item {
+        color: #E5E5E5;
+        list-style-type: disc;
+        margin-left: 20px;
+        letter-spacing: 0.32px;
+    }
+
+    .description {
+        font-size: 18px;
+        font-family: $font-regular;
+    }
+}
