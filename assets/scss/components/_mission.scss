@@ -39,7 +39,7 @@
     flex: 100%;
 
     &--last {
-      background-color: #121315;
+      background-color: $dark-slate-gray;
     }
 
     @include respond-to(lg) {

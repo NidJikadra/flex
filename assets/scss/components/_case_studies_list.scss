@@ -40,7 +40,7 @@
       display: block;
       border-radius: 36px;
       object-fit: cover;
-      border: 1px solid #212121;
+      border: 1px solid $border-color;
       box-shadow: 2px 1px 24px 6px rgba(0, 0, 0, 0.6);
 
       @include respond-to(xxl) {
@@ -51,8 +51,8 @@
 
   &__details {
     flex: 1;
-    color: #fbfbfb;
-    background-color: #0b0b0b;
+    color: $primary-color;
+    background-color: $light-black;
     padding: 20px;
     border-radius: 36px;
 
@@ -64,11 +64,8 @@
       margin: 0 0 20px;
     }
 
-    .description {
-      color: #bababa;
+    .overview-text {
       margin: 20px 0;
-      font-size: 18px;
-      line-height: 28px;
     }
   }
   &__technologies {
@@ -77,8 +74,8 @@
     gap: 1rem;
   }
   &__tech {
-    background-color: #121315;
-    color: #fbfbfb;
+    background-color: $dark-slate-gray;
+    color: $primary-color;
     border-radius: 16px;
     text-align: center;
     cursor: pointer;
@@ -117,7 +114,7 @@
     }
   }
   &__stat {
-    background-color: #121315;
+    background-color: $dark-slate-gray;
     border-radius: 10px;
     padding: 15px;
 

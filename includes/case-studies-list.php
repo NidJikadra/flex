@@ -29,7 +29,7 @@
                         <span>3D Design</span>
                     </p>
                     <h3 class="h3">The Interactive Dictionary of Free Speech - WebExperience</h3>
-                    <p class="description">
+                    <p class="overview-text">
                         A virtual reality gaming experience showcasing the wonders of the island of Nisida, intertwining
                         myths, legends, and tourist information with a message of hope and redemption.
                     </p>

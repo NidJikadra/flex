@@ -21,7 +21,7 @@
                     <img src="assets/images/icons/next-authjs.svg" alt="next-authjs" height="36" width="36">
                 </div>
                 <div class="sub-heading">NextAuth.js</div>
-                <div class="description">NextAuth.js is an authentication framework that provides a smoother
+                <div class="overview-text">NextAuth.js is an authentication framework that provides a smoother
                     authentication and
                     authorization solution for Next.js applications. It supports various authentication providers,
                     including
@@ -35,7 +35,7 @@
                     <img src="assets/images/icons/next-authjs.svg" alt="next-authjs" height="36" width="36">
                 </div>
                 <div class="sub-heading">NextAuth.js</div>
-                <div class="description">NextAuth.js is an authentication framework that provides a smoother
+                <div class="overview-text">NextAuth.js is an authentication framework that provides a smoother
                     authentication and
                     authorization solution for Next.js applications. It supports various authentication providers,
                     including
@@ -49,7 +49,7 @@
                     <img src="assets/images/icons/next-authjs.svg" alt="next-authjs" height="36" width="36">
                 </div>
                 <div class="sub-heading">NextAuth.js</div>
-                <div class="description">NextAuth.js is an authentication framework that provides a smoother
+                <div class="overview-text">NextAuth.js is an authentication framework that provides a smoother
                     authentication and
                     authorization solution for Next.js applications. It supports various authentication providers,
                     including
@@ -63,7 +63,7 @@
                     <img src="assets/images/icons/next-authjs.svg" alt="next-authjs" height="36" width="36">
                 </div>
                 <div class="sub-heading">NextAuth.js</div>
-                <div class="description">NextAuth.js is an authentication framework that provides a smoother
+                <div class="overview-text">NextAuth.js is an authentication framework that provides a smoother
                     authentication and
                     authorization solution for Next.js applications. It supports various authentication providers,
                     including
@@ -77,7 +77,7 @@
                     <img src="assets/images/icons/next-authjs.svg" alt="next-authjs" height="36" width="36">
                 </div>
                 <div class="sub-heading">NextAuth.js</div>
-                <div class="description">NextAuth.js is an authentication framework that provides a smoother
+                <div class="overview-text">NextAuth.js is an authentication framework that provides a smoother
                     authentication and
                     authorization solution for Next.js applications. It supports various authentication providers,
                     including

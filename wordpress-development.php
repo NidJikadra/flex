@@ -1,5 +1,5 @@
 <?php
-$page_title = 'Wordpress Development';
+$page_title = 'Wordpress Development - Service';
 include 'includes/header.php';
 ?>
 

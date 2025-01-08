@@ -9,7 +9,7 @@
 .desc {
   font-size: 16px;
   line-height: 26px;
-  color: #fbfbfb;
+  color: $primary-color;
   letter-spacing: 0.36px;
   margin-bottom: 38px;
 
@@ -47,7 +47,7 @@
   }
 }
 
-.read-more{
+.read-more {
   color: $secondary-color;
   gap: 10px;
   align-items: center;
@@ -115,11 +115,16 @@ button {
 }
 
 .description {
-  color: #a4a4a4;
+  color: $gray-color;
   font-family: $font-light;
-  font-size: 20px;
+  font-size: 18px;
+  line-height: 28px;
   letter-spacing: 0.4px;
-  line-height: 32px;
+  
+  @include respond-to(lg){
+    font-size: 20px;
+    line-height: 32px;
+  }
 }
 
 .sub-heading {
@@ -127,30 +132,48 @@ button {
   margin-bottom: 10px;
   color: $secondary-color;
 
-  @include respond-to(md){
+  @include respond-to(md) {
     font-size: 24px;
     margin-bottom: 20px;
   }
 }
 
+.overview-text {
+  font-family: $font-light;
+  font-size: 16px;
+  line-height: 22px;
+  color: #bababa;
+  letter-spacing: 0.36px;
 
-  .text-content {
-    font-family: $font-light;
-    font-size: 20px;
+  @include respond-to(md) {
+    font-size: 18px;
     line-height: 28px;
-    letter-spacing: 0.36px;
-    color: #cfcfcf;
-
-    @include respond-to(md) {
-      font-size: 24px;
-      line-height: 38px;
-    }
   }
+}
+
+.text-content {
+  font-family: $font-light;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0.36px;
+  color: #cfcfcf;
+
+  @include respond-to(md) {
+    font-size: 24px;
+    line-height: 38px;
+  }
+}
 
 .overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to right, rgba($black, 0.8) 17%, transparent 86%, transparent 40%, rgba($black, 0.8) 100%);
+  background: linear-gradient(
+    to right,
+    rgba($black, 0.8) 17%,
+    transparent 86%,
+    transparent 40%,
+    rgba($black, 0.8) 100%
+  );
   background-color: rgba($black, 0.5);
   border-radius: inherit;
   z-index: 2;

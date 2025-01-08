@@ -19,42 +19,42 @@
                     <img src="assets/images/icons/maximize-circle.svg" alt="next-authjs" height="36" width="36">
                 </div>
                 <div class="sub-heading">Improved Performance and SEO</div>
-                <div class="description">Next.js is responsible for enabling server-side rendering (SSR) and static site generation (SSG), which results in faster page loads and improved performance. By pre-rendering pages, Next.js reduces the time-to-first-content and gives a better user experience. It also generates SEO-friendly HTML code, which helps your website rank higher in search engine results, attract more organic traffic, and increase your online visibility.</div>
+                <div class="overview-text">Next.js is responsible for enabling server-side rendering (SSR) and static site generation (SSG), which results in faster page loads and improved performance. By pre-rendering pages, Next.js reduces the time-to-first-content and gives a better user experience. It also generates SEO-friendly HTML code, which helps your website rank higher in search engine results, attract more organic traffic, and increase your online visibility.</div>
             </div>
             <div class="nextjs-excellence__card">
                 <div class="nextjs-excellence__image">
                     <img src="assets/images/icons/maximize-circle.svg" alt="next-authjs" height="36" width="36">
                 </div>
                 <div class="sub-heading">Improved Performance and SEO</div>
-                <div class="description">Next.js is responsible for enabling server-side rendering (SSR) and static site generation (SSG), which results in faster page loads and improved performance. By pre-rendering pages, Next.js reduces the time-to-first-content and gives a better user experience. It also generates SEO-friendly HTML code, which helps your website rank higher in search engine results, attract more organic traffic, and increase your online visibility.</div>
+                <div class="overview-text">Next.js is responsible for enabling server-side rendering (SSR) and static site generation (SSG), which results in faster page loads and improved performance. By pre-rendering pages, Next.js reduces the time-to-first-content and gives a better user experience. It also generates SEO-friendly HTML code, which helps your website rank higher in search engine results, attract more organic traffic, and increase your online visibility.</div>
             </div>
             <div class="nextjs-excellence__card">
                 <div class="nextjs-excellence__image">
                     <img src="assets/images/icons/maximize-circle.svg" alt="next-authjs" height="36" width="36">
                 </div>
                 <div class="sub-heading">Improved Performance and SEO</div>
-                <div class="description">Next.js is responsible for enabling server-side rendering (SSR) and static site generation (SSG), which results in faster page loads and improved performance. By pre-rendering pages, Next.js reduces the time-to-first-content and gives a better user experience. It also generates SEO-friendly HTML code, which helps your website rank higher in search engine results, attract more organic traffic, and increase your online visibility.</div>
+                <div class="overview-text">Next.js is responsible for enabling server-side rendering (SSR) and static site generation (SSG), which results in faster page loads and improved performance. By pre-rendering pages, Next.js reduces the time-to-first-content and gives a better user experience. It also generates SEO-friendly HTML code, which helps your website rank higher in search engine results, attract more organic traffic, and increase your online visibility.</div>
             </div>
             <div class="nextjs-excellence__card">
                 <div class="nextjs-excellence__image">
                     <img src="assets/images/icons/maximize-circle.svg" alt="next-authjs" height="36" width="36">
                 </div>
                 <div class="sub-heading">Improved Performance and SEO</div>
-                <div class="description">Next.js is responsible for enabling server-side rendering (SSR) and static site generation (SSG), which results in faster page loads and improved performance. By pre-rendering pages, Next.js reduces the time-to-first-content and gives a better user experience. It also generates SEO-friendly HTML code, which helps your website rank higher in search engine results, attract more organic traffic, and increase your online visibility.</div>
+                <div class="overview-text">Next.js is responsible for enabling server-side rendering (SSR) and static site generation (SSG), which results in faster page loads and improved performance. By pre-rendering pages, Next.js reduces the time-to-first-content and gives a better user experience. It also generates SEO-friendly HTML code, which helps your website rank higher in search engine results, attract more organic traffic, and increase your online visibility.</div>
             </div>
             <div class="nextjs-excellence__card">
                 <div class="nextjs-excellence__image">
                     <img src="assets/images/icons/maximize-circle.svg" alt="next-authjs" height="36" width="36">
                 </div>
                 <div class="sub-heading">Improved Performance and SEO</div>
-                <div class="description">Next.js is responsible for enabling server-side rendering (SSR) and static site generation (SSG), which results in faster page loads and improved performance. By pre-rendering pages, Next.js reduces the time-to-first-content and gives a better user experience. It also generates SEO-friendly HTML code, which helps your website rank higher in search engine results, attract more organic traffic, and increase your online visibility.</div>
+                <div class="overview-text">Next.js is responsible for enabling server-side rendering (SSR) and static site generation (SSG), which results in faster page loads and improved performance. By pre-rendering pages, Next.js reduces the time-to-first-content and gives a better user experience. It also generates SEO-friendly HTML code, which helps your website rank higher in search engine results, attract more organic traffic, and increase your online visibility.</div>
             </div>
             <div class="nextjs-excellence__card">
                 <div class="nextjs-excellence__image">
                     <img src="assets/images/icons/maximize-circle.svg" alt="next-authjs" height="36" width="36">
                 </div>
                 <div class="sub-heading">Improved Performance and SEO</div>
-                <div class="description">Next.js is responsible for enabling server-side rendering (SSR) and static site generation (SSG), which results in faster page loads and improved performance. By pre-rendering pages, Next.js reduces the time-to-first-content and gives a better user experience. It also generates SEO-friendly HTML code, which helps your website rank higher in search engine results, attract more organic traffic, and increase your online visibility.</div>
+                <div class="overview-text">Next.js is responsible for enabling server-side rendering (SSR) and static site generation (SSG), which results in faster page loads and improved performance. By pre-rendering pages, Next.js reduces the time-to-first-content and gives a better user experience. It also generates SEO-friendly HTML code, which helps your website rank higher in search engine results, attract more organic traffic, and increase your online visibility.</div>
             </div>
         </div>
     </div>

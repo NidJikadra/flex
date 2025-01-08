@@ -53,7 +53,7 @@
 </footer>
 
 <script src="./assets/js/main.js" type="module"></script>
-<script src="https://cdn.jsdelivr.net/npm/embla-carousel/embla-carousel.umd.js"></script>
+<script src="https://unpkg.com/embla-carousel/embla-carousel.umd.js"></script>
 </body>
 </html>
 <?php

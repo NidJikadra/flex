@@ -24,13 +24,8 @@
   }
 
   .row {
-    margin-top: 20px;
     @include flex(column);
     gap: 40px;
-
-    @include respond-to(md) {
-      margin-top: 45px;
-    }
   }
 }
 

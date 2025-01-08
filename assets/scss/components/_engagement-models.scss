@@ -11,7 +11,7 @@
 
   .wordpress-services__service-card {
     padding: 30px;
-    border: 1px solid #212121;
+    border: 1px solid $border-color;
 
     @include respond-to(xl) {
       padding: 40px;
@@ -60,7 +60,7 @@
   }
 
   &__image-container {
-    background: #121315;
+    background: $dark-slate-gray;
     padding: 15px;
     border-radius: 16px;
     position: relative;

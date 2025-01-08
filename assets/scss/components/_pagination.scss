@@ -27,13 +27,13 @@
       display: block;
       padding: 8px 14px;
       border-radius: 6px;
-      background-color: #121315;
+      background-color: $dark-slate-gray;
       color: $primary-color;
       text-decoration: none;
 
       &:hover {
         background-color: $primary-color;
-        color: #121315;
+        color: $dark-slate-gray;
       }
     }
   }
@@ -51,12 +51,12 @@
     letter-spacing: 0.36px;
     font-size: 24px;
     background-color: transparent;
-    color: #A4A4A4;
+    color: $gray-color;
     border: none;
     padding-right: 50px;
 
     &::placeholder {
-      color: #A4A4A4;
+      color: $gray-color;
     }
 
     &:focus {

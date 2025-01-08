@@ -53,7 +53,7 @@
                         <p class="our-core-services__service-text">We protect your website from malicious activity and
                             data breaches using trusted locations, secure https, firewalls, encryption, restricted CMS
                             access, 24/7 server monitoring, regular back-ups, security...</p>
-                        <a href="#" class="read-more" data-hover="Contact now"><span>Contact now</span></a>
+                        <a href="maintenance-support-service.php" class="read-more" data-hover="Contact now"><span>Contact now</span></a>
                     </div>
 
                     <div class="our-core-services__service-image">
@@ -73,7 +73,7 @@
                                 <a href="nextjs-service.php" class="read-more" data-hover="Contact now"><span>Contact now</span></a>
                             </div>
                             <div class="our-core-services__link">
-                                <a href="nodejs-service.php" class="read-more" data-hover="Contact now"><span>Contact now</span></a>
+                                <a href="#" class="read-more" data-hover="Contact now"><span>Contact now</span></a>
                             </div>
                        
                     </div>
@@ -98,7 +98,7 @@
                         <p class="our-core-services__service-text">Support for code, small features, bug fixes, upgrades
                             and security patches. Our hosting keeps your applications and server infrastructure updated
                             and secure...</p>
-                        <a href="#" class="read-more" data-hover="Get inquiry now"><span>Get inquiry now</span></a>
+                        <a href="nodejs-service.php" class="read-more" data-hover="Get inquiry now"><span>Get inquiry now</span></a>
                     </div>
                     <div class="our-core-services__service-image">
                         <img src="assets/images/backend.png" height="192" width="720">

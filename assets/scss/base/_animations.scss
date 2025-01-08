@@ -26,3 +26,18 @@
     transform: rotate(360deg);
   }
 }
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-50%));
+  }
+
+  @include respond-to(md) {
+    100% {
+      transform: translateX(calc(-50%));
+    }
+  }
+}

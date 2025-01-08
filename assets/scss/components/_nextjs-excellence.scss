@@ -15,15 +15,9 @@
     @include respond-to(lg) {
       @include grid(2, 60px);
     }
-
-    .description {
-      font-size: 18px;
-      line-height: 28px;
-    }
   }
-
   &__card {
-    background-color: #121315;
+    background-color: $dark-slate-gray;
     border-radius: 28px;
     padding: 20px;
 
@@ -58,5 +52,17 @@
   .intro-desc {
     color: #cfcfcf;
     margin-top: 10px;
+  }
+
+  .nodejs-excellence__row {
+    @include grid(1, 30px);
+
+    @include respond-to(lg) {
+      @include grid(2, 60px);
+    }
+
+    @include respond-to(xl) {
+      @include grid(3, 60px);
+    }
   }
 }

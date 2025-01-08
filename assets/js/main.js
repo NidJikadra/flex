@@ -92,7 +92,6 @@ document.addEventListener('DOMContentLoaded', () => {
       const position = card.getAttribute('data-position');
       const description = card.getAttribute('data-description');
       const skills = card.getAttribute('data-skills');
-
       const image = card.getAttribute('data-image');
 
       // Set modal content
@@ -143,15 +142,34 @@ document.querySelectorAll('.tech-stack__skills-button').forEach((button) => {
 
 // carousel 
 
-document.addEventListener('DOMContentLoaded', () => {
-  const emblaNode = document.querySelector('.embla__viewport');
-  const embla = EmblaCarousel(emblaNode, {
-    align: "start", 
-    dragFree: true,
-    speed: 5,   
-  });
+document.addEventListener("DOMContentLoaded", function () {
+  const emblaNode = document.querySelector(".embla__viewport");
+  const prevButton = document.querySelector(".embla__button--prev");
+  const nextButton = document.querySelector(".embla__button--next");
 
+  const embla = EmblaCarousel(emblaNode, { dragFree: true });
+
+  const setupButtonStates = () => {
+      if (embla.canScrollPrev()) {
+          prevButton.removeAttribute("disabled");
+      } else {
+          prevButton.setAttribute("disabled", "disabled");
+      }
+
+      if (embla.canScrollNext()) {
+          nextButton.removeAttribute("disabled");
+      } else {
+          nextButton.setAttribute("disabled", "disabled");
+      }
+  };
+
+  prevButton.addEventListener("click", embla.scrollPrev);
+  nextButton.addEventListener("click", embla.scrollNext);
+
+  embla.on("init", setupButtonStates);
+  embla.on("select", setupButtonStates);
 });
+
 
 
 

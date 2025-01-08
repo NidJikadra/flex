@@ -1,4 +1,25 @@
 .carousel {
+  position: relative;
+
+  @include respond-to(lg) {
+    margin-left: calc((100% - 992px) / 2);
+    padding-left: 16px;
+  }
+
+  @include respond-to(xl) {
+    margin-left: calc((100% - 1172px) / 2);
+    padding-left: 16px;
+  }
+
+  @include respond-to(xxl) {
+    margin-left: calc((100% - 1352px) / 2);
+    padding-left: 16px;
+  }
+
+  @include respond-to(2xl) {
+    margin-left: calc((100% - 1472px) / 2);
+    padding-left: 16px;
+  }
 
   .embla__viewport {
     overflow: hidden;
@@ -9,13 +30,13 @@
     color: $primary-color;
     margin-top: 10px;
 
-    @include respond-to(md){
+    @include respond-to(md) {
       margin-top: 20px;
     }
   }
 
   &__card {
-    background-color: #121315;
+    background-color: $dark-slate-gray;
     padding: 20px;
     min-width: 300px;
     margin-right: 20px;
@@ -54,7 +75,7 @@
   }
 
   &__icon {
-    background-color: #121315;
+    background-color: $dark-slate-gray;
     border-radius: 50px;
     padding: 19px;
     width: 64px;
@@ -71,15 +92,36 @@
     display: flex;
     user-select: none;
   }
+}
 
-  .description {
-    font-size: 16px;
-    line-height: 22px;
-    color: #bababa;
+.embla__button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #333;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  padding: 14px 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
 
-    @include respond-to(md) {
-      font-size: 18px;
-      line-height: 28px;
-    }
-  }
+.embla__button:hover {
+  background: #555;
+}
+.embla__button--prev {
+  left: 0;
+}
+.embla__button--next {
+  right: 13%;
+}
+
+.embla__button__svg {
+  width: 15px;
+  height: 15px;
+}
+
+.embla__button:disabled {
+  color: #ffffff34;
 }

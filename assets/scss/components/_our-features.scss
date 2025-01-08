@@ -39,7 +39,7 @@
       rgba(193, 207, 255, 0.12) 100%
     );
     border-radius: 10px;
-    border: 1px solid #212121;
+    border: 1px solid $border-color;
     position: relative;
 
     &::after {

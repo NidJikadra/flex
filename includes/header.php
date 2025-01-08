@@ -20,7 +20,6 @@ ob_start();
     <meta name="description" content="<?php echo SITE_DESCRIPTION; ?>">
     <title><?php echo SITE_NAME; ?> | <?php echo isset($page_title) ? $page_title : 'HomePage'; ?></title>
     <link rel="stylesheet" href="./assets/scss/main.css">
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/embla-carousel/embla-carousel.min.css"> -->
 </head>
 <body>
     <header class="main-header">

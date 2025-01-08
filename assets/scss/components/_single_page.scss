@@ -1,5 +1,5 @@
 .blog-detail {
-  color: #ffffff;
+  color: $white;
   padding: 0 0 35px;
 
   @include respond-to(md) {
@@ -106,7 +106,7 @@
     @include respond-to(lg) {
       height: 350px;
       margin-top: 0;
-      border-left: 1px solid #212121;
+      border-left: 1px solid $border-color;
       padding-left: 72px;
       max-width: 525px;
     }

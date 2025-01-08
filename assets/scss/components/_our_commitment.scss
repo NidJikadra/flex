@@ -13,7 +13,7 @@
     @include flex();
     flex-wrap: wrap;
     gap: 30px;
-    background-color: #121315;
+    background-color: $dark-slate-gray;
     border-radius: 36px;
     padding: 20px;
     align-items: center;

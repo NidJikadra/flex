@@ -22,7 +22,7 @@
   }
 
   .wordpress-services__inner-card {
-    background: #121315;
+    background: $dark-slate-gray;
     padding: 20px;
     flex-direction: column;
     position: relative;
@@ -84,7 +84,7 @@
   }
 
   &__image-container {
-    background: #0b0b0b;
+    background: $light-black;
     padding: 13px;
     border-radius: 10px;
 

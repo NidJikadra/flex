@@ -1,5 +1,5 @@
 <?php
-$page_title = 'Next js';
+$page_title = 'Next js - Service';
 include 'includes/header.php';
 ?>
 

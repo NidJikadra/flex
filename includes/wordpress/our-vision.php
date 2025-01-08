@@ -25,7 +25,7 @@
                         <div class="wordpress-services__content">
                             <p class="our-process__title"><span class="text-blue">Expertise & Experience</span>
                             </p>
-                            <p class="job-opening__text">Deep Industry Knowledge and Skills</p>
+                            <p class="overview-text">Deep Industry Knowledge and Skills</p>
                         </div>
                     </div>
                     <div class="wordpress-services__inner-card">
@@ -36,7 +36,7 @@
                         <div class="wordpress-services__content">
                             <p class="our-process__title"><span class="text-blue">Expertise & Experience</span>
                             </p>
-                            <p class="job-opening__text">Deep Industry Knowledge and Skills</p>
+                            <p class="overview-text">Deep Industry Knowledge and Skills</p>
                         </div>
                     </div>
                     <div class="wordpress-services__inner-card">
@@ -47,7 +47,7 @@
                         <div class="wordpress-services__content">
                             <p class="our-process__title"><span class="text-blue">Expertise & Experience</span>
                             </p>
-                            <p class="job-opening__text">Deep Industry Knowledge and Skills</p>
+                            <p class="overview-text">Deep Industry Knowledge and Skills</p>
                         </div>
                     </div>
                     <div class="wordpress-services__inner-card">
@@ -58,7 +58,7 @@
                         <div class="wordpress-services__content">
                             <p class="our-process__title"><span class="text-blue">Expertise & Experience</span>
                             </p>
-                            <p class="job-opening__text">Deep Industry Knowledge and Skills</p>
+                            <p class="overview-text">Deep Industry Knowledge and Skills</p>
                         </div>
                     </div>
                     <div class="wordpress-services__inner-card">
@@ -69,7 +69,7 @@
                         <div class="wordpress-services__content">
                             <p class="our-process__title"><span class="text-blue">Expertise & Experience</span>
                             </p>
-                            <p class="job-opening__text">Deep Industry Knowledge and Skills</p>
+                            <p class="overview-text">Deep Industry Knowledge and Skills</p>
                         </div>
                     </div>
                     <div class="wordpress-services__inner-card">
@@ -80,7 +80,7 @@
                         <div class="wordpress-services__content">
                             <p class="our-process__title"><span class="text-blue">Expertise & Experience</span>
                             </p>
-                            <p class="job-opening__text">Deep Industry Knowledge and Skills</p>
+                            <p class="overview-text">Deep Industry Knowledge and Skills</p>
                         </div>
                     </div>
                

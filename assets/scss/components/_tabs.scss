@@ -29,7 +29,7 @@
 
 .tabs-panel {
   @include flex;
-  border: 1px solid #212121;
+  border: 1px solid $border-color;
   border-radius: 50px;
   overflow-x: auto;
 
@@ -59,7 +59,7 @@
   }
 
   &:hover {
-    background-color: #212121;
+    background-color: $border-color;
   }
 
   &.active {
@@ -86,7 +86,7 @@
 
 .grid {
   position: relative;
-  background-color: #121315;
+  background-color: $dark-slate-gray;
   color: $primary-color;
   border-radius: 16px;
   text-align: center;

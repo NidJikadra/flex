@@ -22,7 +22,7 @@
 
   &__service-card {
     background: #1b1b1b;
-    color: #fff;
+    color: $white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 24px;
   }
@@ -30,7 +30,7 @@
   &__inner-card {
     @include flex(row, space-between, flex-start);
     background: linear-gradient(179deg, #0B0B0B 0%, #131416 100%);
-    border: 1px solid #212121;
+    border: 1px solid $border-color;
     box-shadow: 0 18px 20px rgba(0, 0, 0, 0.3);
     border-radius: 24px;
     padding: 24px 30px 20px;

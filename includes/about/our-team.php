@@ -6,15 +6,17 @@
 
 <section class="our-team">
     <div class="container">
-        <div class="title-wrapper">
-            <p class="sub-title">our team</p>
-            <h2 class="h2">Our People, Our Strength</h2>
+        <div class="section-title">
+            <div class="title-wrapper">
+                <p class="sub-title">our team</p>
+                <h2 class="h2">Our People, Our Strength</h2>
+            </div>
         </div>
         <div class="our-team__row">
             <div class="team-card" data-name="Jacob Jones" data-position="Founder" data-description="Bessie Cooper is the visionary Team Leader at Flex Solutions, driving innovative design strategies 
                                     and ensuring seamless project execution. With a background in both design and project management, 
-                                    Bessie excels in leading creative teams to deliver exceptional results." data-skills="Strategic Planning"
-                data-image="assets/images/team-member1(lg).png">
+                                    Bessie excels in leading creative teams to deliver exceptional results."
+                data-skills="Strategic Planning" data-image="assets/images/team-member1(lg).png">
                 <img src="assets/images/team-member1.png" alt="Jacob Jones" width="310" height="300" class="img-border">
                 <div class="card-content">
                     <div class="team-card__name">Jacob Jones</div>
@@ -24,8 +26,8 @@
             </div>
             <div class="team-card" data-name="Bessie Cooper" data-position="Team Leader" data-description="Bessie Cooper is the visionary Team Leader at Flex Solutions, driving innovative design strategies 
                                     and ensuring seamless project execution. With a background in both design and project management, 
-                                    Bessie excels in leading creative teams to deliver exceptional results." data-skills="Strategic Planning" 
-                data-image="assets/images/team-member2(lg).png">
+                                    Bessie excels in leading creative teams to deliver exceptional results."
+                data-skills="Strategic Planning" data-image="assets/images/team-member2(lg).png">
                 <img src="assets/images/team-member2.png" alt="Bessie Cooper" width="310" height="300"
                     class="img-border">
                 <div class="card-content">
@@ -35,8 +37,8 @@
             </div>
             <div class="team-card" data-name="Marvin McKinney" data-position="UI/UX Designer" data-description="Bessie Cooper is the visionary Team Leader at Flex Solutions, driving innovative design strategies 
                                     and ensuring seamless project execution. With a background in both design and project management, 
-                                    Bessie excels in leading creative teams to deliver exceptional results." data-skills="Strategic Planning"
-                data-image="assets/images/team-member3(lg).png">
+                                    Bessie excels in leading creative teams to deliver exceptional results."
+                data-skills="Strategic Planning" data-image="assets/images/team-member3(lg).png">
                 <img src="assets/images/team-member3.png" alt="Marvin McKinney" width="310" height="300"
                     class="img-border">
                 <div class="card-content">
@@ -46,8 +48,8 @@
             </div>
             <div class="team-card" data-name="Savannah Nguyen" data-position="Software Developer" data-description="Bessie Cooper is the visionary Team Leader at Flex Solutions, driving innovative design strategies 
                                     and ensuring seamless project execution. With a background in both design and project management, 
-                                    Bessie excels in leading creative teams to deliver exceptional results." data-skills="Strategic Planning"
-                data-image="assets/images/team-member4(lg).png">
+                                    Bessie excels in leading creative teams to deliver exceptional results."
+                data-skills="Strategic Planning" data-image="assets/images/team-member4(lg).png">
                 <img src="assets/images/team-member4.png" alt="Savannah Nguyen" width="310" height="300"
                     class="img-border">
                 <div class="card-content">

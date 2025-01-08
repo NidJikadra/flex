@@ -33,7 +33,7 @@
   }
 
   &__service-card {
-    background-color: #121315;
+    background-color: $dark-slate-gray;
     color: #cfcfcf;
     border-radius: 36px;
     position: relative;
@@ -95,8 +95,12 @@
 
   &__link {
     position: relative;
-    left: 36%;
+    left: 52%;
     display: inline-block;
+
+    @include respond-to(md){
+      left: 44%;
+    }
   }
 }
 

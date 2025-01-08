@@ -249,7 +249,7 @@
   visibility: hidden;
   position: absolute;
   width: 100%;
-  background-color: #121315;
+  background-color: $dark-slate-gray;
   top: 85px;
   left: 0;
   right: 0;
@@ -268,13 +268,14 @@
     margin: 0 auto;
     max-width: 1440px;
   }
-
+}
   .menu-card {
     padding: 20px;
     border: 1px solid rgba(#bababa, 0.12);
     color: $primary-color;
     transition: all 0.4s ease-in-out;
     overflow: hidden;
+    background-color: $dark-slate-gray;
 
     &:hover {
       background-color: $light-black;
@@ -282,6 +283,14 @@
 
     .img-border {
       box-shadow: -1px -1px 1px rgba($white, 0.25);
+    }
+
+    .read-more {
+      color: $primary-color;
+    
+      &::after {
+        background-image: url("../images/icons/white-arrow.svg");
+      }
     }
   }
 
@@ -346,7 +355,7 @@
   }
 
   .icons {
-    background-color: #121315;
+    background-color: $dark-slate-gray;
     box-shadow: -2px -1px 2px rgba($white, 0.25);
     border-radius: 50%;
     padding: 19px;
@@ -355,7 +364,7 @@
     width: 68px;
     margin-right: -10px;
   }
-}
+
 
 .menu-item:hover .mega-menu {
   visibility: visible;
@@ -374,7 +383,11 @@
 
 .tech-icons {
   @include flex;
-  margin: 26px 0;
+  margin: 12px 0;
+
+  @include respond-to(md) {
+    margin: 26px 0;
+  }
 }
 
 .tech-field {
@@ -383,7 +396,7 @@
   line-height: 18px;
   text-transform: uppercase;
   color: #cfcfcf;
-  margin: 26px 0;
+  margin: 12px 0;
 
   span {
     border-right: 1px solid #cfcfcf;
@@ -392,6 +405,10 @@
     &:last-child {
       border: none;
     }
+  }
+
+  @include respond-to(md) {
+    margin: 26px 0;
   }
 }
 
