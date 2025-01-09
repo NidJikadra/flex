@@ -63,7 +63,7 @@
     &-tab {
       display: none;
 
-      &--active {
+      &--list {
         gap: 30px;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -72,7 +72,15 @@
             grid-template-columns: repeat(4, 1fr);
         }
       }
+      &--list-item {
+        display: contents;
+      }
+
+      &--active {
+        display: block;
+      }
     }
+   
   }
   .item-name {
     display: block;

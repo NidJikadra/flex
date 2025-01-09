@@ -147,10 +147,10 @@ document.addEventListener("DOMContentLoaded", function () {
   const prevButton = document.querySelector(".embla__button--prev");
   const nextButton = document.querySelector(".embla__button--next");
 
-  const embla = EmblaCarousel(emblaNode, { dragFree: true });
+  const embla = EmblaCarousel(emblaNode, { dragFree: true, containScroll: false, slidesToScroll: 'auto' });
 
   const setupButtonStates = () => {
-      if (embla.canScrollPrev()) {
+      if (embla.canScrollPrev()) {  
           prevButton.removeAttribute("disabled");
       } else {
           prevButton.setAttribute("disabled", "disabled");
@@ -168,6 +168,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   embla.on("init", setupButtonStates);
   embla.on("select", setupButtonStates);
+  
 });
 
 

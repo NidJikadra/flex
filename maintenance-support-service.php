@@ -7,10 +7,13 @@ include 'includes/header.php';
     <?php
         include 'includes/maintenance-support/hero.php';
         include 'includes/maintenance-support/maintenance-overview.php';
-        include 'includes/maintenance-support/sector-expertise.php';
-
+        include 'includes/maintenance-support/maintenance-sector-expertise.php';
+        include 'includes/maintenance-support/maintenance-package-workflow.php';
+        include 'includes/maintenance-support/consulting-service.php';
+        include 'includes/maintenance-support/pricing-plan.php';
+        include 'includes/maintenance-support/web-maintenance-service.php';
         include 'includes/our-track-record.php';
-
+        include 'includes/maintenance-support/tech-stack.php';
         include 'includes/client-review.php';
         include 'includes/faq.php';
         include 'includes/blog.php';

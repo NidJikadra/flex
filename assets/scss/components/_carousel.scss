@@ -1,25 +1,25 @@
 .carousel {
   position: relative;
 
-  @include respond-to(lg) {
-    margin-left: calc((100% - 992px) / 2);
-    padding-left: 16px;
-  }
+  // @include respond-to(lg) {
+  //   margin-left: calc((100% - 992px) / 2);
+  //   padding-left: 16px;
+  // }
 
-  @include respond-to(xl) {
-    margin-left: calc((100% - 1172px) / 2);
-    padding-left: 16px;
-  }
+  // @include respond-to(xl) {
+  //   margin-left: calc((100% - 1172px) / 2);
+  //   padding-left: 16px;
+  // }
 
-  @include respond-to(xxl) {
-    margin-left: calc((100% - 1352px) / 2);
-    padding-left: 16px;
-  }
+  // @include respond-to(xxl) {
+  //   margin-left: calc((100% - 1352px) / 2);
+  //   padding-left: 16px;
+  // }
 
-  @include respond-to(2xl) {
-    margin-left: calc((100% - 1472px) / 2);
-    padding-left: 16px;
-  }
+  // @include respond-to(2xl) {
+  //   margin-left: calc((100% - 1472px) / 2);
+  //   padding-left: 16px;
+  // }
 
   .embla__viewport {
     overflow: hidden;

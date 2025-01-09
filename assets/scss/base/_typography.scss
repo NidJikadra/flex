@@ -40,3 +40,17 @@ h3,
     line-height: 36px;
   }
 }
+
+h4,
+.h4 {
+  font-family: $font-semibold;
+    font-size: 20px;
+    line-height: 22px;
+    color: $secondary-color;
+    margin-bottom: 25px;
+
+    @include respond-to(md) {
+      font-size: 26px;
+      line-height: 36px;
+    }
+}

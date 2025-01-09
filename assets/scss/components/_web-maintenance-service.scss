@@ -1,0 +1,65 @@
+.web-maintenance-services {
+  padding: 32px 0;
+
+  @include respond-to(md) {
+    padding: 56px 0;
+  }
+
+  @include respond-to(lg) {
+    padding: 80px 0;
+  }
+
+  &__image {
+    background: #1b1b1b;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    padding: 14px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: 10px;
+      background: linear-gradient(
+        128deg,
+        rgba(255, 255, 255, 0.3) 0%,
+        rgba(255, 255, 255, 0) 40%,
+        rgba(255, 255, 255, 0) 60%,
+        rgba(255, 255, 255, 0.1) 100%
+      );
+      padding: 1.5px;
+      -webkit-mask: linear-gradient(#ffffff 0 0) content-box,
+        linear-gradient(#ffffff 0 0);
+      mask: linear-gradient(#ffffff 0 0) content-box,
+        linear-gradient(#ffffff 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+    }
+  }
+
+  .carousel__card {
+    padding: 40px;
+  }
+
+  .overview-text {
+    color: $primary-color;
+  }
+}
+
+.support-tech-stack__list-item li, 
+  .web-maintenance-services li {
+    margin-top: 16px;
+    &::before {
+        content: "";
+        border: 3px solid #003AFF;
+        background-color: transparent;
+        width: 7px;
+        height: 7px;
+        border-radius: 4px;
+        display: inline-block;
+        margin-right: 12px;    
+    }
+  }

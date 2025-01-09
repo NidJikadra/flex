@@ -1,0 +1,53 @@
+.sector-expertise {
+  padding: 32px 0;
+
+  @include respond-to(md) {
+    padding: 56px 0;
+  }
+
+  @include respond-to(lg) {
+    padding: 80px 0;
+  }
+
+  .maintenance-service__row {
+    display: flex;
+    overflow-x: auto;
+    gap: 24px;
+    scroll-snap-type: x mandatory;
+
+    @include respond-to(md) {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 34px;
+      overflow: hidden;
+    }
+
+    .maintenance-service__card {
+      padding: 23px 0;
+
+      @include respond-to(md) {
+        padding: 43px 0;
+      }
+    }
+
+    .our-features__card {
+      flex: 0 0 250px;
+    }
+  }
+
+  .maintenance-service__title {
+    margin-top: 30px;
+    font-size: 18px;
+    line-height: 29px;
+    letter-spacing: 0.4px;
+    text-align: center;
+    color: $primary-color;
+    white-space: nowrap;
+  }
+
+  .maintenance-service__image {
+    width: 52px;
+    height: 52px;
+    margin: 0 auto;
+  }
+}

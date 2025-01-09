@@ -47,13 +47,16 @@
     z-index: 1;
     max-width: 735px;
 
-    .h3 {
+    .cta__title {
       font-size: 28px;
       font-family: $font-medium;
       font-weight: 100;
+      line-height: 30px;
+
 
       @include respond-to(lg){
         font-size: 48px;
+        line-height: 50px;
       }
     }
 
