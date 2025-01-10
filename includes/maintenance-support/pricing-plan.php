@@ -18,7 +18,7 @@
                 you require basic upkeep or comprehensive support, our flexible packages ensure your website remains
                 secure, up-to-date, and optimized for peak performance.</p>
         </div>
-        <div class="pricing-plans__table">
+         <div class="pricing-plans__table">
             <div class="pricing-plans__header">
                 <p class="pricing-plans__title">Pick Your Plan</p>
                 <div class="pricing-plans__options">
@@ -31,51 +31,77 @@
             <div class="pricing-plans__content">
                 <div class="pricing-plans__row">
                     <div class="pricing-plans__feature-title">Website Speed Optimization</div>
-                    <div class="pricing-plans__feature-check"><span class="checkmark">&#x2714;</span></div>
-                    <div class="pricing-plans__feature-check"><span class="checkmark">&#x2714;</span></div>
-                    <div class="pricing-plans__feature-check"><span class="checkmark">&#x2714;</span></div>
+                    <div class="pricing-plans__feature-title">Security Upgrades</div>
+                    <div class="pricing-plans__feature-title">SSL Installation</div>
+                    <div class="pricing-plans__feature-title">Google ReCaptcha Integration</div>
+                    <div class="pricing-plans__feature-title">Google Analytics Integration</div>
+                    <div class="pricing-plans__feature-title">Google Search Console Setup</div>
+                    <div class="pricing-plans__feature-title">Plugin Updates</div>
                 </div>
-                <div class="pricing-plans__row">
-                    <div class="feature-title">Security Upgrades</div>
-                    <div class="pricing-plans__feature-check"><span class="checkmark">&#x2714;</span></div>
-                    <div class="pricing-plans__feature-check"><span class="checkmark">&#x2714;</span></div>
-                    <div class="pricing-plans__feature-check"><span class="checkmark">&#x2714;</span></div>
-                </div>
-                <div class="pricing-plans__row">
-                    <div class="feature-title">SSL Installation</div>
-                    <div class="pricing-plans__feature-check"><span class="checkmark">&#x2714;</span></div>
-                    <div class="pricing-plans__feature-check"><span class="checkmark">&#x2714;</span></div>
-                    <div class="pricing-plans__feature-check"><span class="checkmark">&#x2714;</span></div>
-                </div>
-                <div class="pricing-plans__row">
-                    <div class="feature-title">Google ReCaptcha Integration</div>
-                    <div class="pricing-plans__feature-check"><span class="checkmark">&#x2714;</span></div>
-                    <div class="pricing-plans__feature-check"><span class="checkmark">&#x2714;</span></div>
-                    <div class="pricing-plans__feature-check"><span class="checkmark">&#x2714;</span></div>
-                </div>
-                <div class="pricing-plans__row">
-                    <div class="feature-title">Google Analytics Integration</div>
-                    <div class="pricing-plans__feature-check"><span class="checkmark">&#x2714;</span></div>
-                    <div class="pricing-plans__feature-check"><span class="checkmark">&#x2714;</span></div>
-                    <div class="pricing-plans__feature-check"><span class="empty">&#x25CF;</span></div>
-                </div>
-                <div class="pricing-plans__row">
-                    <div class="feature-title">Google Search Console Setup</div>
-                    <div class="pricing-plans__feature-check"><span class="checkmark">&#x2714;</span></div>
-                    <div class="pricing-plans__feature-check"><span class="checkmark">&#x2714;</span></div>
-                    <div class="pricing-plans__feature-check"><span class="empty">&#x25CF;</span></div>
-                </div>
-                <div class="pricing-plans__row">
-                    <div class="feature-title">Plugin Updates</div>
-                    <div class="pricing-plans__feature-check"><span class="checkmark">&#x2714;</span></div>
-                    <div class="pricing-plans__feature-check"><span class="checkmark">&#x2714;</span></div>
-                    <div class="pricing-plans__feature-check"><span class="empty">&#x25CF;</span></div>
+
+                <div class="pricing-plans__row--options">
+                    <div class="pricing-plans__feature-title">
+                        <p class="pricing-plans__feature-check"><img src="assets/images/icons/checkmark.svg"
+                                alt="checkmark" height="13" width="13" class="checkmark"></p>
+                        <p class="pricing-plans__feature-check"><img src="assets/images/icons/checkmark.svg"
+                                alt="checkmark" height="13" width="13" class="checkmark"></p>
+                        <p class="pricing-plans__feature-check"><img src="assets/images/icons/checkmark.svg"
+                                alt="checkmark" height="13" width="13" class="checkmark"></p>
+                    </div>
+                    <div class="pricing-plans__feature-title">
+                        <p class="pricing-plans__feature-check"><img src="assets/images/icons/checkmark.svg"
+                                alt="checkmark" height="13" width="13" class="checkmark"></p>
+                        <p class="pricing-plans__feature-check"><img src="assets/images/icons/checkmark.svg"
+                                alt="checkmark" height="13" width="13" class="checkmark"></p>
+                        <p class="pricing-plans__feature-check"><img src="assets/images/icons/checkmark.svg"
+                                alt="checkmark" height="13" width="13" class="checkmark"></p>
+                    </div>
+                    <div class="pricing-plans__feature-title">
+                        <p class="pricing-plans__feature-check"><img src="assets/images/icons/checkmark.svg"
+                                alt="checkmark" height="13" width="13" class="checkmark"></p>
+                        <p class="pricing-plans__feature-check"><img src="assets/images/icons/checkmark.svg"
+                                alt="checkmark" height="13" width="13" class="checkmark"></p>
+                        <p class="pricing-plans__feature-check"><img src="assets/images/icons/checkmark.svg"
+                                alt="checkmark" height="13" width="13" class="checkmark"></p>
+                    </div>
+                    <div class="pricing-plans__feature-title">
+                        <p class="pricing-plans__feature-check"><img src="assets/images/icons/empty.svg" alt="empty"
+                                height="13" width="13" class="empty"></p>
+                        <p class="pricing-plans__feature-check"><img src="assets/images/icons/checkmark.svg"
+                                alt="checkmark" height="13" width="13" class="checkmark"></p>
+                        <p class="pricing-plans__feature-check"><img src="assets/images/icons/checkmark.svg"
+                                alt="checkmark" height="13" width="13" class="checkmark"></p>
+                    </div>
+                    <div class="pricing-plans__feature-title">
+                        <p class="pricing-plans__feature-check"><img src="assets/images/icons/checkmark.svg"
+                                alt="checkmark" height="13" width="13" class="checkmark"></p>
+                        <p class="pricing-plans__feature-check"><img src="assets/images/icons/checkmark.svg"
+                                alt="checkmark" height="13" width="13" class="checkmark"></p>
+                        <p class="pricing-plans__feature-check"><img src="assets/images/icons/checkmark.svg"
+                                alt="checkmark" height="13" width="13" class="checkmark"></p>
+                    </div>
+                    <div class="pricing-plans__feature-title">
+                        <p class="pricing-plans__feature-check"><img src="assets/images/icons/empty.svg" alt="empty"
+                                height="13" width="13" class="empty"></p>
+                        <p class="pricing-plans__feature-check"><img src="assets/images/icons/checkmark.svg"
+                                alt="checkmark" height="13" width="13" class="checkmark"></p>
+                        <p class="pricing-plans__feature-check"><img src="assets/images/icons/checkmark.svg"
+                                alt="checkmark" height="13" width="13" class="checkmark"></p>
+                    </div>
+                    <div class="pricing-plans__feature-title">
+                        <p class="pricing-plans__feature-check"><img src="assets/images/icons/empty.svg" alt="empty"
+                                height="13" width="13" class="empty"></p>
+                        <p class="pricing-plans__feature-check"><img src="assets/images/icons/empty.svg" alt="empty"
+                                height="13" width="13" class="empty"></p>
+                        <p class="pricing-plans__feature-check"><img src="assets/images/icons/checkmark.svg"
+                                alt="checkmark" height="13" width="13" class="checkmark"></p>
+                    </div>
                 </div>
             </div>
-
             <div class="pricing-plans__footer">
                 View All Services
             </div>
         </div>
+
     </div>
 </section>

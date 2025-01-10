@@ -14,7 +14,7 @@ include 'includes/header.php';
         include 'includes/client-review.php';
         include 'includes/nodejs/engagement-models.php';
         include 'includes/nodejs/our-features.php';
-        include 'includes/nodejs/highlight-projects.php';
+        include 'includes/highlight-projects.php';
         include 'includes/nodejs/nodejs-advantages.php';
         include 'includes/nodejs/call-to-action.php';
         include 'includes/faq.php';

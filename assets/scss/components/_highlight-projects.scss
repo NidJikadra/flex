@@ -11,10 +11,18 @@
 
     .menu-card {
         &:first-child {
-            border-radius: 24px 0 0 24px;
+            border-radius: 24px 24px 0 0;
+
+            @include respond-to(md){
+              border-radius: 24px 0 0 24px;
+            }
         }
         &:last-child {
-            border-radius: 0 24px 24px 0;
+            border-radius: 0 0 24px 24px;
+
+            @include respond-to(md) {
+              border-radius: 0 24px 24px 0;
+            }
         }
     }
 

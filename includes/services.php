@@ -40,7 +40,7 @@
                             that enhance user experience. Our designs focus on seamless navigation and user engagement,
                             ensuring your product is both functional and attractive. We turn your vision into an
                             interactive and user-friendly reality.</p>
-                        <a href="#" class="read-more" data-hover="Let’s meet"><span>Let’s meet</span></a>
+                        <a href="ui-ux-design-service" class="read-more" data-hover="Let’s meet"><span>Let’s meet</span></a>
                     </div>
 
                     <div class="our-core-services__service-image">
@@ -110,7 +110,7 @@
                         <p class="our-core-services__service-text">We integrate third-party systems and APIs with your
                             website or web app so you can improve functionality without the need for costly development.
                         </p>
-                        <a href="#" class="read-more" data-hover="Learn more"><span>Learn more</span></a>
+                        <a href="shopify-development.php" class="read-more" data-hover="Learn more"><span>Learn more</span></a>
                     </div>
                     <div class="our-core-services__service-image">
                         <img src="assets/images/e-commerce.png" height="308" width="720">

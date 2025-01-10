@@ -147,7 +147,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const prevButton = document.querySelector(".embla__button--prev");
   const nextButton = document.querySelector(".embla__button--next");
 
-  const embla = EmblaCarousel(emblaNode, { dragFree: true, containScroll: false, slidesToScroll: 'auto' });
+  const embla = EmblaCarousel(emblaNode, { containScroll: false, slidesToScroll: 'auto' });
 
   const setupButtonStates = () => {
       if (embla.canScrollPrev()) {  

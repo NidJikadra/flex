@@ -52,8 +52,14 @@
 .support-tech-stack__list-item li, 
   .web-maintenance-services li {
     margin-top: 16px;
+    position: relative;
+    padding-left: 22px;
+    
     &::before {
         content: "";
+        position: absolute;
+        left: 0;
+        top: 5px;
         border: 3px solid #003AFF;
         background-color: transparent;
         width: 7px;
