@@ -10,15 +10,89 @@
     }
 
     &__row {
-        @include grid(2, 50px);
-
-        img {
-            width: 140px;
+        @include grid(1, 30px);
+        
+        @include respond-to(lg) {
+          @include grid(2, 50px);
         }
+    }
+
+    &__image-block {
+      width: 90px;
+
+      @include respond-to(md) {
+        width: 120px;
+      }
+
+      @include respond-to(lg) {
+        width: 140px;
+      }
+    }
+
+    .our-features__card {
+      padding: 30px;
+      border-radius: 36px;
+
+      &::after {
+        border-radius: 36px;
+      }
+
+      @include respond-to(xl) {
+        padding: 50px;
+      }
     }
 
     .sub-heading {
         color: $primary-color;
-        margin-top: 50px;
+        margin-top: 18px;
+
+        @include respond-to(md) {
+          margin-top: 30px;
+        }
+
+        @include respond-to(xl) {
+          margin-top: 50px;
+        }
     }
+
+    &__list {
+      @include grid(1, 12px);
+      margin-top: 16px;
+
+      @include respond-to(md) {
+        @include grid(2, 20px);
+        margin-top: 30px;
+      }
+
+      @include respond-to(lg) {
+        @include grid(1, 20px);
+      }
+
+      @include respond-to(xl) {
+        @include grid(2, 20px);
+      }
+    }
+
+  &__list-item {
+    font-size: 18px;
+    line-height: 29px;
+    letter-spacing: 0.36px;
+    color: $primary-color;
+    position: relative;
+    padding-left: 22px;
+    
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 5px;
+        border: 3px solid #003AFF;
+        background-color: transparent;
+        width: 7px;
+        height: 7px;
+        border-radius: 4px;
+        display: inline-block;
+        margin-right: 12px;    
+    }
+  }
 }  

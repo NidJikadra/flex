@@ -10,7 +10,7 @@ include 'includes/header.php';
         include 'includes/shopify/shopify-excellence.php';
         include 'includes/shopify/consulting-service.php';
         include 'includes/shopify/e-commerce-partners.php';
-        include 'includes/shopify/shopify-advantage.php';
+        include 'includes/shopify/shopify-advantages.php';
         include 'includes/highlight-projects.php';
         include 'includes/shopify/engagement-models.php';
         include 'includes/shopify/shopify-cta.php';

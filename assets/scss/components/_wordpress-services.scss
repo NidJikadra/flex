@@ -12,11 +12,11 @@
   &__row {
     @include grid(1, 20px);
 
-    @include respond-to(md){
-        @include grid(2, 30px);
+    @include respond-to(md) {
+      @include grid(2, 30px);
     }
-    @include respond-to(xl){
-        @include grid(3, 30px);
+    @include respond-to(xl) {
+      @include grid(3, 30px);
     }
   }
 
@@ -25,28 +25,34 @@
     color: $white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    height: auto;
   }
 
   &__inner-card {
-    @include flex(row, space-between, flex-start);
-    background: linear-gradient(179deg, #0B0B0B 0%, #131416 100%);
+    background: linear-gradient(179deg, #0b0b0b 0%, #131416 100%);
     border: 1px solid $border-color;
     box-shadow: 0 18px 20px rgba(0, 0, 0, 0.3);
     border-radius: 24px;
     padding: 24px 30px 20px;
 
-    @include respond-to(lg){
-        padding: 35px 40px 26px;
+    @include respond-to(lg) {
+      padding: 35px 40px 26px;
     }
   }
 
+  &__content {
+    @include flex(row, space-between, flex-start);
+  }
+
   &__image-container {
-    background: #1B1B1B;
+    background: #1b1b1b;
     padding: 15px;
     border-radius: 50px;
 
     img {
-        display: block;
+      display: block;
     }
   }
 
@@ -59,9 +65,10 @@
     padding: 16px 30px 20px;
     font-size: 16px;
     line-height: 26px;
+    margin-top: auto;
 
-    @include respond-to(lg){
-        padding: 20px 38px 30px;
+    @include respond-to(lg) {
+      padding: 20px 38px 30px;
     }
   }
 
@@ -69,8 +76,8 @@
     color: $secondary-color;
     margin: 0 0 10px;
 
-    @include respond-to(lg){
-        margin: 0 0 20px;
+    @include respond-to(lg) {
+      margin: 0 0 20px;
     }
   }
 }

@@ -20,12 +20,14 @@
     width: 80px;
     height: 80px;
     border-radius: 10px;
-    margin-bottom: 15px;
+    margin-bottom: 15px;  
     padding: 18px;
   }
 
   .wordpress-services__inner-card {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     padding: 30px;
   }
 
@@ -33,11 +35,15 @@
     margin-bottom: 8px;
   }
 
+  .overview-text {
+    margin-top: auto;
+  }
+
   &__content {
     flex: 1;
     @include grid(1, 20px);
 
-    @include respond-to(md){
+    @include respond-to(md) {
       @include grid(2, 40px);
     }
   }

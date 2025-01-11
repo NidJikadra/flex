@@ -61,6 +61,7 @@
       -webkit-mask-composite: xor;
       mask-composite: exclude;
       box-shadow: rgba(0, 0, 0, 0.6) 4px 5px 10px 4px;
+      pointer-events: none;
     }
   }
 

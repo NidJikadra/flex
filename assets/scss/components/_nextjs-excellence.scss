@@ -22,7 +22,7 @@
     padding: 20px;
 
     @include respond-to(md) {
-        padding: 40px;
+      padding: 40px;
     }
   }
 
@@ -31,7 +31,7 @@
     margin-top: 10px;
 
     @include respond-to(md) {
-        margin-top: 20px;
+      margin-top: 20px;
     }
   }
 
@@ -63,6 +63,16 @@
 
     @include respond-to(xl) {
       @include grid(3, 60px);
+    }
+  }
+
+  .adaptive__image {
+    width: 66px;
+    height: 66px;
+
+    @include respond-to(lg) {
+      width: 100px;
+      height: 100px;
     }
   }
 }

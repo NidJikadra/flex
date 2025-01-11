@@ -5,24 +5,22 @@
 ?>
 <section class="hero-section">
     <div class="hero-main">
-    <div class="container">
-        <div class="hero-wrapper"> 
-            <p class="review-text">Loved by founders worldwide</p>
-            <h1 class="h1">Modern <span class="text-white">WordPress</span> Development</h1>
-            <p class="desc">It's not just about building web - Flex Solutions create customer - focused, tech-enabled experiences that drive business results.</p>
-            <button type="button" class="button btn-secondary">Start Your Projects<span class="icon"></span></button>
+        <div class="container">
+            <div class="hero-wrapper">
+                <p class="review-text">Loved by founders worldwide</p>
+                <h1 class="h1">Modern <span class="text-white">WordPress</span> Development</h1>
+                <p class="desc">It's not just about building web - Flex Solutions create customer - focused,
+                    tech-enabled experiences that drive business results.</p>
+                <button type="button" class="button btn-secondary">Start Your Projects<span
+                        class="icon"></span></button>
+            </div>
         </div>
     </div>
-</div>
 
     <div class="clients">
-    <?php
+        <?php
+            include 'includes/trusted.php';
+        ?>
+    </div>
 
-include 'includes/trusted.php';
-
-        
-
-?>
-</div>
- 
-</section> 
+</section>

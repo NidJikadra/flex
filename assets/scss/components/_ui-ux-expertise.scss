@@ -1,0 +1,35 @@
+.ui-ux-expertise {
+  padding: 32px 0;
+
+  @include respond-to(md) {
+    padding: 56px 0;
+  }
+
+  @include respond-to(lg) {
+    padding: 80px 0;
+  }
+
+  .wordpress-services__inner-card {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    @include respond-to(md) {
+      padding: 30px;
+    }
+  }
+
+  .overview-text {
+    margin-top: auto;
+  }
+
+  &__title {
+    line-height: 32px;
+    margin: 10px 0 5px 0;
+
+    @include respond-to(md) {
+      margin: 20px 0 10px 0;
+    }
+  }
+}
