@@ -17,11 +17,16 @@
 
   &__image-container {
     background: #1b1b1b;
-    width: 80px;
-    height: 80px;
+    width: 66px;
+    height: 66px;
     border-radius: 10px;
     margin-bottom: 15px;  
     padding: 18px;
+
+    @include respond-to(md) {
+      width: 80px;
+      height: 80px;
+    }
   }
 
   .wordpress-services__inner-card {

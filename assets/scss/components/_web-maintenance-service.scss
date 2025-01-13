@@ -41,12 +41,25 @@
   }
 
   .carousel__card {
-    padding: 40px;
+    padding: 20px;
+
+    @include respond-to(lg) {
+      padding: 40px;
+    }
+
+    h4 {
+      margin-top: 7px;
+      margin-bottom: 7px;
+    }
   }
 
   .overview-text {
     color: $primary-color;
   }
+}
+
+.web-maintenance-services__list-item {
+  margin-top: auto;
 }
 
 .support-tech-stack__list-item li, 

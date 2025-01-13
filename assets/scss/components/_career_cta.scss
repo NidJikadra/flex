@@ -19,10 +19,12 @@
     border: 1px solid rgba($primary-color, 0.27);
     box-shadow: 0px 28px 8px rgba($black, 0.2);
     position: relative;
+    z-index: 1;
 
     &::before {
       content: "";
       position: absolute;
+      z-index: -1;
       inset: 0;
       border-radius: 36px;
       background: linear-gradient(
@@ -42,35 +44,31 @@
 }
 
 .career {
-  &__content {
-    position: relative;
-    z-index: 1;
+  
+  &__description {
+    color: #e5e5e5;
+    letter-spacing: 0.36px;
+    padding: 20px 0 25px;
+    line-height: 32px;
 
-    .cta__title {
-      font-size: 28px;
-      font-family: $font-medium;
-      font-weight: 100;
-      line-height: 30px;
-
-
-      @include respond-to(lg){
-        font-size: 48px;
-        line-height: 50px;
-      }
-    }
-
-    .career__description {
-      color: #e5e5e5;
-      letter-spacing: 0.36px;
-      padding: 20px 0 25px;
-      line-height: 32px;
-
-      @include respond-to(lg) {
-        padding: 30px 0 40px;
-      }
+    @include respond-to(lg) {
+      padding: 30px 0 40px;
     }
   }
 }
 .wordpress-cta {
   background-image: url("../images/cta-bg.png");
+}
+
+.cta__title {
+  font-size: 28px;
+  font-family: $font-medium;
+  font-weight: 100;
+  line-height: 30px;
+
+
+  @include respond-to(lg){
+    font-size: 48px;
+    line-height: 50px;
+  }
 }

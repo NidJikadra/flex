@@ -78,10 +78,16 @@
   &__title {
     color: $primary-color;
     font-family: $font-medium;
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 20px;
+    line-height: 24px;
     letter-spacing: 0.42px;
-    margin: 13px 0;
+    margin: 9px 0;
+
+    @include respond-to(md) {
+      font-size: 24px;
+      line-height: 32px;
+      margin: 13px 0;
+    }
   }
 
   &__image-container {

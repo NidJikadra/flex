@@ -97,10 +97,11 @@
                                 alt="checkmark" height="13" width="13" class="checkmark"></p>
                     </div>
                 </div>
-            </div>
-            <div class="pricing-plans__footer">
+                <div class="pricing-plans__footer">
                 View All Services
             </div>
+            </div>
+           
         </div>
 
     </div>

@@ -108,7 +108,8 @@
             </div>
         </div>
     </div>
-    <div class="container">
+
+    <div class="button-controls">
         <button type="button" class="embla__button embla__button--prev" aria-label="Previous slide"><svg
                 class="embla__button__svg" viewBox="0 0 532 532">
                 <path fill="currentColor"
@@ -122,5 +123,6 @@
                 </path>
             </svg></button>
     </div>
+
 
 </section>

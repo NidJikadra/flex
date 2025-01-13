@@ -15,7 +15,7 @@
 
         <div class="tech-stack__skills">
             <div class="tech-stack__skills-categories">
-                <ul>
+                <ul class="tech-stack__skills-list">
                     <li class="tech-stack__skills-button" data-tab="programming-language">Programming Language</li>
                     <li class="tech-stack__skills-button tech-stack__skills-button--active" data-tab="frontend">Frontend
                     </li>

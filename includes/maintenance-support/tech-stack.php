@@ -16,7 +16,7 @@
 
         <div class="tech-stack__skills">
             <div class="tech-stack__skills-categories">
-                <ul>
+                <ul class="tech-stack__skills-list">
                     <li class="tech-stack__skills-button" data-tab="Benefits of Website Maintenance">Benefits of Website Maintenance</li>
                     <li class="tech-stack__skills-button tech-stack__skills-button--active" data-tab="frontend">How do I Maintain my Website?
                     </li>

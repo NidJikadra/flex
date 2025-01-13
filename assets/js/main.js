@@ -1,5 +1,3 @@
-
-
 // tab-section
 document.querySelectorAll(".tab").forEach((tab) => {
     tab.addEventListener("click", () => {
@@ -147,7 +145,11 @@ document.addEventListener("DOMContentLoaded", function () {
   const prevButton = document.querySelector(".embla__button--prev");
   const nextButton = document.querySelector(".embla__button--next");
 
-  const embla = EmblaCarousel(emblaNode, { containScroll: false, slidesToScroll: 'auto' });
+  const embla = EmblaCarousel(emblaNode, {
+    containScroll: window.innerWidth < 768 ? 'trimSnaps' : false,
+    slidesToScroll: 'auto',
+    dragFree: true
+  });
 
   const setupButtonStates = () => {
       if (embla.canScrollPrev()) {  
@@ -169,7 +171,16 @@ document.addEventListener("DOMContentLoaded", function () {
   embla.on("init", setupButtonStates);
   embla.on("select", setupButtonStates);
   
+  window.addEventListener('resize', () => {
+    embla.reInit({
+      containScroll: window.innerWidth < 768 ? 'trimSnaps' : false,
+      slidesToScroll: 'auto',
+      dragFree: true
+    });
+  });
 });
+
+// pricing plan slider 
 
 
 

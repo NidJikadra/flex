@@ -10,15 +10,15 @@
   }
 
   &__row {
-    display: flex; 
+    display: flex;
     overflow-x: auto;
     gap: 24px;
-    scroll-snap-type: x mandatory; 
+    scroll-snap-type: x mandatory;
 
     @include respond-to(md) {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
-      gap: 34px; 
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 34px;
       overflow: hidden;
     }
   }
@@ -38,11 +38,10 @@
   .our-features__card {
     flex: 0 0 150px;
     border-radius: 28px;
-    
+
     @include respond-to(md) {
       padding: 32px 0;
     }
-
 
     &::after {
       border-radius: 28px;

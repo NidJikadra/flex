@@ -1,6 +1,6 @@
 <?php
 /**
- * shopify carousel Component
+ * SaaS carousel Component
  */
 ?>
 
@@ -8,11 +8,9 @@
     <div class="container">
         <div class="section-title">
             <div class="title-wrapper">
-                <p class="sub-title">Your Trusted Development Ally</p>
-                <h2 class="h2">Why Flex Solutions is the best Shopify web development partner</h2>
-                <p class="description">Flex Solutions stands out as the best Shopify web development partner due to our
-                    deep expertise in e-commerce, commitment to personalized service, and a proven track record of
-                    delivering high-quality, innovative solutions that drive business growth and success.</p>
+                <p class="sub-title">Our Process</p>
+                <h2 class="h2">SaaS Development Process We Follow</h2>
+                <p class="description">Flex Solutions is committed to following a SaaS development lifecycle that matches the industry standards and makes sure that the whole process of developing the app is smooth, hassle-free, and organized. Here is the process Angular Minds follows.</p>
             </div>
         </div>
     </div>
@@ -21,18 +19,18 @@
             <div class="carousel__row">
                 <div class="carousel__card">
                     <h1 class="content-title">01</h1>
-                    <p class="shopify-carousel__title">Discovery and planning</p>
-                    <p class="description">We analyze current website performance and evaluate customer expectations to get a clear timetable for the project. This will help neutralize planning imperfections, and surprises in the form of underwork and force majeure.</p>
+                    <p class="shopify-carousel__title">Ideation and Consulting</p>
+                    <p class="description"> At the very foundation of your SaaS product is the seed of an idea. We understand this idea, elaborate on it, expand it, and provide consulting, if necessary. Once we have a clear understanding of your idea, we move ahead.</p>
                 </div>
                 <div class="carousel__card">
                     <h1 class="content-title">02</h1>
-                    <p class="shopify-carousel__title">Discovery and planning</p>
-                    <p class="description">We analyze current website performance and evaluate customer expectations to get a clear timetable for the project. This will help neutralize planning imperfections, and surprises in the form of underwork and force majeure.</p>
+                    <p class="shopify-carousel__title">Understanding Business Requirements</p>
+                    <p class="description">We lay out strategies and make plans to align with the requirements of your business. Your vision of the SaaS app is broken down into smaller milestones and strategies that make sure that the app is designed to fit your requirements.</p>
                 </div>
                 <div class="carousel__card">
                     <h1 class="content-title">03</h1>
-                    <p class="shopify-carousel__title">Discovery and planning</p>
-                    <p class="description">We analyze current website performance and evaluate customer expectations to get a clear timetable for the project. This will help neutralize planning imperfections, and surprises in the form of underwork and force majeure.</p>
+                    <p class="shopify-carousel__title">UI/UX Designing</p>
+                    <p class="description">As soon as your requirements are clear and the strategy is laid out, our UI/UX designers get to work. They use relevant business data to build information infrastructures. In this step, we build the skeleton of your SaaS product, design-wise and data-wise.</p>
                 </div>
                 <div class="carousel__card">
                     <h1 class="content-title">04</h1>
@@ -41,6 +39,21 @@
                 </div>
                 <div class="carousel__card">
                     <h1 class="content-title">05</h1>
+                    <p class="shopify-carousel__title">Discovery and planning</p>
+                    <p class="description">We analyze current website performance and evaluate customer expectations to get a clear timetable for the project. This will help neutralize planning imperfections, and surprises in the form of underwork and force majeure.</p>
+                </div>
+                <div class="carousel__card">
+                    <h1 class="content-title">06</h1>
+                    <p class="shopify-carousel__title">Discovery and planning</p>
+                    <p class="description">We analyze current website performance and evaluate customer expectations to get a clear timetable for the project. This will help neutralize planning imperfections, and surprises in the form of underwork and force majeure.</p>
+                </div>
+                <div class="carousel__card">
+                    <h1 class="content-title">07</h1>
+                    <p class="shopify-carousel__title">Discovery and planning</p>
+                    <p class="description">We analyze current website performance and evaluate customer expectations to get a clear timetable for the project. This will help neutralize planning imperfections, and surprises in the form of underwork and force majeure.</p>
+                </div>
+                <div class="carousel__card">
+                    <h1 class="content-title">08</h1>
                     <p class="shopify-carousel__title">Discovery and planning</p>
                     <p class="description">We analyze current website performance and evaluate customer expectations to get a clear timetable for the project. This will help neutralize planning imperfections, and surprises in the form of underwork and force majeure.</p>
                 </div>
