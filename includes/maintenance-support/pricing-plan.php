@@ -1,9 +1,24 @@
 <?php
 /**
- * 
  * Pricing Plan Component
- * 
- **/
+ */
+
+$features = [
+    'Website Speed Optimization',
+    'Security Upgrades',
+    'SSL Installation',
+    'Google ReCaptcha Integration',
+    'Google Analytics Integration',
+    'Google Search Console Setup',
+    'Plugin Updates',
+    'Core Updates'
+];
+        
+$plans = [
+    'Start-ups' => [true, true, true, false, true, false, false, false],
+    'Professional' => [true, true, true, true, true, true, false, false],
+    'Business' => [true, true, true, true, true, true, true, true]
+];
 ?>
 
 <section class="pricing-plans">
@@ -14,95 +29,61 @@
                 <h2 class="h2">Select Website Maintenance Plan</h2>
             </div>
             <button type="button" class="button btn-primary" aria-label="contact-button">Send Inquiry</button>
-            <p class="description">Choose the perfect website maintenance plan tailored to your business needs. Whether
-                you require basic upkeep or comprehensive support, our flexible packages ensure your website remains
-                secure, up-to-date, and optimized for peak performance.</p>
+            <p class="description">Choose the perfect website maintenance plan tailored to your business needs.</p>
         </div>
-         <div class="pricing-plans__table">
+
+        <div class="pricing-plans__wrapper">
             <div class="pricing-plans__header">
-                <p class="pricing-plans__title">Pick Your Plan</p>
+                <div class="pricing-plans__title-col">Pick Your Plan</div>
+                <div class="pricing-plans__dropdown">
+                    <select class="pricing-plans__select">
+                        <?php foreach(array_keys($plans) as $plan): ?>
+                        <option value="<?php echo strtolower(str_replace(' ', '-', $plan)); ?>">
+                            <?php echo $plan; ?>
+                        </option>
+                        <?php endforeach; ?>
+                    </select>
+                    <span class="pricing-plans__select-arrow"></span>
+                </div>
                 <div class="pricing-plans__options">
-                    <p class="pricing-plans__title option">Start-ups</p>
-                    <p class="pricing-plans__title option">Professional</p>
-                    <p class="pricing-plans__title option">Business</p>
+                    <?php foreach(array_keys($plans) as $plan): ?>
+                    <div class="pricing-plans__option"><?php echo $plan; ?></div>
+                    <?php endforeach; ?>
                 </div>
             </div>
 
             <div class="pricing-plans__content">
-                <div class="pricing-plans__row">
-                    <div class="pricing-plans__feature-title">Website Speed Optimization</div>
-                    <div class="pricing-plans__feature-title">Security Upgrades</div>
-                    <div class="pricing-plans__feature-title">SSL Installation</div>
-                    <div class="pricing-plans__feature-title">Google ReCaptcha Integration</div>
-                    <div class="pricing-plans__feature-title">Google Analytics Integration</div>
-                    <div class="pricing-plans__feature-title">Google Search Console Setup</div>
-                    <div class="pricing-plans__feature-title">Plugin Updates</div>
+                <div class="pricing-plans__features">
+                    <?php foreach($features as $feature): ?>
+                    <div class="pricing-plans__feature"><?php echo $feature; ?></div>
+                    <?php endforeach; ?>
                 </div>
 
-                <div class="pricing-plans__row--options">
-                    <div class="pricing-plans__feature-title">
-                        <p class="pricing-plans__feature-check"><img src="assets/images/icons/checkmark.svg"
-                                alt="checkmark" height="13" width="13" class="checkmark"></p>
-                        <p class="pricing-plans__feature-check"><img src="assets/images/icons/checkmark.svg"
-                                alt="checkmark" height="13" width="13" class="checkmark"></p>
-                        <p class="pricing-plans__feature-check"><img src="assets/images/icons/checkmark.svg"
-                                alt="checkmark" height="13" width="13" class="checkmark"></p>
+                <div class="pricing-plans__checks">
+                    <?php 
+    $isFirstColumn = true; 
+    foreach ($plans as $planKey => $planFeatures): ?>
+                    <div class="pricing-plans__check-column <?php echo ($planKey === array_key_first($plans)) ? 'active' : ''; ?>"
+                        data-plan="<?php echo strtolower(str_replace(' ', '-', $planKey)); ?>">
+                        <?php foreach ($planFeatures as $index => $hasFeature): ?>
+                        <div
+                            class="pricing-plans__check <?php echo $isFirstColumn && $index === 0 ? 'first-column-first-check' : ''; ?>">
+                            <img src="assets/images/icons/<?php echo $hasFeature ? 'checkmark' : 'empty'; ?>.svg"
+                                alt="<?php echo $hasFeature ? 'checkmark' : 'empty'; ?>" height="13" width="13">
+                        </div>
+                        <?php endforeach; ?>
                     </div>
-                    <div class="pricing-plans__feature-title">
-                        <p class="pricing-plans__feature-check"><img src="assets/images/icons/checkmark.svg"
-                                alt="checkmark" height="13" width="13" class="checkmark"></p>
-                        <p class="pricing-plans__feature-check"><img src="assets/images/icons/checkmark.svg"
-                                alt="checkmark" height="13" width="13" class="checkmark"></p>
-                        <p class="pricing-plans__feature-check"><img src="assets/images/icons/checkmark.svg"
-                                alt="checkmark" height="13" width="13" class="checkmark"></p>
-                    </div>
-                    <div class="pricing-plans__feature-title">
-                        <p class="pricing-plans__feature-check"><img src="assets/images/icons/checkmark.svg"
-                                alt="checkmark" height="13" width="13" class="checkmark"></p>
-                        <p class="pricing-plans__feature-check"><img src="assets/images/icons/checkmark.svg"
-                                alt="checkmark" height="13" width="13" class="checkmark"></p>
-                        <p class="pricing-plans__feature-check"><img src="assets/images/icons/checkmark.svg"
-                                alt="checkmark" height="13" width="13" class="checkmark"></p>
-                    </div>
-                    <div class="pricing-plans__feature-title">
-                        <p class="pricing-plans__feature-check"><img src="assets/images/icons/empty.svg" alt="empty"
-                                height="13" width="13" class="empty"></p>
-                        <p class="pricing-plans__feature-check"><img src="assets/images/icons/checkmark.svg"
-                                alt="checkmark" height="13" width="13" class="checkmark"></p>
-                        <p class="pricing-plans__feature-check"><img src="assets/images/icons/checkmark.svg"
-                                alt="checkmark" height="13" width="13" class="checkmark"></p>
-                    </div>
-                    <div class="pricing-plans__feature-title">
-                        <p class="pricing-plans__feature-check"><img src="assets/images/icons/checkmark.svg"
-                                alt="checkmark" height="13" width="13" class="checkmark"></p>
-                        <p class="pricing-plans__feature-check"><img src="assets/images/icons/checkmark.svg"
-                                alt="checkmark" height="13" width="13" class="checkmark"></p>
-                        <p class="pricing-plans__feature-check"><img src="assets/images/icons/checkmark.svg"
-                                alt="checkmark" height="13" width="13" class="checkmark"></p>
-                    </div>
-                    <div class="pricing-plans__feature-title">
-                        <p class="pricing-plans__feature-check"><img src="assets/images/icons/empty.svg" alt="empty"
-                                height="13" width="13" class="empty"></p>
-                        <p class="pricing-plans__feature-check"><img src="assets/images/icons/checkmark.svg"
-                                alt="checkmark" height="13" width="13" class="checkmark"></p>
-                        <p class="pricing-plans__feature-check"><img src="assets/images/icons/checkmark.svg"
-                                alt="checkmark" height="13" width="13" class="checkmark"></p>
-                    </div>
-                    <div class="pricing-plans__feature-title">
-                        <p class="pricing-plans__feature-check"><img src="assets/images/icons/empty.svg" alt="empty"
-                                height="13" width="13" class="empty"></p>
-                        <p class="pricing-plans__feature-check"><img src="assets/images/icons/empty.svg" alt="empty"
-                                height="13" width="13" class="empty"></p>
-                        <p class="pricing-plans__feature-check"><img src="assets/images/icons/checkmark.svg"
-                                alt="checkmark" height="13" width="13" class="checkmark"></p>
-                    </div>
+                    <?php 
+      
+        $isFirstColumn = false; 
+    endforeach; ?>
                 </div>
+
                 <div class="pricing-plans__footer">
-                View All Services
+                    <span>View All Services</span>
+                </div>
             </div>
-            </div>
-           
-        </div>
 
+        </div>
     </div>
 </section>

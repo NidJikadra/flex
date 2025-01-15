@@ -83,7 +83,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const modalSkills = modal.querySelector('.skills__name');
   const closeModalBtn = document.getElementById('closeModal');
 
-  // Open modal on team card click
   document.querySelectorAll('.team-card').forEach(card => {
     card.addEventListener('click', () => {
       const name = card.getAttribute('data-name');
@@ -92,19 +91,17 @@ document.addEventListener('DOMContentLoaded', () => {
       const skills = card.getAttribute('data-skills');
       const image = card.getAttribute('data-image');
 
-      // Set modal content
+     
       modalImage.src = image;
       modalName.textContent = name;
       modalPosition.textContent = position;
       modalDescription.textContent = description;
       modalSkills.textContent = skills;
 
-      // Open modal
       modal.classList.add('open');
     });
   });
 
-  // Close modal when close button is clicked
   closeModalBtn.addEventListener('click', () => {
     modal.classList.remove('open');
   });
@@ -180,8 +177,72 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-// pricing plan slider 
+// pricing plan dropdown 
 
+document.addEventListener('DOMContentLoaded', function() {
+    const planSelect = document.querySelector('.pricing-plans__select');
+    if (planSelect) {
+        planSelect.addEventListener('change', function(e) {
+            const selectedPlan = e.target.value;
+            const checkColumns = document.querySelectorAll('.pricing-plans__check-column');
+            
+            checkColumns.forEach(column => {
+                if (column.dataset.plan === selectedPlan) {
+                    column.classList.add('active');
+                } else {
+                    column.classList.remove('active');
+                }
+            });
+        });
+    }
+});
 
+// pricing paln height change on window resize
 
+document.addEventListener('DOMContentLoaded', function () {
+  const adjustCheckHeight = () => {
+      const featureElements = document.querySelectorAll('.pricing-plans__feature');
+      const checkColumns = document.querySelectorAll('.pricing-plans__check-column');
 
+      featureElements.forEach((feature, index) => {
+          const featureHeight = feature.offsetHeight;
+
+          checkColumns.forEach(column => {
+              const checkElements = column.querySelectorAll('.pricing-plans__check');
+              if (checkElements[index]) {
+                  checkElements[index].style.height = `${featureHeight}px`;
+                  checkElements[index].style.lineHeight = `${featureHeight}px`; 
+              }
+          });
+      });
+  };
+
+  adjustCheckHeight();
+
+  window.addEventListener('resize', adjustCheckHeight);
+});
+
+// pricing plan feature hover effect
+
+document.addEventListener("DOMContentLoaded", () => {
+  const features = document.querySelectorAll(".pricing-plans__feature");
+  const checkColumns = document.querySelectorAll(".pricing-plans__check-column");
+
+  features.forEach((feature, index) => {
+      feature.addEventListener("mouseover", () => {
+          checkColumns.forEach((column) => {
+              const check = column.children[index];
+              if (check) check.classList.add("hover");
+          });
+          feature.classList.add("hover");
+      });
+
+      feature.addEventListener("mouseout", () => {
+          checkColumns.forEach((column) => {
+              const check = column.children[index];
+              if (check) check.classList.remove("hover");
+          });
+          feature.classList.remove("hover");
+      });
+  });
+});

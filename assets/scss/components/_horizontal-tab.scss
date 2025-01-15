@@ -1,0 +1,18 @@
+.tab-item {
+  padding: 20px 20px;
+  border: 1px solid #212121;
+  border-radius: 16px;
+  margin: 14px 0;
+
+  @include respond-to(md){
+    padding: 36px 36px;
+  }
+
+  &:last-child {
+    padding: 20px 20px;
+
+    @include respond-to(md){
+        padding: 36px 36px;
+      }
+  }
+}

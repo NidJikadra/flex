@@ -10,28 +10,27 @@
   }
 
   &__skills {
-    display: flex;
+    display: none;
     flex-wrap: wrap;
-    gap: 70px;
+    gap: 40px;
 
-    @include respond-to(lg){
-        flex-wrap: nowrap;
-        gap: 90px;
+    @include respond-to(lg) {
+      display: flex;
+    }
+
+    @include respond-to(xxl) {
+      gap: 80px;
     }
 
     &-list {
       display: flex;
-      overflow-x: auto;
-      
+
       @include respond-to(lg) {
         display: block;
+        flex: 1;
       }
     }
 
-    &-categories {
-      overflow: hidden;
-      flex: 1;
-    }
     &-button {
       white-space: nowrap;
       border: none;
@@ -48,10 +47,14 @@
       padding: 20px;
       cursor: pointer;
       transition: all 0.3s ease-in-out;
-     
 
       &--active {
-        background:linear-gradient(249deg, rgba(193, 207, 255, 0.02) 0%, rgba(193, 207, 255, 0.03) 35%, rgba(193, 207, 255, 0.12) 100%);
+        background: linear-gradient(
+          249deg,
+          rgba(193, 207, 255, 0.02) 0%,
+          rgba(193, 207, 255, 0.03) 35%,
+          rgba(193, 207, 255, 0.12) 100%
+        );
         border-radius: 14px;
 
         &::after {
@@ -63,7 +66,7 @@
           background-size: cover;
           background-repeat: no-repeat;
 
-          @include respond-to(lg){
+          @include respond-to(lg) {
             content: "";
           }
         }
@@ -75,28 +78,26 @@
       }
     }
 
-    &-content {
-      flex: 100%;
-
-      @include respond-to(lg){
-        flex: 2;
-      }
-    }
-
     &-tab {
       display: none;
+      width: 54%;
+
+      @include respond-to(xl) {
+        width: 59%;
+      }
 
       &--list {
-        gap: 30px;
+        gap: 20px;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
 
-        @include respond-to(md){
+        @include respond-to(md) {
           grid-template-columns: repeat(3, 1fr);
-      }
+          gap: 30px;
+        }
 
-        @include respond-to(lg){
-            grid-template-columns: repeat(4, 1fr);
+        @include respond-to(lg) {
+          grid-template-columns: repeat(4, 1fr);
         }
       }
       &--list-item {
@@ -107,9 +108,16 @@
         display: block;
       }
     }
-   
   }
   .item-name {
     display: block;
+  }
+}
+
+.horizontal-tabs {
+  display: block;
+
+  @include respond-to(lg) {
+    display: none;
   }
 }

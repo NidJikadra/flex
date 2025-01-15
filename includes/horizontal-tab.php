@@ -1,0 +1,134 @@
+<?php
+/**
+ * Horizontal tabbing Component
+ */
+?>
+
+<section class="horizontal-tabs">
+    <div class="faq__accordion">
+        <div class="accordion-item tab-item">
+            <div class="accordion-header">Benefits of Website Maintenance</div>
+            <div class="accordion-content">
+                <div class="web-maintenance-services__image">
+                    <img src="assets/images/icons/mobile.svg" alt="Node.js" height="32" width="32">
+                </div>
+                <ul class="support-tech-stack__list-item">
+                    <li class="overview-text"><strong><span class="text-white">Do it in-house :</span></strong> Some
+                        of our clients have in-house technical personnel responsible for maintenance and upkeep.
+                    </li>
+                    <li class="overview-text"><strong><span class="text-white">Out-source :</span></strong> Other
+                        clients prefer working with a professional <span class="text-nvyblue">Website Design
+                            Services company</span> providing programming and content updates.</li>
+                    <li class="overview-text"><strong><span class="text-white">Hybrid :</span></strong> If a client
+                        does not have the technical know-how but they prefer updating website content in-house,
+                        Skynet Technologies has user-friendly, easy to use Content Management Solutions. In this
+                        model. No programming skills are required to manage your website content.</li>
+                    <li class="overview-text">For <span class="text-nvyblue">E-Commerce Website Design</span> and
+                        complex database driven websites, a custom maintenance and business support arrangement can
+                        be made.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="accordion-item tab-item open">
+            <div class="accordion-header active">How do I Maintain my Website?</div>
+            <div class="accordion-content">
+                <div class="web-maintenance-services__image">
+                    <img src="assets/images/icons/mobile.svg" alt="Node.js" height="32" width="32">
+                </div>
+                <ul class="support-tech-stack__list-item">
+                    <li class="overview-text"><strong><span class="text-white">Do it in-house :</span></strong> Some
+                        of our clients have in-house technical personnel responsible for maintenance and upkeep.
+                    </li>
+                    <li class="overview-text"><strong><span class="text-white">Out-source :</span></strong> Other
+                        clients prefer working with a professional <span class="text-nvyblue">Website Design
+                            Services company</span> providing programming and content updates.</li>
+                    <li class="overview-text"><strong><span class="text-white">Hybrid :</span></strong> If a client
+                        does not have the technical know-how but they prefer updating website content in-house,
+                        Skynet Technologies has user-friendly, easy to use Content Management Solutions. In this
+                        model. No programming skills are required to manage your website content.</li>
+                    <li class="overview-text">For <span class="text-nvyblue">E-Commerce Website Design</span> and
+                        complex database driven websites, a custom maintenance and business support arrangement can
+                        be made.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="accordion-item tab-item">
+            <div class="accordion-header">Terms of Web Maintenance Contract</div>
+            <div class="accordion-content">
+                <div class="web-maintenance-services__image">
+                    <img src="assets/images/icons/mobile.svg" alt="Node.js" height="32" width="32">
+                </div>
+                <h4 class="h4">Terms of Web Maintenance Contract</h4>
+                <ul class="support-tech-stack__list-item">
+                    <li class="overview-text">Keep your website visitors informed with updated content about your
+                        products and services, special offers, hours of operation, and other key business
+                        information.</li>
+                    <li class="overview-text">Align your online presence with your offline marketing efforts to
+                        create a consistent message across all channels.</li>
+                    <li class="overview-text">Give clients and site visitors a reason to return to your site by
+                        regularly updating and maintaining your content.</li>
+                    <li class="overview-text">Our white label website maintenance service ensures your website stays
+                        fresh, relevant, and optimized to enhance your online presence, boost user engagement, and
+                        increase profits.</li>
+                    <li class="overview-text">Whether you're a small business or an agency, regular web maintenance
+                        is essential to keeping your site secure and performing well.</li>
+                    <li class="overview-text">We offer Custom Website Maintenance Service and Support with flexible
+                        options, including monthly, quarterly, annual packages, as well as fixed cost, hourly cost,
+                        and custom plan packages to meet your unique business needs.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="accordion-item tab-item">
+            <div class="accordion-header">Tips for maintaining site effectively</div>
+            <div class="accordion-content">
+                <div class="web-maintenance-services__image">
+                    <img src="assets/images/icons/mobile.svg" alt="Node.js" height="32" width="32">
+                </div>
+                <h4 class="h4">Terms of Web Maintenance Contract</h4>
+                <ul class="support-tech-stack__list-item">
+                    <li class="overview-text">Keep your website visitors informed with updated content about your
+                        products and services, special offers, hours of operation, and other key business
+                        information.</li>
+                    <li class="overview-text">Align your online presence with your offline marketing efforts to
+                        create a consistent message across all channels.</li>
+                    <li class="overview-text">Give clients and site visitors a reason to return to your site by
+                        regularly updating and maintaining your content.</li>
+                    <li class="overview-text">Our white label website maintenance service ensures your website stays
+                        fresh, relevant, and optimized to enhance your online presence, boost user engagement, and
+                        increase profits.</li>
+                    <li class="overview-text">Whether you're a small business or an agency, regular web maintenance
+                        is essential to keeping your site secure and performing well.</li>
+                    <li class="overview-text">We offer Custom Website Maintenance Service and Support with flexible
+                        options, including monthly, quarterly, annual packages, as well as fixed cost, hourly cost,
+                        and custom plan packages to meet your unique business needs.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="accordion-item tab-item">
+            <div class="accordion-header">Additional web maintenance services</div>
+            <div class="accordion-content">
+                <div class="web-maintenance-services__image">
+                    <img src="assets/images/icons/mobile.svg" alt="Node.js" height="32" width="32">
+                </div>
+                <h4 class="h4">Terms of Web Maintenance Contract</h4>
+                <ul class="support-tech-stack__list-item">
+                    <li class="overview-text">Keep your website visitors informed with updated content about your
+                        products and services, special offers, hours of operation, and other key business
+                        information.</li>
+                    <li class="overview-text">Align your online presence with your offline marketing efforts to
+                        create a consistent message across all channels.</li>
+                    <li class="overview-text">Give clients and site visitors a reason to return to your site by
+                        regularly updating and maintaining your content.</li>
+                    <li class="overview-text">Our white label website maintenance service ensures your website stays
+                        fresh, relevant, and optimized to enhance your online presence, boost user engagement, and
+                        increase profits.</li>
+                    <li class="overview-text">Whether you're a small business or an agency, regular web maintenance
+                        is essential to keeping your site secure and performing well.</li>
+                    <li class="overview-text">We offer Custom Website Maintenance Service and Support with flexible
+                        options, including monthly, quarterly, annual packages, as well as fixed cost, hourly cost,
+                        and custom plan packages to meet your unique business needs.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>

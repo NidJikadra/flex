@@ -1,3 +1,19 @@
+$breakpoints: (
+  md: 768px,
+  lg: 1024px,
+  xl: 1200px,
+  xxl: 1440px,
+  2xl: 1536px
+);
+
+$container-offsets: (
+  md: 14px,
+  lg: 24px,
+  xl: 184px,
+  xxl: 404px,
+  2xl: 24px
+);
+
 .carousel {
   .embla__viewport {
     overflow: hidden;
@@ -76,24 +92,10 @@
     width: 100%;
     max-width: 100%;
 
-    @include respond-to(md) {
-      max-width: calc(100% - 14px);
-    }
-
-    @include respond-to(lg) {
-      max-width: calc(100% - 24px);
-    }
-
-    @include respond-to(xl) {
-      max-width: calc(100% - 184px);
-    }
-
-    @include respond-to(xxl) {
-      max-width: calc(100% - 404px);
-    }
-
-    @include respond-to(2xl) {
-      max-width: calc(100% - 24px);
+    @each $breakpoint, $offset in $container-offsets {
+      @include respond-to($breakpoint) {
+        max-width: calc(100% - $offset);
+      }
     }
   }
 }
