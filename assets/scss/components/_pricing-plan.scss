@@ -10,7 +10,6 @@
   } 
 
   &__wrapper {
-    background: #0B0B0B;
     border-radius: 24px;
     color: $primary-color;
   }
@@ -136,8 +135,6 @@
     flex: 1;
     border-right: none;
 
-
-
     @include respond-to(lg) {
       border-right: 1px solid #212121;
     }
@@ -149,6 +146,9 @@
 
   .pricing-plans__check.first-column-first-check {
     border-radius: 16px 0 0 0;
+  }
+  .pricing-plans__check.last-column-first-check {
+    border-radius: 0 16px 0 0;
   }
 
   &__check {

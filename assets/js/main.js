@@ -1,165 +1,263 @@
-// tab-section
-document.querySelectorAll(".tab").forEach((tab) => {
-    tab.addEventListener("click", () => {
-      document.querySelectorAll(".tab").forEach((t) => t.classList.remove("active"));
-  
-      tab.classList.add("active");
-  
-      document.querySelectorAll(".tab-panel").forEach((content) => content.classList.remove("active"));
-      const target = tab.getAttribute("data-tab");
-      document.getElementById(target).classList.add("active");
+const { animate } = Motion;
+
+/**
+ * Function to animate word-by-word staggered animation
+ *
+ */
+function animateHero(wrapper) {
+  if(!wrapper){
+    return;
+ }
+  const elements = wrapper.querySelectorAll(
+    ".review-text, .desc"
+  );
+
+  elements.forEach((element) => {
+    console.log(element, "element");
+    const words = element.textContent.split(" ");
+    element.textContent = "";
+
+    words.forEach((word) => {
+      const span = document.createElement("span");
+      span.textContent = word;
+      span.classList.add("word");
+      element.appendChild(span);
+
+      element.appendChild(document.createTextNode(" "));
     });
   });
 
+  animate (
+    wrapper,
+    { opacity: 1, transform: "translateY(0)" },
+    { duration: 0.8, ease: "easeOut" }
+  );
+
+  const wordElements = wrapper.querySelectorAll(".word");
+  wordElements.forEach((word, index) => {
+    setTimeout(() => {
+      animate(
+        word,
+        { opacity: 1, transform: "translateY(0)", filter: "blur(0)" },
+        { duration: 0.8, ease: "easeOut" }
+      );
+    }, index * 50);
+  });
+}
+
+const heroWrapper = document.querySelector(".hero-wrapper");
+animateHero(heroWrapper, 1000);
+
+// tab-section
+document.querySelectorAll(".tab").forEach((tab) => {
+  tab.addEventListener("click", () => {
+    document
+      .querySelectorAll(".tab")
+      .forEach((t) => t.classList.remove("active"));
+
+    tab.classList.add("active");
+
+    document
+      .querySelectorAll(".tab-panel")
+      .forEach((content) => content.classList.remove("active"));
+    const target = tab.getAttribute("data-tab");
+    document.getElementById(target).classList.add("active");
+  });
+});
+
 // accordion section
 document.querySelectorAll(".accordion-header").forEach((header) => {
-    header.addEventListener("click", () => {
-      const accordionItem = header.parentElement;
-  
-      document.querySelectorAll(".accordion-item").forEach((item) => {
-        if (item !== accordionItem) {
-          item.classList.remove("open");
-          item.querySelector(".accordion-header").classList.remove("active");
-        }
-      });
-  
-      const isOpen = accordionItem.classList.toggle("open");
-      if (isOpen) {
-        header.classList.add("active");
-      } else {
-        header.classList.remove("active");
+  header.addEventListener("click", () => {
+    const accordionItem = header.parentElement;
+
+    document.querySelectorAll(".accordion-item").forEach((item) => {
+      if (item !== accordionItem) {
+        item.classList.remove("open");
+        item.querySelector(".accordion-header").classList.remove("active");
       }
     });
-  }); 
 
-const menuItems = document.querySelectorAll('.menu-item');
-const header = document.querySelector('.main-header');
+    const isOpen = accordionItem.classList.toggle("open");
+    if (isOpen) {
+      header.classList.add("active");
+    } else {
+      header.classList.remove("active");
+    }
+  });
+});
 
-function showMegaMenu() { 
-  header.classList.add('active'); 
+const menuItems = document.querySelectorAll(".menu-item");
+const header = document.querySelector(".main-header");
 
+function showMegaMenu() {
+  header.classList.add("active");
 }
 function hideMegaMenu() {
-  header.classList.remove('active'); 
+  header.classList.remove("active");
 }
 
-menuItems.forEach(item => {
-  item.addEventListener('mouseenter', showMegaMenu); 
-  item.addEventListener('mouseleave', hideMegaMenu); 
+menuItems.forEach((item) => {
+  item.addEventListener("mouseenter", showMegaMenu);
+  item.addEventListener("mouseleave", hideMegaMenu);
 });
 
 // Core Values Image Switching
 const values = document.querySelectorAll(".core-values__value");
 const images = document.querySelectorAll(".core-values__dynamic-image img");
 
-values.forEach(value => {
-    value.addEventListener("mouseenter", () => {
-        const imageId = value.getAttribute("data-image");
-        images.forEach(img => {
-            if (img.id === imageId) {
-                img.classList.add("active"); 
-                value.classList.add("active");
-            } else {
-                img.classList.remove("active"); 
-                value.classList.remove("active");
-            }
-        });
-    });
-
-    value.addEventListener("mouseleave", () => {
-        images.forEach(img => img.classList.remove("active"));
+values.forEach((value) => {
+  value.addEventListener("mouseenter", () => {
+    const imageId = value.getAttribute("data-image");
+    images.forEach((img) => {
+      if (img.id === imageId) {
+        img.classList.add("active");
+        value.classList.add("active");
+      } else {
+        img.classList.remove("active");
         value.classList.remove("active");
+      }
     });
+  });
+
+  value.addEventListener("mouseleave", () => {
+    images.forEach((img) => img.classList.remove("active"));
+    value.classList.remove("active");
+  });
 });
 
 //popup model
 
-document.addEventListener('DOMContentLoaded', () => {
-  const modal = document.getElementById('teamModal');
-  const modalImage = modal.querySelector('.profile-card__image img');
-  const modalName = modal.querySelector('.profile-card__name');
-  const modalPosition = modal.querySelector('.profile-card__position');
-  const modalDescription = modal.querySelector('.description');
-  const modalSkills = modal.querySelector('.skills__name');
-  const closeModalBtn = document.getElementById('closeModal');
+document.addEventListener("DOMContentLoaded", () => {
+  const modal = document.getElementById("teamModal");
+  if(!modal) return;
 
-  document.querySelectorAll('.team-card').forEach(card => {
-    card.addEventListener('click', () => {
-      const name = card.getAttribute('data-name');
-      const position = card.getAttribute('data-position');
-      const description = card.getAttribute('data-description');
-      const skills = card.getAttribute('data-skills');
-      const image = card.getAttribute('data-image');
+  const modalContent = modal.querySelector('.profile-card');
+  const modalImage = modal.querySelector(".profile-card__image img");
+  const modalName = modal.querySelector(".profile-card__name");
+  const modalPosition = modal.querySelector(".profile-card__position");
+  const modalDescription = modal.querySelector(".description");
+  const modalSkills = modal.querySelector(".skills__name");
+  const closeModalBtn = document.getElementById("closeModal");
 
-     
+  function animateModalOpen() {
+    animate(modal, 
+      { opacity: [0, 1] },
+      { duration: 0.3, ease: "easeOut" }
+    );
+
+    animate(modalContent,
+      { 
+        opacity: [0, 1],
+        scale: [0.95, 1]
+      },
+      { 
+        duration: 0.2,
+        ease: "easeOut",
+      }
+    );
+  }
+
+  function animateModalClose() {
+    animate(modal,
+      { opacity: [1, 0] },
+      { 
+        duration: 0.3,
+        ease: "easeIn",
+        onComplete: () => {
+          modal.classList.remove("open");
+        }
+      }
+    );
+
+    animate(modalContent,
+      { 
+        opacity: [1, 0],
+        scale: [1, 0.95]
+      },
+      { 
+        duration: 0.2,
+        ease: "easeIn"
+      }
+    );
+  }
+
+  document.querySelectorAll(".team-card").forEach((card) => {
+    card.addEventListener("click", () => {
+      const name = card.getAttribute("data-name");
+      const position = card.getAttribute("data-position");
+      const description = card.getAttribute("data-description");
+      const skills = card.getAttribute("data-skills");
+      const image = card.getAttribute("data-image");
+
       modalImage.src = image;
       modalName.textContent = name;
       modalPosition.textContent = position;
       modalDescription.textContent = description;
       modalSkills.textContent = skills;
 
-      modal.classList.add('open');
+      modal.classList.add("open");
+      animateModalOpen();
     });
   });
 
-  closeModalBtn.addEventListener('click', () => {
-    modal.classList.remove('open');
+  closeModalBtn.addEventListener("click", () => {
+    animateModalClose();
   });
 
-  // Close modal when clicking outside modal content
-  modal.addEventListener('click', (e) => {
+  modal.addEventListener("click", (e) => {
     if (e.target === modal) {
-      modal.classList.remove('open');
+      animateModalClose();
     }
   });
 });
 
 //tech stack tabbing
 
-document.querySelectorAll('.tech-stack__skills-button').forEach((button) => {
-  button.addEventListener('click', () => {
-   
-    document.querySelectorAll('.tech-stack__skills-button').forEach((btn) => {
-      btn.classList.remove('tech-stack__skills-button--active');
+document.querySelectorAll(".tech-stack__skills-button").forEach((button) => {
+  button.addEventListener("click", () => {
+    document.querySelectorAll(".tech-stack__skills-button").forEach((btn) => {
+      btn.classList.remove("tech-stack__skills-button--active");
     });
 
-    button.classList.add('tech-stack__skills-button--active');
+    button.classList.add("tech-stack__skills-button--active");
 
-    document.querySelectorAll('.tech-stack__skills-tab').forEach((tab) => {
-      tab.classList.remove('tech-stack__skills-tab--active');
+    document.querySelectorAll(".tech-stack__skills-tab").forEach((tab) => {
+      tab.classList.remove("tech-stack__skills-tab--active");
     });
 
-    const tabId = button.getAttribute('data-tab');
-    document.getElementById(tabId).classList.add('tech-stack__skills-tab--active');
+    const tabId = button.getAttribute("data-tab");
+    document
+      .getElementById(tabId)
+      .classList.add("tech-stack__skills-tab--active");
   });
 });
 
-
-// carousel 
+// carousel
 
 document.addEventListener("DOMContentLoaded", function () {
   const emblaNode = document.querySelector(".embla__viewport");
   const prevButton = document.querySelector(".embla__button--prev");
   const nextButton = document.querySelector(".embla__button--next");
+  if (!emblaNode) return;
 
   const embla = EmblaCarousel(emblaNode, {
-    containScroll: window.innerWidth < 768 ? 'trimSnaps' : false,
-    slidesToScroll: 'auto',
-    dragFree: true
+    containScroll: window.innerWidth < 768 ? "trimSnaps" : false,
+    slidesToScroll: "auto",
+    dragFree: true,
   });
 
   const setupButtonStates = () => {
-      if (embla.canScrollPrev()) {  
-          prevButton.removeAttribute("disabled");
-      } else {
-          prevButton.setAttribute("disabled", "disabled");
-      }
+    if (embla.canScrollPrev()) {
+      prevButton.removeAttribute("disabled");
+    } else {
+      prevButton.setAttribute("disabled", "disabled");
+    }
 
-      if (embla.canScrollNext()) {
-          nextButton.removeAttribute("disabled");
-      } else {
-          nextButton.setAttribute("disabled", "disabled");
-      }
+    if (embla.canScrollNext()) {
+      nextButton.removeAttribute("disabled");
+    } else {
+      nextButton.setAttribute("disabled", "disabled");
+    }
   };
 
   prevButton.addEventListener("click", embla.scrollPrev);
@@ -167,82 +265,90 @@ document.addEventListener("DOMContentLoaded", function () {
 
   embla.on("init", setupButtonStates);
   embla.on("select", setupButtonStates);
-  
-  window.addEventListener('resize', () => {
+
+  window.addEventListener("resize", () => {
     embla.reInit({
-      containScroll: window.innerWidth < 768 ? 'trimSnaps' : false,
-      slidesToScroll: 'auto',
-      dragFree: true
+      containScroll: window.innerWidth < 768 ? "trimSnaps" : false,
+      slidesToScroll: "auto",
+      dragFree: true,
     });
   });
 });
 
-// pricing plan dropdown 
+// pricing plan dropdown
 
-document.addEventListener('DOMContentLoaded', function() {
-    const planSelect = document.querySelector('.pricing-plans__select');
-    if (planSelect) {
-        planSelect.addEventListener('change', function(e) {
-            const selectedPlan = e.target.value;
-            const checkColumns = document.querySelectorAll('.pricing-plans__check-column');
-            
-            checkColumns.forEach(column => {
-                if (column.dataset.plan === selectedPlan) {
-                    column.classList.add('active');
-                } else {
-                    column.classList.remove('active');
-                }
-            });
-        });
-    }
+document.addEventListener("DOMContentLoaded", function () {
+  const planSelect = document.querySelector(".pricing-plans__select");
+  if (planSelect) {
+    planSelect.addEventListener("change", function (e) {
+      const selectedPlan = e.target.value;
+      const checkColumns = document.querySelectorAll(
+        ".pricing-plans__check-column"
+      );
+
+      checkColumns.forEach((column) => {
+        if (column.dataset.plan === selectedPlan) {
+          column.classList.add("active");
+        } else {
+          column.classList.remove("active");
+        }
+      });
+    });
+  }
 });
 
 // pricing paln height change on window resize
 
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener("DOMContentLoaded", function () {
   const adjustCheckHeight = () => {
-      const featureElements = document.querySelectorAll('.pricing-plans__feature');
-      const checkColumns = document.querySelectorAll('.pricing-plans__check-column');
+    const featureElements = document.querySelectorAll(
+      ".pricing-plans__feature"
+    );
+    const checkColumns = document.querySelectorAll(
+      ".pricing-plans__check-column"
+    );
 
-      featureElements.forEach((feature, index) => {
-          const featureHeight = feature.offsetHeight;
+    featureElements.forEach((feature, index) => {
+      const featureHeight = feature.offsetHeight;
 
-          checkColumns.forEach(column => {
-              const checkElements = column.querySelectorAll('.pricing-plans__check');
-              if (checkElements[index]) {
-                  checkElements[index].style.height = `${featureHeight}px`;
-                  checkElements[index].style.lineHeight = `${featureHeight}px`; 
-              }
-          });
+      checkColumns.forEach((column) => {
+        const checkElements = column.querySelectorAll(".pricing-plans__check");
+        if (checkElements[index]) {
+          checkElements[index].style.height = `${featureHeight}px`;
+          checkElements[index].style.lineHeight = `${featureHeight}px`;
+        }
       });
+    });
   };
 
   adjustCheckHeight();
 
-  window.addEventListener('resize', adjustCheckHeight);
+  window.addEventListener("resize", adjustCheckHeight);
 });
 
 // pricing plan feature hover effect
 
 document.addEventListener("DOMContentLoaded", () => {
   const features = document.querySelectorAll(".pricing-plans__feature");
-  const checkColumns = document.querySelectorAll(".pricing-plans__check-column");
+  const checkColumns = document.querySelectorAll(
+    ".pricing-plans__check-column"
+  );
 
   features.forEach((feature, index) => {
-      feature.addEventListener("mouseover", () => {
-          checkColumns.forEach((column) => {
-              const check = column.children[index];
-              if (check) check.classList.add("hover");
-          });
-          feature.classList.add("hover");
+    feature.addEventListener("mouseover", () => {
+      checkColumns.forEach((column) => {
+        const check = column.children[index];
+        if (check) check.classList.add("hover");
       });
+      feature.classList.add("hover");
+    });
 
-      feature.addEventListener("mouseout", () => {
-          checkColumns.forEach((column) => {
-              const check = column.children[index];
-              if (check) check.classList.remove("hover");
-          });
-          feature.classList.remove("hover");
+    feature.addEventListener("mouseout", () => {
+      checkColumns.forEach((column) => {
+        const check = column.children[index];
+        if (check) check.classList.remove("hover");
       });
+      feature.classList.remove("hover");
+    });
   });
 });

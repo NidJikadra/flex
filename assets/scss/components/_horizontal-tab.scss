@@ -4,15 +4,15 @@
   border-radius: 16px;
   margin: 14px 0;
 
-  @include respond-to(md){
-    padding: 36px 36px;
+  @include respond-to(md) {
+    padding: 30px 30px;
   }
 
   &:last-child {
     padding: 20px 20px;
 
-    @include respond-to(md){
-        padding: 36px 36px;
-      }
+    @include respond-to(md) {
+      padding: 30px 30px;
+    }
   }
 }

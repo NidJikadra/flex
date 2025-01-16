@@ -29,6 +29,7 @@
 
 .tabs-panel {
   @include flex;
+  gap: 2px;
   border: 1px solid $border-color;
   border-radius: 50px;
   overflow-x: auto;

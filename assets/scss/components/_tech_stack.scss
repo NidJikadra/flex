@@ -32,14 +32,10 @@
     }
 
     &-button {
+      @include flex(row, space-between, center);
       white-space: nowrap;
-      border: none;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-between;
+      border-top: 1px solid $border-color;
       font-family: $font-light;
-      font-size: 20px;
       line-height: 32px;
       letter-spacing: 0.4px;
       background: transparent;
@@ -48,6 +44,10 @@
       cursor: pointer;
       transition: all 0.3s ease-in-out;
 
+      &:last-child {
+        border-bottom: 1px solid $border-color;
+      }
+
       &--active {
         background: linear-gradient(
           249deg,
@@ -55,7 +55,6 @@
           rgba(193, 207, 255, 0.03) 35%,
           rgba(193, 207, 255, 0.12) 100%
         );
-        border-radius: 14px;
 
         &::after {
           content: none;
@@ -70,11 +69,6 @@
             content: "";
           }
         }
-      }
-
-      @include respond-to(lg) {
-        border-top: 1px solid $border-color;
-        flex-direction: row;
       }
     }
 

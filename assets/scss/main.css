@@ -962,6 +962,11 @@ button {
   width: 100%;
   flex-shrink: 0;
 }
+.hero-section .word {
+  filter: blur(5px);
+  opacity: 0;
+  transform: translateY(20px);
+}
 .hero-section::before {
   content: "";
   position: absolute;
@@ -986,6 +991,8 @@ button {
   max-width: 800px;
   position: relative;
   z-index: 2;
+  opacity: 0;
+  transform: translateY(20px);
 }
 
 .review-text {
@@ -1737,6 +1744,7 @@ button {
   justify-content: flex-start;
   align-items: stretch;
   flex-wrap: nowrap;
+  gap: 2px;
   border: 1px solid #212121;
   border-radius: 50px;
   overflow-x: auto;
@@ -2464,7 +2472,6 @@ footer .footer-content {
 }
 .accordion-header.active {
   color: #fbfbfb;
-  font-family: "utendoregular";
 }
 .accordion-header.active::after {
   content: "";
@@ -2829,7 +2836,9 @@ footer .footer-content {
   justify-content: center;
   align-items: center;
   z-index: 9;
-  transition: all 0.4s ease-in-out;
+  opacity: 0;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
 }
 .modal .profile-card {
   display: flex;
@@ -2842,7 +2851,7 @@ footer .footer-content {
   overflow-y: auto;
   scrollbar-width: none;
   max-height: calc(100vh - 250px);
-  transition: all 0.4s ease-in-out;
+  will-change: transform, opacity;
 }
 @media (min-width: 1024px) {
   .modal .profile-card {
@@ -4245,14 +4254,14 @@ footer .footer-content {
   }
 }
 .tech-stack__skills-button {
-  white-space: nowrap;
-  border: none;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  border-top: 1px solid #212121;
   font-family: "utendolight";
-  font-size: 20px;
   line-height: 32px;
   letter-spacing: 0.4px;
   background: transparent;
@@ -4261,9 +4270,11 @@ footer .footer-content {
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
+.tech-stack__skills-button:last-child {
+  border-bottom: 1px solid #212121;
+}
 .tech-stack__skills-button--active {
   background: linear-gradient(249deg, rgba(193, 207, 255, 0.02) 0%, rgba(193, 207, 255, 0.03) 35%, rgba(193, 207, 255, 0.12) 100%);
-  border-radius: 14px;
 }
 .tech-stack__skills-button--active::after {
   content: none;
@@ -4277,12 +4288,6 @@ footer .footer-content {
 @media (min-width: 1024px) {
   .tech-stack__skills-button--active::after {
     content: "";
-  }
-}
-@media (min-width: 1024px) {
-  .tech-stack__skills-button {
-    border-top: 1px solid #212121;
-    flex-direction: row;
   }
 }
 .tech-stack__skills-tab {
@@ -4725,12 +4730,13 @@ footer .footer-content {
 }
 .carousel__card-icons {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   background-image: url("../images/carousel-bg.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   padding: 30px;
+  gap: 20px;
   border-radius: 10px;
   background-color: #1b1b1b;
   border: 1px solid #212121;
@@ -4740,16 +4746,24 @@ footer .footer-content {
 @media (min-width: 1024px) {
   .carousel__card-icons {
     padding: 45px;
+    gap: 30px;
   }
 }
 .carousel__icon {
   background-color: #121315;
   border-radius: 50px;
-  padding: 19px;
-  width: 64px;
-  height: 64px;
+  padding: 12px;
+  width: 54px;
+  height: 54px;
 }
 @media (min-width: 768px) {
+  .carousel__icon {
+    padding: 19px;
+    width: 64px;
+    height: 64px;
+  }
+}
+@media (min-width: 1024px) {
   .carousel__icon {
     padding: 22px;
     width: 80px;
@@ -5458,7 +5472,6 @@ footer .footer-content {
   }
 }
 .pricing-plans__wrapper {
-  background: #0B0B0B;
   border-radius: 24px;
   color: #fbfbfb;
 }
@@ -5587,6 +5600,9 @@ footer .footer-content {
 }
 .pricing-plans .pricing-plans__check.first-column-first-check {
   border-radius: 16px 0 0 0;
+}
+.pricing-plans .pricing-plans__check.last-column-first-check {
+  border-radius: 0 16px 0 0;
 }
 .pricing-plans__check {
   padding: 20px 20px;
@@ -6311,7 +6327,7 @@ footer .footer-content {
 }
 @media (min-width: 768px) {
   .tab-item {
-    padding: 36px 36px;
+    padding: 30px 30px;
   }
 }
 .tab-item:last-child {
@@ -6319,6 +6335,6 @@ footer .footer-content {
 }
 @media (min-width: 768px) {
   .tab-item:last-child {
-    padding: 36px 36px;
+    padding: 30px 30px;
   }
 }/*# sourceMappingURL=main.css.map */

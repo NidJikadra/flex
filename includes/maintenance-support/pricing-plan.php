@@ -61,22 +61,26 @@ $plans = [
 
                 <div class="pricing-plans__checks">
                     <?php 
-    $isFirstColumn = true; 
-    foreach ($plans as $planKey => $planFeatures): ?>
-                    <div class="pricing-plans__check-column <?php echo ($planKey === array_key_first($plans)) ? 'active' : ''; ?>"
+                        $totalColumns = count($plans); 
+                        $currentColumn = 0; 
+
+                        foreach ($plans as $planKey => $planFeatures): 
+                            $currentColumn++;
+                            $isFirstColumn = ($currentColumn === 1); 
+                            $isLastColumn = ($currentColumn === $totalColumns); 
+                    ?>
+                    <div class="pricing-plans__check-column <?php echo $isFirstColumn ? 'active' : ''; ?>"
                         data-plan="<?php echo strtolower(str_replace(' ', '-', $planKey)); ?>">
                         <?php foreach ($planFeatures as $index => $hasFeature): ?>
-                        <div
-                            class="pricing-plans__check <?php echo $isFirstColumn && $index === 0 ? 'first-column-first-check' : ''; ?>">
+                        <div class="pricing-plans__check 
+                            <?php echo $isFirstColumn && $index === 0 ? 'first-column-first-check' : ''; ?> 
+                            <?php echo $isLastColumn && $index === 0 ? 'last-column-first-check' : ''; ?>">
                             <img src="assets/images/icons/<?php echo $hasFeature ? 'checkmark' : 'empty'; ?>.svg"
                                 alt="<?php echo $hasFeature ? 'checkmark' : 'empty'; ?>" height="13" width="13">
                         </div>
                         <?php endforeach; ?>
                     </div>
-                    <?php 
-      
-        $isFirstColumn = false; 
-    endforeach; ?>
+                    <?php endforeach; ?>
                 </div>
 
                 <div class="pricing-plans__footer">
