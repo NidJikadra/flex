@@ -204,6 +204,7 @@ h4,
 .read-more {
   color: #c1cfff;
   gap: 10px;
+  line-height: 24px;
   align-items: center;
   position: relative;
   overflow: hidden;
@@ -939,6 +940,8 @@ button {
 }
 
 .hero-section {
+  opacity: 0;
+  transform: translateY(20px);
   position: relative;
   min-height: 100dvh;
   background-color: #0b0b0b;
@@ -991,8 +994,6 @@ button {
   max-width: 800px;
   position: relative;
   z-index: 2;
-  opacity: 0;
-  transform: translateY(20px);
 }
 
 .review-text {
@@ -1631,6 +1632,7 @@ button {
   border: 1px solid transparent;
   transition: all 0.3s ease;
   height: 100%;
+  transform: scale(0.95);
 }
 .our-core-services__service-card:hover {
   box-shadow: rgba(0, 0, 0, 0.6) 4px 5px 10px 4px;

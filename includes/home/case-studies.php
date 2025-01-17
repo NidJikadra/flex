@@ -3,16 +3,16 @@
  * Case Studies Section Component
  */
 ?>
-<section class="case-studies">
+<section class="case-studies" data-animate>
     <div class="container">
-        <div class="case-studies__title">
+        <div class="case-studies__title" data-animate="fade-up" data-animate-delay="0">
             <div class="case-studies__title-wrapper">
                 <p class="sub-title">Case Studies</p>
                 <h2 class="case-studies__heading">Our Work in Action</h2>
             </div>
             <button type="button" class="button btn-primary">See all case studies</button>
         </div>
-        <div class="case-studies__background-image">
+        <div class="case-studies__background-image" data-animate="fade-in-scale">
             <div class="overlay">
                 <div class="case-studies__info-wrapper">
                     <p class="case-studies__info">Duolingo empowers its engineers to be force multipliers for expertise with GitHub Copilot, Codespaces.</p>
@@ -25,7 +25,7 @@
             </div>
         </div>
         <div class="case-studies__row">
-            <div class="case-studies__column">
+            <div class="case-studies__column" data-animate="fade-in-scale">
                 <div class="case-studies__healthcare-wrapper">  
                     <div class="overlay">
                         <div class="case-studies__info-wrapper">
@@ -35,7 +35,7 @@
                     </div>
                 </div>
             </div>
-            <div class="case-studies__column">
+            <div class="case-studies__column" data-animate="fade-in-scale">
                 <div class="case-studies__travel-wrapper">
                     <div class="overlay">
                         <div class="case-studies__info-wrapper">
@@ -46,6 +46,6 @@
                 </div>
             </div>
         </div>
-        <button type="button" class="button btn-primary bottom">See all case studies</button>
+        <button type="button" class="button btn-primary bottom" data-animate="fade-up">See all case studies</button>
     </div>
 </section>

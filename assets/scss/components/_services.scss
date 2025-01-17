@@ -41,6 +41,7 @@
     border: 1px solid transparent;
     transition: all 0.3s ease;
     height: 100%;
+    transform: scale(0.95);
   
     &:hover {
       box-shadow: rgba($black, 0.6) 4px 5px 10px 4px;

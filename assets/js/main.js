@@ -1,16 +1,12 @@
 const { animate } = Motion;
 
-/**
- * Function to animate word-by-word staggered animation
- *
- */
-function animateHero(wrapper) {
-  if(!wrapper){
+// Function to animate word-by-word staggered animation
+
+function animateHero(heroSection) {
+  if (!heroSection) {
     return;
- }
-  const elements = wrapper.querySelectorAll(
-    ".review-text, .desc"
-  );
+  }
+  const elements = heroSection.querySelectorAll(".review-text, .desc");
 
   elements.forEach((element) => {
     console.log(element, "element");
@@ -27,26 +23,66 @@ function animateHero(wrapper) {
     });
   });
 
-  animate (
-    wrapper,
-    { opacity: 1, transform: "translateY(0)" },
-    { duration: 0.8, ease: "easeOut" }
-  );
+  Motion.inView(heroSection, () => {
+    animate(
+      heroSection,
+      { opacity: 1, transform: "translateY(0)" },
+      { duration: 0.8, ease: "easeOut" }
+    );
 
-  const wordElements = wrapper.querySelectorAll(".word");
-  wordElements.forEach((word, index) => {
-    setTimeout(() => {
-      animate(
-        word,
-        { opacity: 1, transform: "translateY(0)", filter: "blur(0)" },
-        { duration: 0.8, ease: "easeOut" }
-      );
-    }, index * 50);
+    const wordElements = heroSection.querySelectorAll(".word");
+    wordElements.forEach((word, index) => {
+      setTimeout(() => {
+        animate(
+          word,
+          { opacity: 1, transform: "translateY(0)", filter: "blur(0)" },
+          { duration: 0.8, ease: "easeOut" }
+        );
+      }, index * 50);
+    });
   });
 }
 
-const heroWrapper = document.querySelector(".hero-wrapper");
-animateHero(heroWrapper, 1000);
+const heroSection = document.querySelector(".hero-section");
+animateHero(heroSection);
+
+// All over animation
+document.addEventListener("DOMContentLoaded", () => {
+  const animations = {
+    "fade-up": {
+      initial: { opacity: 0, transform: "translateY(50px)" },
+      final: { opacity: 1, transform: "translateY(0)" },
+    },
+    "fade-in-scale": {
+      initial: { opacity: 0, transform: "scale(0.95)" },
+      final: { opacity: 1, transform: "scale(1)" },
+    },
+    "slide-left": {
+      initial: { opacity: 0, transform: "translateX(-50px)" },
+      final: { opacity: 1, transform: "translateX(0)" },
+    },
+  };
+
+  document.querySelectorAll("[data-animate]").forEach((element) => {
+    const animationType = element.getAttribute("data-animate");
+    if (animations[animationType]) {
+      Object.assign(element.style, {
+        opacity: "0",
+        transform: animations[animationType].initial.transform,
+      });
+
+      Motion.inView(element, () => {
+        const delay = element.getAttribute("data-animate-delay") || 0;
+        setTimeout(() => {
+          animate(element, animations[animationType].final, {
+            duration: 0.6,
+            ease: "easeOut",
+          });
+        }, delay * 1000);
+      });
+    }
+  });
+});
 
 // tab-section
 document.querySelectorAll(".tab").forEach((tab) => {
@@ -129,9 +165,9 @@ values.forEach((value) => {
 
 document.addEventListener("DOMContentLoaded", () => {
   const modal = document.getElementById("teamModal");
-  if(!modal) return;
+  if (!modal) return;
 
-  const modalContent = modal.querySelector('.profile-card');
+  const modalContent = modal.querySelector(".profile-card");
   const modalImage = modal.querySelector(".profile-card__image img");
   const modalName = modal.querySelector(".profile-card__name");
   const modalPosition = modal.querySelector(".profile-card__position");
@@ -140,43 +176,43 @@ document.addEventListener("DOMContentLoaded", () => {
   const closeModalBtn = document.getElementById("closeModal");
 
   function animateModalOpen() {
-    animate(modal, 
-      { opacity: [0, 1] },
-      { duration: 0.3, ease: "easeOut" }
-    );
+    animate(modal, { opacity: [0, 1] }, { duration: 0.3, ease: "easeOut" });
 
-    animate(modalContent,
-      { 
+    animate(
+      modalContent,
+      {
         opacity: [0, 1],
-        scale: [0.95, 1]
+        scale: [0.4, 1],
       },
-      { 
-        duration: 0.2,
+      {
+        duration: 0.3,
         ease: "easeOut",
       }
     );
   }
 
   function animateModalClose() {
-    animate(modal,
+    animate(
+      modal,
       { opacity: [1, 0] },
-      { 
+      {
         duration: 0.3,
         ease: "easeIn",
         onComplete: () => {
           modal.classList.remove("open");
-        }
+        },
       }
     );
 
-    animate(modalContent,
-      { 
+    animate(
+      modalContent,
+      {
         opacity: [1, 0],
-        scale: [1, 0.95]
+        scale: [1, 0.4],
       },
-      { 
-        duration: 0.2,
-        ease: "easeIn"
+      {
+        duration: 0.3,
+        ease: "easeIn",
       }
     );
   }

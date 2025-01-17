@@ -1,5 +1,6 @@
 .hero-section {
-
+  opacity: 0;
+  transform: translateY(20px);
   position: relative;
   min-height: 100dvh;
   background-color: $light-black;
@@ -47,8 +48,7 @@
   max-width: 800px;
   position: relative;
   z-index: 2;
-  opacity: 0;
-  transform: translateY(20px);
+ 
 }
 
 .review-text {

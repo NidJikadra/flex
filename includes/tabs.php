@@ -80,7 +80,7 @@ $tabs = [
 
 <section class="tabs">
     <div class="container"> 
-        <div class="tabs__title-wrapper">
+        <div class="tabs__title-wrapper" data-animate="fade-up" data-animate-delay="0">
             <p class="sub-title">Technologies we use</p>
             <h2 class="tabs__heading">Our Services with Advanced Tools</h2>
         </div>
