@@ -10,6 +10,12 @@
   color: #A5B8FF;
 }
 
+.word {
+  filter: blur(5px);
+  opacity: 0;
+  transform: translateY(20px); 
+}
+
 .desc {
   font-size: 16px;
   line-height: 26px;

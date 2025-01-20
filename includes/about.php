@@ -2,7 +2,6 @@
 /**
  * About Section Component
  */
-
 ?>
 
 <section class="aboutus">
@@ -15,7 +14,7 @@
         </div>
         <div class="row">
             <div class="column">
-                <div class="about-us-wrapper">
+                <div class="about-us-wrapper" data-animate="fade-in-scale" data-animate-delay="0.2">
                     <div class="aboutus-block block1">
                         <div class="about-img">
                             <img src="assets/images/icons/Icon1.svg" height="122" width="122">
@@ -26,7 +25,7 @@
                         <p class="summary-text">To align with your strategic interests</p>
                     </div>
                 </div>
-                <div class="about-us-wrapper">
+                <div class="about-us-wrapper" data-animate="fade-in-scale" data-animate-delay="0.2">
                     <div class="aboutus-block block2">
                         <div class="about-img">
                             <img src="assets/images/icons/Icon2.svg" height="122" width="122">
@@ -37,7 +36,7 @@
                         <p class="summary-text">To solve current and future challenges</p>
                     </div>
                 </div>
-                <div class="about-us-wrapper">
+                <div class="about-us-wrapper" data-animate="fade-in-scale" data-animate-delay="0.2">
                     <div class="aboutus-block block3">
                         <div class="about-img">
                             <img src="assets/images/icons/Icon3.svg" height="122" width="122">
@@ -48,7 +47,7 @@
                         <p class="summary-text">Built on respect for your needs</p>
                     </div>
                 </div>
-                <div class="about-us-wrapper">
+                <div class="about-us-wrapper" data-animate="fade-in-scale" data-animate-delay="0.3">
                     <div class="aboutus-block block4">
                         <div class="about-img">
                             <img src="assets/images/icons/Icon4.svg" height="122" width="122">
@@ -59,7 +58,7 @@
                         <p class="summary-text">To align with your strategic interests</p>
                     </div>
                 </div>
-                <div class="about-us-wrapper">
+                <div class="about-us-wrapper" data-animate="fade-in-scale" data-animate-delay="0.3">
                     <div class="aboutus-block block5">
                         <div class="about-img">
                             <img src="assets/images/icons/Icon5.svg" height="122" width="122">
@@ -70,7 +69,7 @@
                         <p class="summary-text">At every step along the way</p>
                     </div>
                 </div>
-                <div class="about-us-wrapper">
+                <div class="about-us-wrapper" data-animate="fade-in-scale" data-animate-delay="0.3">
                     <div class="aboutus-block block6">
                         <div class="about-img">
                             <img src="assets/images/icons/Icon6.svg" height="122" width="122">

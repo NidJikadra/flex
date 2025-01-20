@@ -5,7 +5,7 @@
 ?>
 <section class="case-studies" data-animate>
     <div class="container">
-        <div class="case-studies__title" data-animate="fade-up" data-animate-delay="0">
+        <div class="case-studies__title">
             <div class="case-studies__title-wrapper">
                 <p class="sub-title">Case Studies</p>
                 <h2 class="case-studies__heading">Our Work in Action</h2>

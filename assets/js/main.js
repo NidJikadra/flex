@@ -1,50 +1,64 @@
-const { animate } = Motion;
+const { animate, inView } = Motion;
 
 // Function to animate word-by-word staggered animation
 
-function animateHero(heroSection) {
-  if (!heroSection) {
-    return;
+function animateHero(section, selector) {
+  if (!section) return;
+  if (!NodeList.prototype.isPrototypeOf(section) && !Array.isArray(section)) {
+    section = [section]; // Wrap single section in an array
   }
-  const elements = heroSection.querySelectorAll(".review-text, .desc");
 
-  elements.forEach((element) => {
-    console.log(element, "element");
-    const words = element.textContent.split(" ");
-    element.textContent = "";
+  section.forEach((section) => {
+    if (!section) return;
 
-    words.forEach((word) => {
-      const span = document.createElement("span");
-      span.textContent = word;
-      span.classList.add("word");
-      element.appendChild(span);
+    const elements = section.querySelectorAll(selector);
+    if (!elements.length) return;
 
-      element.appendChild(document.createTextNode(" "));
+    elements.forEach((element) => {
+      const words = element.textContent.split(" ");
+      element.textContent = "";
+
+      words.forEach((word) => {
+        const span = document.createElement("span");
+        span.textContent = word;
+        span.classList.add("word");
+        span.style.opacity = "0";
+        span.style.transform = "translateY(20px)";
+        span.style.filter = "blur(5px)";
+        element.appendChild(span);
+
+        element.appendChild(document.createTextNode(" "));
+      });
     });
-  });
 
-  Motion.inView(heroSection, () => {
-    animate(
-      heroSection,
-      { opacity: 1, transform: "translateY(0)" },
-      { duration: 0.8, ease: "easeOut" }
-    );
+    inView(section, () => {
+      animate(
+        section,
+        { opacity: 1, transform: "translateY(0)", filter: "blur(0)" },
+        { duration: 0.8, ease: "easeOut" }
+      );
 
-    const wordElements = heroSection.querySelectorAll(".word");
-    wordElements.forEach((word, index) => {
-      setTimeout(() => {
-        animate(
-          word,
-          { opacity: 1, transform: "translateY(0)", filter: "blur(0)" },
-          { duration: 0.8, ease: "easeOut" }
-        );
-      }, index * 50);
+      const wordElements = section.querySelectorAll(".word");
+      wordElements.forEach((word, index) => {
+        inView(word, () => {
+          setTimeout(() => {
+            animate(
+              word,
+              { opacity: 1, transform: "translateY(0)", filter: "blur(0)" },
+              { duration: 0.8, ease: "easeOut" }
+            );
+          }, index * 50);
+        });
+      });
     });
   });
 }
 
-const heroSection = document.querySelector(".hero-section");
-animateHero(heroSection);
+const section = document.querySelectorAll(".case-studies, .our-core-services, .tabs, .aboutus, .blogs-spot, .faq, .core-values, .our-team");
+const heroSection = document.querySelectorAll(".hero-section, .hero-banner");
+
+animateHero(heroSection, ".review-text, .desc");
+animateHero(section, "h2");
 
 // All over animation
 document.addEventListener("DOMContentLoaded", () => {

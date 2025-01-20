@@ -2,11 +2,11 @@
 /**
  * Footer Component
  */
-?>
+?>  
 <footer>
     <div class="container">
         <div class="row-footer">
-            <div class="column">
+            <div class="column" data-animate="fade-up" data-animate-delay="0.3">
                 <a href="index.html" class="footer-logo">
                     <img src="assets/images/Logo.png" alt="Flex-logo">
                 </a>
@@ -24,7 +24,7 @@
             </div>
             <div class="second-column">
                 <?php foreach(FOOTER_LINKS as $section): ?>
-                    <div class="column-footer">
+                    <div class="column-footer" data-animate="fade-up" data-animate-delay="0">
                         <p class="footer-title"><?php echo htmlspecialchars($section['title'], ENT_QUOTES, 'UTF-8'); ?></p>
                         <ul class="footer-nav">
                             <?php foreach($section['links'] as $link): ?>
@@ -38,7 +38,7 @@
     </div>
     <div class="row-copyright">
         <div class="container">
-            <div class="columns">
+            <div class="columns" data-animate="fade-in-scale" data-animate-delay="0.4">
                 <div class="footer-column">
                     <p class="copyright-text">&copy; <?php echo date('Y'); ?> Flex Solutions All Rights Reserved.</p>
                 </div>
@@ -55,6 +55,8 @@
 <script src="./assets/js/main.js" type="module"></script>
 <script src="https://unpkg.com/embla-carousel/embla-carousel.umd.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/motion@latest/dist/motion.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
 
 </body>
 </html>

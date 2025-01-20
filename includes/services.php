@@ -8,7 +8,7 @@
 
 <section class="our-core-services">
     <div class="container">
-        <div class="section-title" data-animate="fade-up" data-animate-delay="0">
+        <div class="section-title">
             <div class="title-wrapper">
                 <p class="sub-title">Our Services</p>
                 <h2 class="h2">Covering All Your Needs</h2>
@@ -17,7 +17,7 @@
         </div>
         <div class="our-core-services__row">
             <div class="our-core-services__column">
-                <div class="our-core-services__service-card" data-animate="fade-in-scale">
+                <div class="our-core-services__service-card" data-animate="fade-in-scale" data-animate-delay="0.3">
                     <div class="our-core-services__service-block">
                         <h3 class="h3">CMS Platform and Frameworks</h3>
                         <p class="our-core-services__service-text">We often work with Drupal, Laravel and Wordpress, but
@@ -31,7 +31,7 @@
                         <img src="assets/images/Vector-service.png" height="546" width="720">
                     </div>
                 </div>
-                <div class="our-core-services__service-card" data-animate="fade-in-scale">
+                <div class="our-core-services__service-card" data-animate="fade-in-scale" data-animate-delay="0.3">
                     <div class="our-core-services__service-block">
                         <h3 class="h3">UI UX Designing</h3>
                         <p class="our-core-services__service-text">Crafting intuitive and visually appealing interfaces
@@ -45,7 +45,7 @@
                         <img src="assets/images/vector-service2.png" height="465" width="720">
                     </div>
                 </div>
-                <div class="our-core-services__service-card" data-animate="fade-in-scale">
+                <div class="our-core-services__service-card" data-animate="fade-in-scale"  data-animate-delay="0.3">
                     <div class="our-core-services__service-block">
                         <h3 class="h3">Support & Maintenance</h3>
                         <p class="our-core-services__service-text">We protect your website from malicious activity and
@@ -60,7 +60,7 @@
                 </div>
             </div>
             <div class="our-core-services__column">
-                <div class="our-core-services__service-card" data-animate="fade-in-scale">
+                <div class="our-core-services__service-card" data-animate="fade-in-scale" data-animate-delay="0.3">
                     <div class="our-core-services__service-block">
                         <h3 class="h3">Web App Development</h3>
                         <p class="our-core-services__service-text">Next.js is among the top libraries for the creation
@@ -90,7 +90,7 @@
                         <img src="assets/images/seo.png" height="270" width="720">
                     </div>
                 </div>
-                <div class="our-core-services__service-card" data-animate="fade-in-scale">
+                <div class="our-core-services__service-card" data-animate="fade-in-scale" data-animate-delay="0.3">
                     <div class="our-core-services__service-block">
                         <h3 class="h3">Backend development</h3>
                         <p class="our-core-services__service-text">Support for code, small features, bug fixes, upgrades
@@ -102,7 +102,7 @@
                         <img src="assets/images/backend.png" height="192" width="720">
                     </div>
                 </div>
-                <div class="our-core-services__service-card" data-animate="fade-in-scale">
+                <div class="our-core-services__service-card" data-animate="fade-in-scale"  data-animate-delay="0.3">
                     <div class="our-core-services__service-block">
                         <h3 class="h3">E Commerce</h3>
                         <p class="our-core-services__service-text">We integrate third-party systems and APIs with your

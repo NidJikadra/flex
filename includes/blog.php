@@ -29,7 +29,7 @@ $blog_posts = [
                     </div>
                     <button type="button" class="button btn-primary">Go to insights</button>
                 </div>
-                <div class="row">
+                <div class="row" data-animate="fade-up" data-animate-delay="0.3">
                     <div class="blog-card">
                         <img src="assets/images/blog-img-1.png" alt="Blog 1" height="300" width="440" class="img-border">
                         <div class="text-block">
