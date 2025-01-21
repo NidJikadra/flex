@@ -6,7 +6,7 @@
 
 <section class="career-cta">
     <div class="container">
-        <div class="career-cta__wrapper">
+        <div class="career-cta__wrapper" data-animate="fade-in-scale" data-animate-delay="0.3">
             <div class="career__content">
                 <div class="sub-heading">Careers</div>
                 <h3 class="cta__title"><a href="career.php">Join Our Team</a></h3>

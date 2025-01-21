@@ -15,7 +15,6 @@ $stats = [
     ['value' => '~25%', 'description' => 'Navigate effortlessly with our intuitive interface.'],
     ['value' => '1m', 'description' => 'Enjoy reliable, cutting-edge technology every time.'],
 ];
-
 ?>
 <section class="case-studies-list">
     <div class="container">

@@ -47,18 +47,44 @@ function animateHero(section, selector) {
               { opacity: 1, transform: "translateY(0)", filter: "blur(0)" },
               { duration: 0.8, ease: "easeOut" }
             );
-          }, index * 50);
+          }, index * 70);
         });
       });
     });
   });
 }
 
-const section = document.querySelectorAll(".case-studies, .our-core-services, .tabs, .aboutus, .blogs-spot, .faq, .core-values, .our-team");
-const heroSection = document.querySelectorAll(".hero-section, .hero-banner");
+const word = document.querySelectorAll(
+  ".case-studies, .our-core-services, .tabs, .aboutus, .blogs-spot, .faq, .core-values, h1"
+);
+const section = document.querySelectorAll(".hero-section, .hero-banner");
 
-animateHero(heroSection, ".review-text, .desc");
-animateHero(section, "h2");
+animateHero(section, ".review-text, .desc");
+animateHero(word, "h2");
+
+document.addEventListener("DOMContentLoaded", () => {
+  const caseStudies = document.querySelectorAll(
+    ".case-studies-list__content-list"
+  );
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        } else {
+          entry.target.classList.remove("visible");
+        }
+      });
+    },
+    {
+      root: null,
+      threshold: 0.5,
+    }
+  );
+
+  caseStudies.forEach((item) => observer.observe(item));
+});
 
 // All over animation
 document.addEventListener("DOMContentLoaded", () => {
@@ -85,35 +111,50 @@ document.addEventListener("DOMContentLoaded", () => {
         transform: animations[animationType].initial.transform,
       });
 
-      Motion.inView(element, () => {
+      inView(element, () => {
         const delay = element.getAttribute("data-animate-delay") || 0;
         setTimeout(() => {
           animate(element, animations[animationType].final, {
             duration: 0.6,
             ease: "easeOut",
           });
-        }, delay * 1000);
+        }, delay * 1500);
       });
     }
   });
 });
 
 // tab-section
-document.querySelectorAll(".tab").forEach((tab) => {
-  tab.addEventListener("click", () => {
-    document
-      .querySelectorAll(".tab")
-      .forEach((t) => t.classList.remove("active"));
+document.addEventListener("DOMContentLoaded", function () {
+  const tabs = document.querySelectorAll(".tab");
+  const tabIndicator = document.querySelector(".tab-indicator");
 
-    tab.classList.add("active");
+  function updateIndicator() {
+    const activeTab = document.querySelector(".tab.active");
+    if (activeTab) {
+      const rect = activeTab.getBoundingClientRect();
+      const panelRect = activeTab.parentElement.getBoundingClientRect();
+      tabIndicator.style.width = `${rect.width}px`;
+      tabIndicator.style.transform = `translateX(${rect.left - panelRect.left}px)`;
+    }
+  }
 
-    document
-      .querySelectorAll(".tab-panel")
-      .forEach((content) => content.classList.remove("active"));
-    const target = tab.getAttribute("data-tab");
-    document.getElementById(target).classList.add("active");
+  tabs.forEach((tab) => {
+    tab.addEventListener("click", () => {
+      document.querySelector(".tab.active").classList.remove("active");
+      tab.classList.add("active");
+
+      document.querySelector(".tab-panel.active").classList.remove("active");
+      const targetId = tab.getAttribute("data-tab");
+      document.getElementById(targetId).classList.add("active");
+
+      updateIndicator(); 
+    });
   });
+
+  updateIndicator();
 });
+
 
 // accordion section
 document.querySelectorAll(".accordion-header").forEach((header) => {

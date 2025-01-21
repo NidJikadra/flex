@@ -17,16 +17,26 @@
     border-radius: 54px;
     gap: 20px;
     margin-top: 30px;
+    position: sticky;
+    top: 50px;
   }
 
   &__content-list {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    opacity: 0.8;
+    transform: scale(0.95);
+    transition: opacity 0.5s ease, transform 0.5s ease;
 
     @include respond-to(xl) {
       flex-wrap: nowrap;
     }
+  }
+
+  &__content-list.visible {
+    opacity: 1;
+    transform: scale(1);
   }
 
   &__image-container {

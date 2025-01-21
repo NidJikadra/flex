@@ -17,10 +17,10 @@
   
     @include respond-to(lg) {
       grid-template-columns: repeat(3, 1fr);
+      overflow-x: unset;
     }
   } 
 }
-
 
 .latest-blog__title {
   margin-bottom: 20px;

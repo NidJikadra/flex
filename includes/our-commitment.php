@@ -6,7 +6,7 @@
 
 <section class="our-commitment">
     <div class="container">
-        <div class="our-commitment__row">
+        <div class="our-commitment__row" data-animate="fade-in-scale" data-animate-delay="0.3">
             <div class="our-commitment__image">
                 <img src="assets/images/Guaranteed.png" alt="Guaranteed" height="472" width="680">  
             </div>

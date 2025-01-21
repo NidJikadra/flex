@@ -11,8 +11,8 @@
             <h2 class="h2"><span class="text-blue">The</span> India's Leading <span class="text-blue">Digital Experience
                 </span>Agency</h2>
             <p class="desc">Our team consists of worldwide, innovative design and programming fanatics.</p>
-            <button type="button" class="button btn-secondary">Connect With Our Story<span class="icon"></span></button>
-            <div class="hero-banner__row">
+            <button type="button" class="button btn-secondary word">Connect With Our Story<span class="icon"></span></button>
+            <div class="hero-banner__row word">
                 <div class="hero-banner__column">
                     <p class="hero-banner__info">5+</p>
                     <p class="hero-banner__count-text">Years of operations</p>

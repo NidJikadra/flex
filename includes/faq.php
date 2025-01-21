@@ -46,9 +46,9 @@ $faqs = [
                 <p class="faq__content">Find quick answers to common questions in our FAQ section. For more help, contact our support team anytime—we're here to assist.</p>
                 <button type="button" class="button btn-secondary">Contact Us<span class="icon"></span></button>
             </div>
-            <div class="faq__column-2" data-animate="fade-up" data-animate-delay="0.3">
+            <div class="faq__column-2">
                 <?php foreach ($faqs as $faq): ?>
-                    <div class="accordion-item <?php echo $faq['is_open'] ? 'open' : ''; ?>">
+                    <div class="accordion-item <?php echo $faq['is_open'] ? 'open' : ''; ?>" data-animate="fade-up" data-animate-delay="0">
                         <div class="accordion-header <?php echo $faq['is_open'] ? 'active' : ''; ?>">
                             <?php echo $faq['question']; ?>
                         </div>

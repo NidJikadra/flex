@@ -13,7 +13,7 @@
             </div>
         </div>
         <div class="core-values-wrapper">
-            <div class="core-values__value" data-image="image-1">
+            <div class="core-values__value" data-image="image-1" data-animate="fade-up" data-animate-delay="0">
                 <div class="item">
                     <span class="number text-blue">01</span>
                     <div class="text">
@@ -26,7 +26,7 @@
                     <img id="image-1" src="assets/images/innovation.png" width="309" height="209" alt="Innovation">
                 </div>
             </div>
-            <div class="core-values__value active" data-image="image-2">
+            <div class="core-values__value active" data-image="image-2" data-animate="fade-up" data-animate-delay="0.1">
                 <div class="item">
                     <span class="number text-blue">02</span>
                     <div class="text">
@@ -40,7 +40,7 @@
                         class="active">
                 </div>
             </div>
-            <div class="core-values__value" data-image="image-3">
+            <div class="core-values__value" data-image="image-3" data-animate="fade-up" data-animate-delay="0.2">
                 <div class="item">
                     <span class="number text-blue">03</span>
                     <div class="text">
@@ -53,7 +53,7 @@
                     <img id="image-3" src="assets/images/innovation.png" width="309" height="209" alt="Impact">
                 </div>
             </div>
-            <div class="core-values__value" data-image="image-4">
+            <div class="core-values__value" data-image="image-4" data-animate="fade-up" data-animate-delay="0.3">
                 <div class="item">
                     <span class="number text-blue">04</span>
                     <div class="text">

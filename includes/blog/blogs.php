@@ -14,7 +14,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="blog-card">
+            <div class="blog-card" data-animate="fade-up" data-animate-delay="0">
                 <img src="assets/images/blog-img-1.png" alt="Blog 1" height="300" width="440" class="img-border">
                 <div class="text-block">
                     <p class="blog-card-text">Design</p>
@@ -25,7 +25,7 @@
                         partly because converting images to AVIF is slow. Here’s how we solved this.</p>
                 </div>
             </div>
-            <div class="blog-card">
+            <div class="blog-card" data-animate="fade-up" data-animate-delay="0.2">
                 <div class="blog">
                     <img src="assets/images/blog-img-2.png" alt="Blog 1" height="300" width="440" class="img-border">
                 </div>
@@ -39,7 +39,7 @@
                         us.</p>
                 </div>
             </div>
-            <div class="blog-card">
+            <div class="blog-card" data-animate="fade-up" data-animate-delay="0.3">
                 <img src="assets/images/blog-img-3.png" alt="Blog 1" height="300" width="440" class="img-border">
                 <div class="text-block">
                     <p class="blog-card-text">Mobile Application</p>
@@ -49,7 +49,7 @@
                         powered by Framer Motion. In this blog post, we'll dive into how it works.</p>
                 </div>
             </div>
-            <div class="blog-card">
+            <div class="blog-card" data-animate="fade-up" data-animate-delay="0.4">
                 <img src="assets/images/blog-image4.png" alt="Blog 1" height="300" width="440" class="img-border">
                 <div class="text-block">
                     <p class="blog-card-text">SaaS Application</p>
@@ -59,7 +59,7 @@
                         partly because converting images to AVIF is slow. Here’s how we solved this.</p>
                 </div>
             </div>
-            <div class="blog-card">
+            <div class="blog-card" data-animate="fade-up" data-animate-delay="0.5">
                 <img src="assets/images/blog-image5.png" alt="Blog 1" height="300" width="440" class="img-border">
                 <div class="text-block">
                     <p class="blog-card-text">Design</p>
@@ -71,7 +71,7 @@
                         partly because converting images to AVIF is slow. Here’s how we solved this.</p>
                 </div>
             </div>
-            <div class="blog-card">
+            <div class="blog-card" data-animate="fade-up" data-animate-delay="0.6">
                 <img src="assets/images/blog-image6.png" alt="Blog 1" height="300" width="440" class="img-border">
                 <div class="text-block">
                     <p class="blog-card-text">Knowledge</p>

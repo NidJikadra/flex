@@ -948,6 +948,7 @@ button {
 .hero-section {
   opacity: 0;
   transform: translateY(20px);
+  filter: blur(5px);
   position: relative;
   min-height: 100dvh;
   background-color: #0b0b0b;
@@ -970,11 +971,6 @@ button {
 .hero-section .clients {
   width: 100%;
   flex-shrink: 0;
-}
-.hero-section .word {
-  filter: blur(5px);
-  opacity: 0;
-  transform: translateY(20px);
 }
 .hero-section::before {
   content: "";
@@ -1051,6 +1047,7 @@ button {
   height: 100%;
   opacity: 0;
   transform: translateY(20px);
+  filter: blur(5px);
 }
 .hero-banner .h2 {
   margin: 15px 0;
@@ -1758,6 +1755,7 @@ button {
   border: 1px solid #212121;
   border-radius: 50px;
   overflow-x: auto;
+  position: relative;
 }
 @media (min-width: 768px) {
   .tabs-panel {
@@ -1774,7 +1772,7 @@ button {
   font-size: 18px;
   text-align: center;
   cursor: pointer;
-  background-color: #0b0b0b;
+  background-color: transparent;
   border: none;
   color: #fbfbfb;
   border-radius: 50px;
@@ -1787,11 +1785,7 @@ button {
     font-size: 20px;
   }
 }
-.tab:hover {
-  background-color: #212121;
-}
 .tab.active {
-  background-color: #fbfbfb;
   color: #0b0b0b;
 }
 
@@ -1817,6 +1811,18 @@ button {
     flex-wrap: wrap;
     overflow-x: visible;
   }
+}
+
+.tab-indicator {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 50px;
+  background: #fbfbfb;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  z-index: -1;
+  pointer-events: none;
 }
 
 .grid {
@@ -2041,6 +2047,7 @@ button {
 @media (min-width: 1024px) {
   .blogs-spot .row {
     grid-template-columns: repeat(3, 1fr);
+    overflow-x: unset;
   }
 }
 
@@ -3136,16 +3143,25 @@ footer .footer-content {
   border-radius: 54px;
   gap: 20px;
   margin-top: 30px;
+  position: sticky;
+  top: 50px;
 }
 .case-studies-list__content-list {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  opacity: 0.8;
+  transform: scale(0.95);
+  transition: opacity 0.5s ease, transform 0.5s ease;
 }
 @media (min-width: 1200px) {
   .case-studies-list__content-list {
     flex-wrap: nowrap;
   }
+}
+.case-studies-list__content-list.visible {
+  opacity: 1;
+  transform: scale(1);
 }
 .case-studies-list__image-container {
   flex: 100%;

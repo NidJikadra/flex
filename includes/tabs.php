@@ -84,8 +84,9 @@ $tabs = [
             <p class="sub-title">Technologies we use</p>
             <h2 class="tabs__heading">Our Services with Advanced Tools</h2>
         </div>
-        <div class="tab-wrapper" data-animate="fade-up" data-animate-delay="0"> 
+        <div class="tab-wrapper" data-animate="fade-up" data-animate-delay="0.3">   
             <div class="tabs-panel">
+                <div class="tab-indicator"></div>
                 <button class="tab active" data-tab="frontend">Front End</button>
                 <button class="tab" data-tab="backend">Back End</button>
                 <button class="tab" data-tab="database">Database</button>

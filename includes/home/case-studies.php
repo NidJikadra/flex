@@ -25,7 +25,7 @@
             </div>
         </div>
         <div class="case-studies__row">
-            <div class="case-studies__column" data-animate="fade-in-scale">
+            <motion.div class="case-studies__column" data-animate="fade-in-scale" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.5 }}>
                 <div class="case-studies__healthcare-wrapper">  
                     <div class="overlay">
                         <div class="case-studies__info-wrapper">
@@ -34,8 +34,8 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="case-studies__column" data-animate="fade-in-scale">
+            </motion.div>
+            <motion.div class="case-studies__column" data-animate="fade-in-scale" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.5 }}>
                 <div class="case-studies__travel-wrapper">
                     <div class="overlay">
                         <div class="case-studies__info-wrapper">
@@ -44,7 +44,7 @@
                         </div>   
                     </div>
                 </div>
-            </div>
+            </motion.div>
         </div>
         <button type="button" class="button btn-primary bottom" data-animate="fade-up">See all case studies</button>
     </div>

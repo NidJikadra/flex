@@ -12,7 +12,7 @@
                 <h2 class="h2">Our People, Our Strength</h2>
             </div>
         </div>
-        <div class="our-team__row">
+        <div class="our-team__row" data-animate="fade-in-scale" data-animate-delay="0.3">
             <div class="team-card" data-name="Jacob Jones" data-position="Founder" data-description="Bessie Cooper is the visionary Team Leader at Flex Solutions, driving innovative design strategies 
                                     and ensuring seamless project execution. With a background in both design and project management, 
                                     Bessie excels in leading creative teams to deliver exceptional results."
